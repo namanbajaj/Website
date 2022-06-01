@@ -1,23 +1,25 @@
 import React from 'react'
 import './welcome.css'
 import Links from './Links'
-import ME from '../../assets/me.png'
+import ME from '../../assets/me.jpeg'
+import Socials from './Socials'
 
 const Welcome = () => {
     return (
         <header>
             <div className="container header__container">
-                <h5>hello</h5>
-                <h1>Naman</h1>
-                <h5 className="text-light">developer</h5>
-                
+                <h1>Naman Bajaj</h1>
+                <h5>Software Developer</h5>
+
                 <Links />
+                <Socials />
 
                 <div className="me">
                     <img src={ME} alt="" />
                 </div>
 
                 <a href="#contact" className='scroll__down'>Scroll Down</a>
+
             </div>
         </header>
     )
