@@ -17,7 +17,7 @@ header {
     justify-content: center;
 }
 
-.header__socials {
+.socials {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     display: flex;
@@ -26,3 +26,24 @@ header {
     align-items: center;
 }
 
+.socials::before {
+    content: '';
+    width: 2rem;
+    height: 1px;
+    background: var(--color-bg-primary);
+}
+
+.socials::after {
+    content: '';
+    width: 2rem;
+    height: 1px;
+    background: var(--color-bg-primary);
+}
+
+.me {
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+}
