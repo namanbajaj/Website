@@ -38,6 +38,7 @@ body {
     line-height: 2;
 }
 
+/* General Styles */
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -85,12 +86,14 @@ a:hover {
 .btn {
     width: max-content;
     display: inline-block;
-    color: var(--color-primary);
+    background: var(--color-bg-primary);
+    color: var(--color-bg);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
+    margin-right: 10px;
 }
 
 .btn:hover {
@@ -100,7 +103,7 @@ a:hover {
 }
 
 .btn-primary {
-    background: var(--color-primary);
+    background: var(--color-bg-primary);
     color: var(--color-bg);
 }
 
@@ -110,3 +113,24 @@ img {
     object-fit: cover;
 }
 
+/* Medium Devices */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+}
+
+/* Small Devices */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+}

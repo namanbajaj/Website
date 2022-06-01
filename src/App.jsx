@@ -9,8 +9,8 @@ import Welcome from './components/Welcome/Welcome'
 const App = () => {
   return (
     <>
-        <Navbar />
         <Welcome />
+        <Navbar />
         <About />
         <Portfolio />
         <Contact />
