@@ -9,10 +9,10 @@ const Navbar = () => {
   const [activeNav, setActiveNav] = useState('#welcome');
   return (
     <navbar>
-      <a id="welcome" href="#welcome" onClick={() => setActiveNav('#welcome')} className={activeNav=== '#welcome' ? 'active' : ''}><RiHomeLine/></a>
-      <a id="about" href="#about" onClick={() => setActiveNav('#about')} className={activeNav=== '#about' ? 'active' : ''}><RiQuestionLine/></a>
-      <a id="portfolio" href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav=== '#portfolio' ? 'active' : ''}><RiComputerLine/></a>
-      <a id="contact" href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav=== '#contact' ? 'active' : ''}><RiPhoneLine/></a>
+      <a href="#welcome" onClick={() => setActiveNav('#welcome')} className={activeNav=== '#welcome' ? 'active' : ''}><RiHomeLine/></a>
+      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav=== '#about' ? 'active' : ''}><RiQuestionLine/></a>
+      <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav=== '#portfolio' ? 'active' : ''}><RiComputerLine/></a>
+      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav=== '#contact' ? 'active' : ''}><RiPhoneLine/></a>
     </navbar>
   )
 }

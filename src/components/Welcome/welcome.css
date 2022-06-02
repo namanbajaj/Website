@@ -41,10 +41,10 @@ header {
 }
 
 .me {
-    width: 22rem;
-    height: 30rem;
+    width: 40rem;
+    height: 55rem;
     position: absolute;
-    left: calc(50% - 11rem);
+    left: calc(50% - 20rem);
 }
 
 /* Medium Devices */

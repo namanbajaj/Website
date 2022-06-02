@@ -1,0 +1,35 @@
+.about__me__header {
+    margin-left: 5%;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.about__me__header::after {
+    content: " ";
+    position: absolute;
+    border-bottom: 10px solid white;
+    width: 50%;
+    height: 0.2rem;
+}
+
+.about__me__geninfo {
+    margin-left: 5%;
+}
+
+.languages {
+    margin-left: 5%;
+    margin-top: 5rem;
+}
+
+.languages h3 {
+    background: transparent;
+    padding: 0.1rem;
+    display: flex;
+    color: var(--color-bg-primary);
+    font-size: 1.3rem;
+}
+
+.languages h3:hover{
+    color: white;
+}
