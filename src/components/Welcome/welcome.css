@@ -46,3 +46,41 @@ header {
     position: absolute;
     left: calc(50% - 11rem);
 }
+
+/* Medium Devices */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+/* Small Devices */
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        height: 135vh;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-height: 800px) {
+    header {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-height: 700px) {
+    header {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-height: 900px) {
+    header {
+        height: 95vh;
+    }
+}
