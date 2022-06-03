@@ -17,9 +17,22 @@
     margin-left: 5%;
 }
 
-.languages {
+.introtext {
     margin-left: 5%;
     margin-top: 5rem;
+}
+
+.languages {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    gap: 3rem;
+}
+
+.languages>div {
+    background: var(--color-bg-variant);
+    padding: 1rem 5rem;
+    border-radius: 3rem;
+    border: 1px solid transparent;
 }
 
 .languages h3 {
@@ -30,6 +43,25 @@
     font-size: 1.3rem;
 }
 
-.languages h3:hover{
+.languages h2 {
+    background: transparent;
+    padding: 0.1rem;
+    display: flex;
+    color: var(--color-bg-primary);
+    font-size: 2rem;
+}
+
+.languages h3:hover {
     color: white;
+}
+
+.text-light {
+    font-size: 20px;
+}
+
+.content {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
