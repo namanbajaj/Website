@@ -2,6 +2,7 @@ import React from 'react'
 import './portfolio.css'
 
 import Popup from 'reactjs-popup'
+import { Player } from 'video-react';
 
 import IMG1 from '../../assets/websiteportfolio.png'
 
@@ -11,7 +12,16 @@ const data = [
     image: IMG1,
     title: 'This Website',
     github: 'https://github.com/namanbajaj/Website',
-    text: 'This website was written using JavaScript, ReactJS, and CSS'
+    text: 'This website was written using JavaScript, ReactJS, and CSS',
+    demo: null,
+  },
+  {
+    id: 2,
+    image: IMG1,
+    title: 'This Website',
+    github: 'https://github.com/namanbajaj/Website',
+    text: 'This website was written using JavaScript, ReactJS, and CSS',
+    demo: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   }
 ]
 
@@ -25,7 +35,9 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {
-          data.map(({ id, image, title, github, text }) => {
+          data.map(({ id, image, title, github, text, demo }) => {
+            const demobutton = <a className="btn" id='demo_button'> Demo </a>;
+
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
@@ -57,6 +69,34 @@ const Portfolio = () => {
                       </div>
                     )}
                   </Popup>
+                  {demo != null ? (
+                    < Popup
+                      trigger={demobutton}
+                      modal
+                    >
+                      {close => (
+                        <div className="pop_up_window">
+                          <div className="pop_up_content_video">
+                            <Player className='video'
+                              playsInline
+                              src={demo}
+                            />
+                          </div>
+                          <div className="pop_up_actions">
+                            <a
+                              className="btn"
+                              onClick={() => {
+                                close();
+                              }}
+                            >
+                              Close
+                            </a>
+                          </div>
+                        </div>
+                      )}
+                    </Popup>
+                  ) : <p></p>
+                  }
                 </div>
               </article>
             )
@@ -64,7 +104,7 @@ const Portfolio = () => {
         }
 
       </div>
-    </section>
+    </section >
   )
 }
 
