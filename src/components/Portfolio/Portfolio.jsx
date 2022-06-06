@@ -2,7 +2,18 @@ import React from 'react'
 import './portfolio.css'
 
 import Popup from 'reactjs-popup'
-import { Player } from 'video-react';
+import {
+  Player,
+  ControlBar,
+  ReplayControl,
+  ForwardControl,
+  CurrentTimeDisplay,
+  TimeDivider,
+  PlaybackRateMenuButton,
+  VolumeMenuButton
+} from 'video-react';
+
+import videoreactcss from '../../../node_modules/video-react/dist/video-react.css'
 
 import IMG1 from '../../assets/websiteportfolio.png'
 
@@ -32,6 +43,13 @@ const Portfolio = () => {
       <div className='portfolio_intro_text'>
         <h1>My Recent Work</h1>
       </div>
+      <div className="container video__container">
+          <Player className='video'
+            playsInline
+            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+          >
+          </Player>
+        </div>
 
       <div className="container portfolio__container">
         {
@@ -75,7 +93,7 @@ const Portfolio = () => {
                       modal
                     >
                       {close => (
-                        <div className="pop_up_window">
+                        <div className="pop_up_window_video">
                           <div className="pop_up_content_video">
                             <Player className='video'
                               playsInline

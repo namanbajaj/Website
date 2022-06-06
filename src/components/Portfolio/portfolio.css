@@ -89,6 +89,26 @@
     justify-content: center;
 }
 
+
+/* For Video Player */
 .video {
-    width: 10px;
+
 }
+
+.pop_up_window_video {
+    background: var(--color-bg-variant);
+    border-radius: 2rem;
+}
+
+.pop_up_content_video {
+    width: 100%;
+    /* padding: 10px 5px; */
+}
+
+/* .video__container > .video {
+    padding-top: 0%;
+} */
+
+/* .video-react.video-react-16-9 {
+    padding-top: 50%;
+} */
