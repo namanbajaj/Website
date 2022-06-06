@@ -3,7 +3,6 @@ import React from 'react'
 import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit } from 'react-icons/di';
 import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel } from 'react-icons/si'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
-import { BsPatchCheckFill } from 'react-icons/bs'
 
 const Languages = () => {
     return (
