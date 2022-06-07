@@ -70,7 +70,7 @@
 /* For Pop Up Window */
 .pop_up_window {
     background: var(--color-bg-variant);
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 .pop_up_window > .pop_up_header {

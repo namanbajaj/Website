@@ -2,20 +2,12 @@ import React from 'react'
 import './portfolio.css'
 
 import Popup from 'reactjs-popup'
-import {
-  Player,
-  ControlBar,
-  ReplayControl,
-  ForwardControl,
-  CurrentTimeDisplay,
-  TimeDivider,
-  PlaybackRateMenuButton,
-  VolumeMenuButton, BigPlayButton
-} from 'video-react';
+import ReactPlayer from 'react-player'
+
 
 import ReactLogo from '../../assets/websiteportfolio.png'
 import PhotosAndroidPhoto from '../../assets/PAPhoto.png'
-import PhotosAndroidDemo from '../../assets/mp.mp4'
+import PhotosAndroidDemo from '../../assets/PADemo.mp4'
 import PhotosDesktopPhoto from '../../assets/PDPhoto.png'
 // import PhotosDesktopDemo from '../../assets/PDDEMO.mp4'
 
@@ -28,14 +20,24 @@ const data = [
     github: 'https://github.com/namanbajaj/Website',
     text: 'This website was written using JavaScript, ReactJS, and CSS',
   },
+
   {
     id: 2,
     image: PhotosAndroidPhoto,
     title: 'Photos Library (Android)',
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
-    text: '',
+    text:
+      <span>
+        Photos library manager written for Android devices.<br />
+        Supports accessing filesystem to add photos to library. <br />
+        Users can create, delete, and rename albums. <br />
+        Users can add, delete, and move photos, in addition to displaying them in a larger display and showing all tags. <br />
+        Users can add tags to pictures and search by those tag values. <br />
+        Larger photo display has slideshow functionality.
+      </span>,
     demo: PhotosAndroidDemo
   },
+
   {
     id: 3,
     image: PhotosDesktopPhoto,
@@ -51,19 +53,8 @@ const Portfolio = () => {
   return (
     <section id='portfolio'>
       <div className='portfolio_intro_text'>
-        <h1>My Recent Work</h1>
+        <h1>My Recent Work (WIP)</h1>
       </div>
-      {/* <div className="container video__container">
-      <Player className='video'
-                              playsInline
-                              src={vid}
-                              fluid={false}
-                              width={1000}
-                              height={50}
-                            >
-                              <BigPlayButton position="center" />
-                            </Player>
-      </div> */}
 
       <div className="container portfolio__container">
         {
@@ -109,15 +100,11 @@ const Portfolio = () => {
                       {close => (
                         <div className="pop_up_window_video">
                           <div className="pop_up_content_video">
-                            <Player className='video'
-                              playsInline
-                              src={demo}
-                              fluid={false}
-                              width={480}
-                              height={272}
-                            >
-                              <BigPlayButton position="center" />
-                            </Player>
+                            <ReactPlayer
+                              url={PhotosAndroidDemo}
+                              controls={1}>
+                            </ReactPlayer>
+
                           </div>
                           <div className="pop_up_actions">
                             <a
