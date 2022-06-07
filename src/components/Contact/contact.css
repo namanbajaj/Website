@@ -5,9 +5,9 @@
 }
 
 .container.contact__container {
-    width: 65%;
+    width: 85%;
     display: grid;
-    grid-template-columns: 30% 65%;
+    grid-template-columns: 30% 55%;
     gap: 12%;
 }
 
@@ -24,6 +24,7 @@
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
+    /* width: fit-content; */
 }
 
 .contact__option:hover {
