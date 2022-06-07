@@ -13,9 +13,12 @@ import {
   VolumeMenuButton, BigPlayButton
 } from 'video-react';
 
-import videoreactcss from '../../../node_modules/video-react/dist/video-react.css'
-
 import ReactLogo from '../../assets/websiteportfolio.png'
+import PhotosAndroidPhoto from '../../assets/PAPhoto.png'
+// import PhotosAndroidDemo from '../../assets/PADEMO.mp4'
+// import PhotosDesktopPhoto from '../../assets/PDPhoto.jpg'
+// import PhotosDesktopDemo from '../../assets/PDDEMO.mp4'
+
 
 const data = [
   {
@@ -27,7 +30,7 @@ const data = [
   },
   {
     id: 2,
-    image: ReactLogo,
+    image: PhotosAndroidPhoto,
     title: 'Photos Library (Android)',
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text: '',
@@ -36,7 +39,7 @@ const data = [
   {
     id: 3,
     image: ReactLogo,
-    title: 'Photos Library (Android)',
+    title: 'Photos Library (Desktop)',
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text: '',
     // demo: vid

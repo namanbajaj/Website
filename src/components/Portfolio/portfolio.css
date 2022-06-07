@@ -18,6 +18,8 @@
 }
 
 .portfolio__item {
+    position: relative;
+    min-height: 25rem;
     background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
@@ -36,10 +38,12 @@
 }
 
 .portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
+    margin: 1rem 0 1rem;
 }
 
 .portfolio__item-cta {
+    position: absolute;
+    bottom: 0;
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
