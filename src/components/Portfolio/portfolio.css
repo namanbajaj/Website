@@ -92,23 +92,31 @@
 
 /* For Video Player */
 .video {
-
+    
 }
 
 .pop_up_window_video {
     background: var(--color-bg-variant);
     border-radius: 2rem;
+    /* width: 100%; */
+    /* width: fit-content;
+    height: auto; */
 }
 
 .pop_up_content_video {
-    width: 100%;
-    /* padding: 10px 5px; */
+    /* width: 100%; */
+    padding: 1rem 1rem 1rem;
 }
 
-/* .video__container > .video {
-    padding-top: 0%;
-} */
+.video__container > .video {
+    /* padding-top: 0%; */
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+}
 
-/* .video-react.video-react-16-9 {
-    padding-top: 50%;
-} */
+.video-react.video-react-16-9 {
+    /* padding-top: 0%; */
+}

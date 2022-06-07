@@ -10,12 +10,14 @@ import {
   CurrentTimeDisplay,
   TimeDivider,
   PlaybackRateMenuButton,
-  VolumeMenuButton
+  VolumeMenuButton, BigPlayButton
 } from 'video-react';
 
 import videoreactcss from '../../../node_modules/video-react/dist/video-react.css'
 
 import IMG1 from '../../assets/websiteportfolio.png'
+
+import vid from '../../assets/mp.mp4'
 
 const data = [
   {
@@ -32,7 +34,9 @@ const data = [
     title: 'This Website',
     github: 'https://github.com/namanbajaj/Website',
     text: 'This website was written using JavaScript, ReactJS, and CSS',
-    demo: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+    // demo: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+    // demo: "T:\\Movies\\Reservoir Dogs (1992)\\Reservoir.Dogs.1992.1080p.BluRay.x265-RARBG.mp4"
+    demo: vid
   }
 ]
 
@@ -43,13 +47,17 @@ const Portfolio = () => {
       <div className='portfolio_intro_text'>
         <h1>My Recent Work</h1>
       </div>
-      <div className="container video__container">
-          <Player className='video'
-            playsInline
-            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-          >
-          </Player>
-        </div>
+      {/* <div className="container video__container">
+      <Player className='video'
+                              playsInline
+                              src={vid}
+                              fluid={false}
+                              width={1000}
+                              height={50}
+                            >
+                              <BigPlayButton position="center" />
+                            </Player>
+      </div> */}
 
       <div className="container portfolio__container">
         {
@@ -98,7 +106,12 @@ const Portfolio = () => {
                             <Player className='video'
                               playsInline
                               src={demo}
-                            />
+                              fluid={false}
+                              width={720}
+                              height={480}
+                            >
+                              <BigPlayButton position="center" />
+                            </Player>
                           </div>
                           <div className="pop_up_actions">
                             <a
