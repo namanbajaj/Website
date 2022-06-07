@@ -15,28 +15,31 @@ import {
 
 import videoreactcss from '../../../node_modules/video-react/dist/video-react.css'
 
-import IMG1 from '../../assets/websiteportfolio.png'
-
-import vid from '../../assets/mp.mp4'
+import ReactLogo from '../../assets/websiteportfolio.png'
 
 const data = [
   {
     id: 1,
-    image: IMG1,
+    image: ReactLogo,
     title: 'This Website',
     github: 'https://github.com/namanbajaj/Website',
     text: 'This website was written using JavaScript, ReactJS, and CSS',
-    demo: null,
   },
   {
     id: 2,
-    image: IMG1,
-    title: 'This Website',
-    github: 'https://github.com/namanbajaj/Website',
-    text: 'This website was written using JavaScript, ReactJS, and CSS',
-    // demo: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
-    // demo: "T:\\Movies\\Reservoir Dogs (1992)\\Reservoir.Dogs.1992.1080p.BluRay.x265-RARBG.mp4"
-    demo: vid
+    image: ReactLogo,
+    title: 'Photos Library (Android)',
+    github: 'https://github.com/namanbajaj/Photos-Library-Android',
+    text: '',
+    // demo: vid
+  },
+  {
+    id: 3,
+    image: ReactLogo,
+    title: 'Photos Library (Android)',
+    github: 'https://github.com/namanbajaj/Photos-Library-Android',
+    text: '',
+    // demo: vid
   }
 ]
 
