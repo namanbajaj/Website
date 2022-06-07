@@ -15,8 +15,8 @@ import {
 
 import ReactLogo from '../../assets/websiteportfolio.png'
 import PhotosAndroidPhoto from '../../assets/PAPhoto.png'
-// import PhotosAndroidDemo from '../../assets/PADEMO.mp4'
-// import PhotosDesktopPhoto from '../../assets/PDPhoto.jpg'
+import PhotosAndroidDemo from '../../assets/mp.mp4'
+import PhotosDesktopPhoto from '../../assets/PDPhoto.png'
 // import PhotosDesktopDemo from '../../assets/PDDEMO.mp4'
 
 
@@ -34,11 +34,11 @@ const data = [
     title: 'Photos Library (Android)',
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text: '',
-    // demo: vid
+    demo: PhotosAndroidDemo
   },
   {
     id: 3,
-    image: ReactLogo,
+    image: PhotosDesktopPhoto,
     title: 'Photos Library (Desktop)',
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text: '',
@@ -113,8 +113,8 @@ const Portfolio = () => {
                               playsInline
                               src={demo}
                               fluid={false}
-                              width={720}
-                              height={480}
+                              width={480}
+                              height={272}
                             >
                               <BigPlayButton position="center" />
                             </Player>

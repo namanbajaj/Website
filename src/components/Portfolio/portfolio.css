@@ -19,7 +19,7 @@
 
 .portfolio__item {
     position: relative;
-    min-height: 25rem;
+    min-height: 35rem;
     background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
@@ -34,7 +34,7 @@
 
 .portfolio__item-image {
     border-radius: 1.5rem;
-    overflow: hidden;
+    overflow: hidden;   
 }
 
 .portfolio__item h3 {
