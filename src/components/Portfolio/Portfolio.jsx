@@ -10,7 +10,10 @@ import PhotosAndroidPhoto from '../../assets/PAPhoto.png'
 import PhotosAndroidDemo from '../../assets/PADemo.mp4'
 import PhotosDesktopPhoto from '../../assets/PDPhoto.png'
 // import PhotosDesktopDemo from '../../assets/PDDEMO.mp4'
-
+import ChessPhoto from '../../assets/CPhoto.png'
+import ChessDemo from '../../assets/CDemo.mp4'
+// import SongLibraryPhoto from '../../assets/SLPhoto.png'
+// import SongLibraryDemo from '../../assets/SLDemo.mp4'
 
 const data = [
   {
@@ -43,8 +46,33 @@ const data = [
     image: PhotosDesktopPhoto,
     title: 'Photos Library (Desktop)',
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
-    text: '',
+    text:
+      <span>
+
+      </span>,
     // demo: vid
+  },
+  {
+    id: 4,
+    image: ChessPhoto,
+    title: 'ASCII Based Chess',
+    github: 'https://github.com/namanbajaj/Chess',
+    text:
+      <span>
+
+      </span>,
+    demo: ChessDemo
+  },
+  {
+    id: 5,
+    // image:
+    title: 'Song Library',
+    github: 'https://github.com/namanbajaj/Song-Library',
+    text:
+      <span>
+
+      </span>,
+    // demo: 
   }
 ]
 
@@ -101,13 +129,13 @@ const Portfolio = () => {
                         <div className="pop_up_window_video">
                           <div className="pop_up_content_video">
                             <div className='player-wrapper'>
-                            <ReactPlayer
-                              url={PhotosAndroidDemo}
-                              controls={1}
-                              width='100%'
-                              height='100%'
-                              className='.react-player'>
-                            </ReactPlayer>
+                              <ReactPlayer
+                                url={demo}
+                                controls={1}
+                                width='100%'
+                                height='100%'
+                                className='.react-player'>
+                              </ReactPlayer>
                             </div>
                           </div>
                           <div className="pop_up_actions">

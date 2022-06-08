@@ -49,6 +49,9 @@
 .pop_up_window {
     background: var(--color-bg-variant);
     border-radius: 1rem;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: white;
 }
 
 .pop_up_window>.pop_up_header {
@@ -56,12 +59,12 @@
     border-bottom: 1px solid gray;
     font-size: 18px;
     text-align: center;
-    padding: 5px;
+    padding: 10px 10px 10px;
 }
 
 .pop_up_window>.pop_up_content {
     width: 100%;
-    padding: 10px 5px;
+    padding: 10px 10px 10px;
 }
 
 .pop_up_actions {
@@ -79,6 +82,9 @@
     /* width: 100%; */
     /* width: fit-content;
     height: auto; */
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: white;
 }
 
 .pop_up_content_video {
@@ -125,7 +131,7 @@
     }
 
     .pop_up_window {
-        width: 90%;
+        width: 80%;
     }
 
     .player-wrapper {
