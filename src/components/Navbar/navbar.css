@@ -10,7 +10,7 @@ navbar {
     bottom: 2rem;
     display: flex;
     gap: 1rem;
-    border-radius: 25px;
+    border-radius: 2rem;
     backdrop-filter: blur(15px);
 }
 
@@ -19,7 +19,7 @@ navbar a {
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
-    color: var(--color-white);
+    color: white;
     font-size: 1.3rem;
 }
 
@@ -29,5 +29,4 @@ navbar a:hover {
 
 navbar a.active {
     background: black;
-    color: white
 }

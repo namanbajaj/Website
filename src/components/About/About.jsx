@@ -6,7 +6,6 @@ import Languages from './Languages';
 const About = () => {
   return (
     <section id='about'>
-      <header>
         <div className='about__me__header'>
           <h1>
             About Me
@@ -20,9 +19,7 @@ const About = () => {
             I've worked with a variety of technologies through hobby projects and undergraduate courses.
           </h5>
         </div>
-
         <Languages />
-      </header>
 
     </section>
   )

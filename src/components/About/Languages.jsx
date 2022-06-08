@@ -15,7 +15,6 @@ const Languages = () => {
                     <h2>Frontend Development</h2>
                     <div className='content'>
                         <article className='details'>
-
                             <h4>
                                 <h3><DiHtml5 size={35}></DiHtml5>&nbsp;HTML5</h3>
                                 <h5 className='text-light'>Intermediate</h5>
@@ -32,7 +31,6 @@ const Languages = () => {
 
 
                         <article className='details'>
-
                             <h4>
                                 <h3><DiJsBadge size={35}></DiJsBadge>&nbsp;JavaScript</h3>
                                 <h5 className='text-light'>Intermediate</h5>
@@ -40,7 +38,6 @@ const Languages = () => {
                         </article>
 
                         <article className='details'>
-
                             <h4>
                                 <h3><DiReact size={35}></DiReact>&nbsp;React</h3>
                                 <h5 className='text-light'>Intermediate</h5>
@@ -48,7 +45,6 @@ const Languages = () => {
                         </article>
 
                         <article className='details'>
-
                             <h4>
                                 <h3><SiKotlin size={35}></SiKotlin>&nbsp;Kotlin</h3>
                                 <h5 className='text-light'>Intermediate</h5>
@@ -62,7 +58,6 @@ const Languages = () => {
                     <h2>Backend Development</h2>
                     <div className='content'>
                         <article className='details'>
-
                             <h4>
                                 <h3><DiJava size={35}></DiJava>&nbsp;Java</h3>
                                 <h5 className='text-light'>Experienced</h5>
@@ -70,7 +65,6 @@ const Languages = () => {
                         </article>
 
                         <article className='details'>
-
                             <h4>
                                 <h3><DiPython size={35}></DiPython>&nbsp;Python</h3>
                                 <h5 className='text-light'>Experienced</h5>
@@ -79,7 +73,6 @@ const Languages = () => {
 
 
                         <article className='details'>
-
                             <h4>
                                 <h3><SiCplusplus size={35}></SiCplusplus>&nbsp;C++</h3>
                                 <h5 className='text-light'>Intermediate</h5>
@@ -87,7 +80,6 @@ const Languages = () => {
                         </article>
 
                         <article className='details'>
-
                             <h4>
                                 <h3><SiCsharp size={35}></SiCsharp>&nbsp;C#</h3>
                                 <h5 className='text-light'>Experienced</h5>
@@ -103,7 +95,6 @@ const Languages = () => {
                         </article>
 
                         <article className='details'>
-
                             <h4>
                                 <h3><SiR size={35}></SiR>&nbsp;R</h3>
                                 <h5 className='text-light'>Intermediate</h5>
@@ -112,7 +103,6 @@ const Languages = () => {
 
 
                         <article className='details'>
-
                             <h4>
                                 <h3><SiIntel size={35}></SiIntel>&nbsp;x86 ASM</h3>
                                 <h5 className='text-light'>Intermediate</h5>
@@ -120,7 +110,6 @@ const Languages = () => {
                         </article>
 
                         <article className='details'>
-
                             <h4>
                                 <h3><AiOutlineConsoleSql size={35}></AiOutlineConsoleSql>&nbsp;SQL</h3>
                                 <h5 className='text-light'>Intermediate</h5>
