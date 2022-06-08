@@ -32,8 +32,8 @@ const Contact = () => {
             <AiOutlineMessage className='contact-icon' /><AiOutlinePhone className='contact-icon' />
             <h4>Phone Number</h4>
             <h5>1-201-408-7000</h5>
-            <a href="tel:0012014087000">Call&emsp;</a>
-            <a href="sms:0012014087000">Text</a>
+            <a href="tel:12014087000">Call&emsp;</a>
+            <a href="sms:12014087000">Text</a>
           </article>
 
           <article className="contact__option">
