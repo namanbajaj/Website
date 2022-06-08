@@ -100,11 +100,15 @@ const Portfolio = () => {
                       {close => (
                         <div className="pop_up_window_video">
                           <div className="pop_up_content_video">
+                            <div className='player-wrapper'>
                             <ReactPlayer
                               url={PhotosAndroidDemo}
-                              controls={1}>
+                              controls={1}
+                              width='100%'
+                              height='100%'
+                              className='.react-player'>
                             </ReactPlayer>
-
+                            </div>
                           </div>
                           <div className="pop_up_actions">
                             <a
