@@ -9,11 +9,11 @@ import ReactLogo from '../../assets/websiteportfolio.png'
 import PhotosAndroidPhoto from '../../assets/PAPhoto.png'
 import PhotosAndroidDemo from '../../assets/PADemo.mp4'
 import PhotosDesktopPhoto from '../../assets/PDPhoto.png'
-// import PhotosDesktopDemo from '../../assets/PDDEMO.mp4'
+import PhotosDesktopDemo from '../../assets/PDDEMO.mp4'
 import ChessPhoto from '../../assets/CPhoto.png'
 import ChessDemo from '../../assets/CDemo.mp4'
-// import SongLibraryPhoto from '../../assets/SLPhoto.png'
-// import SongLibraryDemo from '../../assets/SLDemo.mp4'
+import SongLibraryPhoto from '../../assets/SLPhoto.png'
+import SongLibraryDemo from '../../assets/SLDemo.mp4'
 
 const data = [
   {
@@ -48,9 +48,15 @@ const data = [
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text:
       <span>
-
+        Photos library manager written for Desktop environments using JavaFX.<br />
+        Supports accessing filesystem to add photos to library. <br />
+        Users can create, delete, and rename albums. <br />
+        Users can add, delete, and move photos, in addition to displaying them in a larger display and showing all tags. <br />
+        Users can add tags to pictures and search by those tag values. <br />
+        Larger photo display has slideshow functionality. <br />
+        Users can search by tags and dates.
       </span>,
-    // demo: vid
+    demo: PhotosDesktopDemo
   },
   {
     id: 4,
@@ -59,20 +65,23 @@ const data = [
     github: 'https://github.com/namanbajaj/Chess',
     text:
       <span>
-
+        Fully implemented chess game using ASCII art. <br />
+        Built from scratch using object-oriented design patterns. <br />
+        Supports advanced chess moves such as En Passant and castling.
       </span>,
     demo: ChessDemo
   },
   {
     id: 5,
-    // image:
+    image: SongLibraryPhoto,
     title: 'Song Library',
     github: 'https://github.com/namanbajaj/Song-Library',
     text:
       <span>
-
+        Song library built using JavaFX. <br />
+        Allows users to manage songs.
       </span>,
-    // demo: 
+    demo: SongLibraryDemo
   }
 ]
 
@@ -81,7 +90,7 @@ const Portfolio = () => {
   return (
     <section id='portfolio'>
       <div className='portfolio_intro_text'>
-        <h1>My Recent Work (WIP)</h1>
+        <h1>My Recent Work</h1>
       </div>
 
       <div className="container portfolio__container">
