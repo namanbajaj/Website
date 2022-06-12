@@ -6,7 +6,6 @@ import Navbar from './components/Navbar/Navbar'
 import Portfolio from './components/Portfolio/Portfolio'
 import Welcome from './components/Welcome/Welcome'
 
-
 const App = () => {
   return (
     <>

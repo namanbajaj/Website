@@ -18,6 +18,7 @@
 }
 
 .portfolio__item {
+    display: grid;
     background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
@@ -41,6 +42,7 @@
 
 .portfolio__item-cta {
     display: flex;
+    align-items: flex-end;
     gap: 1rem;
 }
 

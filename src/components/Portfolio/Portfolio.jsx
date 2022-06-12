@@ -4,6 +4,7 @@ import './portfolio.css'
 import Popup from 'reactjs-popup'
 import ReactPlayer from 'react-player'
 
+import 'animate.css';
 
 import ReactLogo from '../../assets/websiteportfolio.png'
 import PhotosAndroidPhoto from '../../assets/PAPhoto.png'
@@ -111,7 +112,7 @@ const Portfolio = () => {
                     modal
                   >
                     {close => (
-                      <div className="pop_up_window">
+                      <div className="pop_up_window animate__animated animate__zoomIn">
                         <div className="pop_up_header"> {title} </div>
                         <div className="pop_up_content">
                           {text}
@@ -135,7 +136,7 @@ const Portfolio = () => {
                       modal
                     >
                       {close => (
-                        <div className="pop_up_window_video">
+                        <div className="pop_up_window_video animate__animated animate__zoomIn">
                           <div className="pop_up_content_video">
                             <div className='player-wrapper'>
                               <ReactPlayer
