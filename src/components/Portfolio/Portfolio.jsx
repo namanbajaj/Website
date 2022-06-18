@@ -15,12 +15,47 @@ import ChessPhoto from '../../assets/CPhoto.png'
 import ChessDemo from '../../assets/CDemo.mp4'
 import SongLibraryPhoto from '../../assets/SLPhoto.png'
 import SongLibraryDemo from '../../assets/SLDemo.mp4'
+import ColorGamePhoto from '../../assets/CGPhoto.png'
+import ColorGameDemo from '../../assets/CGDemo.mp4'
+
+import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit } from 'react-icons/di';
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle } from 'react-icons/si'
+import { AiOutlineConsoleSql } from 'react-icons/ai'
+
+const iconSize = 30;
 
 const data = [
   {
+    id: 6,
+    image: ColorGamePhoto,
+    title:
+      <h3 className='title_and_languages'>
+        <div className='portfolio_item_title_text'>Color Game</div>
+        <div className='icon_under'>
+          <SiKotlin size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiGradle size={iconSize} />
+        </div>
+      </h3>,
+    github: 'https://github.com/namanbajaj/Color-Guessing-Game',
+    text:
+      <span>
+        Color guessing game built with Kotlin in Android Studio. <br />
+        Has 3 difficulty modes, each with their own high scores. <br />
+        Implements coroutines for timer function and color changing title. <br />
+        Responsive according to whether user has dark mode turned on. <br />
+        Works well with variety of screen sizes and orientations. <br />
+      </span>,
+    demo: ColorGameDemo
+  },
+  {
     id: 1,
     image: ReactLogo,
-    title: 'This Website',
+    title:
+      <h3 className='title_and_languages'>
+        <div className='portfolio_item_title_text'>This Website</div>
+        <div className='icon_under'>
+          <DiReact size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <DiHtml5 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <DiCss3 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <DiJsBadge size={iconSize} />
+        </div>
+      </h3>,
     github: 'https://github.com/namanbajaj/Website',
     text: 'This website was written using JavaScript, ReactJS, and CSS',
   },
@@ -28,7 +63,13 @@ const data = [
   {
     id: 2,
     image: PhotosAndroidPhoto,
-    title: 'Photos Library (Android)',
+    title:
+      <h3 className='title_and_languages'>
+        <div className='portfolio_item_title_text'>Photos Library (Android)</div>
+        <div className='icon_under'>
+          <DiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiGradle size={iconSize} />
+        </div>
+      </h3>,
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text:
       <span>
@@ -45,7 +86,13 @@ const data = [
   {
     id: 3,
     image: PhotosDesktopPhoto,
-    title: 'Photos Library (Desktop)',
+    title:
+    <h3 className='title_and_languages'>
+    <div className='portfolio_item_title_text'>Photos Library (Desktop)</div>
+    <div className='icon_under'>
+      <DiJava size={iconSize} />
+    </div>
+  </h3>,
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text:
       <span>
@@ -62,7 +109,13 @@ const data = [
   {
     id: 4,
     image: ChessPhoto,
-    title: 'ASCII Based Chess',
+    title: 
+    <h3 className='title_and_languages'>
+    <div className='portfolio_item_title_text'>ASCII Based Chess</div>
+    <div className='icon_under'>
+      <DiJava size={iconSize} />
+    </div>
+  </h3>,
     github: 'https://github.com/namanbajaj/Chess',
     text:
       <span>
@@ -75,14 +128,21 @@ const data = [
   {
     id: 5,
     image: SongLibraryPhoto,
-    title: 'Song Library',
+    title:
+    <h3 className='title_and_languages'>
+    <div className='portfolio_item_title_text'>Song Library</div>
+    <div className='icon_under'>
+      <DiJava size={iconSize} />
+    </div>
+  </h3>,
     github: 'https://github.com/namanbajaj/Song-Library',
     text:
       <span>
         Song library built using JavaFX. <br />
         Allows users to manage songs.
       </span>,
-    demo: SongLibraryDemo
+    demo: SongLibraryDemo,
+    technologies: <DiJava s></DiJava>
   }
 ]
 
@@ -104,7 +164,7 @@ const Portfolio = () => {
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} />
                 </div>
-                <h3>{title}</h3>
+                <div>{title}</div>
                 <div className="portfolio__item-cta">
                   <a href={github} className='btn' target='_blank'>Github</a>
                   <Popup

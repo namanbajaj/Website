@@ -1,8 +1,128 @@
 import React from 'react'
 
 import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit } from 'react-icons/di';
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel } from 'react-icons/si'
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine } from 'react-icons/si'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
+
+const iconSize = 35;
+
+const frontend = [
+    {
+        id: 1,
+        icon: <DiHtml5 size={iconSize} />,
+        technology: 'HTML5',
+        experience: 'Intermediate'
+    },
+    {
+        id: 2,
+        icon: <DiCss3 size={iconSize} />,
+        technology: 'CSS3',
+        experience: 'Intermediate'
+    },
+    {
+        id: 3,
+        icon: <DiJsBadge size={iconSize} />,
+        technology: 'JavaScript',
+        experience: 'Intermediate'
+    },
+    {
+        id: 4,
+        icon: <DiReact size={iconSize} />,
+        technology: 'React',
+        experience: 'Intermediate'
+    },
+    {
+        id: 5,
+        icon: <SiKotlin size={iconSize} />,
+        technology: 'Kotlin',
+        experience: 'Intermediate'
+    }
+]
+
+const backend = [
+    {
+        id: 1,
+        icon: <DiJava size={iconSize} />,
+        technology: 'Java',
+        experience: 'Experienced'
+    },
+    {
+        id: 2,
+        icon: <DiPython size={iconSize} />,
+        technology: 'Python',
+        experience: 'Experienced'
+    },
+    {
+        id: 3,
+        icon: <SiCplusplus size={iconSize} />,
+        technology: 'C++',
+        experience: 'Intermediate'
+    },
+    {
+        id: 4,
+        icon: <SiCsharp size={iconSize} />,
+        technology: 'C#',
+        experience: 'Intermediate'
+    },
+    {
+        id: 5,
+        icon: <SiC size={iconSize} />,
+        technology: 'C',
+        experience: 'Experienced'
+    },
+    {
+        id: 6,
+        icon: <SiR size={iconSize} />,
+        technology: 'R',
+        experience: 'Intermediate'
+    },
+    {
+        id: 7,
+        icon: <SiIntel size={iconSize} />,
+        technology: 'x86 ASM',
+        experience: 'Intermediate'
+    },
+    {
+        id: 8,
+        icon: <AiOutlineConsoleSql size={iconSize} />,
+        technology: 'SQL',
+        experience: 'Intermediate'
+    }
+]
+
+const tools = [
+    {
+        id: 1,
+        icon: <DiUnitySmall size={iconSize} />,
+        technology: 'Unity',
+        experience: 'Intermediate'
+    },
+    {
+        id: 2,
+        icon: <DiGit size={iconSize} />,
+        technology: 'Git',
+        experience: 'Experienced'
+    },
+    {
+        id: 3,
+        icon: <SiUnrealengine size={iconSize} />,
+        technology: 'Unreal',
+        experience: 'Intermediate'
+    },
+    {
+        id: 4,
+        icon: <SiAdobeillustrator size={iconSize} />,
+        technology: 'Illustrator',
+        experience: 'Intermediate'
+    },
+    {
+        id: 5,
+        icon: <SiAdobephotoshop size={iconSize} />,
+        technology: 'Photoshop',
+        experience: 'Intermediate'
+    }
+]
+
 
 const Languages = () => {
     return (
@@ -14,129 +134,66 @@ const Languages = () => {
                 <div className='frontend'>
                     <h2>Frontend Development</h2>
                     <div className='content'>
-                        <article className='details'>
-                            <h4>
-                                <h3><DiHtml5 size={35}></DiHtml5>&nbsp;HTML5</h3>
-                                <h5 className='text-light'>Intermediate</h5>
-                            </h4>
-                        </article>
-
-                        <article className='details'>
-
-                            <h4>
-                                <h3><DiCss3 size={35}></DiCss3>&nbsp;CSS3</h3>
-                                <h5 className='text-light'>Intermediate</h5>
-                            </h4>
-                        </article>
-
-
-                        <article className='details'>
-                            <h4>
-                                <h3><DiJsBadge size={35}></DiJsBadge>&nbsp;JavaScript</h3>
-                                <h5 className='text-light'>Intermediate</h5>
-                            </h4>
-                        </article>
-
-                        <article className='details'>
-                            <h4>
-                                <h3><DiReact size={35}></DiReact>&nbsp;React</h3>
-                                <h5 className='text-light'>Intermediate</h5>
-                            </h4>
-                        </article>
-
-                        <article className='details'>
-                            <h4>
-                                <h3><SiKotlin size={35}></SiKotlin>&nbsp;Kotlin</h3>
-                                <h5 className='text-light'>Intermediate</h5>
-                            </h4>
-                        </article>
-
+                        {
+                            frontend.map(({ id, icon, technology, experience }) => {
+                                return (
+                                    <article key={id} className='details' >
+                                        <h4>
+                                            <h3>
+                                                {icon}&nbsp;{technology}
+                                            </h3>
+                                            <h5 className='text-light'>
+                                                {experience}
+                                            </h5>
+                                        </h4>
+                                    </article>
+                                )
+                            })
+                        }
                     </div>
                 </div>
 
                 <div className='backend'>
                     <h2>Backend Development</h2>
                     <div className='content'>
-                        <article className='details'>
-                            <h4>
-                                <h3><DiJava size={35}></DiJava>&nbsp;Java</h3>
-                                <h5 className='text-light'>Experienced</h5>
-                            </h4>
-                        </article>
-
-                        <article className='details'>
-                            <h4>
-                                <h3><DiPython size={35}></DiPython>&nbsp;Python</h3>
-                                <h5 className='text-light'>Experienced</h5>
-                            </h4>
-                        </article>
-
-
-                        <article className='details'>
-                            <h4>
-                                <h3><SiCplusplus size={35}></SiCplusplus>&nbsp;C++</h3>
-                                <h5 className='text-light'>Intermediate</h5>
-                            </h4>
-                        </article>
-
-                        <article className='details'>
-                            <h4>
-                                <h3><SiCsharp size={35}></SiCsharp>&nbsp;C#</h3>
-                                <h5 className='text-light'>Experienced</h5>
-                            </h4>
-                        </article>
-
-                        <article className='details'>
-
-                            <h4>
-                                <h3><SiC size={35}></SiC>&nbsp;C</h3>
-                                <h5 className='text-light'>Experienced</h5>
-                            </h4>
-                        </article>
-
-                        <article className='details'>
-                            <h4>
-                                <h3><SiR size={35}></SiR>&nbsp;R</h3>
-                                <h5 className='text-light'>Intermediate</h5>
-                            </h4>
-                        </article>
-
-
-                        <article className='details'>
-                            <h4>
-                                <h3><SiIntel size={35}></SiIntel>&nbsp;x86 ASM</h3>
-                                <h5 className='text-light'>Intermediate</h5>
-                            </h4>
-                        </article>
-
-                        <article className='details'>
-                            <h4>
-                                <h3><AiOutlineConsoleSql size={35}></AiOutlineConsoleSql>&nbsp;SQL</h3>
-                                <h5 className='text-light'>Intermediate</h5>
-                            </h4>
-                        </article>
-
+                        {
+                            backend.map(({ id, icon, technology, experience }) => {
+                                return (
+                                    <article key={id} className='details' >
+                                        <h4>
+                                            <h3>
+                                                {icon}&nbsp;{technology}
+                                            </h3>
+                                            <h5 className='text-light'>
+                                                {experience}
+                                            </h5>
+                                        </h4>
+                                    </article>
+                                )
+                            })
+                        }
                     </div>
                 </div>
 
                 <div className='other'>
                     <h2>Other Technologies</h2>
                     <div className='content'>
-                        <article className='details'>
-
-                            <h4>
-                                <h3><DiUnitySmall size={35}></DiUnitySmall>&nbsp;Unity</h3>
-                                <h5 className='text-light'>Intermediate</h5>
-                            </h4>
-                        </article>
-
-                        <article className='details'>
-
-                            <h4>
-                                <h3><DiGit size={35}></DiGit>&nbsp;Git</h3>
-                                <h5 className='text-light'>Intermediate</h5>
-                            </h4>
-                        </article>
+                        {
+                            tools.map(({ id, icon, technology, experience }) => {
+                                return (
+                                    <article key={id} className='details' >
+                                        <h4>
+                                            <h3>
+                                                {icon}&nbsp;{technology}
+                                            </h3>
+                                            <h5 className='text-light'>
+                                                {experience}
+                                            </h5>
+                                        </h4>
+                                    </article>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>
