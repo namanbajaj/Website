@@ -6,15 +6,19 @@ import Navbar from './components/Navbar/Navbar'
 import Portfolio from './components/Portfolio/Portfolio'
 import Welcome from './components/Welcome/Welcome'
 
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css';
+
 const App = () => {
   return (
     <>
-        <Welcome />
-        <Navbar />
-        <About />
-        <Portfolio />
-        <Contact />
-        <Footer/>
+
+      <Welcome />
+      <Navbar />
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><About /></ScrollAnimation>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Portfolio /></ScrollAnimation>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Contact /></ScrollAnimation>
+      <Footer />
     </>
   )
 }
