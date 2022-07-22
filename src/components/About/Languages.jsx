@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit } from 'react-icons/di';
+import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit, DiMysql } from 'react-icons/di';
 import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine } from 'react-icons/si'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
 
@@ -84,8 +84,8 @@ const backend = [
     },
     {
         id: 8,
-        icon: <AiOutlineConsoleSql size={iconSize} />,
-        technology: 'SQL',
+        icon: <DiMysql size={iconSize} />,
+        technology: 'MySQL',
         experience: 'Intermediate'
     }
 ]
