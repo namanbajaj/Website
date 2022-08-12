@@ -17,14 +17,38 @@ import SongLibraryPhoto from '../../assets/SLPhoto.png'
 import SongLibraryDemo from '../../assets/SLDemo.mp4'
 import ColorGamePhoto from '../../assets/CGPhoto.png'
 import ColorGameDemo from '../../assets/CGDemo.mp4'
+import UniversityPhoto from '../../assets/UniversityPhoto.png'
+import UniversityDemo from '../../assets/UniversityDemo.mp4'
 
-import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit } from 'react-icons/di';
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle } from 'react-icons/si'
+import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit, DiEclipse, DiMysql } from 'react-icons/di';
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat } from 'react-icons/si'
 import { AiOutlineConsoleSql } from 'react-icons/ai'
 
 const iconSize = 30;
 
 const data = [
+  {
+    id: 7,
+    image: UniversityPhoto,
+    title:
+      <h3 className='title_and_languages'>
+        <div className='portfolio_item_title_text'>University Registration System</div>
+        <div className='icon_under'>
+          <DiJava size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp; <DiMysql size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <DiHtml5 size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp; <SiApachetomcat size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp; <DiEclipse size={iconSize} />
+        </div>
+      </h3>,
+    github: 'https://github.com/namanbajaj/University-Registration-System',
+    text:
+      <span>
+        University registration system built with HTML and Java frontend and MySQL backend. <br/>
+        Java and MySQL interact via JDBC. <br/>
+        Used Apache Tomcat for local server and Eclipse as IDE. <br/>
+        Allows department administrators to add professors, students, and courses. <br/>
+        Professors can view students that are taking their course and assign grades. <br/>
+        Students can see courses that they are taking and their grades in those courses, in addition to registering for new courses if prerequisites are met. <br></br>
+      </span>,
+    demo: UniversityDemo
+  },
   {
     id: 6,
     image: ColorGamePhoto,
@@ -124,26 +148,26 @@ const data = [
         Supports advanced chess moves such as En Passant and castling.
       </span>,
     demo: ChessDemo
-  },
-  {
-    id: 5,
-    image: SongLibraryPhoto,
-    title:
-    <h3 className='title_and_languages'>
-    <div className='portfolio_item_title_text'>Song Library</div>
-    <div className='icon_under'>
-      <DiJava size={iconSize} />
-    </div>
-  </h3>,
-    github: 'https://github.com/namanbajaj/Song-Library',
-    text:
-      <span>
-        Song library built using JavaFX. <br />
-        Allows users to manage songs.
-      </span>,
-    demo: SongLibraryDemo,
-    technologies: <DiJava s></DiJava>
   }
+  // {
+  //   id: 5,
+  //   image: SongLibraryPhoto,
+  //   title:
+  //   <h3 className='title_and_languages'>
+  //   <div className='portfolio_item_title_text'>Song Library</div>
+  //   <div className='icon_under'>
+  //     <DiJava size={iconSize} />
+  //   </div>
+  // </h3>,
+  //   github: 'https://github.com/namanbajaj/Song-Library',
+  //   text:
+  //     <span>
+  //       Song library built using JavaFX. <br />
+  //       Allows users to manage songs.
+  //     </span>,
+  //   demo: SongLibraryDemo,
+  //   technologies: <DiJava s></DiJava>
+  // }
 ]
 
 
