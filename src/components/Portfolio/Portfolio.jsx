@@ -68,7 +68,8 @@ const data = [
         Responsive according to whether user has dark mode turned on. <br />
         Works well with variety of screen sizes and orientations. <br />
       </span>,
-    demo: ColorGameDemo
+    demo: ColorGameDemo,
+    link: 'https://play.google.com/store/apps/details?id=com.namanbajaj.colorgame'
   },
   {
     id: 1,
@@ -180,8 +181,8 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {
-          data.map(({ id, image, title, github, text, demo }) => {
-            const demobutton = <a className="btn" id='demo_button'> Demo </a>;
+          data.map(({ id, image, title, github, text, demo, link }) => {
+            const demobutton = <a className="btn" id='demo_button'> Video Demo </a>;
 
             return (
               <article key={id} className='portfolio__item'>
@@ -192,7 +193,7 @@ const Portfolio = () => {
                 <div className="portfolio__item-cta">
                   <a href={github} className='btn' target='_blank'>Github</a>
                   <Popup
-                    trigger={<a className="btn"> Additional Info </a>}
+                    trigger={<a className="btn"> More Info </a>}
                     modal
                   >
                     {close => (
@@ -245,6 +246,13 @@ const Portfolio = () => {
                         </div>
                       )}
                     </Popup>
+                  ) : <p></p>
+                  }
+
+                  {link != null ? (
+                    <a href={link} className='btn' target='_blank'>
+                      Link
+                    </a>
                   ) : <p></p>
                   }
                 </div>
