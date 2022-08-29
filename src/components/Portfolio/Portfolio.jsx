@@ -19,46 +19,67 @@ import ColorGamePhoto from '../../assets/CGPhoto.png'
 import ColorGameDemo from '../../assets/CGDemo.mp4'
 import UniversityPhoto from '../../assets/UniversityPhoto.png'
 import UniversityDemo from '../../assets/UniversityDemo.mp4'
+import QuizGamePhoto from '../../assets/QGPhoto.png'
 
-import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit, DiEclipse, DiMysql } from 'react-icons/di';
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat } from 'react-icons/si'
-import { AiOutlineConsoleSql } from 'react-icons/ai'
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript } from 'react-icons/si'
 
 const iconSize = 30;
 
 const data = [
   {
+    id: 8,
+    image: QuizGamePhoto,
+    title: 'Quiz App',
+    icons:
+      <div className='icon_under'>
+        <SiKotlin size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        <SiSqlite size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+        <SiAndroid size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+        <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        <SiGradle size={iconSize} />
+      </div>,
+    github: 'https://github.com/namanbajaj/Quiz-App',
+    text:
+      <span>
+        Educational application built for Android systems built in Android Studio <br />
+        Uses Kotlin for front end and SQLite for back end <br />
+        Allows users to create, edit, delete, and do quizzes <br />
+        Implements multi-threading using Kotlin concurrency for database loading <br />
+      </span>
+  },
+  {
     id: 7,
     image: UniversityPhoto,
-    title:
-      <h3 className='title_and_languages'>
-        <div className='portfolio_item_title_text'>University Registration System</div>
-        <div className='icon_under'>
-          <DiJava size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp; <DiMysql size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <DiHtml5 size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp; <SiApachetomcat size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp; <DiEclipse size={iconSize} />
-        </div>
-      </h3>,
+    title: 'University Registration System',
+    icons: <div className='icon_under'>
+      <SiJava size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+      <SiMysql size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiHtml5 size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+      <SiApachetomcat size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+      <SiEclipseide size={iconSize} />
+    </div>,
     github: 'https://github.com/namanbajaj/University-Registration-System',
     text:
       <span>
-        University registration system built with HTML and Java frontend and MySQL backend. <br/>
-        Java and MySQL interact via JDBC. <br/>
-        Used Apache Tomcat for local server and Eclipse as IDE. <br/>
-        Allows department administrators to add professors, students, and courses. <br/>
-        Professors can view students that are taking their course and assign grades. <br/>
-        Students can see courses that they are taking and their grades in those courses, in addition to registering for new courses if prerequisites are met. <br></br>
+        University registration system built with HTML and Java frontend and MySQL backend. <br />
+        Java and MySQL interact via JDBC. <br />
+        Used Apache Tomcat for local server and Eclipse as IDE. <br />
+        Allows department administrators to add professors, students, and courses. <br />
+        Professors can view students that are taking their course and assign grades. <br />
+        Students can see courses that they are taking and their grades in those courses, in addition to registering for new courses if prerequisites are met. <br />
       </span>,
     demo: UniversityDemo
   },
   {
     id: 6,
     image: ColorGamePhoto,
-    title:
-      <h3 className='title_and_languages'>
-        <div className='portfolio_item_title_text'>Color Game</div>
-        <div className='icon_under'>
-          <SiKotlin size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiGradle size={iconSize} />
-        </div>
-      </h3>,
+    title: 'Color Game',
+    icons: <div className='icon_under'>
+      <SiKotlin size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+      <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiGradle size={iconSize} />
+    </div>,
     github: 'https://github.com/namanbajaj/Color-Guessing-Game',
     text:
       <span>
@@ -74,27 +95,25 @@ const data = [
   {
     id: 1,
     image: ReactLogo,
-    title:
-      <h3 className='title_and_languages'>
-        <div className='portfolio_item_title_text'>This Website</div>
-        <div className='icon_under'>
-          <DiReact size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <DiHtml5 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <DiCss3 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <DiJsBadge size={iconSize} />
-        </div>
-      </h3>,
+    title: 'React Website',
+    icons: <div className='icon_under'>
+      <SiReact size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiHtml5 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiCss3 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiJavascript size={iconSize} />
+    </div>,
     github: 'https://github.com/namanbajaj/Website',
     text: 'This website was written using JavaScript, ReactJS, and CSS',
   },
-
   {
     id: 2,
     image: PhotosAndroidPhoto,
-    title:
-      <h3 className='title_and_languages'>
-        <div className='portfolio_item_title_text'>Photos Library (Android)</div>
-        <div className='icon_under'>
-          <DiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiGradle size={iconSize} />
-        </div>
-      </h3>,
+    title: 'Photos Library (Android)',
+    icons: <div className='icon_under'>
+      <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiGradle size={iconSize} />
+    </div>,
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text:
       <span>
@@ -107,17 +126,13 @@ const data = [
       </span>,
     demo: PhotosAndroidDemo
   },
-
   {
     id: 3,
     image: PhotosDesktopPhoto,
-    title:
-    <h3 className='title_and_languages'>
-    <div className='portfolio_item_title_text'>Photos Library (Desktop)</div>
-    <div className='icon_under'>
-      <DiJava size={iconSize} />
-    </div>
-  </h3>,
+    title: 'Photos Library (Desktop)',
+    icons: <div className='icon_under'>
+      <SiJava size={iconSize} />
+    </div>,
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text:
       <span>
@@ -130,26 +145,26 @@ const data = [
         Users can search by tags and dates.
       </span>,
     demo: PhotosDesktopDemo
-  },
-  {
-    id: 4,
-    image: ChessPhoto,
-    title: 
-    <h3 className='title_and_languages'>
-    <div className='portfolio_item_title_text'>ASCII Based Chess</div>
-    <div className='icon_under'>
-      <DiJava size={iconSize} />
-    </div>
-  </h3>,
-    github: 'https://github.com/namanbajaj/Chess',
-    text:
-      <span>
-        Fully implemented chess game using ASCII art. <br />
-        Built from scratch using object-oriented design patterns. <br />
-        Supports advanced chess moves such as En Passant and castling.
-      </span>,
-    demo: ChessDemo
   }
+  // {
+  //   id: 4,
+  //   image: ChessPhoto,
+  //   title: 
+  //   <h3 className='title_and_languages'>
+  //   <div className='portfolio_item_title_text'>ASCII Based Chess</div>
+  //   <div className='icon_under'>
+  //     <DiJava size={iconSize} />
+  //   </div>
+  // </h3>,
+  //   github: 'https://github.com/namanbajaj/Chess',
+  //   text:
+  //     <span>
+  //       Fully implemented chess game using ASCII art. <br />
+  //       Built from scratch using object-oriented design patterns. <br />
+  //       Supports advanced chess moves such as En Passant and castling.
+  //     </span>,
+  //   demo: ChessDemo
+  // }
   // {
   //   id: 5,
   //   image: SongLibraryPhoto,
@@ -181,7 +196,7 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {
-          data.map(({ id, image, title, github, text, demo, link }) => {
+          data.map(({ id, image, icons, title, github, text, demo, link }) => {
             const demobutton = <a className="btn" id='demo_button'> Video Demo </a>;
 
             return (
@@ -189,7 +204,18 @@ const Portfolio = () => {
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} />
                 </div>
-                <div>{title}</div>
+                <div>
+                  <h3 className='title_and_languages'>
+                    <div className='portfolio_item_title_text'>{title}</div>
+                    {icons}
+                  </h3>
+                </div>
+                {/* <h3 className='title_and_languages'>
+        <div className='portfolio_item_title_text'>Quiz App</div>
+        <div className='icon_under'>
+          <SiKotlin size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiSqlite size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp; <SiAndroid size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp; <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiGradle size={iconSize} />
+        </div>
+      </h3>, */}
                 <div className="portfolio__item-cta">
                   <a href={github} className='btn' target='_blank'>Github</a>
                   <Popup

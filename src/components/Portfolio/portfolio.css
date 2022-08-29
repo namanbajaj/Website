@@ -21,6 +21,7 @@
     display: grid;
     background: var(--color-bg-variant);
     padding: 1.3rem;
+    max-height: 25rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);

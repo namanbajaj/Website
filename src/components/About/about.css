@@ -32,7 +32,7 @@
 
 .languages>div {
     background: var(--color-bg-variant);
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
     border-radius: 3rem;
     border: 1px solid transparent;
 }
