@@ -6,6 +6,8 @@ import ReactPlayer from 'react-player'
 
 import 'animate.css';
 
+import Icons from '../Icons/Icons.jsx';
+
 import ReactLogo from '../../assets/websiteportfolio.png'
 import PhotosAndroidPhoto from '../../assets/PAPhoto.png'
 import PhotosAndroidDemo from '../../assets/PADemo.mp4'
@@ -36,7 +38,8 @@ const data = [
         <SiSqlite size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
         <SiAndroid size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
         <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-        <SiGradle size={iconSize} />
+        <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        <Icons name='xml' size={iconSize} />
       </div>,
     github: 'https://github.com/namanbajaj/Quiz-App',
     text:
@@ -45,7 +48,8 @@ const data = [
         Uses Kotlin for front end and SQLite for back end <br />
         Allows users to create, edit, delete, and do quizzes <br />
         Implements multi-threading using Kotlin concurrency for database loading <br />
-      </span>
+      </span>,
+      link: 'https://play.google.com/store/apps/details?id=com.namanbajaj.quizapp'
   },
   {
     id: 7,
@@ -78,7 +82,8 @@ const data = [
       <SiKotlin size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
       <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiGradle size={iconSize} />
+      <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <Icons name='xml' size={iconSize} />
     </div>,
     github: 'https://github.com/namanbajaj/Color-Guessing-Game',
     text:
@@ -112,7 +117,8 @@ const data = [
     icons: <div className='icon_under'>
       <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiGradle size={iconSize} />
+      <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <Icons name='xml' size={iconSize} />
     </div>,
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text:
@@ -194,7 +200,7 @@ const Portfolio = () => {
         <h1>My Recent Work</h1>
       </div>
 
-      <div className="container portfolio__container">
+      <div className="portfolio__container">
         {
           data.map(({ id, image, icons, title, github, text, demo, link }) => {
             const demobutton = <a className="btn" id='demo_button'> Video Demo </a>;
@@ -202,7 +208,31 @@ const Portfolio = () => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
-                  <img src={image} alt={title} />
+                  {/* <img src={image} alt={title} /> */}
+                  <Popup
+                    trigger={<a href="javascript:void(0);"><img src={image} alt={title} /></a>}
+                    modal
+                    contentStyle={{ width: '30%', height: 'auto' }}
+                  >
+                    {close => (
+                      <div className="pop_up_window animate__animated animate__zoomIn">
+                        <div className="pop_up_header"> {title} </div>
+                        <div className="pop_up_content">
+                          {<img src={image} alt={title} />}
+                        </div>
+                        <div className="pop_up_actions">
+                          <a
+                            className="btn"
+                            onClick={() => {
+                              close();
+                            }}
+                          >
+                            Close
+                          </a>
+                        </div>
+                      </div>
+                    )}
+                  </Popup>
                 </div>
                 <div>
                   <h3 className='title_and_languages'>
@@ -272,7 +302,7 @@ const Portfolio = () => {
                         </div>
                       )}
                     </Popup>
-                  ) : <p></p>
+                  ) : null
                   }
 
                   {link != null ? (
