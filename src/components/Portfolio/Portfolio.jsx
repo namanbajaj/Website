@@ -60,7 +60,8 @@ const data = [
       <SiMysql size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiHtml5 size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
       <SiApachetomcat size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
-      <SiEclipseide size={iconSize} />
+      <SiEclipseide size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+      <Icons name='jdbc' size={iconSize} />
     </div>,
     github: 'https://github.com/namanbajaj/University-Registration-System',
     text:
@@ -137,7 +138,10 @@ const data = [
     image: PhotosDesktopPhoto,
     title: 'Photos Library (Desktop)',
     icons: <div className='icon_under'>
-      <SiJava size={iconSize} />
+      <SiJava size={iconSize} />&nbsp;&nbsp; &nbsp;&nbsp;
+      <Icons name='javafx' size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+      <Icons name='xml' size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+      <Icons name='scenebuilder' size={iconSize} />
     </div>,
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text:
