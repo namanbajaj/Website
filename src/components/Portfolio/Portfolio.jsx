@@ -96,7 +96,7 @@ const data = [
         Works well with variety of screen sizes and orientations. <br />
       </span>,
     demo: ColorGameDemo,
-    link: 'https://play.google.com/store/apps/details?id=com.namanbajaj.colorgame'
+    link: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame'
   },
   {
     id: 1,

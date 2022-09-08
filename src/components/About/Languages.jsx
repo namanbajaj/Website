@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit, DiMysql, DiSqllite, DiVisualstudio, DiVim, DiEclipse, DiLinux } from 'react-icons/di';
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiVisualstudiocode, SiAndroidstudio, SiGnuemacs, SiMicrosoftoffice, SiApache, SiApachetomcat, SiBlender, SiGimp, SiInkscape } from 'react-icons/si'
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiVisualstudiocode, SiAndroidstudio, SiGnuemacs, SiMicrosoftoffice, SiApache, SiApachetomcat, SiBlender, SiGimp, SiInkscape, SiGradle } from 'react-icons/si'
 import Icons from '../Icons/Icons.jsx';
 
 const iconSize = 35;
@@ -178,6 +178,12 @@ const tools = [
         technology: 'Scene Builder',
         experience: 'Experienced'
     },
+    {
+        id: 13,
+        icon: <SiGradle size={iconSize} />,
+        technology: 'Gradle',
+        experience: 'Intermediate'
+    }
 ]
 
 const other = [
