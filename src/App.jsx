@@ -12,7 +12,6 @@ import 'animate.css';
 const App = () => {
   return (
     <>
-
       <Welcome />
       <Navbar />
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><About /></ScrollAnimation>

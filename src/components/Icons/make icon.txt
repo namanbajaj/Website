@@ -1,0 +1,11 @@
+copy image into doc
+path trace as bitmap until it looks good
+ctrl shift d and resize doc to content
+save as optimized svg
+	deselect everything in options except work around rendered bugs
+	remove xml declaration
+	remove metadata
+	remove comments
+	embed raster images
+change xml:s to xmlS
+resize as needed with iconSize=
