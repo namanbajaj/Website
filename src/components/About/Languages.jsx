@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit, DiMysql, DiSqllite, DiVisualstudio, DiVim, DiEclipse, DiLinux } from 'react-icons/di';
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiVisualstudiocode, SiAndroidstudio, SiGnuemacs, SiMicrosoftoffice, SiApache, SiApachetomcat, SiBlender, SiGimp, SiInkscape, SiGradle } from 'react-icons/si'
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiVisualstudiocode, SiAndroidstudio, SiGnuemacs, SiMicrosoftoffice, SiApache, SiApachetomcat, SiBlender, SiGimp, SiInkscape, SiGradle, SiBootstrap, SiOcaml } from 'react-icons/si'
 import Icons from '../Icons/Icons.jsx';
 
 const iconSize = 35;
@@ -35,19 +35,25 @@ const frontend = [
         id: 5,
         icon: <SiKotlin size={iconSize} />,
         technology: 'Kotlin',
-        experience: 'Intermediate'
+        experience: 'Experienced'
     },
     {
         id: 6,
-        icon: <Icons name="javafx" size={iconSize}/>,
+        icon: <Icons name="javafx" size={iconSize} />,
         technology: 'JavaFX',
         experience: 'Experienced'
     },
     {
         id: 7,
-        icon: <Icons name="xml" size={iconSize}/>,
-        technology: 'XML',
-        experience: 'Experienced'
+        icon: <SiBootstrap size={iconSize} />,
+        technology: 'Bootstrap',
+        experience: 'Beginner'
+    },
+    {
+        id: 8,
+        icon: <Icons name="wpf" size={iconSize} />,
+        technology: 'WPF',
+        experience: 'Beginner'
     }
 ]
 
@@ -82,6 +88,12 @@ const backend = [
         technology: 'C',
         experience: 'Experienced'
     },
+    {
+        id: 6,
+        icon: <SiOcaml size={iconSize} />,
+        technology: 'OCaml',
+        experience: 'Beginner'
+    }
 ]
 
 const database = [
@@ -99,7 +111,7 @@ const database = [
     },
     {
         id: 3,
-        icon: <Icons name="jdbc" size={iconSize}/>,
+        icon: <Icons name="jdbc" size={iconSize} />,
         technology: 'JDBC',
         experience: 'Experienced'
     },
@@ -113,42 +125,6 @@ const tools = [
         experience: 'Intermediate'
     },
     {
-        id: 2,
-        icon: <SiVisualstudiocode size={iconSize} />,
-        technology: 'VS Code',
-        experience: 'Experienced'
-    },
-    {
-        id: 3,
-        icon: <DiVisualstudio size={iconSize} />,
-        technology: 'Visual Studio',
-        experience: 'Intermediate'
-    },
-    {
-        id: 4,
-        icon: <SiAndroidstudio size={iconSize} />,
-        technology: 'Android Studio',
-        experience: 'Experienced'
-    },
-    {
-        id: 5,
-        icon: <DiVim size={iconSize} />,
-        technology: 'Vim',
-        experience: 'Beginner'
-    },
-    {
-        id: 6,
-        icon: <SiGnuemacs size={iconSize} />,
-        technology: 'Emacs',
-        experience: 'Beginner'
-    },
-    {
-        id: 7,
-        icon: <DiEclipse size={iconSize} />,
-        technology: 'Eclipse',
-        experience: 'Experienced'
-    },
-    {
         id: 8,
         icon: <DiLinux size={iconSize} />,
         technology: 'Linux',
@@ -158,7 +134,7 @@ const tools = [
         id: 9,
         icon: <SiUnrealengine size={iconSize} />,
         technology: 'Unreal',
-        experience: 'Intermediate'
+        experience: 'Beginner'
     },
     {
         id: 10,
@@ -174,7 +150,7 @@ const tools = [
     },
     {
         id: 12,
-        icon: <Icons name="scenebuilder" size={iconSize}/>,
+        icon: <Icons name="scenebuilder" size={iconSize} />,
         technology: 'Scene Builder',
         experience: 'Experienced'
     },
@@ -215,14 +191,53 @@ const other = [
         id: 5,
         icon: <SiGimp size={iconSize} />,
         technology: 'GIMP',
-        experience: 'Beginner'
+        experience: 'Intermediate'
     },
     {
         id: 6,
         icon: <SiInkscape size={iconSize} />,
         technology: 'Inkscape',
-        experience: 'Beginner'
+        experience: 'Intermediate'
     }
+]
+
+const editors = [
+    {
+        id: 2,
+        icon: <SiVisualstudiocode size={iconSize} />,
+        technology: 'VS Code',
+        experience: 'Experienced'
+    },
+    {
+        id: 3,
+        icon: <DiVisualstudio size={iconSize} />,
+        technology: 'Visual Studio',
+        experience: 'Intermediate'
+    },
+    {
+        id: 4,
+        icon: <SiAndroidstudio size={iconSize} />,
+        technology: 'Android Studio',
+        experience: 'Experienced'
+    },
+    {
+        id: 5,
+        icon: <DiVim size={iconSize} />,
+        technology: 'Vim',
+        experience: 'Beginner'
+    },
+    {
+        id: 6,
+        icon: <SiGnuemacs size={iconSize} />,
+        technology: 'Emacs',
+        experience: 'Beginner'
+    },
+    {
+        id: 7,
+        icon: <DiEclipse size={iconSize} />,
+        technology: 'Eclipse',
+        experience: 'Experienced'
+    },
 ]
 
 
@@ -321,30 +336,51 @@ const Languages = () => {
                     </div>
                 </div>
 
-                <div className='other'>
-                    <h2>Other Tools</h2>
-                    <div className='content'>
-                        {
-                            other.map(({ id, icon, technology, experience }) => {
-                                return (
-                                    <article key={id} className='details' >
-                                        <h4>
-                                            <h3>
-                                                {icon}&nbsp;{technology}
-                                            </h3>
-                                            <h5 className='text-light'>
-                                                {experience}
-                                            </h5>
-                                        </h4>
-                                    </article>
-                                )
-                            })
-                        }
-                    </div>
+                <div className='editors'>
+                <h2>Editors/IDEs</h2>
+                <div className='content'>
+                    {
+                        editors.map(({ id, icon, technology, experience }) => {
+                            return (
+                                <article key={id} className='details' >
+                                    <h4>
+                                        <h3>
+                                            {icon}&nbsp;{technology}
+                                        </h3>
+                                        <h5 className='text-light'>
+                                            {experience}
+                                        </h5>
+                                    </h4>
+                                </article>
+                            )
+                        })
+                    }
                 </div>
+            </div>
 
+            <div className='other'>
+                <h2>Other Tools</h2>
+                <div className='content'>
+                    {
+                        other.map(({ id, icon, technology, experience }) => {
+                            return (
+                                <article key={id} className='details' >
+                                    <h4>
+                                        <h3>
+                                            {icon}&nbsp;{technology}
+                                        </h3>
+                                        <h5 className='text-light'>
+                                            {experience}
+                                        </h5>
+                                    </h4>
+                                </article>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
+        </div >
 
     )
 }
