@@ -23,7 +23,7 @@ import UniversityPhoto from '../../assets/UniversityPhoto.png'
 import UniversityDemo from '../../assets/UniversityDemo.mp4'
 import QuizGamePhoto from '../../assets/QGPhoto.png'
 
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript } from 'react-icons/si'
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode } from 'react-icons/si'
 
 const iconSize = 30;
 
@@ -39,7 +39,7 @@ const data = [
         <SiAndroid size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
         <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
         <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-        <Icons name='xml' size={iconSize} />
+        <Icons name='xml' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       </div>,
     github: 'https://github.com/namanbajaj/Quiz-App',
     text:
@@ -61,7 +61,7 @@ const data = [
       <SiHtml5 size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
       <SiApachetomcat size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
       <SiEclipseide size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
-      <Icons name='jdbc' size={iconSize} />
+      <Icons name='jdbc' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/University-Registration-System',
     text:
@@ -75,29 +75,29 @@ const data = [
       </span>,
     demo: UniversityDemo
   },
-  {
-    id: 6,
-    image: ColorGamePhoto,
-    title: 'Color Game',
-    icons: <div className='icon_under'>
-      <SiKotlin size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
-      <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <Icons name='xml' size={iconSize} />
-    </div>,
-    github: 'https://github.com/namanbajaj/Color-Guessing-Game',
-    text:
-      <span>
-        Color guessing game built with Kotlin in Android Studio. <br />
-        Has 3 difficulty modes, each with their own high scores. <br />
-        Implements coroutines for timer function and color changing title. <br />
-        Responsive according to whether user has dark mode turned on. <br />
-        Works well with variety of screen sizes and orientations. <br />
-      </span>,
-    demo: ColorGameDemo,
-    link: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame'
-  },
+  // {
+  //   id: 6,
+  //   image: ColorGamePhoto,
+  //   title: 'Color Game',
+  //   icons: <div className='icon_under'>
+  //     <SiKotlin size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+  //     <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+  //     <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+  //     <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+  //     <Icons name='xml' size={iconSize} />
+  //   </div>,
+  //   github: 'https://github.com/namanbajaj/Color-Guessing-Game',
+  //   text:
+  //     <span>
+  //       Color guessing game built with Kotlin in Android Studio. <br />
+  //       Has 3 difficulty modes, each with their own high scores. <br />
+  //       Implements coroutines for timer function and color changing title. <br />
+  //       Responsive according to whether user has dark mode turned on. <br />
+  //       Works well with variety of screen sizes and orientations. <br />
+  //     </span>,
+  //   demo: ColorGameDemo,
+  //   link: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame'
+  // },
   {
     id: 1,
     image: ReactLogo,
@@ -106,7 +106,7 @@ const data = [
       <SiReact size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiHtml5 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiCss3 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiJavascript size={iconSize} />
+      <SiJavascript size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/Website',
     text: 'This website was written using JavaScript, ReactJS, and CSS',
@@ -117,9 +117,10 @@ const data = [
     title: 'Photos Library (Android)',
     icons: <div className='icon_under'>
       <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiAndroid size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
       <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <Icons name='xml' size={iconSize} />
+      <Icons name='xml' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text:
@@ -141,7 +142,7 @@ const data = [
       <SiJava size={iconSize} />&nbsp;&nbsp; &nbsp;&nbsp;
       <Icons name='javafx' size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
       <Icons name='xml' size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
-      <Icons name='scenebuilder' size={iconSize} />
+      <Icons name='scenebuilder' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
     text:
@@ -155,26 +156,26 @@ const data = [
         Users can search by tags and dates.
       </span>,
     demo: PhotosDesktopDemo
-  }
-  // {
-  //   id: 4,
-  //   image: ChessPhoto,
-  //   title: 
-  //   <h3 className='title_and_languages'>
-  //   <div className='portfolio_item_title_text'>ASCII Based Chess</div>
-  //   <div className='icon_under'>
-  //     <DiJava size={iconSize} />
-  //   </div>
-  // </h3>,
-  //   github: 'https://github.com/namanbajaj/Chess',
-  //   text:
-  //     <span>
-  //       Fully implemented chess game using ASCII art. <br />
-  //       Built from scratch using object-oriented design patterns. <br />
-  //       Supports advanced chess moves such as En Passant and castling.
-  //     </span>,
-  //   demo: ChessDemo
-  // }
+  },
+  {
+    id: 4,
+    image: ChessPhoto,
+    title: 
+    <h3 className='title_and_languages'>
+    <div className='portfolio_item_title_text'>ASCII Based Chess</div>
+    <div className='icon_under'>
+      <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+    </div>
+  </h3>,
+    github: 'https://github.com/namanbajaj/Chess',
+    text:
+      <span>
+        Fully implemented chess game using ASCII art. <br />
+        Built from scratch using object-oriented design patterns. <br />
+        Supports advanced chess moves such as En Passant and castling.
+      </span>,
+    demo: ChessDemo
+  },
   // {
   //   id: 5,
   //   image: SongLibraryPhoto,
@@ -182,7 +183,7 @@ const data = [
   //   <h3 className='title_and_languages'>
   //   <div className='portfolio_item_title_text'>Song Library</div>
   //   <div className='icon_under'>
-  //     <DiJava size={iconSize} />
+  //     <SiJava size={iconSize} />
   //   </div>
   // </h3>,
   //   github: 'https://github.com/namanbajaj/Song-Library',
@@ -192,8 +193,8 @@ const data = [
   //       Allows users to manage songs.
   //     </span>,
   //   demo: SongLibraryDemo,
-  //   technologies: <DiJava s></DiJava>
-  // }
+  //   technologies: <SiJava s></SiJava>
+  // },
 ]
 
 

@@ -244,9 +244,9 @@ const editors = [
 const Languages = () => {
     return (
         <div>
-            <div className='introtext'>
+            {/* <div className='introtext'>
                 <h5>Languages and Technologies That I'm Familiar With:</h5>
-            </div>
+            </div> */}
             <div className='languages'>
                 <div className='frontend'>
                     <h2>Frontend Development</h2>

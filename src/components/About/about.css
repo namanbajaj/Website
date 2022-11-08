@@ -15,6 +15,8 @@
 
 .about__me__geninfo {
     margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
 }
 
 .introtext {
@@ -27,8 +29,8 @@
 .languages {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
     gap: 3rem;
 }
 

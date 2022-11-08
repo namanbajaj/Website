@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import Portfolio from './components/Portfolio/Portfolio'
 import Welcome from './components/Welcome/Welcome'
+import Experience from './components/Experience/Experience'
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
@@ -13,8 +14,9 @@ const App = () => {
   return (
     <>
       <Welcome />
-      <Navbar />
+      {/* <Navbar /> */}
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><About /></ScrollAnimation>
+      {/* <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Experience /></ScrollAnimation> */}
       <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Portfolio /></ScrollAnimation>
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Contact /></ScrollAnimation>
       <Footer />

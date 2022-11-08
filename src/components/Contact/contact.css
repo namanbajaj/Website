@@ -1,11 +1,20 @@
 .introtext {
-    text-align: center;
+    margin-left: 5%;
     height: fit-content;
-    position: static;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.introtext::after {
+    content: " ";
+    position: absolute;
+    border-bottom: 10px solid white;
+    width: 50%;
+    height: 0.2rem;
 }
 
 .container.contact__container {
-    width: 85%;
+    width: 90%;
     display: grid;
     grid-template-columns: 30% 55%;
     gap: 12%;
