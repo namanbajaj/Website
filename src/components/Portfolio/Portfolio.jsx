@@ -40,7 +40,7 @@ const data = [
     <SiWindows size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     <SiVisualstudio size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
   </div>,
-  github: 'https://github.com/namanbajaj/Quiz-App',
+  github: 'https://github.com/namanbajaj/CurrencyConverter',
   text:
     <span>
       Currency converter application built for Windows environments using WPF frontend and C# backend <br />
