@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit, DiMysql, DiSqllite, DiVisualstudio, DiVim, DiEclipse, DiLinux } from 'react-icons/di';
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiVisualstudiocode, SiAndroidstudio, SiGnuemacs, SiMicrosoftoffice, SiApache, SiApachetomcat, SiBlender, SiGimp, SiInkscape, SiGradle, SiBootstrap, SiOcaml } from 'react-icons/si'
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiVisualstudiocode, SiAndroidstudio, SiGnuemacs, SiMicrosoftoffice, SiApache, SiApachetomcat, SiBlender, SiGimp, SiInkscape, SiGradle, SiBootstrap, SiOcaml, SiMicrosoftsqlserver } from 'react-icons/si'
 import Icons from '../Icons/Icons.jsx';
 
 const iconSize = 35;
@@ -115,6 +115,12 @@ const database = [
         technology: 'JDBC',
         experience: 'Experienced'
     },
+    {
+        id: 4,
+        icon: <SiMicrosoftsqlserver size={iconSize} />,
+        technology: 'Microsoft SQL',
+        experience: 'Intermediate'
+    }
 ]
 
 const tools = [

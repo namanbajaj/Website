@@ -22,12 +22,32 @@ import ColorGameDemo from '../../assets/CGDemo.mp4'
 import UniversityPhoto from '../../assets/UniversityPhoto.png'
 import UniversityDemo from '../../assets/UniversityDemo.mp4'
 import QuizGamePhoto from '../../assets/QGPhoto.png'
+import CurrencyConverterPhoto from '../../assets/CCPhoto.png'
 
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode } from 'react-icons/si'
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows } from 'react-icons/si'
 
 const iconSize = 30;
 
 const data = [
+  {
+    id: 9,
+    image: CurrencyConverterPhoto,
+    title: 'Currency Converter',
+    icons: <div className='icon_under'>
+    <SiCsharp size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+    <Icons name='wpf' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+    <SiJson size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+    <SiWindows size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+    <SiVisualstudio size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+  </div>,
+  github: 'https://github.com/namanbajaj/Quiz-App',
+  text:
+    <span>
+      Currency converter application built for Windows environments using WPF frontend and C# backend <br />
+      Uses Open Exchange Rates API to retrieve latest exchange rates for over 170 currencies and calculates based on user entered value <br />
+      Implements multithreading and async/await functionality for exchange rate retrieval <br />
+    </span>
+  },
   {
     id: 8,
     image: QuizGamePhoto,
