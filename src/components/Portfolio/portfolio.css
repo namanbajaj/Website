@@ -156,6 +156,8 @@
 }
 
 .portfolio__container_old {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: grid;
     margin-left: 5%;
     margin-right: 5%;
