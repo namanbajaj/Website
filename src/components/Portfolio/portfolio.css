@@ -171,6 +171,11 @@
         gap: 1.2rem;
     }
 
+    .portfolio__container_old {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+
     .portfolio__item-image {
         border-radius: 1.5rem;
         width: 100%;
@@ -182,14 +187,25 @@
 /* Small Devices */
 @media screen and (max-width: 600px) {
     .portfolio__container {
+        margin-top: 3rem;
         grid-template-columns: 1fr;
         gap: 1rem;
+        row-gap: 2rem;
+    }
+
+    .portfolio__container_old {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        row-gap: 2rem;
     }
 
     .portfolio__item {
         display: grid;
         background: var(--color-bg-variant);
-        padding: 0rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         max-height: 27rem;
         border-radius: 2rem;
         border: 0px solid transparent;
