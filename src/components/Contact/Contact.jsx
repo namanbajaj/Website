@@ -17,11 +17,11 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <div className="introtext">
+      {/* <div className="introtext">
         <h1>
           Contact Me
           </h1>
-        </div>
+        </div> */}
 
       <div className="container contact__container">
         <div className="contact__options">

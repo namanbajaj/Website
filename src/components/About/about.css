@@ -85,7 +85,7 @@
 /* Small Devices */
 @media screen and (max-width: 600px) {
     .languages {
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .languages > div {

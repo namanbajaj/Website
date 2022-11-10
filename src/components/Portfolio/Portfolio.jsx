@@ -25,6 +25,7 @@ import QuizGamePhoto from '../../assets/QGPhoto.png'
 import CurrencyConverterPhoto from '../../assets/CCPhoto.png'
 
 import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows } from 'react-icons/si'
+import Collapsible from 'react-collapsible';
 
 const iconSize = 30;
 
@@ -34,19 +35,20 @@ const data = [
     image: CurrencyConverterPhoto,
     title: 'Currency Converter',
     icons: <div className='icon_under'>
-    <SiCsharp size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-    <Icons name='wpf' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-    <SiJson size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
-    <SiWindows size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-    <SiVisualstudio size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
-  </div>,
-  github: 'https://github.com/namanbajaj/CurrencyConverter/releases/tag/currency-converter%2Fv1.0',
-  text:
-    <span>
-      Currency converter application built for Windows environments using WPF frontend and C# backend <br />
-      Uses Open Exchange Rates API to retrieve latest exchange rates for over 170 currencies and calculates based on user entered value <br />
-      Implements multithreading and async/await functionality for exchange rate retrieval <br />
-    </span>
+      <SiCsharp size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <Icons name='wpf' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiJson size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+      <SiWindows size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiVisualstudio size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+    </div>,
+    github: 'https://github.com/namanbajaj/CurrencyConverter/releases/tag/currency-converter%2Fv1.0',
+    text:
+      <span>
+        Currency converter application built for Windows environments using WPF frontend and C# backend <br />
+        Uses Open Exchange Rates API to retrieve latest exchange rates for over 170 currencies and calculates based on user entered value <br />
+        Implements multithreading and async/await functionality for exchange rate retrieval <br />
+      </span>,
+    isOldProject: false
   },
   {
     id: 8,
@@ -69,7 +71,8 @@ const data = [
         Allows users to create, edit, delete, and do quizzes <br />
         Implements multi-threading using Kotlin concurrency for database loading <br />
       </span>,
-      link: 'https://play.google.com/store/apps/details?id=com.namanbajaj.quizapp'
+    link: 'https://play.google.com/store/apps/details?id=com.namanbajaj.quizapp',
+    isOldProject: false
   },
   {
     id: 7,
@@ -93,7 +96,8 @@ const data = [
         Professors can view students that are taking their course and assign grades. <br />
         Students can see courses that they are taking and their grades in those courses, in addition to registering for new courses if prerequisites are met. <br />
       </span>,
-    demo: UniversityDemo
+    demo: UniversityDemo,
+    isOldProject: false
   },
   // {
   //   id: 6,
@@ -130,6 +134,7 @@ const data = [
     </div>,
     github: 'https://github.com/namanbajaj/Website',
     text: 'This website was written using JavaScript, ReactJS, and CSS',
+    isOldProject: false
   },
   {
     id: 2,
@@ -152,7 +157,8 @@ const data = [
         Users can add tags to pictures and search by those tag values. <br />
         Larger photo display has slideshow functionality.
       </span>,
-    demo: PhotosAndroidDemo
+    demo: PhotosAndroidDemo,
+    isOldProject: false
   },
   {
     id: 3,
@@ -175,18 +181,19 @@ const data = [
         Larger photo display has slideshow functionality. <br />
         Users can search by tags and dates.
       </span>,
-    demo: PhotosDesktopDemo
+    demo: PhotosDesktopDemo,
+    isOldProject: false
   },
   {
     id: 4,
     image: ChessPhoto,
-    title: 
-    <h3 className='title_and_languages'>
-    <div className='portfolio_item_title_text'>ASCII Based Chess</div>
-    <div className='icon_under'>
-      <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-    </div>
-  </h3>,
+    title:
+      <h3 className='title_and_languages'>
+        <div className='portfolio_item_title_text'>ASCII Based Chess</div>
+        <div className='icon_under'>
+          <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        </div>
+      </h3>,
     github: 'https://github.com/namanbajaj/Chess',
     text:
       <span>
@@ -194,29 +201,36 @@ const data = [
         Built from scratch using object-oriented design patterns. <br />
         Supports advanced chess moves such as En Passant and castling.
       </span>,
-    demo: ChessDemo
+    demo: ChessDemo,
+    isOldProject: true
   },
-  // {
-  //   id: 5,
-  //   image: SongLibraryPhoto,
-  //   title:
-  //   <h3 className='title_and_languages'>
-  //   <div className='portfolio_item_title_text'>Song Library</div>
-  //   <div className='icon_under'>
-  //     <SiJava size={iconSize} />
-  //   </div>
-  // </h3>,
-  //   github: 'https://github.com/namanbajaj/Song-Library',
-  //   text:
-  //     <span>
-  //       Song library built using JavaFX. <br />
-  //       Allows users to manage songs.
-  //     </span>,
-  //   demo: SongLibraryDemo,
-  //   technologies: <SiJava s></SiJava>
-  // },
+  {
+    id: 5,
+    image: SongLibraryPhoto,
+    title:
+      <h3 className='title_and_languages'>
+        <div className='portfolio_item_title_text'>Song Library</div>
+        <div className='icon_under'>
+          <SiJava size={iconSize} />
+        </div>
+      </h3>,
+    github: 'https://github.com/namanbajaj/Song-Library',
+    text:
+      <span>
+        Song library built using JavaFX. <br />
+        Allows users to manage songs.
+      </span>,
+    demo: SongLibraryDemo,
+    isOldProject: true
+  }
 ]
 
+var collapsibleOpen = false;
+function handleCollapsible() {
+  console.log('collapsible clicked');
+  collapsibleOpen = !collapsibleOpen;
+  console.log(collapsibleOpen);
+}
 
 const Portfolio = () => {
   return (
@@ -227,92 +241,23 @@ const Portfolio = () => {
 
       <div className="portfolio__container">
         {
-          data.map(({ id, image, icons, title, github, text, demo, link }) => {
-            const demobutton = <a className="btn" id='demo_button'> Video Demo </a>;
+          data.map(({ id, image, icons, title, github, text, demo, link, isOldProject }) => {
+            if (!isOldProject) {
+              const demobutton = <a className="btn" id='demo_button'> Video Demo </a>;
 
-            return (
-              <article key={id} className='portfolio__item'>
-                <div className="portfolio__item-image">
-                  {/* <img src={image} alt={title} /> */}
-                  <Popup
-                    trigger={<a href="javascript:void(0);"><img src={image} alt={title} /></a>}
-                    modal
-                    contentStyle={{ width: '30%', height: 'auto' }}
-                  >
-                    {close => (
-                      <div className="pop_up_window animate__animated animate__zoomIn">
-                        <div className="pop_up_header"> {title} </div>
-                        <div className="pop_up_content">
-                          {<img src={image} alt={title} />}
-                        </div>
-                        <div className="pop_up_actions">
-                          <a
-                            className="btn"
-                            onClick={() => {
-                              close();
-                            }}
-                          >
-                            Close
-                          </a>
-                        </div>
-                      </div>
-                    )}
-                  </Popup>
-                </div>
-                <div>
-                  <h3 className='title_and_languages'>
-                    <div className='portfolio_item_title_text'>{title}</div>
-                    {icons}
-                  </h3>
-                </div>
-                {/* <h3 className='title_and_languages'>
-        <div className='portfolio_item_title_text'>Quiz App</div>
-        <div className='icon_under'>
-          <SiKotlin size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiSqlite size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp; <SiAndroid size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp; <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp; <SiGradle size={iconSize} />
-        </div>
-      </h3>, */}
-                <div className="portfolio__item-cta">
-                  <a href={github} className='btn' target='_blank'>Github</a>
-                  <Popup
-                    trigger={<a className="btn"> More Info </a>}
-                    modal
-                  >
-                    {close => (
-                      <div className="pop_up_window animate__animated animate__zoomIn">
-                        <div className="pop_up_header"> {title} </div>
-                        <div className="pop_up_content">
-                          {text}
-                        </div>
-                        <div className="pop_up_actions">
-                          <a
-                            className="btn"
-                            onClick={() => {
-                              close();
-                            }}
-                          >
-                            Close
-                          </a>
-                        </div>
-                      </div>
-                    )}
-                  </Popup>
-                  {demo != null ? (
-                    < Popup
-                      trigger={demobutton}
+              return (
+                <article key={id} className='portfolio__item'>
+                  <div className="portfolio__item-image">
+                    <Popup
+                      trigger={<a href="javascript:void(0);"><img src={image} alt={title} /></a>}
                       modal
+                      contentStyle={{ width: '30%', height: 'auto' }}
                     >
                       {close => (
-                        <div className="pop_up_window_video animate__animated animate__zoomIn">
-                          <div className="pop_up_content_video">
-                            <div className='player-wrapper'>
-                              <ReactPlayer
-                                url={demo}
-                                controls={1}
-                                width='100%'
-                                height='100%'
-                                className='.react-player'>
-                              </ReactPlayer>
-                            </div>
+                        <div className="pop_up_window animate__animated animate__zoomIn">
+                          <div className="pop_up_header"> {title} </div>
+                          <div className="pop_up_content">
+                            {<img src={image} alt={title} />}
                           </div>
                           <div className="pop_up_actions">
                             <a
@@ -327,22 +272,213 @@ const Portfolio = () => {
                         </div>
                       )}
                     </Popup>
-                  ) : null
-                  }
+                  </div>
+                  <div>
+                    <h3 className='title_and_languages'>
+                      <div className='portfolio_item_title_text'>{title}</div>
+                      {icons}
+                    </h3>
+                  </div>
+                  <div className="portfolio__item-cta">
+                    <a href={github} className='btn' target='_blank'>Github</a>
 
-                  {link != null ? (
-                    <a href={link} className='btn' target='_blank'>
-                      Link
-                    </a>
-                  ) : <p></p>
-                  }
-                </div>
-              </article>
-            )
+                    <Popup
+                      trigger={<a className="btn"> More Info </a>}
+                      modal
+                    >
+                      {close => (
+                        <div className="pop_up_window animate__animated animate__zoomIn">
+                          <div className="pop_up_header"> {title} </div>
+                          <div className="pop_up_content">
+                            {text}
+                          </div>
+                          <div className="pop_up_actions">
+                            <a
+                              className="btn"
+                              onClick={() => {
+                                close();
+                              }}
+                            >
+                              Close
+                            </a>
+                          </div>
+                        </div>
+                      )}
+                    </Popup>
+                    {demo != null ? (
+                      < Popup
+                        trigger={demobutton}
+                        modal
+                      >
+                        {close => (
+                          <div className="pop_up_window_video animate__animated animate__zoomIn">
+                            <div className="pop_up_content_video">
+                              <div className='player-wrapper'>
+                                <ReactPlayer
+                                  url={demo}
+                                  controls={1}
+                                  width='100%'
+                                  height='100%'
+                                  className='.react-player'>
+                                </ReactPlayer>
+                              </div>
+                            </div>
+                            <div className="pop_up_actions">
+                              <a
+                                className="btn"
+                                onClick={() => {
+                                  close();
+                                }}
+                              >
+                                Close
+                              </a>
+                            </div>
+                          </div>
+                        )}
+                      </Popup>
+                    ) : null
+                    }
+
+                    {link != null ? (
+                      <a href={link} className='btn' target='_blank'>
+                        Link
+                      </a>
+                    ) : <p></p>
+                    }
+                  </div>
+                </article>
+              )
+            }
           })
         }
-
       </div>
+      
+      {/* <div className='portfolio_intro_text'>
+        <h1 style={{marginTop: "8rem"}}>Older Projects <a className='btn' onClick={handleCollapsible} ></a></h1>
+      </div> */}
+
+      <Collapsible trigger="Older Projects (Click text to expand)" className='older_projects_intro' openedClassName='older_projects_intro'>
+        <div className="portfolio__container_old">
+          {
+            data.map(({ id, image, icons, title, github, text, demo, link, isOldProject }) => {
+              if (isOldProject) {
+                const demobutton = <a style={{fontWeight: "100", fontSize: "1rem"}} className="btn" id='demo_button'> Video Demo </a>;
+
+                return (
+                  <article key={id} className='portfolio__item'>
+                    <div className="portfolio__item-image">
+                      <Popup
+                        trigger={<a href="javascript:void(0);"><img src={image} alt={title} /></a>}
+                        modal
+                        contentStyle={{ width: '30%', height: 'auto' }}
+                      >
+                        {close => (
+                          <div className="pop_up_window animate__animated animate__zoomIn">
+                            <div className="pop_up_header"> {title} </div>
+                            <div className="pop_up_content">
+                              {<img src={image} alt={title} />}
+                            </div>
+                            <div className="pop_up_actions">
+                              <a
+                                className="btn"
+                                onClick={() => {
+                                  close();
+                                }}
+                              >
+                                Close
+                              </a>
+                            </div>
+                          </div>
+                        )}
+                      </Popup>
+                    </div>
+                    <div>
+                      <h3 className='title_and_languages'>
+                        <div className='portfolio_item_title_text'>{title}</div>
+                        {icons}
+                      </h3>
+                    </div>
+                    <div className="portfolio__item-cta">
+                      <a style={{fontWeight: "100", fontSize: "1rem"}} href={github} className='btn' target='_blank'>Github</a>
+
+                      <Popup
+                        trigger={<a style={{fontWeight: "100", fontSize: "1rem"}} className="btn"> More Info </a>}
+                        modal
+                      >
+                        {close => (
+                          <div className="pop_up_window animate__animated animate__zoomIn">
+                            <div className="pop_up_header"> {title} </div>
+                            <div className="pop_up_content">
+                              {text}
+                            </div>
+                            <div className="pop_up_actions">
+                              <a
+                                style={{fontWeight: "100", fontSize: "1rem"}} 
+                                className="btn"
+                                onClick={() => {
+                                  close();
+                                }}
+                              >
+                                Close
+                              </a>
+                            </div>
+                          </div>
+                        )}
+                      </Popup>
+                      {demo != null ? (
+                        < Popup
+                          trigger={demobutton}
+                          modal
+                        >
+                          {close => (
+                            <div className="pop_up_window_video animate__animated animate__zoomIn">
+                              <div className="pop_up_content_video">
+                                <div className='player-wrapper'>
+                                  <ReactPlayer
+                                    url={demo}
+                                    controls={1}
+                                    width='100%'
+                                    height='100%'
+                                    className='.react-player'>
+                                  </ReactPlayer>
+                                </div>
+                              </div>
+                              <div className="pop_up_actions">
+                                <a
+                                  style={{fontWeight: "100", fontSize: "1rem"}} 
+                                  className="btn"
+                                  onClick={() => {
+                                    close();
+                                  }}
+                                >
+                                  Close
+                                </a>
+                              </div>
+                            </div>
+                          )}
+                        </Popup>
+                      ) : null
+                      }
+
+                      {link != null ? (
+                        <a 
+                        style={{fontWeight: "100", fontSize: "1rem"}} 
+                        href={link} className='btn' target='_blank'>
+                          Link
+                        </a>
+                      ) : <p></p>
+                      }
+                    </div>
+                  </article>
+                )
+              }
+            })
+          }
+        </div>
+      </Collapsible>
+
+
+
     </section >
   )
 }
