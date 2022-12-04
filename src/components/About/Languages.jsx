@@ -246,13 +246,9 @@ const editors = [
     },
 ]
 
-
 const Languages = () => {
     return (
         <div>
-            {/* <div className='introtext'>
-                <h5>Languages and Technologies That I'm Familiar With:</h5>
-            </div> */}
             <div className='languages'>
                 <div className='frontend'>
                     <h2>Frontend Development</h2>
@@ -343,51 +339,50 @@ const Languages = () => {
                 </div>
 
                 <div className='editors'>
-                <h2>Editors/IDEs</h2>
-                <div className='content'>
-                    {
-                        editors.map(({ id, icon, technology, experience }) => {
-                            return (
-                                <article key={id} className='details' >
-                                    <h4>
-                                        <h3>
-                                            {icon}&nbsp;{technology}
-                                        </h3>
-                                        <h5 className='text-light'>
-                                            {experience}
-                                        </h5>
-                                    </h4>
-                                </article>
-                            )
-                        })
-                    }
+                    <h2>Editors/IDEs</h2>
+                    <div className='content'>
+                        {
+                            editors.map(({ id, icon, technology, experience }) => {
+                                return (
+                                    <article key={id} className='details' >
+                                        <h4>
+                                            <h3>
+                                                {icon}&nbsp;{technology}
+                                            </h3>
+                                            <h5 className='text-light'>
+                                                {experience}
+                                            </h5>
+                                        </h4>
+                                    </article>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
-            </div>
 
-            <div className='other'>
-                <h2>Other Tools</h2>
-                <div className='content'>
-                    {
-                        other.map(({ id, icon, technology, experience }) => {
-                            return (
-                                <article key={id} className='details' >
-                                    <h4>
-                                        <h3>
-                                            {icon}&nbsp;{technology}
-                                        </h3>
-                                        <h5 className='text-light'>
-                                            {experience}
-                                        </h5>
-                                    </h4>
-                                </article>
-                            )
-                        })
-                    }
+                <div className='other'>
+                    <h2>Other Tools</h2>
+                    <div className='content'>
+                        {
+                            other.map(({ id, icon, technology, experience }) => {
+                                return (
+                                    <article key={id} className='details' >
+                                        <h4>
+                                            <h3>
+                                                {icon}&nbsp;{technology}
+                                            </h3>
+                                            <h5 className='text-light'>
+                                                {experience}
+                                            </h5>
+                                        </h4>
+                                    </article>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </div>
-        </div>
         </div >
-
     )
 }
 
