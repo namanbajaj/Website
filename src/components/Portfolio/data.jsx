@@ -17,6 +17,7 @@ import UniversityPhoto from '../../assets/UniversityPhoto.png'
 import UniversityDemo from '../../assets/UniversityDemo.mp4'
 import QuizGamePhoto from '../../assets/QGPhoto.png'
 import CurrencyConverterPhoto from '../../assets/CCPhoto.png'
+import CTerminal from '../../assets/CTerminal.png'
 
 import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows } from 'react-icons/si'
 
@@ -24,6 +25,21 @@ import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator,
 const iconSize = 30;
 
 export const data = [
+    {
+        id: 10,
+        image: CTerminal,
+        title: 'Custom Shell',
+        icons: <div className='icon_under'>
+            <SiC size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        </div>,
+        github: 'https://github.com/namanbajaj/CS214/tree/main/hw3',
+        text: <span>
+            Custom shell written in C for Linux. <br />
+            Built in commands such as bg, cd, jobs, etc <br />
+            Supports moving jobs between background and foreground <br />
+            Supports suspending and resuming jobs <br />
+        </span>,
+    },
     {
         id: 9,
         image: CurrencyConverterPhoto,
@@ -42,7 +58,8 @@ export const data = [
                 Uses Open Exchange Rates API to retrieve latest exchange rates for over 170 currencies and calculates based on user entered value <br />
                 Implements multithreading and async/await functionality for exchange rate retrieval <br />
             </span>,
-        isOldProject: false
+        isOldProject: false,
+        link: "https://github.com/namanbajaj/CurrencyConverter/releases"
     },
     {
         id: 8,
@@ -120,7 +137,7 @@ export const data = [
     {
         id: 1,
         image: ReactLogo,
-        title: 'React Website',
+        title: 'Personal Portfolio',
         icons: <div className='icon_under'>
             <SiReact size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <SiHtml5 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
@@ -182,13 +199,10 @@ export const data = [
     {
         id: 4,
         image: ChessPhoto,
-        title:
-            <h3 className='title_and_languages'>
-                <div className='portfolio_item_title_text'>ASCII Based Chess</div>
-                <div className='icon_under'>
-                    <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-                </div>
-            </h3>,
+        title: 'ASCII Chess',
+        icons: <div className='icon_under'>
+            <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        </div>,
         github: 'https://github.com/namanbajaj/Chess',
         text:
             <span>
@@ -202,13 +216,12 @@ export const data = [
     {
         id: 5,
         image: SongLibraryPhoto,
-        title:
-            <h3 className='title_and_languages'>
-                <div className='portfolio_item_title_text'>Song Library</div>
-                <div className='icon_under'>
-                    <SiJava size={iconSize} />
-                </div>
-            </h3>,
+        title: 'Song Library',
+        icons: <div className='icon_under'>
+            <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <Icons name='javafx' size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+            <Icons name='scenebuilder' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        </div>,
         github: 'https://github.com/namanbajaj/Song-Library',
         text:
             <span>
