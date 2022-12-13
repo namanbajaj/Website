@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from 'react'
 
 import Icons from '../Icons/Icons.jsx';
 
@@ -18,6 +18,7 @@ import UniversityDemo from '../../assets/UniversityDemo.mp4'
 import QuizGamePhoto from '../../assets/QGPhoto.png'
 import CurrencyConverterPhoto from '../../assets/CCPhoto.png'
 import CTerminal from '../../assets/CTerminal.png'
+import QDPhoto from '../../assets/QDPhoto.png'
 
 import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows } from 'react-icons/si'
 
@@ -25,6 +26,19 @@ import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator,
 const iconSize = 30;
 
 export const data = [
+    {
+        id: 11,
+        image: QDPhoto,
+        title: 'QuickDraw',
+        icons: <div className='icon_under'>
+            <SiKotlin size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiAndroid size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+            <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <Icons name='xml' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        </div>,
+        github: 'https://github.com/namanbajaj/DrawingApp'
+    },
     {
         id: 10,
         image: CTerminal,
@@ -111,28 +125,28 @@ export const data = [
         isOldProject: false
     },
     {
-      id: 6,
-      image: ColorGamePhoto,
-      title: 'Color Game',
-      icons: <div className='icon_under'>
-        <SiKotlin size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
-        <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-        <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-        <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-        <Icons name='xml' size={iconSize} />
-      </div>,
-      github: 'https://github.com/namanbajaj/Color-Guessing-Game',
-      text:
-        <span>
-          Color guessing game built with Kotlin in Android Studio. <br />
-          Has 3 difficulty modes, each with their own high scores. <br />
-          Implements coroutines for timer function and color changing title. <br />
-          Responsive according to whether user has dark mode turned on. <br />
-          Works well with variety of screen sizes and orientations. <br />
-        </span>,
-      demo: ColorGameDemo,
-      link: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame',
-      isOldProject: true
+        id: 6,
+        image: ColorGamePhoto,
+        title: 'Color Game',
+        icons: <div className='icon_under'>
+            <SiKotlin size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+            <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <Icons name='xml' size={iconSize} />
+        </div>,
+        github: 'https://github.com/namanbajaj/Color-Guessing-Game',
+        text:
+            <span>
+                Color guessing game built with Kotlin in Android Studio. <br />
+                Has 3 difficulty modes, each with their own high scores. <br />
+                Implements coroutines for timer function and color changing title. <br />
+                Responsive according to whether user has dark mode turned on. <br />
+                Works well with variety of screen sizes and orientations. <br />
+            </span>,
+        demo: ColorGameDemo,
+        link: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame',
+        isOldProject: true
     },
     {
         id: 1,

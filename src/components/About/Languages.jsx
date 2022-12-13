@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit, DiMysql, DiSqllite, DiVisualstudio, DiVim, DiEclipse, DiLinux } from 'react-icons/di';
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiVisualstudiocode, SiAndroidstudio, SiGnuemacs, SiMicrosoftoffice, SiApache, SiApachetomcat, SiBlender, SiGimp, SiInkscape, SiGradle, SiBootstrap, SiOcaml, SiMicrosoftsqlserver } from 'react-icons/si'
+import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit, DiMysql, DiSqllite, DiVisualstudio, DiVim, DiEclipse, DiLinux, DiProlog } from 'react-icons/di';
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiVisualstudiocode, SiAndroidstudio, SiGnuemacs, SiMicrosoftoffice, SiApache, SiApachetomcat, SiBlender, SiGimp, SiInkscape, SiGradle, SiBootstrap, SiOcaml, SiMicrosoftsqlserver, SiJquery, SiExpress, SiNodedotjs } from 'react-icons/si'
 import Icons from '../Icons/Icons.jsx';
 
 const iconSize = 35;
@@ -54,7 +54,13 @@ const frontend = [
         icon: <Icons name="wpf" size={iconSize} />,
         technology: 'WPF',
         experience: 'Beginner'
-    }
+    },
+    {
+        id: 9,
+        icon: <SiJquery size={iconSize} />,
+        technology: 'jQuery',
+        experience: 'Beginner'
+    },
 ]
 
 const backend = [
@@ -93,7 +99,25 @@ const backend = [
         icon: <SiOcaml size={iconSize} />,
         technology: 'OCaml',
         experience: 'Beginner'
-    }
+    },
+    {
+        id: 7,
+        icon: <DiProlog size={iconSize} />,
+        technology: 'Prolog',
+        experience: 'Intermediate'
+    },
+    {
+        id: 8,
+        icon: <SiExpress size={iconSize} />,
+        technology: 'Express',
+        experience: 'Intermediate'
+    },
+    {
+        id: 9,
+        icon: <SiNodedotjs size={iconSize} />,
+        technology: 'Node.js',
+        experience: 'Intermediate'
+    },
 ]
 
 const database = [

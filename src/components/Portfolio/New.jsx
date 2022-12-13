@@ -50,7 +50,11 @@ const New = () => {
                     </h3>
                   </div>
                   <div className="portfolio__item-cta">
-                    <a href={github} className='btn' target='_blank'>Github</a>
+                    {github != null ?
+                    (
+                      <a href={github} className='btn' target='_blank'>Github</a>
+                    ) : <p></p>
+                  }
 
                     <Popup
                       trigger={<a className="btn"> More Info </a>}
