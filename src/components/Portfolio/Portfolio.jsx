@@ -5,16 +5,19 @@ import 'animate.css';
 
 import Old from './Old'
 import New from './New'
+import Categories from './Categories';
 
 const Portfolio = () => {
   return (
     <section id='portfolio'>
       <div className='portfolio_intro_text'>
-        <h1>My Recent Work</h1>
+        <h1>My Recent Work (Sorted by Recently Updated)</h1>
       </div>
 
       <New/>
       <Old/>
+
+      {/* <Categories/> */}
     </section >
   )
 }

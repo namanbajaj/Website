@@ -20,12 +20,24 @@ import CurrencyConverterPhoto from '../../assets/CCPhoto.png'
 import CTerminal from '../../assets/CTerminal.png'
 import QDPhoto from '../../assets/QDPhoto.png'
 
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows } from 'react-icons/si'
-
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows, SiPython } from 'react-icons/si'
+import { DiProlog } from 'react-icons/di';
 
 const iconSize = 30;
 
 export const data = [
+    {
+        id: 12,
+        image: ReactLogo,
+        title: 'Prolog Interpreter',
+        icons: <div className='icon_under'>
+            <DiProlog size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiPython size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            </div>,
+        github: 'https://github.com/namanbajaj/DrawingApp',
+        isOldProject: false,
+        type: 'Other'
+    },
     {
         id: 11,
         image: QDPhoto,
@@ -37,7 +49,9 @@ export const data = [
             <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <Icons name='xml' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
         </div>,
-        github: 'https://github.com/namanbajaj/DrawingApp'
+        github: 'https://github.com/namanbajaj/DrawingApp',
+        isOldProject: false,
+        type: 'App'
     },
     {
         id: 10,
@@ -53,6 +67,8 @@ export const data = [
             Supports moving jobs between background and foreground <br />
             Supports suspending and resuming jobs <br />
         </span>,
+        isOldProject: false,
+        type: 'Other'
     },
     {
         id: 9,
@@ -73,7 +89,8 @@ export const data = [
                 Implements multithreading and async/await functionality for exchange rate retrieval <br />
             </span>,
         isOldProject: false,
-        link: "https://github.com/namanbajaj/CurrencyConverter/releases"
+        link: "https://github.com/namanbajaj/CurrencyConverter/releases",
+        type: 'App'
     },
     {
         id: 8,
@@ -97,7 +114,8 @@ export const data = [
                 Implements multi-threading using Kotlin concurrency for database loading <br />
             </span>,
         link: 'https://play.google.com/store/apps/details?id=com.namanbajaj.quizapp',
-        isOldProject: false
+        isOldProject: false,
+        type: 'App'
     },
     {
         id: 7,
@@ -122,7 +140,8 @@ export const data = [
                 Students can see courses that they are taking and their grades in those courses, in addition to registering for new courses if prerequisites are met. <br />
             </span>,
         demo: UniversityDemo,
-        isOldProject: false
+        isOldProject: false,
+        type: 'Web'
     },
     {
         id: 6,
@@ -146,7 +165,8 @@ export const data = [
             </span>,
         demo: ColorGameDemo,
         link: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame',
-        isOldProject: true
+        isOldProject: false,
+        type: 'App'
     },
     {
         id: 1,
@@ -160,7 +180,8 @@ export const data = [
         </div>,
         github: 'https://github.com/namanbajaj/Website',
         text: 'This website was written using JavaScript, ReactJS, and CSS',
-        isOldProject: false
+        isOldProject: false,
+        type: 'Web'
     },
     {
         id: 2,
@@ -184,7 +205,8 @@ export const data = [
                 Larger photo display has slideshow functionality.
             </span>,
         demo: PhotosAndroidDemo,
-        isOldProject: false
+        isOldProject: true,
+        type: 'App'
     },
     {
         id: 3,
@@ -208,7 +230,8 @@ export const data = [
                 Users can search by tags and dates.
             </span>,
         demo: PhotosDesktopDemo,
-        isOldProject: true
+        isOldProject: true,
+        type: 'App'
     },
     {
         id: 4,
@@ -225,7 +248,8 @@ export const data = [
                 Supports advanced chess moves such as En Passant and castling.
             </span>,
         demo: ChessDemo,
-        isOldProject: true
+        isOldProject: true,
+        type: 'App'
     },
     {
         id: 5,
@@ -243,6 +267,7 @@ export const data = [
                 Allows users to manage songs.
             </span>,
         demo: SongLibraryDemo,
-        isOldProject: true
+        isOldProject: true,
+        type: 'App'
     }
 ]
