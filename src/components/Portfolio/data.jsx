@@ -36,7 +36,7 @@ export const data = [
             </div>,
         github: 'https://github.com/namanbajaj/DrawingApp',
         isOldProject: false,
-        type: 'Other'
+        type: 'other'
     },
     {
         id: 11,
@@ -51,7 +51,7 @@ export const data = [
         </div>,
         github: 'https://github.com/namanbajaj/DrawingApp',
         isOldProject: false,
-        type: 'App'
+        type: 'app'
     },
     {
         id: 10,
@@ -68,7 +68,7 @@ export const data = [
             Supports suspending and resuming jobs <br />
         </span>,
         isOldProject: false,
-        type: 'Other'
+        type: 'other'
     },
     {
         id: 9,
@@ -90,7 +90,7 @@ export const data = [
             </span>,
         isOldProject: false,
         link: "https://github.com/namanbajaj/CurrencyConverter/releases",
-        type: 'App'
+        type: 'app'
     },
     {
         id: 8,
@@ -115,7 +115,7 @@ export const data = [
             </span>,
         link: 'https://play.google.com/store/apps/details?id=com.namanbajaj.quizapp',
         isOldProject: false,
-        type: 'App'
+        type: 'app'
     },
     {
         id: 7,
@@ -141,7 +141,7 @@ export const data = [
             </span>,
         demo: UniversityDemo,
         isOldProject: false,
-        type: 'Web'
+        type: 'app'
     },
     {
         id: 6,
@@ -166,7 +166,7 @@ export const data = [
         demo: ColorGameDemo,
         link: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame',
         isOldProject: false,
-        type: 'App'
+        type: 'app'
     },
     {
         id: 1,
@@ -181,7 +181,7 @@ export const data = [
         github: 'https://github.com/namanbajaj/Website',
         text: 'This website was written using JavaScript, ReactJS, and CSS',
         isOldProject: false,
-        type: 'Web'
+        type: 'web'
     },
     {
         id: 2,
@@ -206,7 +206,7 @@ export const data = [
             </span>,
         demo: PhotosAndroidDemo,
         isOldProject: true,
-        type: 'App'
+        type: 'app'
     },
     {
         id: 3,
@@ -231,7 +231,7 @@ export const data = [
             </span>,
         demo: PhotosDesktopDemo,
         isOldProject: true,
-        type: 'App'
+        type: 'app'
     },
     {
         id: 4,
@@ -249,7 +249,7 @@ export const data = [
             </span>,
         demo: ChessDemo,
         isOldProject: true,
-        type: 'App'
+        type: 'app'
     },
     {
         id: 5,
@@ -268,6 +268,6 @@ export const data = [
             </span>,
         demo: SongLibraryDemo,
         isOldProject: true,
-        type: 'App'
+        type: 'app'
     }
 ]

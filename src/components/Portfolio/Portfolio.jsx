@@ -5,7 +5,6 @@ import 'animate.css';
 
 import Old from './Old'
 import New from './New'
-import Categories from './Categories';
 
 const Portfolio = () => {
   return (
@@ -17,7 +16,6 @@ const Portfolio = () => {
       <New/>
       <Old/>
 
-      {/* <Categories/> */}
     </section >
   )
 }
