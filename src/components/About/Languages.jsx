@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit, DiMysql, DiSqllite, DiVisualstudio, DiVim, DiEclipse, DiLinux, DiProlog } from 'react-icons/di';
+import { DiJava, DiPython, DiHtml5, DiCss3, DiJsBadge, DiReact, DiUnitySmall, DiGit, DiMysql, DiSqllite, DiVisualstudio, DiVim, DiEclipse, DiLinux, DiProlog, DiTerminal } from 'react-icons/di';
 import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiVisualstudiocode, SiAndroidstudio, SiGnuemacs, SiMicrosoftoffice, SiApache, SiApachetomcat, SiBlender, SiGimp, SiInkscape, SiGradle, SiBootstrap, SiOcaml, SiMicrosoftsqlserver, SiJquery, SiExpress, SiNodedotjs } from 'react-icons/si'
 import Icons from '../Icons/Icons.jsx';
 
@@ -152,6 +152,12 @@ const tools = [
         id: 1,
         icon: <DiGit size={iconSize} />,
         technology: 'Git',
+        experience: 'Intermediate'
+    },
+    {
+        id: 2,
+        icon: <DiTerminal size={iconSize} />,
+        technology: 'Command Line',
         experience: 'Intermediate'
     },
     {

@@ -19,6 +19,7 @@ import QuizGamePhoto from '../../assets/QGPhoto.png'
 import CurrencyConverterPhoto from '../../assets/CCPhoto.png'
 import CTerminal from '../../assets/CTerminal.png'
 import QDPhoto from '../../assets/QDPhoto.png'
+import PrologInterpreter from '../../assets/PrologInterpreter.png'
 
 import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows, SiPython } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
@@ -28,13 +29,18 @@ const iconSize = 30;
 export const data = [
     {
         id: 12,
-        image: ReactLogo,
+        image: PrologInterpreter,
         title: 'Prolog Interpreter',
         icons: <div className='icon_under'>
             <DiProlog size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <SiPython size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             </div>,
-        github: 'https://github.com/namanbajaj/DrawingApp',
+        github: 'https://github.com/namanbajaj/CS314/tree/main/Final',
+        text: <span>
+            Prolog interpreter written in Python <br />
+            Supports basic Prolog syntax such as facts, rules, queries, etc <br />
+            Supports unification, backtracking, and negation <br />
+        </span>,
         isOldProject: false,
         type: 'other'
     },
@@ -50,7 +56,13 @@ export const data = [
             <Icons name='xml' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
         </div>,
         github: 'https://github.com/namanbajaj/DrawingApp',
+        text: <span>
+            Android application that allows users to draw on a canvas and save their drawings <br />
+            Implements a custom view that allows users to draw on the canvas <br />
+            Allows users to set background image to trace
+        </span>,
         isOldProject: false,
+        link: 'https://play.google.com/store/apps/details?id=com.nbaj.drawingapp',
         type: 'app'
     },
     {
@@ -165,7 +177,7 @@ export const data = [
             </span>,
         demo: ColorGameDemo,
         link: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame',
-        isOldProject: false,
+        isOldProject: true,
         type: 'app'
     },
     {
