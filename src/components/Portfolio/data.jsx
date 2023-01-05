@@ -12,7 +12,6 @@ import ChessDemo from '../../assets/CDemo.mp4'
 import SongLibraryPhoto from '../../assets/SLPhoto.png'
 import SongLibraryDemo from '../../assets/SLDemo.mp4'
 import ColorGamePhoto from '../../assets/CGPhoto.png'
-import ColorGameDemo from '../../assets/CGDemo.mp4'
 import UniversityPhoto from '../../assets/UniversityPhoto.png'
 import UniversityDemo from '../../assets/UniversityDemo.mp4'
 import QuizGamePhoto from '../../assets/QGPhoto.png'
@@ -175,7 +174,6 @@ export const data = [
                 Responsive according to whether user has dark mode turned on. <br />
                 Works well with variety of screen sizes and orientations. <br />
             </span>,
-        demo: ColorGameDemo,
         link: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame',
         isOldProject: true,
         type: 'app'

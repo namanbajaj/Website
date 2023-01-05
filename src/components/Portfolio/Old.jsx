@@ -20,7 +20,7 @@ const Old = () => {
         {
           data.map(({ id, image, icons, title, github, text, demo, link, isOldProject }) => {
             if (isOldProject) {
-              const demobutton = <a style={{ fontWeight: "100", fontSize: "1rem" }} className="btn" id='demo_button'> Video Demo </a>;
+              const demobutton = <a className="btn old_button" id='demo_button'> Video Demo </a>;
 
               return (
                 <article key={id} className='portfolio__item'>
@@ -59,12 +59,12 @@ const Old = () => {
                   <div className="portfolio__item-cta">
                     {github != null ?
                       (
-                        <a style={{ fontWeight: "100", fontSize: "1rem" }} href={github} className='btn' target='_blank'>Github</a>
+                        <a href={github} className='btn old_button' target='_blank'>Github</a>
                       ) : <p></p>
                     }
 
                     <Popup
-                      trigger={<a style={{ fontWeight: "100", fontSize: "1rem" }} className="btn"> More Info </a>}
+                      trigger={<a className="btn old_button"> More Info </a>}
                       modal
                     >
                       {close => (
@@ -75,8 +75,7 @@ const Old = () => {
                           </div>
                           <div className="pop_up_actions">
                             <a
-                              style={{ fontWeight: "100", fontSize: "1rem" }}
-                              className="btn"
+                              className="btn old_button"
                               onClick={() => {
                                 close();
                               }}
@@ -107,8 +106,7 @@ const Old = () => {
                             </div>
                             <div className="pop_up_actions">
                               <a
-                                style={{ fontWeight: "100", fontSize: "1rem" }}
-                                className="btn"
+                                className="btn old_button"
                                 onClick={() => {
                                   close();
                                 }}
@@ -124,8 +122,7 @@ const Old = () => {
 
                     {link != null ? (
                       <a
-                        style={{ fontWeight: "100", fontSize: "1rem" }}
-                        href={link} className='btn' target='_blank'>
+                        href={link} className='btn old_button' target='_blank'>
                         Link
                       </a>
                     ) : <p></p>

@@ -163,33 +163,9 @@
     font-size: 1.5rem;
 }
 
-/* Unused */
-.older_projects_full {
-    display: grid;
-    grid-template-columns: 0.82fr 0.18fr;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.older_projects_intro_btn {
-    margin-bottom: 2%;
-    margin-top: 8rem;
-    font-size: 2.5rem;
-    font-weight: 500;
-    display: inline-block;
-    padding: 0rem 1rem;
-    width: fit-content;
-    background: var(--color-bg-primary);
-    border-radius: 0.4rem;
-    cursor: pointer;
-    border: 1px solid var(--color-primary);
-    transition: var(--transition);
-}
-
-.older_projects_intro_btn:hover {
-    background: white;
-    color: var(--color-bg);
-    border-color: transparent;
+.old_button {
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 /* Medium Devices */
@@ -221,12 +197,22 @@
         row-gap: 2rem;
     }
 
+    .portfolio__item:hover {
+        border-color: transparent;
+        background: var(--color-bg-variant);
+    }
+
     .portfolio__container_old {
         margin-top: 3rem;
         margin-bottom: 3rem;
         grid-template-columns: 1fr;
         gap: 1rem;
         row-gap: 2rem;
+        overflow: scroll;
+    }
+
+    .portfolio__container_old > .portfolio__item {
+        overflow: hidden;
     }
 
     .portfolio__item {
@@ -246,6 +232,7 @@
 
     .pop_up_window {
         width: 80%;
+        margin-left: 10%;
     }
 
     .player-wrapper {
