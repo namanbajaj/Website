@@ -171,4 +171,21 @@ li {
         grid-template-rows: 1fr 1fr;
         /* margin-bottom: -100%; */
     }
+
+    .content_cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    .logo.center_text {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text-light.center_text {
+        padding-top: 2rem;
+    }
 }

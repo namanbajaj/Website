@@ -30,7 +30,7 @@ const AboutCards = () => {
                 <div className='card'>
                     <h2>Aspiring Software Developer</h2>
                     <div className='content_cards'>
-                        <h3 className='center_text'>
+                        <h3 className='logo center_text'>
                             <AiFillCode size={iconSize} />
                         </h3>
 
@@ -45,7 +45,7 @@ const AboutCards = () => {
                 <div className='card'>
                     <h2>20+ Projects</h2>
                     <div className='content_cards'>
-                        <h3 className='center_text'>
+                        <h3 className='logo center_text'>
                             <CgHomeScreen size={iconSize} />
                         </h3>
 

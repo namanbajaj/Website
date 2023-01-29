@@ -82,4 +82,8 @@
     .experience_grid {
         grid-template-columns: 1fr;
     }
+
+    .pop_up_window {
+        max-width: 100vw;
+    }
 }
