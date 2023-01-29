@@ -54,7 +54,7 @@ const AboutCards = () => {
                             <br />
                             Mobile, Web, and Desktop applications
                             <br />
-                            For full list of technologies, see below
+                            For full list of technologies and projects, see below
                         </h5>
                     </div>
                 </div>

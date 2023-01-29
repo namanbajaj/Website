@@ -10,6 +10,7 @@ import Languages from './components/About/Languages'
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
+import Certifications from './components/Certifications/Certifications'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Experience /></ScrollAnimation>
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Languages /></ScrollAnimation>
       <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Portfolio /></ScrollAnimation>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Certifications /></ScrollAnimation>
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Contact /></ScrollAnimation>
       <Footer />
     </>
