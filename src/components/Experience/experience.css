@@ -1,0 +1,45 @@
+.introtext {
+    margin-left: 5%;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.introtext::after {
+    content: " ";
+    position: absolute;
+    border-bottom: 10px solid white;
+    width: 50%;
+    height: 0.2rem;
+}
+
+.experience_grid {
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-bottom: 5%;
+}
+
+.experience_item {
+    display: grid;
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    max-height: 27rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.experience_item:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+
+.item_title_text {
+    text-align: center;
+    color: var(--color-bg-primary);
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}

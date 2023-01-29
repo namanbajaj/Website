@@ -15,7 +15,7 @@
 
 .about__me__geninfo {
     margin-left: 5%;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     margin-right: 5%;
 }
 
@@ -39,6 +39,12 @@
     padding: 1rem 3rem;
     border-radius: 3rem;
     border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.languages>div:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
 }
 
 .languages>div h2 {
@@ -69,6 +75,73 @@
     row-gap: 1rem;
 }
 
+/* About Me Cards */
+.cards_overview {
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    gap: 3rem;
+    margin-bottom: 5%;
+}
+
+.cards {
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.content_cards {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    justify-content: left;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.text-light.center_text {
+    /* color: red; */
+    margin-left: 5%;
+}
+
+.logo.center_text {
+    justify-content: left;
+    text-align: left;
+}
+
+.working_on{
+    border-bottom: 10px solid white;
+    margin-bottom: 1rem;
+}
+
+.working_on_list {
+    /* margin-top: 1rem; */
+    display: list-item;
+    list-style-position: outside;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+
+li {
+    list-style-type: square;
+}
+
+.main_list_item {
+    margin-bottom: 1rem;
+}
+
+.card {
+    transition: var(--transition);
+}
+
+.card:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+    transition: var(--transition);
+}
+
 /* Medium Devices */
 @media screen and (max-width: 1024px) {
     .languages {
@@ -91,5 +164,11 @@
     .languages > div {
         width: 100%;
         padding: 2rem 1rem;
+    }
+
+    .cards_overview {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* margin-bottom: -100%; */
     }
 }

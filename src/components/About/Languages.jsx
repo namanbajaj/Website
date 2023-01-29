@@ -279,6 +279,11 @@ const editors = [
 const Languages = () => {
     return (
         <div>
+            <div className='about__me__header'>
+                <h1>
+                    Languages and Technologies
+                </h1>
+            </div>
             <div className='languages'>
                 <div className='frontend'>
                     <h2>Frontend Development</h2>

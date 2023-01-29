@@ -20,8 +20,8 @@ const Contact = () => {
       <div className="introtext">
         <h1>
           Contact Me
-          </h1>
-        </div>
+        </h1>
+      </div>
 
       <div className="container contact__container">
         <div className="contact__options">

@@ -1,5 +1,5 @@
 import React from 'react'
-import Resume from '../../assets/Naman Bajaj Resume.pdf'
+import Resume from '../../assets/Resume___Naman_Bajaj.pdf'
 
 const Links = () => {
   return (
