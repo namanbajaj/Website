@@ -102,6 +102,10 @@ const AboutCards = () => {
                     </li>
 
                     <li className='main_list_item'>
+                        <h2>Developing mobile games using the Unity engine </h2>
+                    </li>
+
+                    <li className='main_list_item'>
                         <h2> Working on and maintaining currently published projects and apps</h2>
                         <ul className='working_on_list'>
                             <li>
