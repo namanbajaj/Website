@@ -43,3 +43,43 @@
     font-size: 1.5rem;
     padding-bottom: 2rem;
 }
+
+.icon {
+    background: transparent;
+    padding: 0.1rem;
+    display: flex;
+    color: var(--color-bg-primary);
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+.icon:hover {
+    color: white;
+}
+
+.full_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.r_btn {
+    justify-self: end;
+    align-self: flex-end;
+    max-height: 3rem;
+}
+
+.r_list {
+    margin-left: 10px;
+}
+
+.pop_up_window {
+    max-width: 25vw;
+    justify-self: center;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+    .experience_grid {
+        grid-template-columns: 1fr;
+    }
+}
