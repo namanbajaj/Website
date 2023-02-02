@@ -11,7 +11,7 @@ const data = [
     title: 'Prudential',
     subtitle: 'Software Engineering Intern',
     date: 'Jun 2023 - Aug 2023',
-    description: 'Starting later this summer :)',
+    description: 'Starting later this summer',
     icon: 'prudential',
   },
 
@@ -21,9 +21,10 @@ const data = [
     subtitle: 'Math Grader',
     date: 'Jan 2023 - May 2023',
     description: <ul className='r_list'>
-      <li>Graded for 01:640:300- Introduction to Mathematical Reasoning</li>
-      <li>Graded homework for 20+ students</li>
-      <li>Helped students with their questions</li>
+      <li>Current Position</li>
+      <li>Grading for 01:640:300- Introduction to Mathematical Reasoning</li>
+      <li>Grading homework for 20+ students</li>
+      <li>Helping students with their questions</li>
     </ul>,
     icon: 'rutgers',
   },

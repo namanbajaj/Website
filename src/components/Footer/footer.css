@@ -7,6 +7,10 @@ footer {
     /* margin-top: -30rem; */
 }
 
+li {
+    list-style: none;
+}
+
 .footer__logo {
     font-size: 2rem;
     font-weight: 500;

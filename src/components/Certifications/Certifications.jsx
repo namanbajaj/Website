@@ -51,7 +51,6 @@ const Certifications = () => {
         ))}
       </div>
 
-
     </section>
   )
 }

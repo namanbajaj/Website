@@ -10,11 +10,6 @@ import { data } from './data'
 
 const Old = () => {
   return (
-    // <div className='older_projects_full'>
-    // <div className='older_projects_intro'>
-    //   <h1>Older Projects</h1>
-    // </div>
-
     <Collapsible trigger="Older Projects >" triggerWhenOpen="Older Projects v" className='older_projects_intro' openedClassName='older_projects_intro'>
       <div className="portfolio__container_old">
         {

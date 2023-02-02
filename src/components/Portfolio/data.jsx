@@ -24,8 +24,6 @@ import PongPhoto from '../../assets/Pong.png'
 import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity, SiWebgl } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
 
-import { Link, Route } from 'react-router-dom';
-
 const iconSize = 30;
 
 

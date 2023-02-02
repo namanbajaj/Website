@@ -14,8 +14,7 @@ const About = () => {
       </div>
 
       <AboutCards/>
-      {/* <Languages /> */}
-
+      
     </section>
   )
 
