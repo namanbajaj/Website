@@ -32,22 +32,22 @@ const App = () => {
     //   <Route exact path='/MiniTennis' component={MiniTennis} />
     // </>
     // <Router>
-      <>
-        <Welcome />
-        {/* <Navbar /> */}
-        <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><About /></ScrollAnimation>
-        <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Experience /></ScrollAnimation>
-        <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Languages /></ScrollAnimation>
-        <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Portfolio /></ScrollAnimation>
-        <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Certifications /></ScrollAnimation>
-        <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Contact /></ScrollAnimation>
-        <Footer />
+    <>
+      <Welcome />
+      {/* <Navbar /> */}
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><About /></ScrollAnimation>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Experience /></ScrollAnimation>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Languages /></ScrollAnimation>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Portfolio /></ScrollAnimation>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Certifications /></ScrollAnimation>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Contact /></ScrollAnimation>
+      <Footer />
 
-        {/* <Routes>
+      {/* <Routes>
           <Route path='MiniTennis' element={<MiniTennis/>} />
         </Routes> */}
 
-      </>
+    </>
     // </Router>
 
 
