@@ -19,13 +19,52 @@ import CurrencyConverterPhoto from '../../assets/CCPhoto.png'
 import CTerminal from '../../assets/CTerminal.png'
 import QDPhoto from '../../assets/QDPhoto.png'
 import PrologInterpreter from '../../assets/PrologInterpreter.png'
+import PongPhoto from '../../assets/Pong.png'
 
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows, SiPython } from 'react-icons/si'
+import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity, SiWebgl } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
+
+import { Link, Route } from 'react-router-dom';
 
 const iconSize = 30;
 
+
 export const data = [
+    {
+        id: 13,
+        image: PongPhoto,
+        title: 'Pong Clone',
+        icons: <div className='icon_under'>
+            <SiUnity size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiCsharp size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiWindows size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiWebgl size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        </div>,
+        github: 'https://github.com/namanbajaj/Mini-Tennis',
+        text: <span>
+            Pong clone made in Unity <br />
+            Supports single player and multiplayer <br />
+            Supports keyboard, mouse, and touchscreen controls <br />
+            Supports Android and Windows <br />
+        </span>,
+        multilinks: [
+            {
+                value: 'https://github.com/namanbajaj/Mini-Tennis/releases',
+                label: 'Windows'
+            },
+            {
+                value: 'https://play.google.com/store/apps/details?id=com.NBaj.Pong',
+                label: 'Android'
+            },
+            {
+                value: <Link to='/MiniTennis'></Link>,
+                label: 'WebGL'
+            }
+        ],
+        isOldProject: false,
+        type: 'game'
+    },
     {
         id: 12,
         image: PrologInterpreter,
@@ -33,7 +72,7 @@ export const data = [
         icons: <div className='icon_under'>
             <DiProlog size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <SiPython size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-            </div>,
+        </div>,
         github: 'https://github.com/namanbajaj/CS314/tree/main/Final',
         text: <span>
             Prolog interpreter written in Python <br />

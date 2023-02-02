@@ -12,19 +12,45 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
 import Certifications from './components/Certifications/Certifications'
 
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import MiniTennis from '../src/components/Games/MiniTennis.jsx'
+
+
 const App = () => {
   return (
-    <>
-      <Welcome />
-      {/* <Navbar /> */}
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><About /></ScrollAnimation>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Experience /></ScrollAnimation>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Languages /></ScrollAnimation>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Portfolio /></ScrollAnimation>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Certifications /></ScrollAnimation>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Contact /></ScrollAnimation>
-      <Footer />
-    </>
+    // <>
+    //   <Welcome />
+    //   {/* <Navbar /> */}
+    //   <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><About /></ScrollAnimation>
+    //   <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Experience /></ScrollAnimation>
+    //   <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Languages /></ScrollAnimation>
+    //   <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Portfolio /></ScrollAnimation>
+    //   <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Certifications /></ScrollAnimation>
+    //   <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Contact /></ScrollAnimation>
+    //   <Footer />
+
+    //   <Route exact path='/MiniTennis' component={MiniTennis} />
+    // </>
+    // <Router>
+      <>
+        <Welcome />
+        {/* <Navbar /> */}
+        <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><About /></ScrollAnimation>
+        <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Experience /></ScrollAnimation>
+        <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Languages /></ScrollAnimation>
+        <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Portfolio /></ScrollAnimation>
+        <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Certifications /></ScrollAnimation>
+        <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Contact /></ScrollAnimation>
+        <Footer />
+
+        {/* <Routes>
+          <Route path='MiniTennis' element={<MiniTennis/>} />
+        </Routes> */}
+
+      </>
+    // </Router>
+
+
   )
 }
 
