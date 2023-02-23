@@ -28,41 +28,41 @@ const iconSize = 30;
 
 
 export const data = [
-    // {
-    //     id: 13,
-    //     image: PongPhoto,
-    //     title: 'Pong Clone',
-    //     icons: <div className='icon_under'>
-    //         <SiUnity size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-    //         <SiCsharp size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-    //         <SiWindows size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-    //         <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-    //         <SiWebgl size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-    //     </div>,
-    //     github: 'https://github.com/namanbajaj/Mini-Tennis',
-    //     text: <span>
-    //         Pong clone made in Unity <br />
-    //         Supports single player and multiplayer <br />
-    //         Supports keyboard, mouse, and touchscreen controls <br />
-    //         Supports Android and Windows <br />
-    //     </span>,
-    //     multilinks: [
-    //         {
-    //             value: 'https://github.com/namanbajaj/Mini-Tennis/releases',
-    //             label: 'Windows'
-    //         },
-    //         {
-    //             value: 'https://play.google.com/store/apps/details?id=com.NBaj.Pong',
-    //             label: 'Android'
-    //         },
-    //         {
-    //             value: <Link to='/MiniTennis'></Link>,
-    //             label: 'WebGL'
-    //         }
-    //     ],
-    //     isOldProject: false,
-    //     type: 'game'
-    // },
+    {
+        id: 13,
+        image: PongPhoto,
+        title: 'Pong Clone',
+        icons: <div className='icon_under'>
+            <SiUnity size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiCsharp size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiWindows size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiWebgl size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        </div>,
+        github: 'https://github.com/namanbajaj/Mini-Tennis',
+        text: <span>
+            Pong clone made in Unity <br />
+            Supports single player and multiplayer <br />
+            Supports keyboard, mouse, and touchscreen controls <br />
+            Supports Android and Windows <br />
+        </span>,
+        multilinks: [
+            {
+                value: 'https://github.com/namanbajaj/Mini-Tennis/releases',
+                label: 'Windows'
+            },
+            {
+                value: 'https://play.google.com/store/apps/details?id=com.NBaj.Pong',
+                label: 'Android'
+            },
+            // {
+            //     value: <Link to='/MiniTennis'></Link>,
+            //     label: 'WebGL'
+            // }
+        ],
+        isOldProject: false,
+        type: 'game'
+    },
     {
         id: 12,
         image: PrologInterpreter,
