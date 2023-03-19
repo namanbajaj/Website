@@ -106,14 +106,14 @@ const AboutCards = () => {
                     </li>
 
                     <li className='main_list_item'>
-                        <h2> Working on and maintaining currently published projects and apps</h2>
+                        <h2> Improving and maintaining currently published projects and apps</h2>
                         <ul className='working_on_list'>
                             <li>
-                                <h2> This Website (last updated 1/28/2023)</h2>
+                                <h2> This Website (last updated 3/19/2023)</h2>
                             </li>
 
                             <li>
-                                <h2> Android Apps (last updated can be seen in app description in Play Store) </h2>
+                                <h2> Android Apps </h2>
                             </li> 
                         </ul>
                     </li>

@@ -125,7 +125,7 @@ const New = () => {
                   }
 
                   {multilinks != null ? (
-                    <select className='btn links' id='links-dropdown' onChange={(e) => handleChange(e.target.value)}>
+                    <select className='btn site-links' id='links-dropdown' onChange={(e) => handleChange(e.target.value)}>
                       <option>Links</option>
                       {multilinks.map((link) => (
                         <option value={link.value}>{link.label}</option>
