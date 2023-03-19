@@ -37,7 +37,6 @@ export const data = [
             <SiCsharp size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <SiWindows size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-            <SiWebgl size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
         </div>,
         github: 'https://github.com/namanbajaj/Mini-Tennis',
         text: <span>
@@ -55,10 +54,6 @@ export const data = [
                 value: 'https://play.google.com/store/apps/details?id=com.NBaj.Pong',
                 label: 'Android'
             },
-            // {
-            //     value: <Link to='/MiniTennis'></Link>,
-            //     label: 'WebGL'
-            // }
         ],
         isOldProject: false,
         type: 'game'

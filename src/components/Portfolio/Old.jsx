@@ -13,9 +13,14 @@ const Old = () => {
     <Collapsible trigger="Older Projects >" triggerWhenOpen="Older Projects v" className='older_projects_intro' openedClassName='older_projects_intro'>
       <div className="portfolio__container_old">
         {
-          data.map(({ id, image, icons, title, github, text, demo, link, isOldProject }) => {
+          data.map(({ id, image, icons, title, github, text, demo, link, isOldProject, multilinks }) => {
             if (isOldProject) {
               const demobutton = <a className="btn old_button" id='demo_button'> Video Demo </a>;
+
+              // for dropdown
+              const handleChange = (option) => {
+                window.open(option.value, '_blank');
+              };
 
               return (
                 <article key={id} className='portfolio__item'>
@@ -121,6 +126,16 @@ const Old = () => {
                         Link
                       </a>
                     ) : <p></p>
+                    }
+
+                    {multilinks != null ? (
+                      <select className='btn' onChange={(e) => handleChange(e.target.value)}>
+                        <option>Links</option>
+                        {multilinks.map((link) => (
+                          <option value={link.value}>{link.label}</option>
+                        ))}
+                      </select>
+                    ) : null
                     }
                   </div>
                 </article>

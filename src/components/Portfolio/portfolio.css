@@ -68,6 +68,11 @@
     color: white;
 }
 
+.links {
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
 /* For Pop Up Window */
 .pop_up_window {
     background: var(--color-bg-variant);

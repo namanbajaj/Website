@@ -79,7 +79,7 @@ section > h2 {
     font-size: 20px;
 }
 
-a {
+a, select {
     color: var(--color-bg-primary);
     transition: var(--transition);
 }

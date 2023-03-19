@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 
 import Popup from 'reactjs-popup'
 import ReactPlayer from 'react-player'
-import Dropdown from 'react-dropdown'
-
 
 import { data } from './data'
 
@@ -11,13 +9,14 @@ const New = () => {
   return (
     <div className="portfolio__container">
       {
-        data.map(({ id, image, icons, title, github, text, demo, link, isOldProject, dateOfCompletion, multilinks }) => {
+        data.map(({ id, image, icons, title, github, text, demo, link, isOldProject, multilinks }) => {
           if (!isOldProject) {
             const demobutton = <a className="btn" id='demo_button'> Video Demo </a>;
 
             // for dropdown
             const handleChange = (option) => {
-              window.open(option.value, '_blank');
+              window.open(option, '_blank');
+              document.getElementById("links-dropdown").value = "Links";
             };
 
             return (
@@ -126,12 +125,12 @@ const New = () => {
                   }
 
                   {multilinks != null ? (
-                    <Dropdown
-                      className='btn'
-                      options={multilinks}
-                      value={"Links"}
-                      onChange={handleChange}
-                    />
+                    <select className='btn links' id='links-dropdown' onChange={(e) => handleChange(e.target.value)}>
+                      <option>Links</option>
+                      {multilinks.map((link) => (
+                        <option value={link.value}>{link.label}</option>
+                      ))}
+                    </select>
                   ) : null
                   }
                 </div>
