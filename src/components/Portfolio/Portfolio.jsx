@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <section id='portfolio'>
       <div className='portfolio_intro_text'>
-        <h1>My Recent Work (Sorted by Recently Updated)</h1>
+        <h1>My Notable Work</h1>
       </div>
 
       <New/>

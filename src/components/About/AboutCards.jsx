@@ -83,7 +83,7 @@ const AboutCards = () => {
                         <ul className='working_on_list'>
                             <li>
                                 <h2>
-                                    Google Play Store Link: <a href='https://play.google.com/store/apps/developer?id=NBaj'>NBaj</a>
+                                    Google Play Store Link: <a href='https://play.google.com/store/apps/dev?id=5692626467682406083'>NBaj</a>
                                 </h2>
                             </li>
                             <li>
@@ -94,11 +94,7 @@ const AboutCards = () => {
                         </ul>
                     </li>
                     <li className='main_list_item'>
-                        <h2>Learning Swift for IOS App Development </h2>
-                    </li>
-
-                    <li className='main_list_item'>
-                        <h2> Working on projects for Internet Technology (class) </h2>
+                        <h2>Learning Full Stack development </h2>
                     </li>
 
                     <li className='main_list_item'>
@@ -109,7 +105,7 @@ const AboutCards = () => {
                         <h2> Improving and maintaining currently published projects and apps</h2>
                         <ul className='working_on_list'>
                             <li>
-                                <h2> This Website (last updated 3/19/2023)</h2>
+                                <h2> This Website (last updated 5/11/2023)</h2>
                             </li>
 
                             <li>

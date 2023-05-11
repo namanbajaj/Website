@@ -1,7 +1,7 @@
 import React from 'react'
 import './welcome.css'
 import Links from './Links'
-import ME from '../../assets/me.jpeg'
+import ME from '../../assets/me.jpg'
 import Socials from './Socials'
 
 import Particles from "react-tsparticles";

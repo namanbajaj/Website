@@ -9,8 +9,8 @@ const New = () => {
   return (
     <div className="portfolio__container">
       {
-        data.map(({ id, image, icons, title, github, text, demo, link, isOldProject, multilinks }) => {
-          if (!isOldProject) {
+        data.map(({ id, image, icons, title, github, text, demo, link, isNotable, multilinks }) => {
+          if (isNotable) {
             const demobutton = <a className="btn" id='demo_button'> Video Demo </a>;
 
             // for dropdown

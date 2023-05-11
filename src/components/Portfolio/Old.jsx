@@ -10,11 +10,10 @@ import { data } from './data'
 
 const Old = () => {
   return (
-    <Collapsible trigger="Older Projects >" triggerWhenOpen="Older Projects v" className='older_projects_intro' openedClassName='older_projects_intro'>
+    <Collapsible trigger="All Projects >" triggerWhenOpen="All Projects v" className='older_projects_intro' openedClassName='older_projects_intro'>
       <div className="portfolio__container_old">
         {
-          data.map(({ id, image, icons, title, github, text, demo, link, isOldProject, multilinks }) => {
-            if (isOldProject) {
+          data.map(({ id, image, icons, title, github, text, demo, link, multilinks }) => {
               const demobutton = <a className="btn old_button" id='demo_button'> Video Demo </a>;
 
               // for dropdown
@@ -140,7 +139,6 @@ const Old = () => {
                   </div>
                 </article>
               )
-            }
           })
         }
       </div>

@@ -20,6 +20,7 @@ import CTerminal from '../../assets/CTerminal.png'
 import QDPhoto from '../../assets/QDPhoto.png'
 import PrologInterpreter from '../../assets/PrologInterpreter.png'
 import PongPhoto from '../../assets/Pong.png'
+import DiagPhoto from '../../assets/diagrunnerimage.png'
 
 import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity, SiWebgl } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
@@ -28,6 +29,23 @@ const iconSize = 30;
 
 
 export const data = [
+    {
+        id: 14,
+        image: DiagPhoto,
+        title: 'Infinite Running Game',
+        icons: <div className='icon_under'>
+            <SiUnity size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiCsharp size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        </div>,
+        text: <span>
+            Infinite running game made in Unity <br />
+        </span>,
+        link: 'https://play.google.com/store/apps/details?id=com.NBaj.DiagonalRunner',
+        isNotable: true,
+        type: 'game'
+
+    },
     {
         id: 13,
         image: PongPhoto,
@@ -55,7 +73,7 @@ export const data = [
                 label: 'Android'
             },
         ],
-        isOldProject: false,
+        isNotable: false,
         type: 'game'
     },
     {
@@ -72,7 +90,7 @@ export const data = [
             Supports basic Prolog syntax such as facts, rules, queries, etc <br />
             Supports unification, backtracking, and negation <br />
         </span>,
-        isOldProject: false,
+        isNotable: true,
         type: 'other'
     },
     {
@@ -92,7 +110,7 @@ export const data = [
             Implements a custom view that allows users to draw on the canvas <br />
             Allows users to set background image to trace
         </span>,
-        isOldProject: false,
+        isNotable: true,
         link: 'https://play.google.com/store/apps/details?id=com.nbaj.drawingapp',
         type: 'app'
     },
@@ -110,7 +128,7 @@ export const data = [
             Supports moving jobs between background and foreground <br />
             Supports suspending and resuming jobs <br />
         </span>,
-        isOldProject: false,
+        isNotable: true,
         type: 'other'
     },
     {
@@ -131,7 +149,7 @@ export const data = [
                 Uses Open Exchange Rates API to retrieve latest exchange rates for over 170 currencies and calculates based on user entered value <br />
                 Implements multithreading and async/await functionality for exchange rate retrieval <br />
             </span>,
-        isOldProject: false,
+        isNotable: false,
         link: "https://github.com/namanbajaj/CurrencyConverter/releases",
         type: 'app'
     },
@@ -157,7 +175,7 @@ export const data = [
                 Implements multi-threading using Kotlin concurrency for database loading <br />
             </span>,
         link: 'https://play.google.com/store/apps/details?id=com.namanbajaj.quizapp',
-        isOldProject: false,
+        isNotable: false,
         type: 'app'
     },
     {
@@ -183,7 +201,7 @@ export const data = [
                 Students can see courses that they are taking and their grades in those courses, in addition to registering for new courses if prerequisites are met. <br />
             </span>,
         demo: UniversityDemo,
-        isOldProject: false,
+        isNotable: true,
         type: 'app'
     },
     {
@@ -207,7 +225,7 @@ export const data = [
                 Works well with variety of screen sizes and orientations. <br />
             </span>,
         link: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame',
-        isOldProject: true,
+        isNotable: false,
         type: 'app'
     },
     {
@@ -222,7 +240,7 @@ export const data = [
         </div>,
         github: 'https://github.com/namanbajaj/Website',
         text: 'This website was written using JavaScript, ReactJS, and CSS',
-        isOldProject: false,
+        isNotable: true,
         type: 'web'
     },
     {
@@ -247,7 +265,7 @@ export const data = [
                 Larger photo display has slideshow functionality.
             </span>,
         demo: PhotosAndroidDemo,
-        isOldProject: true,
+        isNotable: false,
         type: 'app'
     },
     {
@@ -272,7 +290,7 @@ export const data = [
                 Users can search by tags and dates.
             </span>,
         demo: PhotosDesktopDemo,
-        isOldProject: true,
+        isNotable: false,
         type: 'app'
     },
     {
@@ -290,7 +308,7 @@ export const data = [
                 Supports advanced chess moves such as En Passant and castling.
             </span>,
         demo: ChessDemo,
-        isOldProject: true,
+        isNotable: false,
         type: 'app'
     },
     {
@@ -309,7 +327,7 @@ export const data = [
                 Allows users to manage songs.
             </span>,
         demo: SongLibraryDemo,
-        isOldProject: true,
+        isNotable: false,
         type: 'app'
     }
 ]
