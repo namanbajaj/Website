@@ -70,11 +70,23 @@
 
 .r_list {
     margin-left: 10px;
+    margin-top: 5px;
 }
 
 .pop_up_window {
     max-width: 25vw;
     justify-self: center;
+}
+
+.session_name {
+    font-size: 1.2rem;
+}
+
+.line{
+    content: " ";
+    position: absolute;
+    border-bottom: 1px solid white;
+    width: 50%;
 }
 
 /* Mobile Devices */

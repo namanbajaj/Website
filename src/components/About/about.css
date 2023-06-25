@@ -25,56 +25,6 @@
     margin-bottom: 1rem;
 }
 
-/* Languages and Technologies */
-.languages {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 5%;
-    margin-right: 5%;
-    gap: 3rem;
-}
-
-.languages>div {
-    background: var(--color-bg-variant);
-    padding: 1rem 3rem;
-    border-radius: 3rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-}
-
-.languages>div:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
-}
-
-.languages>div h2 {
-    text-align: center;
-    padding: 0.1rem;
-    color: var(--color-bg-primary);
-    font-size: 2rem;
-}
-
-.languages h3 {
-    background: transparent;
-    padding: 0.1rem;
-    display: flex;
-    color: var(--color-bg-primary);
-    font-size: 1.2rem;
-}
-
-.languages h3:hover {
-    color: white;
-}
-
-.content {
-    margin-top: 1.5rem;
-    /* align-items: center; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* gap: 2rem; */
-    row-gap: 1rem;
-}
-
 /* About Me Cards */
 .cards_overview {
     display: grid;
@@ -85,10 +35,11 @@
     margin-bottom: 5%;
 }
 
-.cards {
+.info_cards {
     margin-bottom: 5%;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .content_cards {
@@ -111,7 +62,7 @@
     text-align: left;
 }
 
-.working_on{
+.working_on {
     border-bottom: 10px solid white;
     margin-bottom: 1rem;
 }
@@ -148,7 +99,7 @@ li {
         grid-template-columns: 1fr;
     }
 
-    .languages > div {
+    .languages>div {
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
@@ -161,15 +112,14 @@ li {
         gap: 2rem;
     }
 
-    .languages > div {
+    .languages>div {
         width: 100%;
-        padding: 2rem 1rem;
+        padding: 0 1rem 20%;
     }
 
     .cards_overview {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        /* margin-bottom: -100%; */
     }
 
     .content_cards {

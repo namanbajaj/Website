@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer'
 import Portfolio from './components/Portfolio/Portfolio'
 import Welcome from './components/Welcome/Welcome'
 import Experience from './components/Experience/Experience'
-import Languages from './components/About/Languages'
+import Languages from './components/Languages/Languages'
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';

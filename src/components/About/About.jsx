@@ -1,7 +1,6 @@
 import React from 'react'
 import './about.css'
 import AboutCards from './AboutCards';
-import Languages from './Languages';
 
 
 const About = () => {

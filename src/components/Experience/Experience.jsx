@@ -10,8 +10,8 @@ const data = [
     id: 3,
     title: 'Prudential',
     subtitle: 'Software Engineering Intern',
-    date: 'Jun 2023 - Aug 2023',
-    description: 'Starting later this summer',
+    date: 'Jun 2023 - Current',
+    description: 'Current position',
     icon: 'prudential',
   },
 
@@ -19,12 +19,25 @@ const data = [
     id: 2,
     title: 'Rutgers University - New Brunswick',
     subtitle: 'Math Grader',
-    date: 'Jan 2023 - May 2023',
-    description: <ul className='r_list'>
-      <li>Graded for 3 classes of 01:640:300 - Introduction to Mathematical Reasoning</li>
-      <li>Graded homework for 50+ students</li>
-      <li>Helped students with their questions</li>
-    </ul>,
+    date: 'Jan 2023 - Current',
+    description:
+      <ul className='r_list'>
+        <div className='session_name'>Summer 2023 Session</div>
+        <div className='line'></div>
+        <ul className='r_list'>
+          <li>Graded for 1 class of 01:640:252 - Elementary Differential Equations</li>
+          <li>Graded homework for 15+ students</li>
+        </ul>
+        <br />
+        <div className='session_name'>Spring 2023 Session</div>
+        <div className='line'></div>
+        <ul className='r_list'>
+          <li>Graded for 3 classes of 01:640:300 - Introduction to Mathematical Reasoning</li>
+          <li>Graded homework for 50+ students</li>
+        </ul>
+      </ul>
+
+    ,
     icon: 'rutgers',
   },
 

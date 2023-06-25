@@ -4,12 +4,14 @@ import { IoIosSchool } from 'react-icons/io'
 import { AiFillCode } from 'react-icons/ai'
 import { CgHomeScreen } from 'react-icons/cg'
 
+import './about.css'
+
 const iconSize = 125;
 
 const AboutCards = () => {
     return (
         <div className='cards_overview'>
-            <div className='languages cards'>
+            <div className='info_cards languages'>
                 <div className='card'>
                     <h2>Rutgers University - New Brunswick</h2>
                     <div className='content_cards'>
@@ -18,7 +20,7 @@ const AboutCards = () => {
                         </h3>
 
                         <h5 className='text-light center_text'>
-                            GPA: 3.97/4.00
+                            GPA: 3.93/4.00
                             <br />
                             Major: BS in Computer Science & Math
                             <br />
@@ -28,14 +30,14 @@ const AboutCards = () => {
                 </div>
 
                 <div className='card'>
-                    <h2>Aspiring Software Developer</h2>
+                    <h2>Software Developer</h2>
                     <div className='content_cards'>
                         <h3 className='logo center_text'>
                             <AiFillCode size={iconSize} />
                         </h3>
 
                         <h5 className='text-light center_text'>
-                            Upcoming Prudential Software Engineer Intern
+                            Prudential Frontend Software Engineer Intern
                             <br />
                             Always working on hobby projects
                         </h5>
@@ -54,7 +56,7 @@ const AboutCards = () => {
                             <br />
                             Mobile, Web, and Desktop applications
                             <br />
-                            For full list of technologies and projects, see below
+                            For a full list of technologies and projects, see below
                         </h5>
                     </div>
                 </div>
@@ -75,9 +77,14 @@ const AboutCards = () => {
                 <br />
 
                 <h1 className='working_on'>
-                    Currently Working On:
+                    Current Development:
                 </h1>
                 <ul className='working_on_list'>
+                    <li className='main_list_item'>
+                        <h2>
+                            Working at Prudential as a Frontend Software Engineer Intern
+                        </h2>
+                    </li>
                     <li className='main_list_item'>
                         <h2>Developing Android Apps using Kotlin </h2>
                         <ul className='working_on_list'>
@@ -94,23 +101,12 @@ const AboutCards = () => {
                         </ul>
                     </li>
                     <li className='main_list_item'>
-                        <h2>Learning Full Stack development </h2>
-                    </li>
-
-                    <li className='main_list_item'>
                         <h2>Developing mobile games using the Unity engine </h2>
                     </li>
 
                     <li className='main_list_item'>
                         <h2> Improving and maintaining currently published projects and apps</h2>
                         <ul className='working_on_list'>
-                            <li>
-                                <h2> This Website (last updated 5/11/2023)</h2>
-                            </li>
-
-                            <li>
-                                <h2> Android Apps </h2>
-                            </li> 
                         </ul>
                     </li>
                 </ul>
