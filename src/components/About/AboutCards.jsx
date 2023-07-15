@@ -39,7 +39,7 @@ const AboutCards = () => {
                         <h5 className='text-light center_text'>
                             Prudential Frontend Software Engineer Intern
                             <br />
-                            Always working on hobby projects
+                            Working on hobby projects
                         </h5>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const AboutCards = () => {
                         </h3>
 
                         <h5 className='text-light center_text'>
-                            Frontend and Backend projects
+                            Frontend, Backend, & Full Stack projects
                             <br />
                             Mobile, Web, and Desktop applications
                             <br />
@@ -102,6 +102,10 @@ const AboutCards = () => {
                     </li>
                     <li className='main_list_item'>
                         <h2>Developing mobile games using the Unity engine </h2>
+                    </li>
+
+                    <li className='main_list_item'>
+                        <h2>Learning full stack web development </h2>
                     </li>
 
                     <li className='main_list_item'>

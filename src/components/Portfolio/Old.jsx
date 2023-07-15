@@ -7,21 +7,20 @@ import 'animate.css';
 import Collapsible from 'react-collapsible';
 
 import { data } from './data'
+import { RiVideoLine } from 'react-icons/ri';
+import { SiGithub } from 'react-icons/si';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
+
+const iconSize = 25;
 
 const Old = () => {
   return (
     <Collapsible trigger="Other Projects >" triggerWhenOpen="All Projects v" className='older_projects_intro' openedClassName='older_projects_intro'>
       <div className="portfolio__container_old">
         {
-          data.map(({ id, image, icons, title, github, text, demo, link, multilinks, isNotable }) => {
+          data.map(({ id, image, icons, title, github, text, demo, links, isNotable }) => {
             if (!isNotable) {
-              const demobutton = <a className="btn old_button" id='demo_button'> Video Demo </a>;
-
-              // for dropdown
-              const handleChange = (option) => {
-                window.open(option.value, '_blank');
-              };
-
+              const demobutton = <a className="btn old_button portfolio_btns" id='demo_button'> <RiVideoLine size={iconSize} /> </a>;
               return (
                 <article key={id} className='portfolio__item'>
                   <div className="portfolio__item-image">
@@ -57,14 +56,8 @@ const Old = () => {
                     </h3>
                   </div>
                   <div className="portfolio__item-cta">
-                    {github != null ?
-                      (
-                        <a href={github} className='btn old_button' target='_blank'>Github</a>
-                      ) : <p></p>
-                    }
-
                     <Popup
-                      trigger={<a className="btn old_button"> More Info </a>}
+                      trigger={<a className="btn old_button portfolio_btns"> <AiOutlineInfoCircle size={iconSize} /> </a>}
                       modal
                     >
                       {close => (
@@ -86,6 +79,14 @@ const Old = () => {
                         </div>
                       )}
                     </Popup>
+
+                    {github != null ?
+                      (
+                        <a href={github} className='btn old_button portfolio_btns' target='_blank'><SiGithub size={iconSize} /></a>
+                      ) : <p></p>
+                    }
+
+
                     {demo != null ? (
                       < Popup
                         trigger={demobutton}
@@ -120,21 +121,13 @@ const Old = () => {
                     ) : null
                     }
 
-                    {link != null ? (
-                      <a
-                        href={link} className='btn old_button' target='_blank'>
-                        Link
-                      </a>
-                    ) : <p></p>
-                    }
-
-                    {multilinks != null ? (
-                      <select className='btn' onChange={(e) => handleChange(e.target.value)}>
-                        <option>Links</option>
-                        {multilinks.map((link) => (
-                          <option value={link.value}>{link.label}</option>
-                        ))}
-                      </select>
+                    {links != null ? (
+                      links.map((link) => (
+                        <a
+                          href={link.value} className='btn old_button portfolio_btns' target='_blank'>
+                          {link.icon}
+                        </a>
+                      ))
                     ) : null
                     }
                   </div>

@@ -250,4 +250,8 @@
         height: 100%;
         overflow: hidden;
     }
+
+    .portfolio_btns {
+        margin-right: 5px;
+    }
 }

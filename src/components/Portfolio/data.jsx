@@ -2,31 +2,30 @@ import React from 'react'
 
 import Icons from '../Icons/Icons.jsx';
 
-import ReactLogo from '../../assets/websiteportfolio.png'
-import PhotosAndroidPhoto from '../../assets/PAPhoto.png'
-import PhotosAndroidDemo from '../../assets/PADemo.mp4'
-import PhotosDesktopPhoto from '../../assets/PDPhoto.png'
-import PhotosDesktopDemo from '../../assets/PDDEMO.mp4'
-import ChessPhoto from '../../assets/CPhoto.png'
-import ChessDemo from '../../assets/CDemo.mp4'
-import SongLibraryPhoto from '../../assets/SLPhoto.png'
-import SongLibraryDemo from '../../assets/SLDemo.mp4'
-import ColorGamePhoto from '../../assets/CGPhoto.png'
-import UniversityPhoto from '../../assets/UniversityPhoto.png'
-import UniversityDemo from '../../assets/UniversityDemo.mp4'
-import QuizGamePhoto from '../../assets/QGPhoto.png'
-import CurrencyConverterPhoto from '../../assets/CCPhoto.png'
-import CTerminal from '../../assets/CTerminal.png'
-import QDPhoto from '../../assets/QDPhoto.png'
-import PrologInterpreter from '../../assets/PrologInterpreter.png'
-import PongPhoto from '../../assets/Pong.png'
-import DiagPhoto from '../../assets/diagrunnerimage.png'
+import ReactLogo from '../../assets/website_portfolio_photo.png'
+import PhotosAndroidPhoto from '../../assets/android_photos_app_photo.png'
+import PhotosAndroidDemo from '../../assets/android_photos_app_demo.mp4'
+import PhotosDesktopPhoto from '../../assets/desktop_photos_app_photo.png'
+import PhotosDesktopDemo from '../../assets/desktop_photos_app_demo.mp4'
+import ChessPhoto from '../../assets/chess_photo.png'
+import ChessDemo from '../../assets/chess_demo.mp4'
+import SongLibraryPhoto from '../../assets/song_library_photo.png'
+import SongLibraryDemo from '../../assets/song_library_demo.mp4'
+import ColorGamePhoto from '../../assets/guess_the_color_photo.png'
+import UniversityPhoto from '../../assets/university_management_photo.png'
+import UniversityDemo from '../../assets/university_management_demo.mp4'
+import QuizGamePhoto from '../../assets/quizbiz_photo.png'
+import CurrencyConverterPhoto from '../../assets/currency_converter_photo.png'
+import CTerminalPhoto from '../../assets/c_terminal_photo.png'
+import QuickdrawPhoto from '../../assets/quickdraw_photo.png'
+import PrologInterpreter from '../../assets/prolog_interpriter_photo.png'
+import PongPhoto from '../../assets/pong_photo.png'
+import DiagPhoto from '../../assets/diagonal_runner_photo.png'
 
-import { SiCplusplus, SiCsharp, SiC, SiR, SiKotlin, SiIntel, SiAdobeillustrator, SiAdobephotoshop, SiUnrealengine, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiVisualstudiocode, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity, SiWebgl } from 'react-icons/si'
+import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
 
-const iconSize = 30;
-
+const iconSize = 25;
 
 export const data = [
     {
@@ -41,7 +40,12 @@ export const data = [
         text: <span>
             Infinite running game made in Unity <br />
         </span>,
-        link: 'https://play.google.com/store/apps/details?id=com.NBaj.DiagonalRunner',
+        links: [
+            {
+                icon: <SiAndroid size={iconSize} />,
+                value: 'https://play.google.com/store/apps/details?id=com.NBaj.DiagonalRunner',
+            }
+        ],
         isNotable: true,
         type: 'game'
 
@@ -63,14 +67,14 @@ export const data = [
             Supports keyboard, mouse, and touchscreen controls <br />
             Supports Android and Windows <br />
         </span>,
-        multilinks: [
+        links: [
             {
+                icon: <SiWindows size={iconSize} />,
                 value: 'https://github.com/namanbajaj/Mini-Tennis/releases',
-                label: 'Windows'
             },
             {
+                icon: <SiAndroid size={iconSize} />,
                 value: 'https://play.google.com/store/apps/details?id=com.NBaj.Pong',
-                label: 'Android'
             },
         ],
         isNotable: false,
@@ -95,7 +99,7 @@ export const data = [
     },
     {
         id: 11,
-        image: QDPhoto,
+        image: QuickdrawPhoto,
         title: 'QuickDraw',
         icons: <div className='icon_under'>
             <SiKotlin size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
@@ -111,12 +115,17 @@ export const data = [
             Allows users to set background image to trace
         </span>,
         isNotable: true,
-        link: 'https://play.google.com/store/apps/details?id=com.nbaj.drawingapp',
+        links: [
+            {
+                icon: <SiAndroid size={iconSize} />,
+                value: 'https://play.google.com/store/apps/details?id=com.nbaj.drawingapp',
+            }
+        ],
         type: 'app'
     },
     {
         id: 10,
-        image: CTerminal,
+        image: CTerminalPhoto,
         title: 'Custom Shell',
         icons: <div className='icon_under'>
             <SiC size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
@@ -150,7 +159,12 @@ export const data = [
                 Implements multithreading and async/await functionality for exchange rate retrieval <br />
             </span>,
         isNotable: false,
-        link: "https://github.com/namanbajaj/CurrencyConverter/releases",
+        links: [
+            {
+                icon: <SiWindows size={iconSize} />,
+                value: 'https://github.com/namanbajaj/CurrencyConverter/releases'
+            }
+        ],
         type: 'app'
     },
     {
@@ -174,7 +188,12 @@ export const data = [
                 Allows users to create, edit, delete, and do quizzes <br />
                 Implements multi-threading using Kotlin concurrency for database loading <br />
             </span>,
-        link: 'https://play.google.com/store/apps/details?id=com.namanbajaj.quizapp',
+        links: [
+            {
+                icon: <SiAndroid size={iconSize} />,
+                value: 'https://play.google.com/store/apps/details?id=com.namanbajaj.quizapp',
+            }
+        ],
         isNotable: false,
         type: 'app'
     },
@@ -224,7 +243,12 @@ export const data = [
                 Responsive according to whether user has dark mode turned on. <br />
                 Works well with variety of screen sizes and orientations. <br />
             </span>,
-        link: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame',
+        links: [
+            {
+                icon: <SiAndroid size={iconSize} />,
+                value: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame',
+            }
+        ],
         isNotable: false,
         type: 'app'
     },

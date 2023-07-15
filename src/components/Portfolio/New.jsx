@@ -5,20 +5,19 @@ import ReactPlayer from 'react-player'
 
 import { data } from './data'
 
+import { SiGithub } from 'react-icons/si'
+import { AiOutlineInfoCircle } from 'react-icons/ai'
+import { RiVideoLine } from 'react-icons/ri'
+
+const iconSize = 25;
+
 const New = () => {
   return (
     <div className="portfolio__container">
       {
-        data.map(({ id, image, icons, title, github, text, demo, link, isNotable, multilinks }) => {
+        data.map(({ id, image, icons, title, github, text, demo, links, isNotable }) => {
           if (isNotable) {
-            const demobutton = <a className="btn" id='demo_button'> Video Demo </a>;
-
-            // for dropdown
-            const handleChange = (option) => {
-              window.open(option, '_blank');
-              document.getElementById("links-dropdown").value = "Links";
-            };
-
+            const demobutton = <a className="btn portfolio_btns" id='demo_button'> <RiVideoLine size={iconSize} /> </a>;
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
@@ -54,14 +53,8 @@ const New = () => {
                   </h3>
                 </div>
                 <div className="portfolio__item-cta">
-                  {github != null ?
-                    (
-                      <a href={github} className='btn' target='_blank'>Github</a>
-                    ) : null
-                  }
-
                   <Popup
-                    trigger={<a className="btn"> More Info </a>}
+                    trigger={<a className="btn portfolio_btns"> <AiOutlineInfoCircle size={iconSize} /> </a>}
                     modal
                   >
                     {close => (
@@ -83,6 +76,14 @@ const New = () => {
                       </div>
                     )}
                   </Popup>
+
+                  {github != null ?
+                    (
+                      <a href={github} className='btn portfolio_btns' target='_blank'><SiGithub size={iconSize} /></a>
+                    ) : null
+                  }
+
+
                   {demo != null ? (
                     < Popup
                       trigger={demobutton}
@@ -116,21 +117,13 @@ const New = () => {
                     </Popup>
                   ) : null
                   }
-
-                  {link != null ? (
-                    <a href={link} className='btn' target='_blank'>
-                      Link
-                    </a>
-                  ) : null
-                  }
-
-                  {multilinks != null ? (
-                    <select className='btn site-links' id='links-dropdown' onChange={(e) => handleChange(e.target.value)}>
-                      <option>Links</option>
-                      {multilinks.map((link) => (
-                        <option value={link.value}>{link.label}</option>
-                      ))}
-                    </select>
+                  {links != null ? (
+                    links.map((link) => (
+                      <a
+                        href={link.value} className='btn old_button' target='_blank'>
+                        {link.icon}
+                      </a>
+                    ))
                   ) : null
                   }
                 </div>
