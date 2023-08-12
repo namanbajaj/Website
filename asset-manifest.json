@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Website/static/css/main.9d2d4627.css",
-    "main.js": "/Website/static/js/main.84cb0b56.js",
+    "main.js": "/Website/static/js/main.ad100d8d.js",
     "static/js/937.0ceaffc7.chunk.js": "/Website/static/js/937.0ceaffc7.chunk.js",
     "static/media/university_management_demo.mp4": "/Website/static/media/university_management_demo.e4fff1c6a52df1d3f9b8.mp4",
     "static/media/android_photos_app_demo.mp4": "/Website/static/media/android_photos_app_demo.2e621c68b74677c29bb9.mp4",
@@ -17,7 +17,7 @@
     "static/media/Angular_Course_Certificate.jpg": "/Website/static/media/Angular_Course_Certificate.550a04bb0cbfe8c62e1b.jpg",
     "static/media/desktop_photos_app_photo.png": "/Website/static/media/desktop_photos_app_photo.b3fa55617b14a53106aa.png",
     "static/media/university_management_photo.png": "/Website/static/media/university_management_photo.171603d4b4805f3cc300.png",
-    "static/media/Resume___Naman_Bajaj.pdf": "/Website/static/media/Resume___Naman_Bajaj.29ceea86b37112177b37.pdf",
+    "static/media/Resume___Naman_Bajaj.pdf": "/Website/static/media/Resume___Naman_Bajaj.640d7c02570329d79656.pdf",
     "static/media/website_portfolio_photo.png": "/Website/static/media/website_portfolio_photo.f11e033b6cbd9bf7b193.png",
     "static/media/quickdraw_photo.png": "/Website/static/media/quickdraw_photo.a90d89428be0b78c28f5.png",
     "static/media/currency_converter_photo.png": "/Website/static/media/currency_converter_photo.287c8fa7b7e18156153a.png",
@@ -26,11 +26,11 @@
     "static/media/song_library_photo.png": "/Website/static/media/song_library_photo.0956fefd20d0413a58ab.png",
     "index.html": "/Website/index.html",
     "main.9d2d4627.css.map": "/Website/static/css/main.9d2d4627.css.map",
-    "main.84cb0b56.js.map": "/Website/static/js/main.84cb0b56.js.map",
+    "main.ad100d8d.js.map": "/Website/static/js/main.ad100d8d.js.map",
     "937.0ceaffc7.chunk.js.map": "/Website/static/js/937.0ceaffc7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d2d4627.css",
-    "static/js/main.84cb0b56.js"
+    "static/js/main.ad100d8d.js"
   ]
 }
