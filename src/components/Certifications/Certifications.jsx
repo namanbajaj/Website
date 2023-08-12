@@ -1,7 +1,7 @@
 import React from 'react'
 import './certifications.css'
 
-import { SiMicrosoftexcel, SiUdemy } from 'react-icons/si'
+import { SiAngular, SiC, SiCplusplus, SiMicrosoftexcel, SiPython, SiUdemy } from 'react-icons/si'
 
 import Angular_Course_Certificate from '../../assets/Angular_Course_Certificate.jpg'
 
@@ -11,7 +11,7 @@ const data = [
   {
     id: 5,
     title: 'Angular Essentials (Angular 2+ with TypeScript)',
-    company: <SiUdemy size={iconSize} />,
+    company: <SiAngular size={iconSize} />,
     date: '07/2023',
     link: Angular_Course_Certificate
   },
@@ -25,21 +25,21 @@ const data = [
   {
     id: 3,
     title: 'Beginning C++ Programming - From Beginner to Beyond',
-    company: <SiUdemy size={iconSize} />,
+    company: <SiCplusplus size={iconSize} />,
     date: '07/2022',
     link: 'https://www.udemy.com/certificate/UC-58727c93-ff9a-4c7c-8820-5e8f2de11a5b/'
   },
   {
     id: 2,
     title: 'C Programming For Beginners - Master the C Language',
-    company: <SiUdemy size={iconSize} />,
+    company: <SiC size={iconSize} />,
     date: '09/2021',
     link: 'https://www.udemy.com/certificate/UC-97fc354e-5d9b-42d8-bfd1-c77e5ca2d017/'
   },
   {
     id: 1,
     title: 'Learn Python Programming Masterclass',
-    company: <SiUdemy size={iconSize} />,
+    company: <SiPython size={iconSize} />,
     date: '08/2020',
     link: 'https://www.udemy.com/certificate/UC-2e0cfbb5-f10d-4beb-9a01-3577874223f4/'
   },

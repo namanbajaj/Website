@@ -38,7 +38,7 @@ export const data = [
             <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
         </div>,
         text: <span>
-            Infinite running game made in Unity <br />
+            - Infinite running game made in Unity <br />
         </span>,
         links: [
             {
@@ -62,10 +62,10 @@ export const data = [
         </div>,
         github: 'https://github.com/namanbajaj/Mini-Tennis',
         text: <span>
-            Pong clone made in Unity <br />
-            Supports single player and multiplayer <br />
-            Supports keyboard, mouse, and touchscreen controls <br />
-            Supports Android and Windows <br />
+            - Pong clone made in Unity <br />
+            - Supports single player and multiplayer <br />
+            - Supports keyboard, mouse, and touchscreen controls <br />
+            - Supports Android and Windows <br />
         </span>,
         links: [
             {
@@ -90,9 +90,9 @@ export const data = [
         </div>,
         github: 'https://github.com/namanbajaj/CS314/tree/main/Final',
         text: <span>
-            Prolog interpreter written in Python <br />
-            Supports basic Prolog syntax such as facts, rules, queries, etc <br />
-            Supports unification, backtracking, and negation <br />
+            - Prolog interpreter written in Python <br />
+            - Supports basic Prolog syntax such as facts, rules, queries, etc <br />
+            - Supports unification, backtracking, and negation <br />
         </span>,
         isNotable: true,
         type: 'other'
@@ -110,9 +110,9 @@ export const data = [
         </div>,
         github: 'https://github.com/namanbajaj/DrawingApp',
         text: <span>
-            Android application that allows users to draw on a canvas and save their drawings <br />
-            Implements a custom view that allows users to draw on the canvas <br />
-            Allows users to set background image to trace
+            - Android application that allows users to draw on a canvas and save their drawings <br />
+            - Implements a custom view that allows users to draw on the canvas <br />
+            - Allows users to set background image to trace
         </span>,
         isNotable: true,
         links: [
@@ -132,10 +132,10 @@ export const data = [
         </div>,
         github: 'https://github.com/namanbajaj/CS214/tree/main/hw3',
         text: <span>
-            Custom shell written in C for Linux. <br />
-            Built in commands such as bg, cd, jobs, etc <br />
-            Supports moving jobs between background and foreground <br />
-            Supports suspending and resuming jobs <br />
+            - Custom shell written in C for Linux. <br />
+            - Built in commands such as bg, cd, jobs, etc <br />
+            - Supports moving jobs between background and foreground <br />
+            - Supports suspending and resuming jobs <br />
         </span>,
         isNotable: true,
         type: 'other'
@@ -154,9 +154,9 @@ export const data = [
         github: 'https://github.com/namanbajaj/CurrencyConverter/releases/tag/currency-converter%2Fv1.0',
         text:
             <span>
-                Currency converter application built for Windows environments using WPF frontend and C# backend <br />
-                Uses Open Exchange Rates API to retrieve latest exchange rates for over 170 currencies and calculates based on user entered value <br />
-                Implements multithreading and async/await functionality for exchange rate retrieval <br />
+                - Currency converter application built for Windows environments using WPF frontend and C# backend <br />
+                - Uses Open Exchange Rates API to retrieve latest exchange rates for over 170 currencies and calculates based on user entered value <br />
+                - Implements multithreading and async/await functionality for exchange rate retrieval <br />
             </span>,
         isNotable: false,
         links: [
@@ -183,10 +183,10 @@ export const data = [
         github: 'https://github.com/namanbajaj/Quiz-App',
         text:
             <span>
-                Educational application built for Android systems built in Android Studio <br />
-                Uses Kotlin for front end and SQLite for back end <br />
-                Allows users to create, edit, delete, and do quizzes <br />
-                Implements multi-threading using Kotlin concurrency for database loading <br />
+                - Educational application built for Android systems built in Android Studio <br />
+                - Uses Kotlin for front end and SQLite for back end <br />
+                - Allows users to create, edit, delete, and do quizzes <br />
+                - Implements multi-threading using Kotlin concurrency for database loading <br />
             </span>,
         links: [
             {
@@ -212,12 +212,12 @@ export const data = [
         github: 'https://github.com/namanbajaj/University-Registration-System',
         text:
             <span>
-                University registration system built with HTML and Java frontend and MySQL backend. <br />
-                Java and MySQL interact via JDBC. <br />
-                Used Apache Tomcat for local server and Eclipse as IDE. <br />
-                Allows department administrators to add professors, students, and courses. <br />
-                Professors can view students that are taking their course and assign grades. <br />
-                Students can see courses that they are taking and their grades in those courses, in addition to registering for new courses if prerequisites are met. <br />
+                - University registration system built with HTML and Java frontend and MySQL backend. <br />
+                - Java and MySQL interact via JDBC. <br />
+                - Used Apache Tomcat for local server and Eclipse as IDE. <br />
+                - Allows department administrators to add professors, students, and courses. <br />
+                - Professors can view students that are taking their course and assign grades. <br />
+                - Students can see courses that they are taking and their grades in those courses, in addition to registering for new courses if prerequisites are met. <br />
             </span>,
         demo: UniversityDemo,
         isNotable: true,
@@ -237,11 +237,11 @@ export const data = [
         github: 'https://github.com/namanbajaj/Color-Guessing-Game',
         text:
             <span>
-                Color guessing game built with Kotlin in Android Studio. <br />
-                Has 3 difficulty modes, each with their own high scores. <br />
-                Implements coroutines for timer function and color changing title. <br />
-                Responsive according to whether user has dark mode turned on. <br />
-                Works well with variety of screen sizes and orientations. <br />
+                - Color guessing game built with Kotlin in Android Studio. <br />
+                - Has 3 difficulty modes, each with their own high scores. <br />
+                - Implements coroutines for timer function and color changing title. <br />
+                - Responsive according to whether user has dark mode turned on. <br />
+                - Works well with variety of screen sizes and orientations. <br />
             </span>,
         links: [
             {
@@ -281,12 +281,12 @@ export const data = [
         github: 'https://github.com/namanbajaj/Photos-Library-Android',
         text:
             <span>
-                Photos library manager written for Android devices.<br />
-                Supports accessing filesystem to add photos to library. <br />
-                Users can create, delete, and rename albums. <br />
-                Users can add, delete, and move photos, in addition to displaying them in a larger display and showing all tags. <br />
-                Users can add tags to pictures and search by those tag values. <br />
-                Larger photo display has slideshow functionality.
+                - Photos library manager written for Android devices.<br />
+                - Supports accessing filesystem to add photos to library. <br />
+                - Users can create, delete, and rename albums. <br />
+                - Users can add, delete, and move photos, in addition to displaying them in a larger display and showing all tags. <br />
+                - Users can add tags to pictures and search by those tag values. <br />
+                - Larger photo display has slideshow functionality.
             </span>,
         demo: PhotosAndroidDemo,
         isNotable: false,
@@ -305,13 +305,13 @@ export const data = [
         github: 'https://github.com/namanbajaj/Photos-Library-Android',
         text:
             <span>
-                Photos library manager written for Desktop environments using JavaFX.<br />
-                Supports accessing filesystem to add photos to library. <br />
-                Users can create, delete, and rename albums. <br />
-                Users can add, delete, and move photos, in addition to displaying them in a larger display and showing all tags. <br />
-                Users can add tags to pictures and search by those tag values. <br />
-                Larger photo display has slideshow functionality. <br />
-                Users can search by tags and dates.
+                - Photos library manager written for Desktop environments using JavaFX.<br />
+                - Supports accessing filesystem to add photos to library. <br />
+                - Users can create, delete, and rename albums. <br />
+                - Users can add, delete, and move photos, in addition to displaying them in a larger display and showing all tags. <br />
+                - Users can add tags to pictures and search by those tag values. <br />
+                - Larger photo display has slideshow functionality. <br />
+                - Users can search by tags and dates.
             </span>,
         demo: PhotosDesktopDemo,
         isNotable: false,
@@ -327,9 +327,9 @@ export const data = [
         github: 'https://github.com/namanbajaj/Chess',
         text:
             <span>
-                Fully implemented chess game using ASCII art. <br />
-                Built from scratch using object-oriented design patterns. <br />
-                Supports advanced chess moves such as En Passant and castling.
+                - Fully implemented chess game using ASCII art. <br />
+                - Built from scratch using object-oriented design patterns. <br />
+                - Supports advanced chess moves such as En Passant and castling.
             </span>,
         demo: ChessDemo,
         isNotable: false,
@@ -347,8 +347,8 @@ export const data = [
         github: 'https://github.com/namanbajaj/Song-Library',
         text:
             <span>
-                Song library built using JavaFX. <br />
-                Allows users to manage songs.
+                - Song library built using JavaFX. <br />
+                - Allows users to manage songs.
             </span>,
         demo: SongLibraryDemo,
         isNotable: false,
