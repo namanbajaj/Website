@@ -37,7 +37,7 @@ const AboutCards = () => {
                         </h3>
 
                         <h5 className='text-light center_text'>
-                            Prudential Frontend Software Engineer Intern
+                            Learning through Udemy and YouTube
                             <br />
                             Working on hobby projects
                         </h5>
@@ -80,11 +80,6 @@ const AboutCards = () => {
                     Current Development:
                 </h1>
                 <ul className='working_on_list'>
-                    <li className='main_list_item'>
-                        <h2>
-                            Working at Prudential as a Frontend Software Engineer Intern
-                        </h2>
-                    </li>
                     <li className='main_list_item'>
                         <h2>Developing Android Apps using Kotlin </h2>
                         <ul className='working_on_list'>

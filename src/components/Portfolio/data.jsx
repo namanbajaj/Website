@@ -46,9 +46,9 @@ export const data = [
                 value: 'https://play.google.com/store/apps/details?id=com.NBaj.DiagonalRunner',
             }
         ],
-        isNotable: true,
-        type: 'game'
-
+        isNotable: false,
+        type: 'game',
+        dateOfLastUpdate: '2023-04-11'
     },
     {
         id: 13,
@@ -78,7 +78,8 @@ export const data = [
             },
         ],
         isNotable: false,
-        type: 'game'
+        type: 'game',
+        dateOfLastUpdate: '2023-03-27'
     },
     {
         id: 12,
@@ -95,7 +96,8 @@ export const data = [
             - Supports unification, backtracking, and negation <br />
         </span>,
         isNotable: true,
-        type: 'other'
+        type: 'other',
+        dateOfLastUpdate: '2023-05-02'
     },
     {
         id: 11,
@@ -121,7 +123,8 @@ export const data = [
                 value: 'https://play.google.com/store/apps/details?id=com.nbaj.drawingapp',
             }
         ],
-        type: 'app'
+        type: 'app',
+        dateOfLastUpdate: '2023-07-18'
     },
     {
         id: 10,
@@ -138,7 +141,8 @@ export const data = [
             - Supports suspending and resuming jobs <br />
         </span>,
         isNotable: true,
-        type: 'other'
+        type: 'other',
+        dateOfLastUpdate: '2022-12-11'
     },
     {
         id: 9,
@@ -165,7 +169,8 @@ export const data = [
                 value: 'https://github.com/namanbajaj/CurrencyConverter/releases'
             }
         ],
-        type: 'app'
+        type: 'app',
+        dateOfLastUpdate: '2023-02-23'
     },
     {
         id: 8,
@@ -194,8 +199,9 @@ export const data = [
                 value: 'https://play.google.com/store/apps/details?id=com.namanbajaj.quizapp',
             }
         ],
-        isNotable: false,
-        type: 'app'
+        isNotable: true,
+        type: 'app',
+        dateOfLastUpdate: '2023-07-18'
     },
     {
         id: 7,
@@ -221,7 +227,8 @@ export const data = [
             </span>,
         demo: UniversityDemo,
         isNotable: true,
-        type: 'app'
+        type: 'app',
+        dateOfLastUpdate: '2022-08-13'
     },
     {
         id: 6,
@@ -250,7 +257,8 @@ export const data = [
             }
         ],
         isNotable: false,
-        type: 'app'
+        type: 'app',
+        dateOfLastUpdate: '2023-07-18'
     },
     {
         id: 1,
@@ -265,7 +273,8 @@ export const data = [
         github: 'https://github.com/namanbajaj/Website',
         text: 'This website was written using JavaScript, ReactJS, and CSS',
         isNotable: true,
-        type: 'web'
+        type: 'web',
+        dateOfLastUpdate: '2023-09-01'
     },
     {
         id: 2,
@@ -290,7 +299,8 @@ export const data = [
             </span>,
         demo: PhotosAndroidDemo,
         isNotable: false,
-        type: 'app'
+        type: 'app',
+        dateOfLastUpdate: '2022-4-28'
     },
     {
         id: 3,
@@ -315,7 +325,8 @@ export const data = [
             </span>,
         demo: PhotosDesktopDemo,
         isNotable: false,
-        type: 'app'
+        type: 'app',
+        dateOfLastUpdate: '2022-04-02'
     },
     {
         id: 4,
@@ -333,7 +344,8 @@ export const data = [
             </span>,
         demo: ChessDemo,
         isNotable: false,
-        type: 'app'
+        type: 'app',
+        dateOfLastUpdate: '2022-03-20'
     },
     {
         id: 5,
@@ -352,6 +364,7 @@ export const data = [
             </span>,
         demo: SongLibraryDemo,
         isNotable: false,
-        type: 'app'
+        type: 'app',
+        dateOfLastUpdate: '2022-02-15'
     }
 ]

@@ -6,10 +6,13 @@ export const data = [
     date: 'Jun 2023 - Aug 2023',
     description:
       <ul className='r_list'>
-        <li>Worked as a front end software engineer intern on the Financial Wellness application</li>
-        <li>Worked with Angular, Typescript, JavaScript, Adobe Experience Manager, NodeJS, Git, and more</li>
-        <li>Assisted with implementation of Adobe Launch Tag Management in Financial Wellness web application to track user impressions and events with 80% more information  and 60% more accuracy than previous tag manager</li>
-        <li>Contributed to creation of over 10+ components in custom Prudential library to allow sand boxing of implemented services</li>
+        <li>Worked as a front end software engineer on the Financial Wellness application</li>
+        <li>Used programming tools and technologies such as Angular, Typescript, JavaScript, HTML/SCSS, NodeJS, Git, Adobe Experience Manager, and Karma</li>
+        <li>Assisted with implementation of Adobe Launch Tag Management in Financial Wellness application to track user impressions and events with 80% more information and 60% more accuracy than previous tag manager</li>
+        <li>Played a vital role in ensuring the efficacy of the transition by making necessary code adjustments and enhancements</li>
+        <li>Collaborated closely with the Quality Assurance (QA) team, addressing issues promptly and guaranteeing the accuracy and comprehensiveness of data sent to back end services</li>
+        <li>Developed and implemented a dynamic script enabling real-time application of modifications to Adobe Launch code within the Financial Wellness application, resulting in streamlined development and accelerated testing processes</li>
+        <li>Contributed to creation of over 10+ Angular components in custom Prudential library to allow sand boxing of implemented services</li>
         <li>Created routes service in Financial Wellness application to calculate 50+ possible page routes</li>
       </ul>,
     icon: 'prudential',
@@ -22,6 +25,13 @@ export const data = [
     date: 'Jan 2023 - Current',
     description:
       <ul className='r_list'>
+        <div className='session_name'>Fall 2023 Session</div>
+        <div className='line'></div>
+        <ul className='r_list'>
+          <li>Grading for 2 classes of 01:640:252 - Elementary Differential Equations</li>
+          <li>Grading homework for 50+ students</li>
+        </ul>
+        <br />
         <div className='session_name'>Summer 2023 Session</div>
         <div className='line'></div>
         <ul className='r_list'>

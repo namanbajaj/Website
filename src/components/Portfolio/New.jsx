@@ -11,11 +11,16 @@ import { RiVideoLine } from 'react-icons/ri'
 
 const iconSize = 25;
 
+const sortedData = data.sort((a, b) => {
+  return a.dateOfLastUpdate < b.dateOfLastUpdate ? 1 : -1;  // Sort in descending order
+  // return a.dateOfLastUpdate > b.dateOfLastUpdate ? 1 : -1;  // Sort in ascending order
+});
+
 const New = () => {
   return (
     <div className="portfolio__container">
       {
-        data.map(({ id, image, icons, title, github, text, demo, links, isNotable }) => {
+        sortedData.map(({ id, image, icons, title, github, text, demo, links, isNotable, dateOfLastUpdate }) => {
           if (isNotable) {
             const demobutton = <a className="btn portfolio_btns" id='demo_button'> <RiVideoLine size={iconSize} /> </a>;
             return (
