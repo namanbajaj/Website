@@ -1,13 +1,20 @@
 import React from 'react'
 import './certifications.css'
 
-import { SiAngular, SiC, SiCplusplus, SiMicrosoftexcel, SiPython, SiUdemy } from 'react-icons/si'
+import { SiAngular, SiC, SiCplusplus, SiCsharp, SiMicrosoftexcel, SiPython } from 'react-icons/si'
 
 import Angular_Course_Certificate from '../../assets/Angular_Course_Certificate.jpg'
 
 const iconSize = 100;
 
 const data = [
+  {
+    id: 6,
+    title: 'Complete C# Masterclass',
+    company: <SiCsharp size={iconSize} />,
+    date: '08/2023',
+    link: 'https://www.udemy.com/certificate/UC-223cfa12-1df1-490f-a2d9-c50fa88b5ffc/'
+  },
   {
     id: 5,
     title: 'Angular Essentials (Angular 2+ with TypeScript)',
@@ -50,7 +57,7 @@ const Certifications = () => {
     <section id='Certifications'>
       <div className="introtext">
         <h1>
-          Certifications
+          Certifications (Courses)
         </h1>
       </div>
 
