@@ -1,164 +1,170 @@
 /* General container header */
 .about__me__header {
-    margin-left: 5%;
-    height: fit-content;
-    position: relative;
-    margin-bottom: 3rem;
+  margin-left: 5%;
+  height: fit-content;
+  position: relative;
+  margin-bottom: 3rem;
 }
 
 .about__me__header::after {
-    content: " ";
-    position: absolute;
-    border-bottom: 10px solid white;
-    width: 50%;
-    height: 0.2rem;
+  content: " ";
+  position: absolute;
+  border-bottom: 10px solid white;
+  width: 50%;
+  height: 0.2rem;
 }
 
 /* Container for intro text and what I'm working on */
 .about__me__geninfo {
-    margin-left: 5%;
-    margin-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* Container for entire section */
 .cards_overview {
-    display: grid;
-    grid-template-columns: 5fr 6fr;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    gap: 3rem;
-    margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  gap: 3rem;
+  margin-bottom: 5%;
 }
 
 /* Container for cards that hold info about school, position, and projects */
 .info_cards {
-    margin-bottom: 5%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 /* Card that holds actual info */
 .card {
-    display: block;
-    position: relative;
-    background: var(--color-bg-variant);
-    margin: 0% 0% 5% 5%;
-    gap: 3rem;
-    padding: 1rem 3rem;
-    border-radius: 3rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+  display: block;
+  position: relative;
+  background: var(--color-bg-variant);
+  margin: 0% 0% 5% 5%;
+  gap: 3rem;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
 }
 
 .card:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
-    transition: var(--transition);
+  border-color: var(--color-primary-variant);
+  background: transparent;
+  transition: var(--transition);
 }
 
 .card>div:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
+  border-color: var(--color-primary-variant);
+  background: transparent;
 }
 
 .card>h2 {
-    text-align: center;
-    padding: 0.1rem;
-    color: var(--color-bg-primary);
-    font-size: 2rem;
+  text-align: center;
+  padding: 0.1rem;
+  color: var(--color-bg-primary);
+  font-size: 2rem;
 }
 
 .card h3 {
-    background: transparent;
-    padding: 0.1rem;
-    display: flex;
-    color: var(--color-bg-primary);
-    font-size: 1.2rem;
+  background: transparent;
+  padding: 0.1rem;
+  display: flex;
+  color: var(--color-bg-primary);
+  font-size: 1.2rem;
 }
 
 .card h3:hover {
-    color: white;
+  color: white;
 }
 
 .content_cards {
-    margin-top: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr;
-    justify-content: left;
-    text-align: right;
-    vertical-align: middle;
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  justify-content: left;
+  text-align: right;
+  vertical-align: middle;
 }
 
 .text-light.center_text {
-    margin-left: 5%;
+  margin-left: 5%;
 }
 
 .logo.center_text {
-    justify-content: left;
-    text-align: left;
+  justify-content: left;
+  text-align: left;
 }
 
 .working_on {
-    border-bottom: 10px solid white;
-    margin-bottom: 1rem;
+  border-bottom: 10px solid white;
+  margin-bottom: 1rem;
 }
 
 .working_on_list {
-    /* margin-top: 1rem; */
-    display: list-item;
-    list-style-position: outside;
-    margin-left: 2rem;
-    font-size: 2rem;
+  /* margin-top: 1rem; */
+  display: list-item;
+  list-style-position: outside;
+  margin-left: 2rem;
+  font-size: 2rem;
 }
 
 li {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 .main_list_item {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 
 /* Medium Devices */
 @media screen and (max-width: 1024px) {
-    .languages {
-        grid-template-columns: 1fr;
-    }
+  .languages {
+    grid-template-columns: 1fr;
+  }
 
-    .languages>div {
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
+  .languages>div {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
 }
 
 /* Small Devices */
 @media screen and (max-width: 600px) {
-    .cards_overview {
-        grid-template-columns: 1fr;
-        margin-bottom: -100%;
-    }
+  .cards_overview {
+    grid-template-columns: 1fr;
+    margin-bottom: -100%;
+  }
 
-     .content_cards {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: center;
-        text-align: left;
-        vertical-align: middle;
-    }
+  .content_cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    text-align: left;
+    vertical-align: middle;
+  }
 
-    .card {
-        margin: 0% 5% 5% 5%;
-    }
+  .info_cards {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .card>h2 {
-        font-size: 1.5rem;
-    }
+  .card {
+    margin: 0% 5% 5% 5%;
+    height: fit-content;
+  }
 
-    .card h5 {
-        margin-top: -10%;
-    }
+  .card>h2 {
+    font-size: 1.5rem;
+  }
+
+  .card h5 {
+    margin-top: -5%;
+  }
 }
