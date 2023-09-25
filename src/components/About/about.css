@@ -1,3 +1,4 @@
+/* General container header */
 .about__me__header {
     margin-left: 5%;
     height: fit-content;
@@ -13,19 +14,13 @@
     height: 0.2rem;
 }
 
+/* Container for intro text and what I'm working on */
 .about__me__geninfo {
     margin-left: 5%;
-    /* margin-bottom: 5%; */
     margin-right: 5%;
 }
 
-.introtext {
-    margin-left: 5%;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-}
-
-/* About Me Cards */
+/* Container for entire section */
 .cards_overview {
     display: grid;
     grid-template-columns: 5fr 6fr;
@@ -35,11 +30,49 @@
     margin-bottom: 5%;
 }
 
+/* Container for cards that hold info about school, position, and projects */
 .info_cards {
     margin-bottom: 5%;
     display: grid;
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* Card that holds actual info */
+.card {
+    display: block;
+    position: relative;
+    background: var(--color-bg-variant);
+    margin: 0% 0% 5% 5%;
+    gap: 3rem;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.card>div:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.card>h2 {
+    text-align: center;
+    padding: 0.1rem;
+    color: var(--color-bg-primary);
+    font-size: 2rem;
+}
+
+.card h3 {
+    background: transparent;
+    padding: 0.1rem;
+    display: flex;
+    color: var(--color-bg-primary);
+    font-size: 1.2rem;
+}
+
+.card h3:hover {
+    color: white;
 }
 
 .content_cards {
@@ -108,21 +141,12 @@ li {
 
 /* Small Devices */
 @media screen and (max-width: 600px) {
-    .languages {
-        gap: 2rem;
-    }
-
-    .languages>div {
-        width: 100%;
-        padding: 0 1rem 20%;
-    }
-
     .cards_overview {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        margin-bottom: -100%;
     }
 
-    .content_cards {
+     .content_cards {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         justify-content: center;
@@ -130,12 +154,15 @@ li {
         vertical-align: middle;
     }
 
-    .logo.center_text {
-        justify-content: center;
-        text-align: center;
+    .card {
+        margin: 0% 5% 5% 5%;
     }
 
-    .text-light.center_text {
-        padding-top: 2rem;
+    .card>h2 {
+        font-size: 1.5rem;
+    }
+
+    .card h5 {
+        margin-top: -10%;
     }
 }

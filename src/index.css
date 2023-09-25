@@ -137,4 +137,10 @@ img {
     section > h2{
         margin-bottom: 2rem;
     }
+
+    .animate__animated {
+        animation: none !important;
+        -webkit-animation: none !important;
+    }
+
 }

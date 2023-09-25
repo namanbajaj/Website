@@ -11,7 +11,7 @@ const iconSize = 125;
 const AboutCards = () => {
     return (
         <div className='cards_overview'>
-            <div className='info_cards languages'>
+            <div className='info_cards'>
                 <div className='card'>
                     <h2>Rutgers University - New Brunswick</h2>
                     <div className='content_cards'>
@@ -37,7 +37,7 @@ const AboutCards = () => {
                         </h3>
 
                         <h5 className='text-light center_text'>
-                            Learning through Udemy and YouTube
+                            Incoming Global Technology Rotation Associate at Prudential
                             <br />
                             Working on hobby projects
                         </h5>
@@ -90,15 +90,11 @@ const AboutCards = () => {
                             </li>
                             <li>
                                 <h2>
-                                    Five Minute Workout App
+                                    Current Project in Progress: Five Minute Workout App
                                 </h2>
                             </li>
                         </ul>
                     </li>
-                    <li className='main_list_item'>
-                        <h2>Developing mobile games using the Unity engine </h2>
-                    </li>
-
                     <li className='main_list_item'>
                         <h2>Learning full stack web development </h2>
                     </li>

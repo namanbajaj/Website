@@ -274,7 +274,7 @@ export const data = [
         text: 'This website was written using JavaScript, ReactJS, and CSS',
         isNotable: true,
         type: 'web',
-        dateOfLastUpdate: '2023-09-01'
+        dateOfLastUpdate: '2023-09-24'
     },
     {
         id: 2,

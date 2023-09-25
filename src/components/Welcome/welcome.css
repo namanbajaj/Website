@@ -1,9 +1,11 @@
+/* General header style */
 header {
     height: 100vh;
     padding-top: 1rem;
     overflow: hidden;
 }
 
+/* Container that most of the section, excluding particles */
 .header__container {
     text-align: center;
     height: 100%;
@@ -42,12 +44,14 @@ header {
     background: var(--color-bg-primary);
 }
 
+/* Image of myself */
 .me {
     width: 28rem;
     position: absolute;
     left: calc(50% - 14rem);
 }
 
+/* Particles effect */
 .particles {
     position: absolute;
     top: 0;
