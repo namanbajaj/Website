@@ -1,3 +1,4 @@
+/* Introduction Text */
 .introtext {
     margin-left: 5%;
     height: fit-content;
@@ -13,6 +14,7 @@
     height: 0.2rem;
 }
 
+/* Grid for experience items */
 .experience_grid {
     display: grid;
     margin-left: 5%;
@@ -22,6 +24,7 @@
     margin-bottom: 5%;
 }
 
+/* Specific item in experience grid */
 .experience_item {
     display: grid;
     background: var(--color-bg-variant);
@@ -57,31 +60,26 @@
     color: white;
 }
 
+/* Grid for role, date, and responsibilities button */
 .full_grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
+/* Button to open responsibilities button */
 .r_btn {
     justify-self: end;
     align-self: flex-end;
     max-height: 3rem;
 }
 
+/* List for responsibilites */
 .r_list {
     margin-left: 10px;
     margin-top: 5px;
 }
 
-.pop_up_window {
-    max-width: 25vw;
-    justify-self: center;
-}
-
-.session_name {
-    font-size: 1.2rem;
-}
-
+/* Specific session organizer */
 .line{
     content: " ";
     position: absolute;
@@ -89,10 +87,53 @@
     width: 50%;
 }
 
+.session_name {
+    font-size: 1.2rem;
+}
+
+/* Pop up window */
+.pop_up_window {
+    max-width: 25vw;
+    justify-self: center;
+    
+    max-height: 90vh; 
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+/* Style for the modal content */
+.pop_up_content {
+    overflow-y: auto;
+    flex: 1;
+    padding: 20px;
+    border-color: black;
+    border: 10px;
+}
+
+/* When the modal is open, prevent body from scrolling */
+body.modal-open {
+    overflow: hidden;
+}
+
 /* Mobile Devices */
 @media screen and (max-width: 600px) {
     .experience_grid {
         grid-template-columns: 1fr;
+    }
+
+    .full_grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .info_grid {
+        text-align: center;
+    }
+
+    .r_btn {
+        justify-self: center;
     }
 
     .pop_up_window {

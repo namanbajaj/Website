@@ -51,6 +51,12 @@
     transition: var(--transition);
 }
 
+.card:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+    transition: var(--transition);
+}
+
 .card>div:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
@@ -86,7 +92,6 @@
 }
 
 .text-light.center_text {
-    /* color: red; */
     margin-left: 5%;
 }
 
@@ -116,15 +121,6 @@ li {
     margin-bottom: 1rem;
 }
 
-.card {
-    transition: var(--transition);
-}
-
-.card:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
-    transition: var(--transition);
-}
 
 /* Medium Devices */
 @media screen and (max-width: 1024px) {
