@@ -21,13 +21,72 @@ import QuickdrawPhoto from '../../assets/quickdraw_photo.png'
 import PrologInterpreter from '../../assets/prolog_interpriter_photo.png'
 import PongPhoto from '../../assets/pong_photo.png'
 import DiagPhoto from '../../assets/diagonal_runner_photo.png'
+import Threads from '../../assets/threads.png'
+import Memory from '../../assets/memory.png'
+import FS from '../../assets/fs.png'
 
-import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity } from 'react-icons/si'
+import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity, SiLinux } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
 
 const iconSize = 25;
 
 export const data = [
+    {
+        id: 17,
+        image: FS,
+        title: 'File System using FUSE',
+        icons: <div className='icon_under'>
+            <SiC size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiLinux size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        </div>,
+        github: 'https://github.com/namanbajaj/CS416/tree/Main/Project_4',
+        text: <span>
+            - File system written in C using FUSE <br />
+            - Implements basic file system operations such as open, close, read, write, etc <br />
+            - Supports multiple levels of directories <br />
+            - Supports file and directory permissions <br />
+        </span>,
+        isNotable: true,
+        type: 'other',
+        dateOfLastUpdate: '2023-12-13'
+    },
+    {
+        id: 16,
+        image: Memory,
+        title: 'User-level Memory Management',
+        icons: <div className='icon_under'>
+            <SiC size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiLinux size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        </div>,
+        github: 'https://github.com/namanbajaj/CS416/tree/Main/Project_3',
+        text: <span>
+            - User-level memory management written in C <br />
+            - Translates virtual addresses to physical addresses using page tables <br />
+            - Implements Transition Lookaside Buffer (TLB) <br />
+        </span>,
+        isNotable: true,
+        type: 'other',
+        dateOfLastUpdate: '2023-11-22'
+    },
+    {
+        id: 15,
+        image: Threads,
+        title: 'User-level Thread Library and Scheduler',
+        icons: <div className='icon_under'>
+            <SiC size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <SiLinux size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+        </div>,
+        github: 'https://github.com/namanbajaj/CS416/tree/Main/Project_2',
+        text: <span>
+            - User-level thread library and scheduler written in C <br />
+            - Supports thread creation, scheduling, and synchronization <br />
+            - Supports preemption and priority scheduling <br />
+            - Implements PSJF and MLFQ scheduling algorithms <br />
+        </span>,
+        isNotable: true,
+        type: 'other',
+        dateOfLastUpdate: '2023-10-25'
+    },
     {
         id: 14,
         image: DiagPhoto,
@@ -102,7 +161,7 @@ export const data = [
     {
         id: 11,
         image: QuickdrawPhoto,
-        title: 'QuickDraw',
+        title: 'SwiftStrokes',
         icons: <div className='icon_under'>
             <SiKotlin size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <SiAndroid size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
@@ -140,7 +199,7 @@ export const data = [
             - Supports moving jobs between background and foreground <br />
             - Supports suspending and resuming jobs <br />
         </span>,
-        isNotable: true,
+        isNotable: false,
         type: 'other',
         dateOfLastUpdate: '2022-12-11'
     },
@@ -274,7 +333,7 @@ export const data = [
         text: 'This website was written using JavaScript, ReactJS, and CSS',
         isNotable: true,
         type: 'web',
-        dateOfLastUpdate: '2023-09-24'
+        dateOfLastUpdate: '2023-12-28'
     },
     {
         id: 2,
