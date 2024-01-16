@@ -20,7 +20,7 @@ const AboutCards = () => {
                         </h3>
 
                         <h5 className='text-light center_text'>
-                            GPA: 3.93/4.00
+                            GPA: 3.89/4.00
                             <br />
                             Major: BS in Computer Science & Math
                             <br />

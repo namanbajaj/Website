@@ -6,6 +6,13 @@ export const data = [
     date: 'Jan 2023 - Current',
     description:
       <ul className='r_list'>
+        <div className='session_name'>Spring 2024 Session</div>
+        <div className='line'></div>
+        <ul className='r_list'>
+          <li>Grading for 1 class of 01:640:244 - Differential Equations for Engineering and Physics</li>
+          <li>Grading homework for 30+ students</li>
+        </ul>
+        <br />
         <div className='session_name'>Fall 2023 Session</div>
         <div className='line'></div>
         <ul className='r_list'>

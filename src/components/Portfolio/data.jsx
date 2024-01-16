@@ -17,7 +17,7 @@ import UniversityDemo from '../../assets/university_management_demo.mp4'
 import QuizGamePhoto from '../../assets/quizbiz_photo.png'
 import CurrencyConverterPhoto from '../../assets/currency_converter_photo.png'
 import CTerminalPhoto from '../../assets/c_terminal_photo.png'
-import QuickdrawPhoto from '../../assets/quickdraw_photo.png'
+import SwiftStrokesPhoto from '../../assets/swiftstrokes.png'
 import PrologInterpreter from '../../assets/prolog_interpriter_photo.png'
 import PongPhoto from '../../assets/pong_photo.png'
 import DiagPhoto from '../../assets/diagonal_runner_photo.png'
@@ -154,13 +154,13 @@ export const data = [
             - Supports basic Prolog syntax such as facts, rules, queries, etc <br />
             - Supports unification, backtracking, and negation <br />
         </span>,
-        isNotable: true,
+        isNotable: false,
         type: 'other',
         dateOfLastUpdate: '2023-05-02'
     },
     {
         id: 11,
-        image: QuickdrawPhoto,
+        image: SwiftStrokesPhoto,
         title: 'SwiftStrokes',
         icons: <div className='icon_under'>
             <SiKotlin size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
