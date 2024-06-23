@@ -62,7 +62,13 @@ const Languages = () => {
       name: 'Other',
       key: 'other',
       data: other
-    }
+    },
+    // {
+    //   id: 7,
+    //   name: 'Gaming',
+    //   key: 'gaming',
+    //   data: gaming
+    // }
   ]
 
   return (
@@ -75,14 +81,21 @@ const Languages = () => {
       <div className='languages'>
         {
           categories.map(({ id, name, key, data }) => {
+            const notableItemsCount = data.filter(item => item.isNotable).length
+            const totalItemsCount = data.length
+
             return (
               <div className='category' key={id}>
                 <h2>{name}</h2>
                 <div className='content'>
                   {
                     data.map(({ id, icon, technology, experience, isNotable }) => {
-                      return (isNotable || booleanState[key]) ? (
-                        <article key={id} className='details' >
+                      const isVisible = booleanState[key] || isNotable
+                      return (isVisible) ? (
+                        <article
+                          key={id}
+                          className='details'
+                        >
                           <h4>
                             <h3>
                               {icon}&nbsp;{technology}
@@ -96,7 +109,12 @@ const Languages = () => {
                     })
                   }
                 </div>
-                <a className='btn r_btn see_more_tech' onClick={() => toggleBoolean(key)}>{booleanState[key] ? 'See Less' : 'See More'}</a>
+                {
+                  notableItemsCount != totalItemsCount && (
+                    <a className='btn r_btn see_more_tech' onClick={() => toggleBoolean(key)}>
+                      {booleanState[key] ? 'See Less' : 'See More'}
+                    </a>
+                  )}
               </div>
             )
           })

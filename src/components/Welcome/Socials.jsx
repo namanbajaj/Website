@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
-import {IoLogoGooglePlaystore} from 'react-icons/io5'
+import { IoLogoGooglePlaystore } from 'react-icons/io5'
 
 const Socials = () => {
     return (

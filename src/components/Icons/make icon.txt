@@ -1,4 +1,4 @@
-copy image into doc
+copy image into inkscape doc
 path trace as bitmap until it looks good
 ctrl shift d and resize doc to content
 save as optimized svg

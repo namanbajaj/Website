@@ -13,8 +13,8 @@ const Portfolio = () => {
         <h1>My Notable Work (Sorted By Last Updated)</h1>
       </div>
 
-      <New/>
-      <Old/>
+      <New />
+      <Old />
 
     </section >
   )

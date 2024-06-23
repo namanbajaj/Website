@@ -20,11 +20,11 @@ const AboutCards = () => {
                         </h3>
 
                         <h5 className='text-light center_text'>
-                            GPA: 3.89/4.00
+                            GPA: 3.86/4.00
                             <br />
-                            Major: BS in Computer Science & Math
+                            BS in Computer Science (Honors) & Mathematics
                             <br />
-                            Graduation Date: May 2024
+                            Graduated Summa Cum Laude
                         </h5>
                     </div>
                 </div>
@@ -65,10 +65,10 @@ const AboutCards = () => {
 
             <div className='about__me__geninfo'>
                 <h5>
-                    Hi! I'm a Software Developer currently enrolled at Rutgers University - New Brunswick majoring in Computer Science (BS) and Mathematics.
+                    Hi! I'm an incoming Global Rotation Associate at Prudential Financial. I graduated from Rutgers University - New Brunswick with a major in Computer Science (BS) and Mathematics (Summa Cum Laude).
                     <br />
                     <br />
-                    I've worked with a variety of technologies through hobby projects and undergraduate courses and am continously learning new frameworks, technologies, langauges, and Computer Science topics and applying them through personal projects.
+                    I've worked with a variety of technologies through hobby projects and undergraduate courses and am continously learning new frameworks, technologies, languages, and Computer Science topics and applying them through personal projects.
                     <br />
                     <br />
                 </h5>
@@ -90,13 +90,16 @@ const AboutCards = () => {
                             </li>
                             <li>
                                 <h2>
-                                    Current Project in Progress: Five Minute Workout App
+                                    Current Project(s) in Progress: Five Minute Workout App, Grocery Store App
                                 </h2>
                             </li>
                         </ul>
                     </li>
                     <li className='main_list_item'>
                         <h2>Learning full stack web development </h2>
+                    </li>
+                    <li className='main_list_item'>
+                        <h2>Learning game development in raylib </h2>
                     </li>
 
                     <li className='main_list_item'>

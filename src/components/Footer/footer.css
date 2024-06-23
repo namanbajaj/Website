@@ -41,6 +41,7 @@ footer {
     display: flex;
     border: 1px solid transparent;
 }
+
 .footer__copyright {
     margin-bottom: 4rem;
 }

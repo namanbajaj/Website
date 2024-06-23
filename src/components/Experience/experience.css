@@ -35,7 +35,7 @@
     transition: var(--transition);
 }
 
-.experience_item:hover{
+.experience_item:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
 }
@@ -80,7 +80,7 @@
 }
 
 /* Specific session organizer */
-.line{
+.line {
     content: " ";
     position: absolute;
     border-bottom: 1px solid white;
@@ -95,8 +95,8 @@
 .pop_up_window {
     max-width: 25vw;
     justify-self: center;
-    
-    max-height: 90vh; 
+
+    max-height: 90vh;
     overflow-y: hidden;
     display: flex;
     flex-direction: column;

@@ -216,7 +216,7 @@
         overflow: scroll;
     }
 
-    .portfolio__container_old > .portfolio__item {
+    .portfolio__container_old>.portfolio__item {
         overflow: hidden;
     }
 

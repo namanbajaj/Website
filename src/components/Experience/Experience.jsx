@@ -33,7 +33,7 @@ const Experience = () => {
                   trigger={<a className="btn r_btn"> Responsibilities </a>}
                   modal
                   onOpen={() => document.body.classList.add('modal-open')}
-                  onClose={() => document.body.classList.remove('modal-open')}              
+                  onClose={() => document.body.classList.remove('modal-open')}
                 >
                   {close => (
                     <div className="pop_up_window animate__animated animate__zoomIn">

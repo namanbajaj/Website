@@ -5,6 +5,7 @@
   "private": false,
   "dependencies": {
     "@makotot/ghostui": "^2.0.0",
+    "@react-icons/all-files": "https://github.com/react-icons/react-icons/releases/download/v5.2.1/react-icons-all-files-5.2.1.tgz",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -23,6 +24,7 @@
     "react-tsparticles": "^2.0.6",
     "reactjs-popup": "^2.0.5",
     "redux": "^4.2.0",
+    "simple-icons": "^12.4.0",
     "tsparticles": "^2.0.6",
     "video-react": "^0.15.0",
     "web-vitals": "^2.1.4"

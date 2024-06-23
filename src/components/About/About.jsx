@@ -12,11 +12,10 @@ const About = () => {
         </h1>
       </div>
 
-      <AboutCards/>
-      
+      <AboutCards />
+
     </section>
   )
-
 }
 
 export default About

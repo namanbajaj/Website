@@ -25,7 +25,7 @@ const data = [
   {
     id: 4,
     title: 'Excel Course',
-    company: <SiMicrosoftexcel size={iconSize}/>,
+    company: <SiMicrosoftexcel size={iconSize} />,
     date: '06/2023',
     link: 'https://credentials.fe.training/8ce1a567-025c-41b4-a134-b5c9399cf1a6#gs.130n7u'
   },

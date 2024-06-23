@@ -63,13 +63,13 @@ section {
     margin-top: 8rem;
 }
 
-section > h2, 
-section > h5 {
+section>h2,
+section>h5 {
     text-align: center;
     color: var(--color-light);
 }
 
-section > h2 {
+section>h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
 }
@@ -79,7 +79,8 @@ section > h2 {
     font-size: 20px;
 }
 
-a, select {
+a,
+select {
     color: var(--color-bg-primary);
     transition: var(--transition);
 }
@@ -134,7 +135,7 @@ img {
         width: var(--container-width-sm);
     }
 
-    section > h2{
+    section>h2 {
         margin-bottom: 2rem;
     }
 
@@ -142,5 +143,4 @@ img {
         animation: none !important;
         -webkit-animation: none !important;
     }
-
 }
