@@ -101,11 +101,8 @@ const AboutCards = () => {
                     <li className='main_list_item'>
                         <h2>Learning game development in raylib </h2>
                     </li>
-
                     <li className='main_list_item'>
                         <h2> Improving and maintaining currently published projects and apps</h2>
-                        <ul className='working_on_list'>
-                        </ul>
                     </li>
                 </ul>
             </div>

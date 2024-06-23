@@ -139,7 +139,6 @@ li {
 @media screen and (max-width: 600px) {
   .cards_overview {
     grid-template-columns: 1fr;
-    margin-bottom: -100%;
   }
 
   .content_cards {
