@@ -31,7 +31,7 @@ const Contact = () => {
         <article className="contact__option">
           <AiOutlineLinkedin className='contact-icon' />
           <h4>LinkedIn</h4>
-          <a href="https://www.linkedin.com/in/namanbajaj" target='_blank'>Connect on LinkedIn</a>
+          <a href="https://www.linkedin.com/in/namanbajaj" target='_blank' rel='noreferrer'>Connect on LinkedIn</a>
         </article>
       </div>
     </section>

@@ -1,4 +1,5 @@
-import { SiAdobeillustrator, SiAdobephotoshop, SiMicrosoftoffice, SiBlender, SiGimp, SiInkscape } from 'react-icons/si'
+import { SiAdobeillustrator, SiAdobephotoshop, SiBlender, SiGimp, SiInkscape } from 'react-icons/si'
+import { TbBrandOffice } from 'react-icons/tb';
 import { iconSize } from './iconSize.jsx';
 
 export const other = [
@@ -18,7 +19,7 @@ export const other = [
     },
     {
         id: 3,
-        icon: <SiMicrosoftoffice size={iconSize} />,
+        icon: <TbBrandOffice size={iconSize} />,
         technology: 'Office',
         experience: 'Experienced',
         isNotable: true

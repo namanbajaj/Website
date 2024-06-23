@@ -1,5 +1,5 @@
-import { DiHtml5, DiCss3, DiJsBadge, DiReact } from 'react-icons/di';
-import { SiKotlin, SiBootstrap, SiJquery, SiAngularjs, SiTypescript } from 'react-icons/si'
+import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiAngularSimple } from 'react-icons/di';
+import { SiKotlin, SiBootstrap, SiJquery, SiTypescript } from 'react-icons/si'
 import Icons from '../../Icons/Icons.jsx';
 import { iconSize } from './iconSize.jsx';
 
@@ -69,7 +69,7 @@ export const frontend = [
     },
     {
         id: 10,
-        icon: <SiAngularjs size={iconSize} />,
+        icon: <DiAngularSimple size={iconSize} />,
         technology: 'Angular',
         experience: 'Intermediate',
         isNotable: true

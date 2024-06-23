@@ -25,8 +25,9 @@ import Threads from '../../assets/threads.png'
 import Memory from '../../assets/memory.png'
 import FS from '../../assets/fs.png'
 
-import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiJava, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJavascript, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity, SiLinux } from 'react-icons/si'
+import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity, SiLinux } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
+import { DiJava, DiJavascript } from 'react-icons/di';
 
 const iconSize = 25;
 
@@ -267,7 +268,7 @@ export const data = [
         image: UniversityPhoto,
         title: 'University Registration System',
         icons: <div className='icon_under'>
-            <SiJava size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
+            <DiJava size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
             <SiMysql size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <SiHtml5 size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
             <SiApachetomcat size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
@@ -327,7 +328,7 @@ export const data = [
             <SiReact size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <SiHtml5 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <SiCss3 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-            <SiJavascript size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <DiJavascript size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
         </div>,
         github: 'https://github.com/namanbajaj/Website',
         text: 'This website was written using JavaScript, ReactJS, and CSS',
@@ -340,7 +341,7 @@ export const data = [
         image: PhotosAndroidPhoto,
         title: 'Photos Library (Android)',
         icons: <div className='icon_under'>
-            <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <DiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <SiAndroid size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
             <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
@@ -366,7 +367,7 @@ export const data = [
         image: PhotosDesktopPhoto,
         title: 'Photos Library (Desktop)',
         icons: <div className='icon_under'>
-            <SiJava size={iconSize} />&nbsp;&nbsp; &nbsp;&nbsp;
+            <DiJava size={iconSize} />&nbsp;&nbsp; &nbsp;&nbsp;
             <Icons name='javafx' size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
             <Icons name='xml' size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
             <Icons name='scenebuilder' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
@@ -392,7 +393,7 @@ export const data = [
         image: ChessPhoto,
         title: 'ASCII Chess',
         icons: <div className='icon_under'>
-            <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <DiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
         </div>,
         github: 'https://github.com/namanbajaj/Chess',
         text:
@@ -411,7 +412,7 @@ export const data = [
         image: SongLibraryPhoto,
         title: 'Song Library',
         icons: <div className='icon_under'>
-            <SiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+            <DiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
             <Icons name='javafx' size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
             <Icons name='scenebuilder' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
         </div>,
