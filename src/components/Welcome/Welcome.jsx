@@ -5,12 +5,13 @@ import ME from '../../assets/me.jpg'
 import Socials from './Socials'
 
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+// import { loadFull } from "tsparticles";
+import { loadSlim } from 'tsparticles-slim'
 
 const Welcome = () => {
     const particlesInit = async (main) => {
         console.log(main);
-        await loadFull(main);
+        await loadSlim(main);
     };
 
     return (
