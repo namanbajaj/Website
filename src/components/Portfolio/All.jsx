@@ -18,7 +18,7 @@ const iconSize = 25;
 const All = () => {
   const [filter, setFilter] = useState('notable');
   const [sortBy, setSortBy] = useState('dateOfFirstUpdate');
-  const [sortOrder, setSortOrder] = useState('asc');
+  const [sortOrder, setSortOrder] = useState('desc');
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const handleFilterChange = (newFilter) => {
