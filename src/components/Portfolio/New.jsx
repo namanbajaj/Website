@@ -20,7 +20,7 @@ const New = () => {
   return (
     <div className="portfolio__container">
       {
-        sortedData.map(({ id, image, icons, title, github, text, demo, links, isNotable, dateOfLastUpdate }) => {
+        sortedData.map(({ id, image, icons, title, github, text, demo, links, isNotable }) => {
           if (isNotable) {
             const demobutton = <a className="btn portfolio_btns" id='demo_button'> <RiVideoLine size={iconSize} /> </a>;
             return (

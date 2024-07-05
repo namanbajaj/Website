@@ -49,7 +49,8 @@ export const data = [
         </span>,
         isNotable: true,
         type: 'other',
-        dateOfLastUpdate: '2023-12-13'
+        dateOfLastUpdate: '2023-12-13',
+        dateOfFirstUpdate: '2023-12-13'
     },
     {
         id: 16,
@@ -67,7 +68,8 @@ export const data = [
         </span>,
         isNotable: true,
         type: 'other',
-        dateOfLastUpdate: '2023-11-22'
+        dateOfLastUpdate: '2023-11-22',
+        dateOfFirstUpdate: '2023-11-22'
     },
     {
         id: 15,
@@ -86,7 +88,8 @@ export const data = [
         </span>,
         isNotable: true,
         type: 'other',
-        dateOfLastUpdate: '2023-10-25'
+        dateOfLastUpdate: '2023-10-25',
+        dateOfFirstUpdate: '2023-10-25'
     },
     {
         id: 14,
@@ -108,7 +111,8 @@ export const data = [
         ],
         isNotable: false,
         type: 'game',
-        dateOfLastUpdate: '2023-04-11'
+        dateOfLastUpdate: '2023-04-11',
+        dateOfFirstUpdate: '2023-04-11'
     },
     {
         id: 13,
@@ -139,7 +143,8 @@ export const data = [
         ],
         isNotable: false,
         type: 'game',
-        dateOfLastUpdate: '2023-03-27'
+        dateOfLastUpdate: '2023-03-27',
+        dateOfFirstUpdate: '2023-01-12'
     },
     {
         id: 12,
@@ -157,7 +162,8 @@ export const data = [
         </span>,
         isNotable: false,
         type: 'other',
-        dateOfLastUpdate: '2023-05-02'
+        dateOfLastUpdate: '2023-05-02',
+        dateOfFirstUpdate: '2023-05-02'
     },
     {
         id: 11,
@@ -184,7 +190,8 @@ export const data = [
             }
         ],
         type: 'app',
-        dateOfLastUpdate: '2023-07-18'
+        dateOfLastUpdate: '2023-07-18',
+        dateOfFirstUpdate: '2022-12-12'
     },
     {
         id: 10,
@@ -202,7 +209,8 @@ export const data = [
         </span>,
         isNotable: false,
         type: 'other',
-        dateOfLastUpdate: '2022-12-11'
+        dateOfLastUpdate: '2022-12-11',
+        dateOfFirstUpdate: '2022-12-11'
     },
     {
         id: 9,
@@ -230,7 +238,8 @@ export const data = [
             }
         ],
         type: 'app',
-        dateOfLastUpdate: '2023-02-23'
+        dateOfLastUpdate: '2022-12-12',
+        dateOfFirstUpdate: '2022-11-10'
     },
     {
         id: 8,
@@ -261,7 +270,8 @@ export const data = [
         ],
         isNotable: true,
         type: 'app',
-        dateOfLastUpdate: '2023-07-18'
+        dateOfLastUpdate: '2023-07-18',
+        dateOfFirstUpdate: '2022-08-26'
     },
     {
         id: 7,
@@ -288,7 +298,8 @@ export const data = [
         demo: UniversityDemo,
         isNotable: true,
         type: 'app',
-        dateOfLastUpdate: '2022-08-13'
+        dateOfLastUpdate: '2022-08-13',
+        dateOfFirstUpdate: '2022-08-13'
     },
     {
         id: 6,
@@ -318,7 +329,8 @@ export const data = [
         ],
         isNotable: false,
         type: 'app',
-        dateOfLastUpdate: '2023-07-18'
+        dateOfLastUpdate: '2023-07-18',
+        dateOfFirstUpdate: '2022-08-19'
     },
     {
         id: 1,
@@ -334,7 +346,8 @@ export const data = [
         text: 'This website was written using JavaScript, ReactJS, and CSS',
         isNotable: true,
         type: 'web',
-        dateOfLastUpdate: '2023-12-28'
+        dateOfLastUpdate: '2024-07-05',
+        dateOfFirstUpdate: '2022-06-01'
     },
     {
         id: 2,
@@ -360,7 +373,8 @@ export const data = [
         demo: PhotosAndroidDemo,
         isNotable: false,
         type: 'app',
-        dateOfLastUpdate: '2022-4-28'
+        dateOfLastUpdate: '2022-04-28',
+        dateOfFirstUpdate: '2022-04-28'
     },
     {
         id: 3,
@@ -386,7 +400,8 @@ export const data = [
         demo: PhotosDesktopDemo,
         isNotable: false,
         type: 'app',
-        dateOfLastUpdate: '2022-04-02'
+        dateOfLastUpdate: '2022-04-02',
+        dateOfFirstUpdate: '2022-04-02'
     },
     {
         id: 4,
@@ -405,7 +420,8 @@ export const data = [
         demo: ChessDemo,
         isNotable: false,
         type: 'app',
-        dateOfLastUpdate: '2022-03-20'
+        dateOfLastUpdate: '2022-03-20',
+        dateOfFirstUpdate: '2022-03-20'
     },
     {
         id: 5,
@@ -425,6 +441,7 @@ export const data = [
         demo: SongLibraryDemo,
         isNotable: false,
         type: 'app',
-        dateOfLastUpdate: '2022-02-15'
+        dateOfLastUpdate: '2022-02-15',
+        dateOfFirstUpdate: '2022-02-15'
     }
 ]

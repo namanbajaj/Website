@@ -1,5 +1,4 @@
 import React from 'react'
-import './portfolio.css'
 
 import Popup from 'reactjs-popup'
 import ReactPlayer from 'react-player'
@@ -23,7 +22,7 @@ const Old = () => {
     <Collapsible trigger="Other Projects >" triggerWhenOpen="Other Projects v" className='older_projects_intro' openedClassName='older_projects_intro'>
       <div className="portfolio__container_old">
         {
-          sortedData.map(({ id, image, icons, title, github, text, demo, links, isNotable, dateOfLastUpdate }) => {
+          sortedData.map(({ id, image, icons, title, github, text, demo, links, isNotable }) => {
             if (!isNotable) {
               const demobutton = <a className="btn old_button portfolio_btns" id='demo_button'> <RiVideoLine size={iconSize} /> </a>;
               return (
