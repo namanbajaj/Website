@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <script type="text/javascript">
-    if (window.location.pathname !== '/') {
-      history.replaceState({}, '', window.location.pathname);
-    }
-    window.location.replace('/');
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found</title>
 </head>
 
-<body></body>
+<body>
+  <script type="text/javascript">
+    var redirectUrl = window.location.protocol + '//' + window.location.host + '/?redirect=' + window.location.pathname;
+    window.location.href = redirectUrl;
+  </script>
+</body>
 
 </html>
