@@ -36,6 +36,7 @@ import { DiJava, DiJavascript } from 'react-icons/di';
 const iconSize = 25;
 
 export const data = [
+  // Kayla Portfolio
   {
     id: 21,
     image: kp,
@@ -74,6 +75,12 @@ export const data = [
       - Coded in Linux and compiled to Linux and WebAssembly <br />
       - Many features
     </span>,
+    links: [
+      {
+        icon: <SiWebassembly size={iconSize} />,
+        value: '/snake'
+      }
+    ],
     isNotable: false,
     type: 'game',
     dateOfLastUpdate: '2024-06-24',

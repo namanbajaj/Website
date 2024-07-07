@@ -234,10 +234,16 @@ const All = () => {
                   }
                   {links != null ? (
                     links.map((link) => (
-                      <a
-                        href={link.value} className='btn old_button' target='_blank'>
+                      (link.value[0] === 'h' &&
+                        <a
+                          href={link.value} className='btn old_button' target='_blank'>
+                          {link.icon}
+                        </a>)
+                      ||
+                      (link.value[0] === '/' && <a
+                        href={link.value} className='btn old_button'>
                         {link.icon}
-                      </a>
+                      </a>)
                     ))
                   ) : null
                   }
