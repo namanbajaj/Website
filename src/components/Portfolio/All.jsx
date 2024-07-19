@@ -71,18 +71,18 @@ const All = () => {
       <div className='popup_background' onClick={handleOverlayClick}>
         <div className='popup'>
           <div className='filter_buttons_popup'>
-            <button onClick={() => handleFilterChange('all')} className={filter === 'all' ? 'active btn' : 'inactive btn'}>
+            <button onClick={() => handleFilterChange('all')} className={filter === 'all' ? 'active btn' : 'btn'}>
               All Projects
             </button>
-            <button onClick={() => handleFilterChange('notable')} className={filter === 'notable' ? 'active btn' : 'inactive btn '}>
+            <button onClick={() => handleFilterChange('notable')} className={filter === 'notable' ? 'active btn' : 'btn '}>
               Notable Projects
             </button>
             <div className='vert_line'></div>
             <div className='horiz_line'></div>
-            <button onClick={() => handleSortChange('dateOfFirstUpdate')} className={sortBy === 'dateOfFirstUpdate' ? 'active btn' : 'inactive btn '}>
+            <button onClick={() => handleSortChange('dateOfFirstUpdate')} className={sortBy === 'dateOfFirstUpdate' ? 'active btn' : 'btn '}>
               Sort by Date of First Release
             </button>
-            <button onClick={() => handleSortChange('dateOfLastUpdate')} className={sortBy === 'dateOfLastUpdate' ? 'active btn' : 'inactive btn '}>
+            <button onClick={() => handleSortChange('dateOfLastUpdate')} className={sortBy === 'dateOfLastUpdate' ? 'active btn' : 'btn '}>
               Sort by Date of Last Update
             </button>
             <div className='vert_line'></div>
@@ -99,18 +99,18 @@ const All = () => {
   return (
     <div>
       <div className='filter_buttons'>
-        <button onClick={() => handleFilterChange('all')} className={filter === 'all' ? 'active btn' : 'inactive btn'}>
+        <button onClick={() => handleFilterChange('all')} className={filter === 'all' ? 'active btn' : 'btn'}>
           All Projects
         </button>
-        <button onClick={() => handleFilterChange('notable')} className={filter === 'notable' ? 'active btn' : 'inactive btn '}>
+        <button onClick={() => handleFilterChange('notable')} className={filter === 'notable' ? 'active btn' : 'btn '}>
           Notable Projects
         </button>
         <div className='vert_line'></div>
         <div className='horiz_line'></div>
-        <button onClick={() => handleSortChange('dateOfFirstUpdate')} className={sortBy === 'dateOfFirstUpdate' ? 'active btn' : 'inactive btn '}>
+        <button onClick={() => handleSortChange('dateOfFirstUpdate')} className={sortBy === 'dateOfFirstUpdate' ? 'active btn' : 'btn '}>
           Sort by Date of First Release
         </button>
-        <button onClick={() => handleSortChange('dateOfLastUpdate')} className={sortBy === 'dateOfLastUpdate' ? 'active btn' : 'inactive btn '}>
+        <button onClick={() => handleSortChange('dateOfLastUpdate')} className={sortBy === 'dateOfLastUpdate' ? 'active btn' : 'btn '}>
           Sort by Date of Last Update
         </button>
         <div className='vert_line'></div>

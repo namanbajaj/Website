@@ -32,6 +32,7 @@ import kp from '../../assets/kp.png'
 import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity, SiLinux, SiRaylib, SiWebassembly, SiCplusplus, SiTypescript, SiGithub } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
 import { DiJava, DiJavascript } from 'react-icons/di';
+import { GoLinkExternal } from "react-icons/go";
 
 const iconSize = 25;
 
@@ -51,8 +52,13 @@ export const data = [
     text: <span>
       - Personal portfolio website written in ReactJS, TypeScript, HTML, and CSS <br />
       - Hosted on GitHub Pages <br />
-      - Linked omitted for privacy
     </span>,
+    links: [
+      {
+        icon: <GoLinkExternal size={iconSize} />,
+        value: 'https://www.kaylaramnarain.com'
+      }
+    ],
     isNotable: true,
     type: 'web',
     dateOfLastUpdate: '2024-07-03',
@@ -449,6 +455,12 @@ export const data = [
     </div>,
     github: 'https://github.com/namanbajaj/Website',
     text: 'This website was written using JavaScript, ReactJS, and CSS',
+    links: [
+      {
+        icon: <GoLinkExternal size={iconSize} />,
+        value: '/#'
+      }
+    ],
     isNotable: true,
     type: 'web',
     dateOfLastUpdate: '2024-07-05',
