@@ -3,8 +3,6 @@ import './portfolio.css'
 
 import 'animate.css';
 
-import Old from './Old'
-import New from './New'
 import All from './All'
 
 const Portfolio = () => {

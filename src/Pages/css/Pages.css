@@ -18,6 +18,16 @@
   display: none;
 }
 
+.game_nav_btns {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#games .home_btn {
+  margin: 1% 5%;
+}
+
 @media screen and (max-width: 1300px){
   .snake_container {
     display: none;

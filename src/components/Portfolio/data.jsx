@@ -26,13 +26,14 @@ import Memory from '../../assets/memory.png'
 import FS from '../../assets/fs.png'
 import AIAss1 from '../../assets/AIA1.png'
 import AIFP from '../../assets/AIFP.png'
-import Snake from '../../assets/snake.png'
 import kp from '../../assets/kp.png'
+import raylib from '../../assets/raylib.png'
 
 import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity, SiLinux, SiRaylib, SiWebassembly, SiCplusplus, SiTypescript, SiGithub } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
 import { DiJava, DiJavascript } from 'react-icons/di';
 import { GoLinkExternal } from "react-icons/go";
+import { FiExternalLink } from 'react-icons/fi';
 
 const iconSize = 25;
 
@@ -64,11 +65,11 @@ export const data = [
     dateOfLastUpdate: '2024-07-03',
     dateOfFirstUpdate: '2024-07-01'
   },
-  // Snake game (raylib)
+  // All raylib games
   {
     id: 20,
-    image: Snake,
-    title: 'Snake Game',
+    image: raylib,
+    title: 'Games Portion of Site',
     icons: <div className='icon_under'>
       <SiCplusplus size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiLinux size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
@@ -76,15 +77,13 @@ export const data = [
       <SiWebassembly size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     text: <span>
-      - Snake game written in C++ using raylib <br />
-      - Supports keyboard and mouse controls <br />
-      - Coded in Linux and compiled to Linux and WebAssembly <br />
-      - Many features
+      - Games built using raylib and C++ <br />
+      - Compiled for WebAssembly using emcc (Emscripten Compiler Frontend)
     </span>,
     links: [
       {
-        icon: <SiWebassembly size={iconSize} />,
-        value: '/snake'
+        icon: <FiExternalLink size={iconSize} />,
+        value: '/games'
       }
     ],
     isNotable: false,

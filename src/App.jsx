@@ -8,6 +8,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import Home from './Pages/Home';
 import NotFound from './Pages/NotFound';
 import Snake from './Pages/Snake';
+import Games from './Pages/Games';
 
 const App = () => {
   const navigate = useNavigate();
@@ -23,6 +24,7 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/games" element={<Games />} />
         <Route path="/snake" element={<Snake />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
