@@ -19,8 +19,6 @@ import CurrencyConverterPhoto from '../../assets/currency_converter_photo.png'
 import CTerminalPhoto from '../../assets/c_terminal_photo.png'
 import SwiftStrokesPhoto from '../../assets/swiftstrokes.png'
 import PrologInterpreter from '../../assets/prolog_interpriter_photo.png'
-import PongPhoto from '../../assets/pong_photo.png'
-import DiagPhoto from '../../assets/diagonal_runner_photo.png'
 import Threads from '../../assets/threads.png'
 import Memory from '../../assets/memory.png'
 import FS from '../../assets/fs.png'
@@ -189,63 +187,6 @@ export const data = [
     type: 'other',
     dateOfLastUpdate: '2023-10-25',
     dateOfFirstUpdate: '2023-10-25'
-  },
-  // Diagonal Runner (Infinite Running Game)
-  {
-    id: 14,
-    image: DiagPhoto,
-    title: 'Infinite Running Game',
-    icons: <div className='icon_under'>
-      <SiUnity size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiCsharp size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-    </div>,
-    text: <span>
-      - Infinite running game made in Unity <br />
-    </span>,
-    links: [
-      {
-        icon: <SiAndroid size={iconSize} />,
-        value: 'https://play.google.com/store/apps/details?id=com.NBaj.DiagonalRunner',
-      }
-    ],
-    isNotable: false,
-    type: 'game',
-    dateOfLastUpdate: '2023-04-11',
-    dateOfFirstUpdate: '2023-04-11'
-  },
-  // Pong Clone
-  {
-    id: 13,
-    image: PongPhoto,
-    title: 'Pong Clone',
-    icons: <div className='icon_under'>
-      <SiUnity size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiCsharp size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiWindows size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-    </div>,
-    github: 'https://github.com/namanbajaj/Mini-Tennis',
-    text: <span>
-      - Pong clone made in Unity <br />
-      - Supports single player and multiplayer <br />
-      - Supports keyboard, mouse, and touchscreen controls <br />
-      - Supports Android and Windows <br />
-    </span>,
-    links: [
-      {
-        icon: <SiWindows size={iconSize} />,
-        value: 'https://github.com/namanbajaj/Mini-Tennis/releases',
-      },
-      {
-        icon: <SiAndroid size={iconSize} />,
-        value: 'https://play.google.com/store/apps/details?id=com.NBaj.Pong',
-      },
-    ],
-    isNotable: false,
-    type: 'game',
-    dateOfLastUpdate: '2023-03-27',
-    dateOfFirstUpdate: '2023-01-12'
   },
   // Prolog Interpreter
   {

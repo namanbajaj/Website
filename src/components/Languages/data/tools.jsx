@@ -1,5 +1,5 @@
 import { DiGit, DiLinux, DiTerminal } from 'react-icons/di';
-import { SiUnrealengine, SiApachetomcat, SiGradle, SiNpm, SiUnity } from 'react-icons/si'
+import { SiApachetomcat, SiGradle, SiNpm } from 'react-icons/si'
 import Icons from '../../Icons/Icons.jsx';
 import { iconSize } from './iconSize.jsx';
 
@@ -50,27 +50,6 @@ export const tools = [
         id: 14,
         icon: <SiNpm size={iconSize} />,
         technology: 'NPM',
-        experience: 'Intermediate',
-        isNotable: true
-    },
-    {
-        id: 1,
-        icon: <SiUnity size={iconSize} />,
-        technology: 'Unity',
-        experience: 'Beginner',
-        isNotable: true
-    },
-    {
-        id: 2,
-        icon: <SiUnrealengine size={iconSize} />,
-        technology: 'Unreal',
-        experience: 'Beginner',
-        isNotable: true
-    },
-    {
-        id: 3,
-        icon: <Icons name="raylib" size={iconSize} />,
-        technology: 'raylib',
         experience: 'Intermediate',
         isNotable: true
     },

@@ -2,6 +2,7 @@ import React from 'react'
 import '../components/Portfolio/portfolio.css'
 
 import { data } from './data/games';
+import { techs } from './data/techs'
 
 import 'animate.css';
 import Popup from 'reactjs-popup'
@@ -15,6 +16,38 @@ const iconSize = 25;
 const Games = () => {
   return (
     <section id='games'>
+      <div className='l_t_header'>
+        <h1>
+          Languages and Technologies
+        </h1>
+      </div>
+      <div className='languages'>
+        <div className='category'>
+          <h2>Tools</h2>
+          <div className='games content'>
+            {
+              techs.map(({ id, icon, technology }) => {
+                return (
+                  <article
+                    key={id}
+                    className='details'
+                  >
+                    <h4>
+                      <h3>
+                        {icon}
+                      </h3>
+                      <h3>{technology}</h3>
+                    </h4>
+                  </article>
+                )
+              })
+            }
+          </div>
+        </div>
+      </div>
+
+      <div className='gap'></div>
+
       <div className='portfolio_intro_text'>
         <h1>Games</h1>
       </div>
