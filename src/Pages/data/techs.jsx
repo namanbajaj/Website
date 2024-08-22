@@ -1,4 +1,4 @@
-import { SiUnrealengine, SiApachetomcat, SiGradle, SiNpm, SiUnity, SiVisualstudio, SiVisualstudiocode, SiCplusplus, SiCsharp, SiC } from 'react-icons/si'
+import { SiUnrealengine, SiUnity, SiVisualstudio, SiVisualstudiocode, SiCplusplus, SiCsharp } from 'react-icons/si'
 import Icons from '../../components/Icons/Icons';
 
 const iconSize = 150;

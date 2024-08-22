@@ -11,7 +11,6 @@ import ChessPhoto from '../../assets/chess_photo.png'
 import ChessDemo from '../../assets/chess_demo.mp4'
 import SongLibraryPhoto from '../../assets/song_library_photo.png'
 import SongLibraryDemo from '../../assets/song_library_demo.mp4'
-import ColorGamePhoto from '../../assets/guess_the_color_photo.png'
 import UniversityPhoto from '../../assets/university_management_photo.png'
 import UniversityDemo from '../../assets/university_management_demo.mp4'
 import QuizGamePhoto from '../../assets/quizbiz_photo.png'
@@ -25,9 +24,9 @@ import FS from '../../assets/fs.png'
 import AIAss1 from '../../assets/AIA1.png'
 import AIFP from '../../assets/AIFP.png'
 import kp from '../../assets/kp.png'
-import raylib from '../../assets/raylib.png'
+import controller from '../../assets/controller.png'
 
-import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJson, SiVisualstudio, SiWindows, SiPython, SiUnity, SiLinux, SiRaylib, SiWebassembly, SiCplusplus, SiTypescript, SiGithub } from 'react-icons/si'
+import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJson, SiVisualstudio, SiWindows, SiPython, SiLinux, SiTypescript, SiGithub } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
 import { DiJava, DiJavascript } from 'react-icons/di';
 import { GoLinkExternal } from "react-icons/go";
@@ -63,20 +62,17 @@ export const data = [
     dateOfLastUpdate: '2024-07-03',
     dateOfFirstUpdate: '2024-07-01'
   },
-  // All raylib games
+  // Games
   {
     id: 20,
-    image: raylib,
+    image: controller,
     title: 'Games Portion of Site',
     icons: <div className='icon_under'>
-      <SiCplusplus size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiLinux size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiRaylib size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiWebassembly size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiReact size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     text: <span>
-      - Games built using raylib and C++ <br />
-      - Compiled for WebAssembly using emcc (Emscripten Compiler Frontend)
+      - Gaming portion of site <br />
+      - Contains list of gaming projects I've built and technologies I've used
     </span>,
     links: [
       {
@@ -84,9 +80,9 @@ export const data = [
         value: '/games'
       }
     ],
-    isNotable: false,
+    isNotable: true,
     type: 'game',
-    dateOfLastUpdate: '2024-06-24',
+    dateOfLastUpdate: '2024-07-21',
     dateOfFirstUpdate: '2024-06-20'
   },
   // Face and Digit Classification
@@ -349,38 +345,6 @@ export const data = [
     dateOfLastUpdate: '2022-08-13',
     dateOfFirstUpdate: '2022-08-13'
   },
-  // Color Guessing Game
-  {
-    id: 6,
-    image: ColorGamePhoto,
-    title: 'Color Game',
-    icons: <div className='icon_under'>
-      <SiKotlin size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
-      <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiAndroidstudio size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <SiGradle size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <Icons name='xml' size={iconSize} />
-    </div>,
-    github: 'https://github.com/namanbajaj/Color-Guessing-Game',
-    text:
-      <span>
-        - Color guessing game built with Kotlin in Android Studio. <br />
-        - Has 3 difficulty modes, each with their own high scores. <br />
-        - Implements coroutines for timer function and color changing title. <br />
-        - Responsive according to whether user has dark mode turned on. <br />
-        - Works well with variety of screen sizes and orientations. <br />
-      </span>,
-    links: [
-      {
-        icon: <SiAndroid size={iconSize} />,
-        value: 'https://play.google.com/store/apps/details?id=com.nbaj.colorguessinggame',
-      }
-    ],
-    isNotable: false,
-    type: 'app',
-    dateOfLastUpdate: '2023-07-18',
-    dateOfFirstUpdate: '2022-08-19'
-  },
   // Personal Portfolio
   {
     id: 1,
@@ -403,7 +367,7 @@ export const data = [
     ],
     isNotable: true,
     type: 'web',
-    dateOfLastUpdate: '2024-07-05',
+    dateOfLastUpdate: '2024-08-21',
     dateOfFirstUpdate: '2022-06-01'
   },
   // Photos Library (Android)

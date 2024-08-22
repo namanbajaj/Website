@@ -1,5 +1,25 @@
 export const data = [
   {
+    id: 4,
+    title: 'Prudential',
+    subtitle: 'Global Technology Rotation Associate',
+    date: 'July 2024 - Current',
+    description:
+      <ul className='r_list'>
+        <div className='session_name'>First Rotation</div>
+        <div className='line'></div>
+        <ul className='r_list'>
+          <li>Full stack developer working on internal tool used by Prudential internal business teams</li>
+          <li>Current development: Created microservices in Java and Python; Fixed bugs in Angular application</li>
+          <li>Technologies used: Java, Python, Angular, Typescript, Gradle, PostgreSQL, Postman, pgAdmin4, Jenkins, Git, AWS</li>
+          <li>Methodologies used: Agile, CI/CD, Microservices, Containerization</li>
+        </ul>
+      </ul>,
+    icon: 'prudential',
+
+  },
+
+  {
     id: 2,
     title: 'Rutgers University - New Brunswick',
     subtitle: 'Math Grader',

@@ -37,7 +37,7 @@ const AboutCards = () => {
                         </h3>
 
                         <h5 className='text-light center_text'>
-                            Incoming Global Technology Rotation Associate at Prudential
+                            Global Technology Rotation Associate at Prudential (Current Rotation: Full stack Developer)
                             <br />
                             Working on hobby projects
                         </h5>
@@ -65,7 +65,7 @@ const AboutCards = () => {
 
             <div className='about__me__geninfo'>
                 <h5>
-                    Hi! I'm an incoming Global Rotation Associate at Prudential Financial. I graduated from Rutgers University - New Brunswick with a major in Computer Science (BS) and Mathematics (Summa Cum Laude).
+                    Hi! I'm a Global Rotation Associate at Prudential Financial, currently working as a full stack developer. I graduated from Rutgers University - New Brunswick with a major in Computer Science (BS) and Mathematics (Summa Cum Laude).
                     <br />
                     <br />
                     I've worked with a variety of technologies through hobby projects and undergraduate courses and am continously learning new frameworks, technologies, languages, and Computer Science topics and applying them through personal projects.
@@ -96,13 +96,34 @@ const AboutCards = () => {
                         </ul>
                     </li>
                     <li className='main_list_item'>
-                        <h2>Learning full stack web development </h2>
-                    </li>
-                    <li className='main_list_item'>
-                        <h2>Learning game development in raylib </h2>
+                        <h2>Learning game development </h2>
+                        <ul className='working_on_list'>
+                            <li>
+                                <h2>
+                                    For projects, <a href='/games'>see gaming portion of website</a>
+                                </h2>
+                            </li>
+                            <li>
+                                <h2>
+                                    Current development: Creating games with raylib
+                                </h2>
+                            </li>
+                        </ul>
                     </li>
                     <li className='main_list_item'>
                         <h2> Improving and maintaining currently published projects and apps</h2>
+                        <ul className='working_on_list'>
+                            <li>
+                                <h2>
+                                    Most recently updated project: <a href="/">This website</a>
+                                </h2>
+                            </li>
+                            <li>
+                                <h2>
+                                    Other recently updated project(s): Updated most Android apps to latest Android API version
+                                </h2>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
