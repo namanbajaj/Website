@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.30fa6dc9.css",
-    "main.js": "/static/js/main.0e30d1df.js",
+    "main.js": "/static/js/main.033c64be.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.056d3457.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.484b03ff.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.a4a04f7b.chunk.js",
@@ -29,6 +29,7 @@
     "static/media/chess_photo.png": "/static/media/chess_photo.7ac877e977bad561784f.png",
     "static/media/guess_the_color_photo.png": "/static/media/guess_the_color_photo.66ce3a77e67e1e135a36.png",
     "static/media/AIA1.png": "/static/media/AIA1.62b19879f9f2bd9e0b67.png",
+    "static/media/controller.png": "/static/media/controller.fca68ba280aa5ae45317.png",
     "static/media/Angular_Course_Certificate.jpg": "/static/media/Angular_Course_Certificate.550a04bb0cbfe8c62e1b.jpg",
     "static/media/AIFP.png": "/static/media/AIFP.3f7148ce25fa825edae5.png",
     "static/media/desktop_photos_app_photo.png": "/static/media/desktop_photos_app_photo.b3fa55617b14a53106aa.png",
@@ -46,7 +47,7 @@
     "static/media/fs.png": "/static/media/fs.936db353bc768df21220.png",
     "index.html": "/index.html",
     "main.30fa6dc9.css.map": "/static/css/main.30fa6dc9.css.map",
-    "main.0e30d1df.js.map": "/static/js/main.0e30d1df.js.map",
+    "main.033c64be.js.map": "/static/js/main.033c64be.js.map",
     "reactPlayerYouTube.056d3457.chunk.js.map": "/static/js/reactPlayerYouTube.056d3457.chunk.js.map",
     "reactPlayerSoundCloud.484b03ff.chunk.js.map": "/static/js/reactPlayerSoundCloud.484b03ff.chunk.js.map",
     "reactPlayerVimeo.a4a04f7b.chunk.js.map": "/static/js/reactPlayerVimeo.a4a04f7b.chunk.js.map",
@@ -64,6 +65,6 @@
   },
   "entrypoints": [
     "static/css/main.30fa6dc9.css",
-    "static/js/main.0e30d1df.js"
+    "static/js/main.033c64be.js"
   ]
 }
