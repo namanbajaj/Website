@@ -1,13 +1,29 @@
 import React from 'react'
 import './certifications.css'
 
-import { SiAngular, SiC, SiCplusplus, SiCsharp, SiMicrosoftexcel, SiPython } from 'react-icons/si'
+import { SiAmazonaws, SiAngular, SiC, SiCplusplus, SiCsharp, SiMicrosoftexcel, SiPython, SiRust } from 'react-icons/si'
 
 import Angular_Course_Certificate from '../../assets/Angular_Course_Certificate.jpg'
+import Rust_CC_Cert from '../../assets/Rust_Crash_Course.jpg'
+import Intro_AWS_Cert from '../../assets/Intro_AWS_Cert.pdf'
 
 const iconSize = 100;
 
 const data = [
+  {
+    id: 7,
+    title: 'Introductory AWS Course',
+    company: <SiAmazonaws size={iconSize}/>,
+    date: '10/2024',
+    link: Intro_AWS_Cert
+  },
+  {
+    id: 7,
+    title: 'Rust Crash Course',
+    company: <SiRust size={iconSize}/>,
+    date: '09/2024',
+    link: Rust_CC_Cert
+  },
   {
     id: 6,
     title: 'Complete C# Masterclass',
@@ -57,7 +73,7 @@ const Certifications = () => {
     <section id='Certifications'>
       <div className="introtext">
         <h1>
-          Certifications (Courses)
+          Courses
         </h1>
       </div>
 

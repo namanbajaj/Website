@@ -10,12 +10,15 @@ import Popup from 'reactjs-popup'
 import { SiGithub } from 'react-icons/si'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 import { RiVideoLine } from 'react-icons/ri'
+import Footer from '../components/Footer/Footer';
 
 const iconSize = 25;
 
 const Games = () => {
   return (
     <section id='games'>
+      <a href="/#" className='btn home_btn'>Home</a>
+
       <div className='l_t_header'>
         <h1>
           Languages and Technologies
@@ -32,12 +35,12 @@ const Games = () => {
                     key={id}
                     className='details'
                   >
-                    <h4>
+                    <div className='icon_flex_block'>
                       <h3>
                         {icon}
                       </h3>
                       <h3>{technology}</h3>
-                    </h4>
+                    </div>
                   </article>
                 )
               })
@@ -54,13 +57,12 @@ const Games = () => {
 
       <div className='portfolio__container'>
         {
-          data.map(({ id, image, icons, title, github, text, demo, links }) => {
-            const demobutton = <a className="btn portfolio_btns" id='demo_button'> <RiVideoLine size={iconSize} /> </a>;
+          data.map(({ id, image, icons, title, github, text, links }) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
                   <Popup
-                    trigger={<a href="javascript:void(0);"><img src={image} alt={title} /></a>}
+                    trigger={<a href="#!"><img src={image} alt={title} /></a>}
                     modal
                     contentStyle={{ width: '30%', height: 'auto' }}
                   >
@@ -122,15 +124,15 @@ const Games = () => {
                   }
 
                   {links != null ? (
-                    links.map((link) => (
+                    links.map((link, index) => (
                       (link.value[0] === 'h' &&
                         <a
-                          href={link.value} className='btn old_button' target='_blank'>
+                          href={link.value} className='btn old_button' target='_blank' key={index}>
                           {link.icon}
                         </a>)
                       ||
                       (link.value[0] === '/' && <a
-                        href={link.value} className='btn old_button'>
+                        href={link.value} className='btn old_button' key={index}>
                         {link.icon}
                       </a>)
                     ))
@@ -142,10 +144,9 @@ const Games = () => {
           })
         }
       </div>
-
-      <a href="/#" className='btn home_btn'>Home</a>
-
+    <Footer/>
     </section >
+
   )
 }
 

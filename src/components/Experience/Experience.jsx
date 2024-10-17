@@ -18,7 +18,7 @@ const Experience = () => {
 
       <div className="experience_grid">
         {data.map((item) => (
-          <article className="experience_item">
+          <article className="experience_item" key={item.id}>
             <h2 className='item_title_text'>{item.title}</h2>
             <h3 className='icon'>
               <Icons name={item.icon} size={iconSize} />
@@ -43,7 +43,6 @@ const Experience = () => {
                       </div>
                       <div className="pop_up_actions">
                         <a
-
                           className="btn"
                           onClick={() => {
                             close();
@@ -60,7 +59,6 @@ const Experience = () => {
           </article>
         ))}
       </div>
-
     </section>
   )
 }

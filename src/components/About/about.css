@@ -100,6 +100,10 @@
   text-align: left;
 }
 
+.logo {
+  margin-top: -10%;
+}
+
 .working_on {
   border-bottom: 10px solid white;
   margin-bottom: 1rem;
@@ -163,7 +167,7 @@ li {
     font-size: 1.5rem;
   }
 
-  /* .card h5 {
-    margin-top: -5%;
-  } */
+  .logo {
+    margin-top: 0%;
+  }
 }

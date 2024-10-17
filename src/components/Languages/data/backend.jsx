@@ -1,5 +1,5 @@
 import { DiJava, DiPython, DiProlog } from 'react-icons/di';
-import { SiCplusplus, SiCsharp, SiC, SiOcaml, SiExpress, SiNodedotjs } from 'react-icons/si'
+import { SiCplusplus, SiCsharp, SiC, SiOcaml, SiExpress, SiNodedotjs, SiRust, SiSpringboot, SiFlask } from 'react-icons/si'
 import { iconSize } from './iconSize.jsx';
 
 
@@ -57,7 +57,7 @@ export const backend = [
         id: 8,
         icon: <SiExpress size={iconSize} />,
         technology: 'Express',
-        experience: 'Intermediate',
+        experience: 'Beginner',
         isNotable: false
     },
     {
@@ -67,4 +67,25 @@ export const backend = [
         experience: 'Intermediate',
         isNotable: true
     },
+    {
+      id: 12,
+      icon: <SiFlask size={iconSize}/>,
+      technology: 'Flask',
+      experience: 'Intermediate',
+      isNotable: true
+    },
+    {
+      id: 10,
+      icon: <SiSpringboot size={iconSize}/>,
+      technology: 'Springboot',
+      experience: 'Intermediate',
+      isNotable: true
+    },
+    {
+      id: 11,
+      icon: <SiRust size={iconSize}/>,
+      technology: 'Rust',
+      experience: 'Beginner',
+      isNotable: true
+    }
 ]

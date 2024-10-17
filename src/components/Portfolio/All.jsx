@@ -66,39 +66,9 @@ const All = () => {
     return 0;
   });
 
-  const FilterPopup = ({ onClose, onFilterChange, onSortChange, onSortOrderChange }) => {
+  const FilterButtonsObject = ({ className }) => {
     return (
-      <div className='popup_background' onClick={handleOverlayClick}>
-        <div className='popup'>
-          <div className='filter_buttons_popup'>
-            <button onClick={() => handleFilterChange('all')} className={filter === 'all' ? 'btn' : 'active btn'}>
-              All Projects
-            </button>
-            <button onClick={() => handleFilterChange('notable')} className={filter === 'notable' ? 'btn' : 'active btn '}>
-              Notable Projects
-            </button>
-            <div className='vert_line'></div>
-            <div className='horiz_line'></div>
-            <button onClick={() => handleSortChange('dateOfFirstUpdate')} className={sortBy === 'dateOfFirstUpdate' ? 'btn' : 'active btn '}>
-              Sort by Date of First Release
-            </button>
-            <button onClick={() => handleSortChange('dateOfLastUpdate')} className={sortBy === 'dateOfLastUpdate' ? 'btn' : 'active btn '}>
-              Sort by Date of Last Update
-            </button>
-            <div className='vert_line'></div>
-            <div className='horiz_line'></div>
-            <button onClick={handleSortOrderChange} className='btn'>
-              Sort {sortOrder === 'asc' ? 'Descending' : 'Ascending'}
-            </button>
-          </div>
-        </div>
-      </div>
-    )
-  }
-
-  return (
-    <div>
-      <div className='filter_buttons'>
+      <div className={className}>
         <button onClick={() => handleFilterChange('all')} className={filter === 'all' ? 'btn' : 'active btn'}>
           All Projects
         </button>
@@ -119,6 +89,22 @@ const All = () => {
           Sort {sortOrder === 'asc' ? 'Descending' : 'Ascending'}
         </button>
       </div>
+    )
+  }
+
+  const FilterPopup = () => {
+    return (
+      <div className='popup_background' onClick={handleOverlayClick}>
+        <div className='popup'>
+          <FilterButtonsObject className='filter_buttons_popup' />
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div>
+      <FilterButtonsObject className='filter_buttons' />
 
       <a className='filter_button btn portfolio_btns' onClick={() => handlePopupVisible()}><FaFilter /></a>
       {isPopupVisible && (
@@ -137,7 +123,7 @@ const All = () => {
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
                   <Popup
-                    trigger={<a href="javascript:void(0);"><img src={image} alt={title} /></a>}
+                    trigger={<a href="#!"><img src={image} alt={title} /></a>}
                     modal
                     contentStyle={{ width: '30%', height: 'auto' }}
                   >
@@ -198,7 +184,6 @@ const All = () => {
                     ) : null
                   }
 
-
                   {demo != null ? (
                     < Popup
                       trigger={demobutton}
@@ -210,7 +195,7 @@ const All = () => {
                             <div className='player-wrapper'>
                               <ReactPlayer
                                 url={demo}
-                                controls={1}
+                                controls={true}
                                 width='100%'
                                 height='100%'
                                 className='.react-player'>
@@ -233,15 +218,19 @@ const All = () => {
                   ) : null
                   }
                   {links != null ? (
-                    links.map((link) => (
+                    links.map((link, index) => (
                       (link.value[0] === 'h' &&
                         <a
-                          href={link.value} className='btn old_button' target='_blank'>
+                          href={link.value} className='btn old_button' target='_blank'
+                          key={index}
+                          >
                           {link.icon}
                         </a>)
                       ||
                       (link.value[0] === '/' && <a
-                        href={link.value} className='btn old_button'>
+                        href={link.value} className='btn old_button'
+                        key={index}
+                        >
                         {link.icon}
                       </a>)
                     ))
@@ -256,6 +245,5 @@ const All = () => {
     </div>
   )
 }
-
 
 export default All

@@ -63,12 +63,6 @@ const Languages = () => {
       key: 'other',
       data: other
     },
-    // {
-    //   id: 7,
-    //   name: 'Gaming',
-    //   key: 'gaming',
-    //   data: gaming
-    // }
   ]
 
   return (
@@ -96,14 +90,14 @@ const Languages = () => {
                           key={id}
                           className='details'
                         >
-                          <h4>
+                          <div>
                             <h3>
                               {icon}&nbsp;{technology}
                             </h3>
                             <h5 className='text-light'>
                               {experience}
                             </h5>
-                          </h4>
+                          </div>
                         </article>
                       ) : null
                     })

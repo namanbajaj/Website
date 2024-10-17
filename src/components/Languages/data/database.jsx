@@ -1,5 +1,5 @@
 import { DiMysql, DiSqllite } from 'react-icons/di';
-import { SiMicrosoftsqlserver } from 'react-icons/si'
+import { SiMicrosoftsqlserver, SiPostgresql } from 'react-icons/si'
 import Icons from '../../Icons/Icons.jsx';
 import { iconSize } from './iconSize.jsx';
 
@@ -31,5 +31,12 @@ export const database = [
         technology: 'Microsoft SQL',
         experience: 'Intermediate',
         isNotable: false
-    }
+    },
+    {
+      id: 5,
+      icon: <SiPostgresql size={iconSize} />,
+      technology: 'PostgreSQL',
+      experience: 'Intermediate',
+      isNotable: true
+  }
 ]

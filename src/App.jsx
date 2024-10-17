@@ -3,7 +3,7 @@ import { React, useEffect } from 'react'
 
 import 'animate.css';
 
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 
 import Home from './Pages/Home';
 import NotFound from './Pages/NotFound';
@@ -12,13 +12,19 @@ import Games from './Pages/Games';
 
 const App = () => {
   const navigate = useNavigate();
-
+  const location = useLocation();
+  
   useEffect(() => {
-    const redirect = new URLSearchParams(window.location.search).get('redirect');
+    const searchParams = new URLSearchParams(location.search);
+    const redirect = searchParams.get('redirect');
+    
     if (redirect) {
-      navigate(redirect);
+      searchParams.delete('redirect');
+      const newUrl = `${location.pathname}${searchParams.toString() ? `?${searchParams.toString()}` : ''}`;
+      window.history.replaceState({}, '', newUrl);
+      navigate(redirect, { replace: true });
     }
-  }, [navigate]);
+  }, [navigate, location]);
 
   return (
     <>
