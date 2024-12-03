@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import './languages.css'
 import '../About/about.css'
@@ -65,51 +66,56 @@ const Languages = () => {
     },
   ]
 
+  var delay = 0;
   return (
     <div>
-      <div className='l_t_header'>
-        <h1>
-          Languages and Technologies
-        </h1>
-      </div>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} delay={delay} animateOnce={true}>
+        <div className='l_t_header'>
+          <h1>
+            Languages and Technologies
+          </h1>
+        </div>
+      </ScrollAnimation>
       <div className='languages'>
         {
           categories.map(({ id, name, key, data }) => {
             const notableItemsCount = data.filter(item => item.isNotable).length
             const totalItemsCount = data.length
-
+            delay += 100
             return (
-              <div className='category' key={id}>
-                <h2>{name}</h2>
-                <div className='content'>
+              <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={delay} animateOnce={true}>
+                <div className='category' key={id}>
+                  <h2>{name}</h2>
+                  <div className='content'>
+                    {
+                      data.map(({ id, icon, technology, experience, isNotable }) => {
+                        const isVisible = booleanState[key] || isNotable
+                        return (isVisible) ? (
+                          <article
+                            key={id}
+                            className='details'
+                          >
+                            <div>
+                              <h3>
+                                {icon}&nbsp;{technology}
+                              </h3>
+                              <h5 className='text-light'>
+                                {experience}
+                              </h5>
+                            </div>
+                          </article>
+                        ) : null
+                      })
+                    }
+                  </div>
                   {
-                    data.map(({ id, icon, technology, experience, isNotable }) => {
-                      const isVisible = booleanState[key] || isNotable
-                      return (isVisible) ? (
-                        <article
-                          key={id}
-                          className='details'
-                        >
-                          <div>
-                            <h3>
-                              {icon}&nbsp;{technology}
-                            </h3>
-                            <h5 className='text-light'>
-                              {experience}
-                            </h5>
-                          </div>
-                        </article>
-                      ) : null
-                    })
-                  }
+                    notableItemsCount != totalItemsCount && (
+                      <a className='btn r_btn see_more_tech' onClick={() => toggleBoolean(key)}>
+                        {booleanState[key] ? 'See Less' : 'See More'}
+                      </a>
+                    )}
                 </div>
-                {
-                  notableItemsCount != totalItemsCount && (
-                    <a className='btn r_btn see_more_tech' onClick={() => toggleBoolean(key)}>
-                      {booleanState[key] ? 'See Less' : 'See More'}
-                    </a>
-                  )}
-              </div>
+              </ScrollAnimation>
             )
           })
         }

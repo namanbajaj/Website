@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-
+import ScrollAnimation from 'react-animate-on-scroll';
 import Popup from 'reactjs-popup'
 import ReactPlayer from 'react-player'
-
 import 'animate.css';
 
 import { data } from './data'
@@ -10,7 +9,6 @@ import { data } from './data'
 import { SiGithub } from 'react-icons/si'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 import { RiVideoLine } from 'react-icons/ri'
-
 import { FaFilter } from "react-icons/fa6";
 
 const iconSize = 25;
@@ -104,103 +102,38 @@ const All = () => {
 
   return (
     <div>
-      <FilterButtonsObject className='filter_buttons' />
+      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={0.5} animateOnce={true}>
+        <FilterButtonsObject className='filter_buttons' />
 
-      <a className='filter_button btn portfolio_btns' onClick={() => handlePopupVisible()}><FaFilter /></a>
-      {isPopupVisible && (
-        <FilterPopup
-          onClose={() => setIsPopupVisible(false)}
-          onFilterChange={handleFilterChange}
-          onSortChange={handleSortChange}
-          onSortOrderChange={handleSortOrderChange}
-        />
-      )}
-      <div className='portfolio__container'>
-        {
-          sortedData.map(({ id, image, icons, title, github, text, demo, links }) => {
-            const demobutton = <a className="btn portfolio_btns" id='demo_button'> <RiVideoLine size={iconSize} /> </a>;
-            return (
-              <article key={id} className='portfolio__item'>
-                <div className="portfolio__item-image">
-                  <Popup
-                    trigger={<a href="#!"><img src={image} alt={title} /></a>}
-                    modal
-                    contentStyle={{ width: '30%', height: 'auto' }}
-                  >
-                    {close => (
-                      <div className="pop_up_window animate__animated animate__zoomIn">
-                        <div className="pop_up_header"> {title} </div>
-                        <div className="pop_up_content">
-                          {<img src={image} alt={title} />}
-                        </div>
-                        <div className="pop_up_actions">
-                          <a
-                            className="btn"
-                            onClick={() => {
-                              close();
-                            }}
-                          >
-                            Close
-                          </a>
-                        </div>
-                      </div>
-                    )}
-                  </Popup>
-                </div>
-                <div>
-                  <h3 className='title_and_languages'>
-                    <div className='portfolio_item_title_text'>{title}</div>
-                    {icons}
-                  </h3>
-                </div>
-                <div className="portfolio__item-cta">
-                  <Popup
-                    trigger={<a className="btn portfolio_btns"> <AiOutlineInfoCircle size={iconSize} /> </a>}
-                    modal
-                  >
-                    {close => (
-                      <div className="pop_up_window animate__animated animate__zoomIn">
-                        <div className="pop_up_header"> {title} </div>
-                        <div className="pop_up_content">
-                          {text}
-                        </div>
-                        <div className="pop_up_actions">
-                          <a
-                            className="btn"
-                            onClick={() => {
-                              close();
-                            }}
-                          >
-                            Close
-                          </a>
-                        </div>
-                      </div>
-                    )}
-                  </Popup>
+        <a className='filter_button btn portfolio_btns' onClick={() => handlePopupVisible()}><FaFilter /></a>
+        {isPopupVisible && (
+          <FilterPopup
+            onClose={() => setIsPopupVisible(false)}
+            onFilterChange={handleFilterChange}
+            onSortChange={handleSortChange}
+            onSortOrderChange={handleSortOrderChange}
+          />
+        )}
+      </ScrollAnimation>
 
-                  {github != null ?
-                    (
-                      <a href={github} className='btn portfolio_btns' target='_blank'><SiGithub size={iconSize} /></a>
-                    ) : null
-                  }
-
-                  {demo != null ? (
-                    < Popup
-                      trigger={demobutton}
+      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={0.5} animateOnce={true}>
+        <div className='portfolio__container'>
+          {
+            sortedData.map(({ id, image, icons, title, github, text, demo, links }) => {
+              const demobutton = <a className="btn portfolio_btns" id='demo_button'> <RiVideoLine size={iconSize} /> </a>;
+              return (
+                <article key={id} className='portfolio__item'>
+                  <div className="portfolio__item-image">
+                    <Popup
+                      trigger={<a href="#!"><img src={image} alt={title} /></a>}
                       modal
+                      contentStyle={{ width: '30%', height: 'auto' }}
                     >
                       {close => (
-                        <div className="pop_up_window_video animate__animated animate__zoomIn">
-                          <div className="pop_up_content_video">
-                            <div className='player-wrapper'>
-                              <ReactPlayer
-                                url={demo}
-                                controls={true}
-                                width='100%'
-                                height='100%'
-                                className='.react-player'>
-                              </ReactPlayer>
-                            </div>
+                        <div className="pop_up_window animate__animated animate__zoomIn">
+                          <div className="pop_up_header"> {title} </div>
+                          <div className="pop_up_content">
+                            {<img src={image} alt={title} />}
                           </div>
                           <div className="pop_up_actions">
                             <a
@@ -215,33 +148,103 @@ const All = () => {
                         </div>
                       )}
                     </Popup>
-                  ) : null
-                  }
-                  {links != null ? (
-                    links.map((link, index) => (
-                      (link.value[0] === 'h' &&
-                        <a
-                          href={link.value} className='btn old_button' target='_blank'
-                          key={index}
+                  </div>
+                  <div>
+                    <h3 className='title_and_languages'>
+                      <div className='portfolio_item_title_text'>{title}</div>
+                      {icons}
+                    </h3>
+                  </div>
+                  <div className="portfolio__item-cta">
+                    <Popup
+                      trigger={<a className="btn portfolio_btns"> <AiOutlineInfoCircle size={iconSize} /> </a>}
+                      modal
+                    >
+                      {close => (
+                        <div className="pop_up_window animate__animated animate__zoomIn">
+                          <div className="pop_up_header"> {title} </div>
+                          <div className="pop_up_content">
+                            {text}
+                          </div>
+                          <div className="pop_up_actions">
+                            <a
+                              className="btn"
+                              onClick={() => {
+                                close();
+                              }}
+                            >
+                              Close
+                            </a>
+                          </div>
+                        </div>
+                      )}
+                    </Popup>
+
+                    {github != null ?
+                      (
+                        <a href={github} className='btn portfolio_btns' target='_blank'><SiGithub size={iconSize} /></a>
+                      ) : null
+                    }
+
+                    {demo != null ? (
+                      < Popup
+                        trigger={demobutton}
+                        modal
+                      >
+                        {close => (
+                          <div className="pop_up_window_video animate__animated animate__zoomIn">
+                            <div className="pop_up_content_video">
+                              <div className='player-wrapper'>
+                                <ReactPlayer
+                                  url={demo}
+                                  controls={true}
+                                  width='100%'
+                                  height='100%'
+                                  className='.react-player'>
+                                </ReactPlayer>
+                              </div>
+                            </div>
+                            <div className="pop_up_actions">
+                              <a
+                                className="btn"
+                                onClick={() => {
+                                  close();
+                                }}
+                              >
+                                Close
+                              </a>
+                            </div>
+                          </div>
+                        )}
+                      </Popup>
+                    ) : null
+                    }
+                    {links != null ? (
+                      links.map((link, index) => (
+                        (link.value[0] === 'h' &&
+                          <a
+                            href={link.value} className='btn old_button' target='_blank'
+                            key={index}
                           >
+                            {link.icon}
+                          </a>)
+                        ||
+                        (link.value[0] === '/' && <a
+                          href={link.value} className='btn old_button'
+                          key={index}
+                        >
                           {link.icon}
                         </a>)
-                      ||
-                      (link.value[0] === '/' && <a
-                        href={link.value} className='btn old_button'
-                        key={index}
-                        >
-                        {link.icon}
-                      </a>)
-                    ))
-                  ) : null
-                  }
-                </div>
-              </article>
-            )
-          })
-        }
-      </div>
+                      ))
+                    ) : null
+                    }
+                  </div>
+                </article>
+              )
+            })
+          }
+        </div>
+      </ScrollAnimation>
     </div>
   )
 }

@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './certifications.css'
+import ScrollAnimation from 'react-animate-on-scroll';
 
-import { SiAmazonaws, SiAngular, SiC, SiCplusplus, SiCsharp, SiMicrosoftexcel, SiPython, SiRust } from 'react-icons/si'
+import { SiAngular, SiC, SiCplusplus, SiCsharp, SiMicrosoftexcel, SiPython, SiRust } from 'react-icons/si'
 
 import Angular_Course_Certificate from '../../assets/Angular_Course_Certificate.jpg'
 import Rust_CC_Cert from '../../assets/Rust_Crash_Course.jpg'
 import Intro_AWS_Cert from '../../assets/Intro_AWS_Cert.pdf'
+import { FaAws } from 'react-icons/fa6'
 
 const iconSize = 100;
 
@@ -13,14 +15,14 @@ const data = [
   {
     id: 7,
     title: 'Introductory AWS Course',
-    company: <SiAmazonaws size={iconSize}/>,
+    company: <FaAws size={iconSize} />,
     date: '10/2024',
     link: Intro_AWS_Cert
   },
   {
     id: 7,
     title: 'Rust Crash Course',
-    company: <SiRust size={iconSize}/>,
+    company: <SiRust size={iconSize} />,
     date: '09/2024',
     link: Rust_CC_Cert
   },
@@ -68,29 +70,39 @@ const data = [
   },
 ]
 
+var delay = 0;
 const Certifications = () => {
   return (
     <section id='Certifications'>
-      <div className="introtext">
-        <h1>
-          Courses
-        </h1>
-      </div>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}>
+        <div className="introtext">
+          <h1>
+            Courses
+          </h1>
+        </div>
+      </ScrollAnimation>
 
       <div className="certifications_grid">
-        {data.map((certification) => (
-          <div className="certification" key={certification.id}>
-            <h2 className='item_title_text'>{certification.title}</h2>
-            <h3 className='icon'>{certification.company}</h3>
-            <div className='grid_info'>
-              <h5 className='date'>{certification.date}</h5>
-              <a className='btn c_btn' href={certification.link} target="_blank" rel="noreferrer">View Certificate</a>
-            </div>
-          </div>
-        ))}
+        {
+          data.map(({ id, title, company, date, link }) => {
+            delay += 25
+            return (
+              <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={delay} animateOnce={true}>
+                <div className="certification" key={id}>
+                  <h2 className='item_title_text'>{title}</h2>
+                  <h3 className='icon'>{company}</h3>
+                  <div className='grid_info'>
+                    <h5 className='date'>{date}</h5>
+                    <a className='btn c_btn' href={link} target="_blank" rel="noreferrer">View Certificate</a>
+                  </div>
+                </div>
+              </ScrollAnimation>
+            )
+          })
+        }
       </div>
 
-    </section>
+    </section >
   )
 }
 

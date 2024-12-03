@@ -7,18 +7,16 @@ import Experience from '../components/Experience/Experience'
 import Languages from '../components/Languages/Languages'
 import Certifications from '../components/Certifications/Certifications'
 
-import ScrollAnimation from 'react-animate-on-scroll';
-
 const Home = () => {
   return (
     <>
       <Welcome />
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><About /></ScrollAnimation>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Experience /></ScrollAnimation>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Languages /></ScrollAnimation>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Portfolio /></ScrollAnimation>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1.5} animateOnce={true}><Certifications /></ScrollAnimation>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}><Contact /></ScrollAnimation>
+      <About/>
+      <Experience />
+      <Languages />
+      <Portfolio />
+      <Certifications />
+      <Contact />
       <Footer />
     </>
   )
