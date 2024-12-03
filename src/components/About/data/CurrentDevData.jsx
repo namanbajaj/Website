@@ -27,9 +27,9 @@ export const cd_data = [
 
   {
     key: 4,
-    main_bullet: 'Learning AWS to acquire AWS Certified Cloud Practitioner',
+    main_bullet: 'Working on acquisition of AWS Associate Certifications',
     sub_bullets: [
-      'Using A Cloud Guru learning path'
+      `Starting with AWS Certified Solutions Architect`,
     ]
   },
 ]

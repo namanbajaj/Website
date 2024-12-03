@@ -23,7 +23,7 @@ const AboutCards = () => {
 
                   <h5 className='text-light center_text'>
                     {info.map((item, index) => (
-                      <div key={index}>{item}</div>
+                      <div className='about_me_line_item' key={index}>{window.screen.width <= 600 && '- '}{item}</div>
                     )
                     )}
                   </h5>
@@ -37,32 +37,36 @@ const AboutCards = () => {
       <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1} animateOnce={true}>
 
         <div className='about__me__geninfo'>
-          <h5>
-            {gi_data.map((item, index) =>
-              (<div key={index}>{item} <br /> <br /></div>)
-            )}
-          </h5>
+          <div className='about_me_text_info'>
+            <h5>
+              {gi_data.map((item, index) =>
+                (<div key={index}>{item} <br /> <br /></div>)
+              )}
+            </h5>
+          </div>
 
-          <h1 className='working_on'>
-            Current Development:
-          </h1>
-          <ul className='working_on_list'>
-            {cd_data.map(({ key, main_bullet, sub_bullets }) => {
-              return (
-                <li className='main_list_item' key={key}>
-                  <h2>{main_bullet}</h2>
-                  <ul className='working_on_list'>
-                    {sub_bullets.map((item, index) => (
-                      <li key={index}>
-                        <h2 dangerouslySetInnerHTML={{ __html: item }}>
-                        </h2>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              )
-            })}
-          </ul>
+          <div className='about_me_development'>
+            <h1 className='working_on'>
+              Current Development:
+            </h1>
+            <ul className='working_on_list'>
+              {cd_data.map(({ key, main_bullet, sub_bullets }) => {
+                return (
+                  <li className='main_list_item' key={key}>
+                    <h2>{main_bullet}</h2>
+                    <ul className='working_on_list'>
+                      {sub_bullets.map((item, index) => (
+                        <li key={index}>
+                          <h2 dangerouslySetInnerHTML={{ __html: item }}>
+                          </h2>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
         </div>
       </ScrollAnimation >
     </div>

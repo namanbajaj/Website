@@ -145,9 +145,18 @@ li {
     grid-template-columns: 1fr;
   }
 
+  .about__me__geninfo {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .about_me_line_item {
+    display: flex;
+  }
+  
   .content_cards {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
     justify-content: center;
     text-align: left;
     vertical-align: middle;

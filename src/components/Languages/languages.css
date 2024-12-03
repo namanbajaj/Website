@@ -100,11 +100,6 @@
     padding: 0 1rem;
   }
 
-  .cards_overview {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
   .logo.center_text {
     justify-content: center;
     text-align: center;

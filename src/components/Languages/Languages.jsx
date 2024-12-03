@@ -68,7 +68,7 @@ const Languages = () => {
 
   var delay = 0;
   return (
-    <div>
+    <section id='Languages'>
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} delay={delay} animateOnce={true}>
         <div className='l_t_header'>
           <h1>
@@ -120,7 +120,7 @@ const Languages = () => {
           })
         }
       </div>
-    </div >
+    </section >
   )
 }
 

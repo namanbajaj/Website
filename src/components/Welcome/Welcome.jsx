@@ -22,7 +22,7 @@ const Welcome = () => {
                         "enable": false,
                         "zIndex": -5
                     },
-                    "fpsLimit": 120,
+                    "fpsLimit": 45,
                     "particles": {
                         "number": {
                             "value": 50,
