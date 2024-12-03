@@ -1,8 +1,9 @@
 /* General header style */
 header {
     height: fit-content;
-    padding-top: 1rem;
     overflow: hidden;
+    position: relative;
+    padding: 5rem 0;
 }
 
 /* Container that most of the section, excluding particles */
