@@ -9,3 +9,5 @@ save as optimized svg
 	embed raster images
 change xml:s to xmlS
 resize as needed with iconSize=
+
+or just use https://www.pngtosvg.com/

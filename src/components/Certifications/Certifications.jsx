@@ -2,92 +2,84 @@ import React, { useState } from 'react'
 import './certifications.css'
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import { SiAngular, SiC, SiCplusplus, SiCsharp, SiMicrosoftexcel, SiPython, SiRust } from 'react-icons/si'
+import { data } from './data'
+import { FaFilter } from 'react-icons/fa6';
 
-import Angular_Course_Certificate from '../../assets/Angular_Course_Certificate.jpg'
-import Rust_CC_Cert from '../../assets/Rust_Crash_Course.jpg'
-import Intro_AWS_Cert from '../../assets/Intro_AWS_Cert.pdf'
-import { FaAws } from 'react-icons/fa6'
-
-const iconSize = 100;
-
-const data = [
-  {
-    id: 7,
-    title: 'Introductory AWS Course',
-    company: <FaAws size={iconSize} />,
-    date: '10/2024',
-    link: Intro_AWS_Cert
-  },
-  {
-    id: 7,
-    title: 'Rust Crash Course',
-    company: <SiRust size={iconSize} />,
-    date: '09/2024',
-    link: Rust_CC_Cert
-  },
-  {
-    id: 6,
-    title: 'Complete C# Masterclass',
-    company: <SiCsharp size={iconSize} />,
-    date: '08/2023',
-    link: 'https://www.udemy.com/certificate/UC-223cfa12-1df1-490f-a2d9-c50fa88b5ffc/'
-  },
-  {
-    id: 5,
-    title: 'Angular Essentials (Angular 2+ with TypeScript)',
-    company: <SiAngular size={iconSize} />,
-    date: '07/2023',
-    link: Angular_Course_Certificate
-  },
-  {
-    id: 4,
-    title: 'Excel Course',
-    company: <SiMicrosoftexcel size={iconSize} />,
-    date: '06/2023',
-    link: 'https://credentials.fe.training/8ce1a567-025c-41b4-a134-b5c9399cf1a6#gs.130n7u'
-  },
-  {
-    id: 3,
-    title: 'Beginning C++ Programming - From Beginner to Beyond',
-    company: <SiCplusplus size={iconSize} />,
-    date: '07/2022',
-    link: 'https://www.udemy.com/certificate/UC-58727c93-ff9a-4c7c-8820-5e8f2de11a5b/'
-  },
-  {
-    id: 2,
-    title: 'C Programming For Beginners - Master the C Language',
-    company: <SiC size={iconSize} />,
-    date: '09/2021',
-    link: 'https://www.udemy.com/certificate/UC-97fc354e-5d9b-42d8-bfd1-c77e5ca2d017/'
-  },
-  {
-    id: 1,
-    title: 'Learn Python Programming Masterclass',
-    company: <SiPython size={iconSize} />,
-    date: '08/2020',
-    link: 'https://www.udemy.com/certificate/UC-2e0cfbb5-f10d-4beb-9a01-3577874223f4/'
-  },
-]
-
-var delay = 0;
 const Certifications = () => {
+  const [filter, setFilter] = useState('certifications');
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const handleFilterChange = (newFilter) => {
+    setFilter(newFilter);
+    setIsPopupVisible(false);
+  };
+
+  const handlePopupVisible = () => {
+    setIsPopupVisible(!isPopupVisible);
+  };
+
+  const handleOverlayClick = (e) => {
+    if (e.target.classList.contains('popup_background')) {
+      setIsPopupVisible(false);
+    }
+  };
+
+  const filteredProjects = data.filter((project) => {
+    if (filter === 'all') return true;
+    if (filter === 'certifications') return project.type === 'certification';
+    if (filter === 'coursework') return project.type === 'coursework';
+  });
+
+  const FilterButtonsObject = ({ className }) => {
+    return (
+      <div className={className}>
+        <button onClick={() => handleFilterChange('all')} className={filter === 'all' ? 'btn' : 'active btn'}>
+          All
+        </button>
+        <button onClick={() => handleFilterChange('certifications')} className={filter === 'certifications' ? 'btn' : 'active btn '}>
+          Certifications
+        </button>
+        <button onClick={() => handleFilterChange('coursework')} className={filter === 'coursework' ? 'btn' : 'active btn '}>
+          Coursework
+        </button>
+        <div className='vert_line' style={{ visibility: 'hidden' }}></div>
+      </div>
+    )
+  }
+
+  const FilterPopup = () => {
+    return (
+      <div className='popup_background' onClick={handleOverlayClick}>
+        <div className='popup'>
+          <FilterButtonsObject className='filter_buttons_popup' />
+        </div>
+      </div>
+    )
+  }
+
   return (
     <section id='Certifications'>
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}>
         <div className="introtext">
           <h1>
-            Courses
+            Certifications/Coursework
           </h1>
         </div>
-      </ScrollAnimation>
 
-      <div className="certifications_grid">
-        {
-          data.map(({ id, title, company, date, link }) => {
-            delay += 25
-            return (
-              <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={delay} animateOnce={true}>
+        <FilterButtonsObject className='filter_buttons' />
+
+        <a className='filter_button btn portfolio_btns' onClick={() => handlePopupVisible()}><FaFilter /></a>
+        {isPopupVisible && (
+          <FilterPopup
+            onClose={() => setIsPopupVisible(false)}
+            onFilterChange={handleFilterChange}
+          />
+        )}
+
+        <div className="certifications_grid">
+          {
+            filteredProjects.map(({ id, title, company, date, link }) => {
+              return (
                 <div className="certification" key={id}>
                   <h2 className='item_title_text'>{title}</h2>
                   <h3 className='icon'>{company}</h3>
@@ -96,12 +88,11 @@ const Certifications = () => {
                     <a className='btn c_btn' href={link} target="_blank" rel="noreferrer">View Certificate</a>
                   </div>
                 </div>
-              </ScrollAnimation>
-            )
-          })
-        }
-      </div>
-
+              )
+            })
+          }
+        </div>
+      </ScrollAnimation>
     </section >
   )
 }

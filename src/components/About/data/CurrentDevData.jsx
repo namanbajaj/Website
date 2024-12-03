@@ -29,7 +29,7 @@ export const cd_data = [
     key: 4,
     main_bullet: 'Working on acquisition of AWS Associate Certifications',
     sub_bullets: [
-      `Starting with AWS Certified Solutions Architect`,
+      `Working on acquiring AWS Certified Solutions Architect`,
     ]
   },
 ]

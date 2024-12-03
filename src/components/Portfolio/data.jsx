@@ -367,7 +367,7 @@ export const data = [
     ],
     isNotable: true,
     type: 'web',
-    dateOfLastUpdate: '2024-10-16',
+    dateOfLastUpdate: '2024-12-03',
     dateOfFirstUpdate: '2022-06-01'
   },
   // Photos Library (Android)
