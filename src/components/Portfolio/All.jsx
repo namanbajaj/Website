@@ -128,6 +128,7 @@ const All = () => {
                       trigger={<a href="#!"><img src={image} alt={title} /></a>}
                       modal
                       contentStyle={{ width: '30%', height: 'auto' }}
+                      disabled={window.screen.width < 600}
                     >
                       {close => (
                         <div className="pop_up_window animate__animated animate__zoomIn">
