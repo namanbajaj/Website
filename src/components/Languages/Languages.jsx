@@ -67,9 +67,10 @@ const Languages = () => {
   ]
 
   var delay = 0;
+  const isMobile = window.screen.width <= 600
   return (
     <section id='Languages'>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} delay={delay} animateOnce={true}>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={isMobile ? 0 : 1.5} animateOnce={true} offset={isMobile ? 0 : 150} delay={isMobile ? 0 : delay}>
         <div className='l_t_header'>
           <h1>
             Languages and Technologies
@@ -83,7 +84,7 @@ const Languages = () => {
             const totalItemsCount = data.length
             delay += 100
             return (
-              <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={delay} animateOnce={true}>
+              <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={isMobile ? 0 : 1} animateOnce={true} offset={isMobile ? 0 : 150} delay={isMobile ? 0 : delay}>
                 <div className='category' key={id}>
                   <h2>{name}</h2>
                   <div className='content'>
@@ -109,7 +110,7 @@ const Languages = () => {
                     }
                   </div>
                   {
-                    notableItemsCount != totalItemsCount && (
+                    notableItemsCount !== totalItemsCount && (
                       <a className='btn r_btn see_more_tech' onClick={() => toggleBoolean(key)}>
                         {booleanState[key] ? 'See Less' : 'See More'}
                       </a>

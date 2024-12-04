@@ -100,9 +100,11 @@ const All = () => {
     )
   }
 
+  const isMobile = window.screen.width <= 600
+
   return (
     <div>
-      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={0.5} animateOnce={true}>
+      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={isMobile ? 0 : 0.5} animateOnce={true} offset={isMobile ? 0 : 150} >
         <FilterButtonsObject className='filter_buttons' />
 
         <a className='filter_button btn portfolio_btns' onClick={() => handlePopupVisible()}><FaFilter /></a>
@@ -116,7 +118,7 @@ const All = () => {
         )}
       </ScrollAnimation>
 
-      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={0.5} animateOnce={true}>
+      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={isMobile ? 0 : 0.5} animateOnce={true} offset={isMobile ? 0 : 150} >
         <div className='portfolio__container'>
           {
             sortedData.map(({ id, image, icons, title, github, text, demo, links }) => {

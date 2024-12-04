@@ -8,12 +8,14 @@ import './about.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const AboutCards = () => {
+  const isMobile = window.screen.width <= 600
+
   return (
     <div className='cards_overview'>
       <div className='info_cards'>
         {cards_data.map(({ key, title, logo, info }) => {
           return (
-            <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}>
+            <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={isMobile ? 0 : 1} animateOnce={true} offset={isMobile ? 0 : 150}>
               <div className='card' key={key}>
                 <h2>{title}</h2>
                 <div className='content_cards'>
@@ -34,8 +36,7 @@ const AboutCards = () => {
         }
         )}
       </div>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1} animateOnce={true}>
-
+      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={isMobile ? 0 : 1} animateOnce={true} offset={isMobile ? 0 : 150}>
         <div className='about__me__geninfo'>
           <div className='about_me_text_info'>
             <h5>

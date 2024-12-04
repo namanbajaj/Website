@@ -14,7 +14,7 @@ export const data = [
     id: 11,
     title: 'AWS CLF-02 Certification',
     company: <img src={CLF02_Cert} alt="" className='cert_image' />,
-    date: '12/2024',
+    date: 'Dec 2024',
     link: 'https://www.credly.com/badges/7b1eefa9-9700-4e4b-b5c4-8344661127e0/public_url',
     type: 'certification'
   },
@@ -22,7 +22,7 @@ export const data = [
     id: 10,
     title: 'AWS CLF-02 Course',
     company: <FaAws size={iconSize} />,
-    date: '11/2024',
+    date: 'Nov 2024',
     link: CLF02_Course,
     type: 'coursework'
   },
@@ -30,7 +30,7 @@ export const data = [
     id: 9,
     title: 'Introductory AWS Course',
     company: <FaAws size={iconSize} />,
-    date: '10/2024',
+    date: 'Oct 2024',
     link: Intro_AWS_Cert,
     type: 'coursework'
   },
@@ -38,7 +38,7 @@ export const data = [
     id: 8,
     title: 'Rust Crash Course',
     company: <SiRust size={iconSize} />,
-    date: '09/2024',
+    date: 'Sep 2024',
     link: Rust_CC_Cert,
     type: 'coursework'
   },
@@ -46,7 +46,7 @@ export const data = [
     id: 6,
     title: 'Complete C# Masterclass',
     company: <SiCsharp size={iconSize} />,
-    date: '08/2023',
+    date: 'Aug 2023',
     link: 'https://www.udemy.com/certificate/UC-223cfa12-1df1-490f-a2d9-c50fa88b5ffc/',
     type: 'coursework'
   },
@@ -54,7 +54,7 @@ export const data = [
     id: 5,
     title: 'Angular Essentials (Angular 2+ with TypeScript)',
     company: <SiAngular size={iconSize} />,
-    date: '07/2023',
+    date: 'Jul 2023',
     link: Angular_Course_Certificate,
     type: 'coursework'
   },
@@ -62,7 +62,7 @@ export const data = [
     id: 4,
     title: 'Excel Course',
     company: <SiMicrosoftexcel size={iconSize} />,
-    date: '06/2023',
+    date: 'Jun 2023',
     link: 'https://credentials.fe.training/8ce1a567-025c-41b4-a134-b5c9399cf1a6#gs.130n7u',
     type: 'coursework'
   },
@@ -70,7 +70,7 @@ export const data = [
     id: 3,
     title: 'Beginning C++ Programming - From Beginner to Beyond',
     company: <SiCplusplus size={iconSize} />,
-    date: '07/2022',
+    date: 'Jul 2022',
     link: 'https://www.udemy.com/certificate/UC-58727c93-ff9a-4c7c-8820-5e8f2de11a5b/',
     type: 'coursework'
   },
@@ -78,7 +78,7 @@ export const data = [
     id: 2,
     title: 'C Programming For Beginners - Master the C Language',
     company: <SiC size={iconSize} />,
-    date: '09/2021',
+    date: 'Sep 2021',
     link: 'https://www.udemy.com/certificate/UC-97fc354e-5d9b-42d8-bfd1-c77e5ca2d017/',
     type: 'coursework'
   },
@@ -86,7 +86,7 @@ export const data = [
     id: 1,
     title: 'Learn Python Programming Masterclass',
     company: <SiPython size={iconSize} />,
-    date: '08/2020',
+    date: 'Aug 2020',
     link: 'https://www.udemy.com/certificate/UC-2e0cfbb5-f10d-4beb-9a01-3577874223f4/',
     type: 'coursework'
   },

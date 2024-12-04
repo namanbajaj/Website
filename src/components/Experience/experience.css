@@ -126,9 +126,16 @@ body.modal-open {
         flex-direction: column;
     }
 
+    .experience_item {
+      max-height: fit-content;
+    }
+
     .full_grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+      flex-direction: column;
+    }
+
+    .full_grid * {
+      padding: 10px 0;
     }
 
     .info_grid {
@@ -137,6 +144,7 @@ body.modal-open {
 
     .r_btn {
         justify-self: center;
+        align-self: center;
     }
 
     .pop_up_window {

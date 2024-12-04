@@ -1,6 +1,5 @@
 .introtext {
     margin-left: 5%;
-    height: fit-content;
     position: relative;
     margin-bottom: 3rem;
 }
@@ -83,5 +82,10 @@
 @media screen and (max-width: 600px) {
     .certifications_grid {
         grid-template-columns: 1fr;
+        margin-top: 48px;
+    }
+
+    .icon {
+      margin-bottom: 32px;
     }
 }

@@ -5,9 +5,11 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { AiOutlineMail, AiOutlinePhone, AiOutlineMessage, AiOutlineLinkedin } from 'react-icons/ai'
 
 const Contact = () => {
+  const isMobile = window.screen.width <= 600;
+
   return (
     <section id='contact'>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={isMobile ? 0 : 1} animateOnce={true} offset={isMobile ? 0 : 150}>
         <div className="introtext">
           <h1>
             Contact Me
@@ -15,7 +17,7 @@ const Contact = () => {
         </div>
       </ScrollAnimation>
       
-      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={200} animateOnce={true}>
+      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={isMobile ? 0 : 1} animateOnce={true} offset={isMobile ? 0 : 150} delay={isMobile ? 0 : 200} >
         <div className="contact__options">
           <article className="contact__option">
             <AiOutlineMail className='contact-icon' />
