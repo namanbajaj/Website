@@ -10,10 +10,9 @@ const iconSize = 150;
 
 const Experience = () => {
   var duration = 0;
-  const isMobile = window.screen.width <= 600
   return (
     <section id='Experience'>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={isMobile ? 0 : 1.5} animateOnce={true} offset={isMobile ? 0 : 150}>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}>
         <div className="introtext">
           <h1>
             Work Experience
@@ -25,7 +24,7 @@ const Experience = () => {
         {data.map((item) => {
           duration += 100
           return (
-            <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={isMobile ? 0 : 1.5} animateOnce={true} offset={isMobile ? 0 : 150} delay={isMobile ? 0 : duration}>
+            <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={duration} animateOnce={true}>
               <article className="experience_item" key={item.id}>
                 <h2 className='item_title_text'>{item.title}</h2>
                 <h3 className='icon'>

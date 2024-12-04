@@ -7,10 +7,9 @@ import 'animate.css';
 import All from './All'
 
 const Portfolio = () => {
-  const isMobile = window.screen.width <= 600
   return (
     <section id='portfolio'>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={isMobile ? 0 : 1.5} animateOnce={true} offset={isMobile ? 0 : 150}>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}>
         <div className='portfolio_intro_text'>
           <h1>Projects</h1>
         </div>

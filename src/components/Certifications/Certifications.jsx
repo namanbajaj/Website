@@ -57,11 +57,9 @@ const Certifications = () => {
     )
   }
 
-  const isMobile = window.screen.width <= 600
-
   return (
     <section id='Certifications'>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={isMobile ? 0 : 1} animateOnce={true} offset={isMobile ? 0 : 150}>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}>
         <div className="introtext">
           <h1>
             Certifications & Coursework
