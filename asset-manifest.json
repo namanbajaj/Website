@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e9ce0d2.css",
-    "main.js": "/static/js/main.6f9d4063.js",
+    "main.css": "/static/css/main.89cba4f6.css",
+    "main.js": "/static/js/main.c614d89c.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.056d3457.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.484b03ff.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.a4a04f7b.chunk.js",
@@ -32,11 +32,13 @@
     "static/media/AIA1.png": "/static/media/AIA1.62b19879f9f2bd9e0b67.png",
     "static/media/controller.png": "/static/media/controller.fca68ba280aa5ae45317.png",
     "static/media/Angular_Course_Certificate.jpg": "/static/media/Angular_Course_Certificate.550a04bb0cbfe8c62e1b.jpg",
+    "static/media/ACG_CLF-02.png": "/static/media/ACG_CLF-02.4c5392b7d45a9abaaeda.png",
     "static/media/Rust_Crash_Course.jpg": "/static/media/Rust_Crash_Course.98d1506e046c4627cb37.jpg",
     "static/media/AIFP.png": "/static/media/AIFP.3f7148ce25fa825edae5.png",
     "static/media/desktop_photos_app_photo.png": "/static/media/desktop_photos_app_photo.b3fa55617b14a53106aa.png",
     "static/media/university_management_photo.png": "/static/media/university_management_photo.171603d4b4805f3cc300.png",
     "static/media/Resume___Naman_Bajaj.pdf": "/static/media/Resume___Naman_Bajaj.d59cdf29889729f7a794.pdf",
+    "static/media/aws-certified-cloud-practitioner.png": "/static/media/aws-certified-cloud-practitioner.39308e77e7d0028acce5.png",
     "static/media/website_portfolio_photo.png": "/static/media/website_portfolio_photo.f11e033b6cbd9bf7b193.png",
     "static/media/swiftstrokes.png": "/static/media/swiftstrokes.7f3df9e8efad5645a14c.png",
     "static/media/memory.png": "/static/media/memory.a579da5b6eadcefd7404.png",
@@ -48,8 +50,8 @@
     "static/media/snake.png": "/static/media/snake.2a8b378275bb1e4eb5ae.png",
     "static/media/fs.png": "/static/media/fs.936db353bc768df21220.png",
     "index.html": "/index.html",
-    "main.9e9ce0d2.css.map": "/static/css/main.9e9ce0d2.css.map",
-    "main.6f9d4063.js.map": "/static/js/main.6f9d4063.js.map",
+    "main.89cba4f6.css.map": "/static/css/main.89cba4f6.css.map",
+    "main.c614d89c.js.map": "/static/js/main.c614d89c.js.map",
     "reactPlayerYouTube.056d3457.chunk.js.map": "/static/js/reactPlayerYouTube.056d3457.chunk.js.map",
     "reactPlayerSoundCloud.484b03ff.chunk.js.map": "/static/js/reactPlayerSoundCloud.484b03ff.chunk.js.map",
     "reactPlayerVimeo.a4a04f7b.chunk.js.map": "/static/js/reactPlayerVimeo.a4a04f7b.chunk.js.map",
@@ -66,7 +68,7 @@
     "reactPlayerPreview.ebf02597.chunk.js.map": "/static/js/reactPlayerPreview.ebf02597.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e9ce0d2.css",
-    "static/js/main.6f9d4063.js"
+    "static/css/main.89cba4f6.css",
+    "static/js/main.c614d89c.js"
   ]
 }
