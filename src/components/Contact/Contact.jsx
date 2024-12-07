@@ -7,15 +7,15 @@ import { AiOutlineMail, AiOutlinePhone, AiOutlineMessage, AiOutlineLinkedin } fr
 const Contact = () => {
   return (
     <section id='contact'>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}>
+      {/* <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}> */}
         <div className="introtext">
           <h1>
             Contact Me
           </h1>
         </div>
-      </ScrollAnimation>
+      {/* </ScrollAnimation> */}
       
-      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={200} animateOnce={true}>
+      {/* <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={200} animateOnce={true}> */}
         <div className="contact__options">
           <article className="contact__option">
             <AiOutlineMail className='contact-icon' />
@@ -38,7 +38,7 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/namanbajaj" target='_blank' rel='noreferrer'>Connect on LinkedIn</a>
           </article>
         </div>
-      </ScrollAnimation>
+      {/* </ScrollAnimation> */}
     </section>
   )
 

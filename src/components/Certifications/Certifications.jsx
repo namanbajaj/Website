@@ -11,16 +11,27 @@ const Certifications = () => {
 
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
-    setIsPopupVisible(false);
+    // setIsPopupVisible(false);
+    // document.body.classList.remove('no-scroll');
   };
 
   const handlePopupVisible = () => {
-    setIsPopupVisible(!isPopupVisible);
+    setIsPopupVisible((prevState) => {
+      const newState = !prevState;
+      if (newState) {
+        document.body.classList.add('no-scroll');
+      } else {
+        document.body.classList.remove('no-scroll');
+        
+      }
+      return newState;
+    });
   };
 
   const handleOverlayClick = (e) => {
     if (e.target.classList.contains('popup_background')) {
       setIsPopupVisible(false);
+      document.body.classList.remove('no-scroll');
     }
   };
 
@@ -42,6 +53,12 @@ const Certifications = () => {
         <button onClick={() => handleFilterChange('coursework')} className={filter === 'coursework' ? 'btn' : 'active btn '}>
           Coursework
         </button>
+        <button className='btn close_popup_btn' onClick={() => {
+          setIsPopupVisible(false);
+          document.body.classList.remove('no-scroll');
+          }}>
+          X
+        </button>
         <div className='vert_line' style={{ visibility: 'hidden' }}></div>
       </div>
     )
@@ -59,7 +76,7 @@ const Certifications = () => {
 
   return (
     <section id='Certifications'>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}>
+      {/* <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}> */}
         <div className="introtext">
           <h1>
             Certifications & Coursework
@@ -92,7 +109,7 @@ const Certifications = () => {
             })
           }
         </div>
-      </ScrollAnimation>
+      {/* </ScrollAnimation> */}
     </section >
   )
 }

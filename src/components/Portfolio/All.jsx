@@ -21,26 +21,39 @@ const All = () => {
 
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
-    setIsPopupVisible(false);
+    // setIsPopupVisible(false);
+    // document.body.classList.remove('no-scroll');
   };
 
   const handleSortChange = (newSortBy) => {
     setSortBy(newSortBy);
-    setIsPopupVisible(false);
+    // setIsPopupVisible(false);
+    // document.body.classList.remove('no-scroll');
   };
 
   const handleSortOrderChange = () => {
     setSortOrder((prevOrder) => (prevOrder === 'asc' ? 'desc' : 'asc'));
-    setIsPopupVisible(false);
+    // setIsPopupVisible(false);
+    // document.body.classList.remove('no-scroll');
   };
 
   const handlePopupVisible = () => {
-    setIsPopupVisible(!isPopupVisible);
+    setIsPopupVisible((prevState) => {
+      const newState = !prevState;
+      if (newState) {
+        document.body.classList.add('no-scroll');
+      } else {
+        document.body.classList.remove('no-scroll');
+        
+      }
+      return newState;
+    });
   };
 
   const handleOverlayClick = (e) => {
     if (e.target.classList.contains('popup_background')) {
       setIsPopupVisible(false);
+      document.body.classList.remove('no-scroll');
     }
   };
 
@@ -86,6 +99,12 @@ const All = () => {
         <button onClick={handleSortOrderChange} className='btn'>
           Sort {sortOrder === 'asc' ? 'Descending' : 'Ascending'}
         </button>
+        <button className='btn close_popup_btn' onClick={() => {
+          setIsPopupVisible(false);
+          document.body.classList.remove('no-scroll');
+          }}>
+          X
+        </button>
       </div>
     )
   }
@@ -116,7 +135,7 @@ const All = () => {
         )}
       </ScrollAnimation>
 
-      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={0.5} animateOnce={true}>
+      {/* <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={0.5} animateOnce={true}> */}
         <div className='portfolio__container'>
           {
             sortedData.map(({ id, image, icons, title, github, text, demo, links }) => {
@@ -245,7 +264,7 @@ const All = () => {
             })
           }
         </div>
-      </ScrollAnimation>
+      {/* </ScrollAnimation> */}
     </div>
   )
 }
