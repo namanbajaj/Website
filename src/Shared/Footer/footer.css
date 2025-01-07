@@ -1,0 +1,18 @@
+footer {
+    margin-top: 2rem;
+    background: black;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer_logo {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.footer_copyright {
+    margin-bottom: 4rem;
+}

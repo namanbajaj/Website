@@ -1,14 +1,14 @@
 import { React, useEffect } from 'react'
 
-
 import 'animate.css';
 
 import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 
-import Home from './Pages/Home';
-import NotFound from './Pages/NotFound';
-import Snake from './Pages/Snake';
-import Games from './Pages/Games';
+import Home from './Pages/Home/Home';
+import NotFound from './Pages/NotFound/NotFound';
+import Snake from './Pages/Snake/Snake';
+import Games from './Pages/Games/Games';
+import Lib from './Pages/Lib/Lib';
 
 const App = () => {
   const navigate = useNavigate();
@@ -30,6 +30,7 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Lib" element={<Lib />} />
         <Route path="/games" element={<Games />} />
         <Route path="/snake" element={<Snake />} />
         <Route path="*" element={<NotFound />} />
