@@ -1,5 +1,12 @@
 export const cd_data = [
   {
+    key: 4,
+    main_bullet: 'Working on acquisition of AWS Associate Certifications',
+    sub_bullets: [
+      `Working on acquiring AWS Certified Solutions Architect`,
+    ]
+  },
+  {
     key: 1,
     main_bullet: 'Developing Android Apps using Kotlin',
     sub_bullets: [
@@ -13,7 +20,7 @@ export const cd_data = [
     main_bullet: 'Learning game development',
     sub_bullets: [
       `For gaming related projects and development, <a href='/games'>see gaming portion of website</a>`,
-      `Current development: Learning raylib and Unreal`
+      `Current development: Learning Unreal`
     ]
   },
 
@@ -22,14 +29,6 @@ export const cd_data = [
     main_bullet: 'Improving and maintaining currently published projects and apps',
     sub_bullets: [
       `Most recently updated project(s): <a href="/">This website</a>, <a href='https://play.google.com/store/apps/dev?id=5692626467682406083'>Android app updates</a>`,
-    ]
-  },
-
-  {
-    key: 4,
-    main_bullet: 'Working on acquisition of AWS Associate Certifications',
-    sub_bullets: [
-      `Working on acquiring AWS Certified Solutions Architect`,
     ]
   },
 ]

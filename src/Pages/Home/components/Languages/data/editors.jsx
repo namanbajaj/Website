@@ -1,5 +1,5 @@
 import { DiVisualstudio, DiVim, DiEclipse } from 'react-icons/di';
-import { SiVisualstudiocode, SiAndroidstudio, SiGnuemacs } from 'react-icons/si'
+import { SiVisualstudiocode, SiAndroidstudio, SiGnuemacs, SiIntellijidea } from 'react-icons/si'
 import { iconSize } from './iconSize.jsx';
 
 export const editors = [
@@ -45,4 +45,11 @@ export const editors = [
         experience: 'Experienced',
         isNotable: true
     },
+    {
+      id: 8,
+      icon: <SiIntellijidea size={iconSize} />,
+      technology: 'IntelliJ',
+      experience: 'Experienced',
+      isNotable: true
+  },
 ]

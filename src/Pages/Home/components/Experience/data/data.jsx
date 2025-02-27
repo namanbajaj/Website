@@ -10,8 +10,8 @@ export const data = [
         <div className='line'></div>
         <ul className='r_list'>
           <li>Full stack developer working on internal tool used by Prudential internal business teams</li>
-          <li>Current development: Created microservices in Java and Python; Fixed bugs in Angular application; Interacted with AWS to find and fix bugs with services</li>
-          <li>Technologies used: Java, Python, Angular, Typescript, Gradle, PostgreSQL, Postman, pgAdmin4, Jenkins, Git, AWS (Lambda, CloudWatch, ECR, ECS, DynamoDB)</li>
+          <li>Current development: Created microservices in Java and Python; Added functionality and features to Angular application; Fixed bugs in said app; Worked in AWS to enable new features and functionality</li>
+          <li>Technologies used: Java (Spring Boot, Gradle, Multithreading), Python (psycopg2, Pytest, FastAPI, Uvicorn, boto3, Flask), Angular (Typescript, HTML, SCSS, Jasmine/Karma), PostgreSQL (pgAdmin4), Microsoft SQL Server, Postman, Jenkins, Git (BitBucket), AWS (Lambda, CloudWatch, ECR, ECS, DynamoDB, Secretes Manager, Systems Manager, Parameter Store)</li>
           <li>Methodologies used: Agile, CI/CD, Microservices, Containerization</li>
         </ul>
       </ul>,

@@ -1,4 +1,4 @@
-import { SiAngular, SiC, SiCplusplus, SiCsharp, SiMicrosoftexcel, SiPython, SiRust } from 'react-icons/si'
+import { SiAngular, SiC, SiCplusplus, SiCsharp, SiDocker, SiMicrosoftexcel, SiPython, SiReact, SiRust } from 'react-icons/si'
 import { FaAws } from 'react-icons/fa6'
 
 import Angular_Course_Certificate from '../assets/Angular_Course_Certificate.jpg'
@@ -6,10 +6,29 @@ import Rust_CC_Cert from '../assets/Rust_Crash_Course.jpg'
 import Intro_AWS_Cert from '../assets/Intro_AWS_Cert.pdf'
 import CLF02_Course from '../assets/ACG_CLF-02.png'
 import CLF02_Cert from '../assets/aws-certified-cloud-practitioner.png'
+import Docker_Cert from '../assets/Docker.png'
+import What_React_Cert from '../assets/React.png'
+import Guided_React_Cert from '../assets/Guided_React.png'
 
 const iconSize = 100;
 
 export const data = [
+  {
+    id: 13,
+    title: 'Getting Started with Docker',
+    company: <SiDocker size={iconSize} />,
+    date: 'Jan 2025',
+    link: Docker_Cert,
+    type: 'coursework'
+  },
+  {
+    id: 12,
+    title: 'What is React Course',
+    company: <SiReact size={iconSize} />,
+    date: 'Dec 2024',
+    link: What_React_Cert,
+    type: 'coursework'
+  },
   {
     id: 11,
     title: 'AWS CLF-02 Certification',
@@ -32,6 +51,14 @@ export const data = [
     company: <FaAws size={iconSize} />,
     date: 'Oct 2024',
     link: Intro_AWS_Cert,
+    type: 'coursework'
+  },
+  {
+    id: 14,
+    title: 'What is React Guided Course',
+    company: <SiReact size={iconSize} />,
+    date: 'Oct 2024',
+    link: Guided_React_Cert,
     type: 'coursework'
   },
   {

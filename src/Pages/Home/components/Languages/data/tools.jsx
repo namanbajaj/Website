@@ -2,7 +2,7 @@ import { DiGit, DiLinux, DiTerminal } from 'react-icons/di';
 import { SiApachetomcat, SiGradle, SiJenkins, SiNpm, SiPostman } from 'react-icons/si'
 import Icons from '../../../../../Shared/Icons/Icons.jsx';
 import { iconSize } from './iconSize.jsx';
-import { FaAws } from 'react-icons/fa6';
+import { FaAws, FaDocker } from 'react-icons/fa6';
 
 export const tools = [
   {
@@ -72,6 +72,13 @@ export const tools = [
     id: 17,
     icon: <FaAws size={iconSize} />,
     technology: 'AWS',
+    experience: 'Beginner',
+    isNotable: true
+  },
+  {
+    id: 18,
+    icon: <FaDocker size={iconSize} />,
+    technology: 'Docker',
     experience: 'Beginner',
     isNotable: true
   },

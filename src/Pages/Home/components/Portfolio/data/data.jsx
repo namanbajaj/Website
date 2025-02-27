@@ -59,7 +59,7 @@ export const data = [
     ],
     isNotable: true,
     type: 'web',
-    dateOfLastUpdate: '2024-07-03',
+    dateOfLastUpdate: '2025-02-27',
     dateOfFirstUpdate: '2024-07-01'
   },
   // Games
@@ -367,7 +367,7 @@ export const data = [
     ],
     isNotable: true,
     type: 'web',
-    dateOfLastUpdate: '2024-12-03',
+    dateOfLastUpdate: '2025-2-23',
     dateOfFirstUpdate: '2022-06-01'
   },
   // Photos Library (Android)
