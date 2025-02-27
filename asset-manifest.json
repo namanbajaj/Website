@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb718188.css",
-    "main.js": "/static/js/main.a7b7939d.js",
+    "main.css": "/static/css/main.fcdb922d.css",
+    "main.js": "/static/js/main.a3b1e6bd.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.056d3457.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.484b03ff.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.a4a04f7b.chunk.js",
@@ -24,9 +24,12 @@
     "static/media/chess_demo.mp4": "/static/media/chess_demo.667638e0b836d1c4cbb6.mp4",
     "static/media/quizbiz_photo.png": "/static/media/quizbiz_photo.b262b3fdc6f0446c0cf3.png",
     "static/media/android_photos_app_photo.png": "/static/media/android_photos_app_photo.fe5649d04f06088a5934.png",
+    "static/media/Guided_React.png": "/static/media/Guided_React.77f89e25e1d05b51ae7e.png",
     "static/media/song_library_demo.mp4": "/static/media/song_library_demo.8d23de91b904c878399b.mp4",
+    "static/media/React.png": "/static/media/React.81095c570db1f9a9e2d0.png",
     "static/media/Intro_AWS_Cert.pdf": "/static/media/Intro_AWS_Cert.e90af4346eb4691b06ae.pdf",
     "static/media/prolog_interpriter_photo.png": "/static/media/prolog_interpriter_photo.82131816a000f30e058c.png",
+    "static/media/Docker.png": "/static/media/Docker.cf3f891274dd50666267.png",
     "static/media/chess_photo.png": "/static/media/chess_photo.7ac877e977bad561784f.png",
     "static/media/guess_the_color_photo.png": "/static/media/guess_the_color_photo.66ce3a77e67e1e135a36.png",
     "static/media/AIA1.png": "/static/media/AIA1.62b19879f9f2bd9e0b67.png",
@@ -50,8 +53,8 @@
     "static/media/snake.png": "/static/media/snake.2a8b378275bb1e4eb5ae.png",
     "static/media/fs.png": "/static/media/fs.936db353bc768df21220.png",
     "index.html": "/index.html",
-    "main.eb718188.css.map": "/static/css/main.eb718188.css.map",
-    "main.a7b7939d.js.map": "/static/js/main.a7b7939d.js.map",
+    "main.fcdb922d.css.map": "/static/css/main.fcdb922d.css.map",
+    "main.a3b1e6bd.js.map": "/static/js/main.a3b1e6bd.js.map",
     "reactPlayerYouTube.056d3457.chunk.js.map": "/static/js/reactPlayerYouTube.056d3457.chunk.js.map",
     "reactPlayerSoundCloud.484b03ff.chunk.js.map": "/static/js/reactPlayerSoundCloud.484b03ff.chunk.js.map",
     "reactPlayerVimeo.a4a04f7b.chunk.js.map": "/static/js/reactPlayerVimeo.a4a04f7b.chunk.js.map",
@@ -68,7 +71,7 @@
     "reactPlayerPreview.ebf02597.chunk.js.map": "/static/js/reactPlayerPreview.ebf02597.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb718188.css",
-    "static/js/main.a7b7939d.js"
+    "static/css/main.fcdb922d.css",
+    "static/js/main.a3b1e6bd.js"
   ]
 }
