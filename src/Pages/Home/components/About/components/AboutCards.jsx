@@ -55,12 +55,12 @@ const AboutCards = () => {
                   <li className='main_list_item' key={key}>
                     <h2>{main_bullet}</h2>
                     <ul className='working_on_list'>
-                      {sub_bullets.map((item, index) => (
+                      {sub_bullets ? sub_bullets.map((item, index) => (
                         <li key={index}>
                           <h2 dangerouslySetInnerHTML={{ __html: item }}>
                           </h2>
                         </li>
-                      ))}
+                      )) : ''}
                     </ul>
                   </li>
                 )

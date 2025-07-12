@@ -112,10 +112,28 @@ a:hover {
     color: var(--color-bg);
 }
 
+.btn_disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.btn_disabled:hover {
+  background-color: gray;
+}
+
 img {
     display: block;
     width: 100%;
     object-fit: cover;
+}
+
+li {
+  list-style-type: square;
+}
+
+li li {
+  margin-left: 20px;
+  list-style-type: circle;
 }
 
 /* Medium Devices */

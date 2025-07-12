@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/experience.css'
 import Icons from '../../../../../Shared/Icons/Icons.jsx';
 import Popup from 'reactjs-popup'
@@ -8,8 +8,16 @@ import { data } from '../data/data.jsx'
 
 const iconSize = 150;
 
+function returnElementsAsArray(elements, index) {
+  return <div className="pop_up_content">
+    {elements.description.props.children.toReversed()[index]}
+  </div>
+}
+
+
 const Experience = () => {
   var duration = 0;
+  const [count, setCount] = useState(0);
   return (
     <section id='Experience'>
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}>
@@ -39,24 +47,74 @@ const Experience = () => {
                     <Popup
                       trigger={<a className="btn r_btn"> Responsibilities </a>}
                       modal
-                      onOpen={() => document.body.classList.add('modal-open')}
+                      onOpen={() => {
+                        document.body.classList.add('modal-open')
+                        setCount(0)
+                        document.getElementById('prev_btn_resp_popup')?.classList.add('btn_disabled');
+                      }}
                       onClose={() => document.body.classList.remove('modal-open')}
                     >
                       {close => (
-                        <div className="pop_up_window animate__animated animate__zoomIn">
-                          <div className="pop_up_header"> {item.title} </div>
-                          <div className="pop_up_content">
-                            {item.description}
-                          </div>
-                          <div className="pop_up_actions">
-                            <a
-                              className="btn"
-                              onClick={() => {
-                                close();
-                              }}
-                            >
-                              Close
-                            </a>
+                        <div>
+                          <div className='popup_background' onClick={
+                            () => {
+                              close()
+                            }
+                          }></div>
+                          <div className="pop_up_window animate__animated animate__zoomIn">
+                            <div className="pop_up_header"> {item.title} </div>
+
+                            {
+                              item.do_multi_page ?
+                                returnElementsAsArray(item, count) : <div className="pop_up_content">
+                                  {item.description}
+                                </div>
+                            }
+
+                            {
+                              item.do_multi_page ? <div className='pop_up_actions prev_next_popup_btn'>
+                                <a className='btn' id='prev_btn_resp_popup' onClick={() => {
+                                  document.getElementById('next_btn_resp_popup').classList.remove('btn_disabled');
+                                  if (count - 1 === 0) {
+                                    document.getElementById('prev_btn_resp_popup').classList.add('btn_disabled');
+                                  }
+                                  if (count !== 0) {
+                                    setCount(count - 1)
+                                  }
+                                }}>
+                                  Newer
+                                </a>
+                                <div>
+                                  <a
+                                    className="btn"
+                                    onClick={() => {
+                                      close();
+                                    }}
+                                  >
+                                    Close
+                                  </a>
+                                </div>
+                                <a className='btn' id='next_btn_resp_popup' onClick={() => {
+                                  document.getElementById('prev_btn_resp_popup').classList.remove('btn_disabled');
+                                  if (count + 1 === item.description.props.children.length - 1) {
+                                    document.getElementById('next_btn_resp_popup').classList.add('btn_disabled');
+                                  }
+                                  if (count !== item.description.props.children.length - 1) {
+                                    setCount(count + 1)
+                                  }
+                                }}>Older</a>
+                              </div> :
+                                <div className="pop_up_actions">
+                                  <a
+                                    className="btn"
+                                    onClick={() => {
+                                      close();
+                                    }}
+                                  >
+                                    Close
+                                  </a>
+                                </div>
+                            }
                           </div>
                         </div>
                       )}

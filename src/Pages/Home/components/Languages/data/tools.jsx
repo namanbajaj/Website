@@ -2,7 +2,7 @@ import { DiGit, DiLinux, DiTerminal } from 'react-icons/di';
 import { SiApachetomcat, SiGradle, SiJenkins, SiNpm, SiPostman } from 'react-icons/si'
 import Icons from '../../../../../Shared/Icons/Icons.jsx';
 import { iconSize } from './iconSize.jsx';
-import { FaAws, FaDocker } from 'react-icons/fa6';
+import { FaAws, FaChrome, FaDocker } from 'react-icons/fa6';
 
 export const tools = [
   {
@@ -65,14 +65,14 @@ export const tools = [
     id: 16,
     icon: <SiJenkins size={iconSize} />,
     technology: 'Jenkins',
-    experience: 'Intermediate',
+    experience: 'Beginner',
     isNotable: true
   },
   {
     id: 17,
     icon: <FaAws size={iconSize} />,
     technology: 'AWS',
-    experience: 'Beginner',
+    experience: 'Intermediate',
     isNotable: true
   },
   {
@@ -82,4 +82,11 @@ export const tools = [
     experience: 'Beginner',
     isNotable: true
   },
+  {
+    id: 19,
+    icon: <FaChrome size={iconSize} />,
+    technology: 'Chromium DevTools',
+    experience: 'Experienced',
+    isNotable: true
+  }
 ]

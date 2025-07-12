@@ -1,5 +1,5 @@
-import { DiVisualstudio, DiVim, DiEclipse } from 'react-icons/di';
-import { SiVisualstudiocode, SiAndroidstudio, SiGnuemacs, SiIntellijidea } from 'react-icons/si'
+import { DiVisualstudio, DiEclipse } from 'react-icons/di';
+import { SiVisualstudiocode, SiAndroidstudio, SiIntellijidea } from 'react-icons/si'
 import { iconSize } from './iconSize.jsx';
 
 export const editors = [
@@ -23,20 +23,6 @@ export const editors = [
         technology: 'Android Studio',
         experience: 'Experienced',
         isNotable: true
-    },
-    {
-        id: 5,
-        icon: <DiVim size={iconSize} />,
-        technology: 'Vim',
-        experience: 'Beginner',
-        isNotable: false
-    },
-    {
-        id: 6,
-        icon: <SiGnuemacs size={iconSize} />,
-        technology: 'Emacs',
-        experience: 'Beginner',
-        isNotable: false
     },
     {
         id: 7,

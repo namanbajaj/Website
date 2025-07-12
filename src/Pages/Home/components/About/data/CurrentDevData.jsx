@@ -1,10 +1,7 @@
 export const cd_data = [
   {
     key: 4,
-    main_bullet: 'Working on acquisition of AWS Associate Certifications',
-    sub_bullets: [
-      `Working on acquiring AWS Certified Solutions Architect`,
-    ]
+    main_bullet: 'Working on acquisition of AWS Certified Solutions Architect',
   },
   {
     key: 1,
@@ -14,16 +11,14 @@ export const cd_data = [
       `Current development: Learning how to build apps using Jetpack Compose instead of XML`
     ]
   },
-
   {
     key: 2,
-    main_bullet: 'Learning game development',
+    main_bullet: 'Learning game/graphics development',
     sub_bullets: [
       `For gaming related projects and development, <a href='/games'>see gaming portion of website</a>`,
-      `Current development: Learning Unreal`
+      `Current development: Learning OpenGL`
     ]
   },
-
   {
     key: 3,
     main_bullet: 'Improving and maintaining currently published projects and apps',

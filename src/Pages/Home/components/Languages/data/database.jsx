@@ -9,7 +9,7 @@ export const database = [
         icon: <DiMysql size={iconSize} />,
         technology: 'MySQL',
         experience: 'Intermediate',
-        isNotable: true
+        isNotable: true,
     },
     {
         id: 2,
@@ -30,7 +30,7 @@ export const database = [
         icon: <SiMicrosoftsqlserver size={iconSize} />,
         technology: 'Microsoft SQL',
         experience: 'Intermediate',
-        isNotable: false
+        isNotable: true
     },
     {
       id: 5,

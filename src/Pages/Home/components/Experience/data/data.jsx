@@ -6,17 +6,46 @@ export const data = [
     date: 'July 2024 - Current',
     description:
       <ul className='r_list'>
-        <div className='session_name'>First Rotation</div>
-        <div className='line'></div>
-        <ul className='r_list'>
-          <li>Full stack developer working on internal tool used by Prudential internal business teams</li>
-          <li>Current development: Created microservices in Java and Python; Added functionality and features to Angular application; Fixed bugs in said app; Worked in AWS to enable new features and functionality</li>
-          <li>Technologies used: Java (Spring Boot, Gradle, Multithreading), Python (psycopg2, Pytest, FastAPI, Uvicorn, boto3, Flask), Angular (Typescript, HTML, SCSS, Jasmine/Karma), PostgreSQL (pgAdmin4), Microsoft SQL Server, Postman, Jenkins, Git (BitBucket), AWS (Lambda, CloudWatch, ECR, ECS, DynamoDB, Secretes Manager, Systems Manager, Parameter Store)</li>
-          <li>Methodologies used: Agile, CI/CD, Microservices, Containerization</li>
-        </ul>
+        <div>
+          <div className='session_name'>First Rotation (7/2024 - 7/2025)</div>
+          <div className='line'></div>
+          <ul className='r_list'>
+            <li>Full stack developer working on internal tool used by Prudential business teams</li>
+            <li>Current development:
+              <ul>
+                <li>Created microservices in Java (Spring Boot) and Python (FastAPI & Flask)</li>
+                <li>Added functionality and features to Angular application</li>
+                <li>Worked in AWS to enable new features and functionality</li>
+              </ul>
+            </li>
+            <li>Technologies used:
+              <ul>
+                <li>Java (Spring Boot, Gradle, Multithreading)</li>
+                <li>Python (psycopg2, Pytest, FastAPI, Uvicorn, boto3, Flask, Streamlit)</li>
+                <li>Angular (Typescript, HTML, SCSS, Jasmine/Karma)</li>
+                <li>PostgreSQL (pgAdmin4), Microsoft SQL Server</li>
+                <li>AWS (Lambda, CloudWatch, ECR, ECS, DynamoDB, Secretes Manager, Systems Manager, Parameter Store, SQS)</li>
+                <li>Postman, Jenkins, Git (BitBucket)</li>
+              </ul>
+            </li>
+            <li>Methodologies used: Agile, CI/CD, Microservices, Containerization</li>
+          </ul>
+        </div>
+
+        <div>
+          <div className='session_name'>Second Rotation (7/2025 - 1/2026)</div>
+          <div className='line'></div>
+          <ul className='r_list'>
+            <li>Platform Engineer working with Salesforce</li>
+            <li>Current development: </li>
+            <li>Technologies used: </li>
+            <li>Methodologies used: </li>
+          </ul>
+        </div>
+
       </ul>,
     icon: 'prudential',
-
+    do_multi_page: true
   },
 
   {
@@ -54,7 +83,6 @@ export const data = [
           <li>Graded homework for 50+ students</li>
         </ul>
       </ul>
-
     ,
     icon: 'rutgers',
   },

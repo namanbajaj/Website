@@ -1,5 +1,5 @@
-import { DiJava, DiPython, DiProlog } from 'react-icons/di';
-import { SiCplusplus, SiCsharp, SiC, SiOcaml, SiExpress, SiNodedotjs, SiRust, SiSpringboot, SiFlask } from 'react-icons/si'
+import { DiJava, DiPython } from 'react-icons/di';
+import { SiCplusplus, SiCsharp, SiC, SiNodedotjs, SiRust, SiSpringboot, SiFlask, SiFastapi } from 'react-icons/si'
 import { iconSize } from './iconSize.jsx';
 
 
@@ -9,14 +9,26 @@ export const backend = [
         icon: <DiJava size={iconSize} />,
         technology: 'Java',
         experience: 'Experienced',
-        isNotable: true
+        isNotable: true,
+        info: [
+          'First language learned',
+          'Used throughout High School/College as part of courses',
+          'Used at Prudential in conjunction with Spring Boot',
+          'Experience: ' + parseInt(((new Date()) - (new Date('2016-9-1'))) / 31556952000)  + ' years'
+        ]
     },
     {
         id: 2,
         icon: <DiPython size={iconSize} />,
         technology: 'Python',
         experience: 'Experienced',
-        isNotable: true
+        isNotable: true,
+        info: [
+          'Learned in 2020',
+          'Used throughout College as part of courses',
+          'Used at Prudential in conjunction with Flask and FastAPI',
+          'Experience: ' + parseInt(((new Date()) - (new Date('2020-6-1'))) / 31556952000)  + ' years'
+        ]
     },
     {
         id: 3,
@@ -40,27 +52,6 @@ export const backend = [
         isNotable: true
     },
     {
-        id: 6,
-        icon: <SiOcaml size={iconSize} />,
-        technology: 'OCaml',
-        experience: 'Beginner',
-        isNotable: false
-    },
-    {
-        id: 7,
-        icon: <DiProlog size={iconSize} />,
-        technology: 'Prolog',
-        experience: 'Intermediate',
-        isNotable: false
-    },
-    {
-        id: 8,
-        icon: <SiExpress size={iconSize} />,
-        technology: 'Express',
-        experience: 'Beginner',
-        isNotable: false
-    },
-    {
         id: 9,
         icon: <SiNodedotjs size={iconSize} />,
         technology: 'Node.js',
@@ -72,6 +63,13 @@ export const backend = [
       icon: <SiFlask size={iconSize}/>,
       technology: 'Flask',
       experience: 'Intermediate',
+      isNotable: true
+    },
+    {
+      id: 13,
+      icon: <SiFastapi size={iconSize}/>,
+      technology: 'FastAPI',
+      experience: 'Beginner',
       isNotable: true
     },
     {

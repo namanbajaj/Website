@@ -47,23 +47,9 @@ export const frontend = [
         isNotable: false
     },
     {
-        id: 7,
-        icon: <SiBootstrap size={iconSize} />,
-        technology: 'Bootstrap',
-        experience: 'Beginner',
-        isNotable: false
-    },
-    {
         id: 8,
         icon: <Icons name="wpf" size={iconSize} />,
         technology: 'WPF',
-        experience: 'Beginner',
-        isNotable: false
-    },
-    {
-        id: 9,
-        icon: <SiJquery size={iconSize} />,
-        technology: 'jQuery',
         experience: 'Beginner',
         isNotable: false
     },

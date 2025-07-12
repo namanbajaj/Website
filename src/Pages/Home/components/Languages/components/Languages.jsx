@@ -9,6 +9,7 @@ import { database } from '../data//database.jsx';
 import { tools } from '../data//tools.jsx';
 import { editors } from '../data//editors.jsx';
 import { other } from '../data//other.jsx';
+import { IoInformationCircleOutline } from 'react-icons/io5';
 
 const Languages = () => {
   const [booleanState, setBooleanState] = useState({
@@ -67,6 +68,23 @@ const Languages = () => {
   ]
 
   var delay = 0;
+
+  const [notes, setNotes] = useState({
+    frontend: { name: '', notes: [''] },
+    backend: { name: '', notes: [''] },
+    database: { name: '', notes: [''] },
+    tools: { name: '', notes: [''] },
+    editors: { name: '', notes: [''] },
+    other: { name: '', notes: [''] }
+  });
+
+  const setCategoryNotes = (key, value) => {
+    setNotes(prev => ({
+      ...prev,
+      [key]: value
+    }));
+  };
+
   return (
     <section id='Languages'>
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} delay={delay} animateOnce={true}>
@@ -78,42 +96,67 @@ const Languages = () => {
       </ScrollAnimation>
       <div className='languages'>
         {
-          categories.map(({ id, name, key, data }) => {
-            const notableItemsCount = data.filter(item => item.isNotable).length
-            const totalItemsCount = data.length
+          categories.map((category) => {
+            const notableItemsCount = category.data.filter(item => item.isNotable).length
+            const totalItemsCount = category.data.length
             delay += 100
             return (
               <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={delay} animateOnce={true}>
-                <div className='category' key={id}>
-                  <h2>{name}</h2>
-                  <div className='content'>
-                    {
-                      data.map(({ id, icon, technology, experience, isNotable }) => {
-                        const isVisible = booleanState[key] || isNotable
-                        return (isVisible) ? (
-                          <article
-                            key={id}
-                            className='details'
-                          >
-                            <div>
-                              <h3>
-                                {icon}&nbsp;{technology}
-                              </h3>
-                              <h5 className='text-light'>
-                                {experience}
-                              </h5>
-                            </div>
-                          </article>
-                        ) : null
-                      })
-                    }
+                <div className='category' key={category.id}>
+                  <div className='category_inner'>
+                    <div className='category_front'>
+                      <h2>{category.name}</h2>
+                      <div className='content'>
+                        {
+                          category.data.map(({ id, icon, technology, experience, isNotable, info }) => {
+                            const isVisible = booleanState[category.key] || isNotable
+                            return (isVisible) ? (
+                              <article
+                                key={id}
+                                className='details'
+                              >
+                                <div className='language_item' onClick={() => {
+                                  if (info) {
+                                    document.getElementsByClassName('category')[category.id - 1].firstChild.classList.add('rotate_transform')
+                                  }
+                                  setCategoryNotes(categories[category.id - 1].key, { name: technology, notes: info })
+                                }}>
+                                  <h3>
+                                    {icon}&nbsp;{technology}
+                                  </h3>
+                                  <div className={'experience_info_container' + (info ? ' set_cursor_click' : '')}>
+                                    {info && <IoInformationCircleOutline />}
+                                    <h5 className='text-light'>
+                                      {experience}
+                                    </h5>
+                                  </div>
+                                </div>
+                              </article>
+                            ) : null
+                          })
+                        }
+                      </div>
+                      {
+                        notableItemsCount !== totalItemsCount && (
+                          <a className='btn r_btn see_more_tech' onClick={() => toggleBoolean(category.key)}>
+                            {booleanState[category.key] ? 'See Less' : 'See More'}
+                          </a>
+                        )}
+                    </div>
+                    <div className='category_back'>
+                      <h2>{notes[categories[category.id - 1].key].name}</h2>
+                      <div className='note_grid'>
+                        {
+                          notes[categories[category.id - 1].key].notes?.map((note) => {
+                            return <div><h3>{note}</h3></div>
+                          })
+                        }
+                      </div>
+                      <a className='btn' onClick={() => {
+                        document.getElementsByClassName('category')[category.id - 1].firstChild.classList.remove('rotate_transform')
+                      }}>Go back</a>
+                    </div>
                   </div>
-                  {
-                    notableItemsCount != totalItemsCount && (
-                      <a className='btn r_btn see_more_tech' onClick={() => toggleBoolean(key)}>
-                        {booleanState[key] ? 'See Less' : 'See More'}
-                      </a>
-                    )}
                 </div>
               </ScrollAnimation>
             )

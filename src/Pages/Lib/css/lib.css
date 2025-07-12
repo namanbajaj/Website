@@ -1,0 +1,75 @@
+.lib_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  gap: 200px;
+}
+
+.lib_container .test_btn {
+  margin-left: 5%;
+}
+
+.lib_container .experience_grid {
+  margin-bottom: 0;
+}
+
+.lib_set_margin {
+  margin-left: 5%;
+}
+
+.lib_container .filter_button {
+  margin-left: 5%;
+  display: block !important;
+}
+
+.lib_container .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-bg);
+  background-image: url(../../../assets/background.png);
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: white;
+}
+
+.lib_container .filter_buttons_popup {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+.lib_container .close_popup_btn {
+  display: inline-block !important;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px !important;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+
+.lib_container .popup .horiz_line {
+  border-top: 3px solid white;
+  width: 100%;
+  display: block;
+}
+
+.lib_container .popup .vert_line {
+  display: none;
+}
+
+.lib_container .no-scroll {
+  overflow: hidden;
+}

@@ -42,9 +42,10 @@ const All = () => {
       const newState = !prevState;
       if (newState) {
         document.body.classList.add('no-scroll');
+        document.getElementsByClassName('z_index_fix')[0].classList.add('scroll_animation_fix')
       } else {
         document.body.classList.remove('no-scroll');
-        
+        document.getElementsByClassName('z_index_fix')[0].classList.remove('scroll_animation_fix')
       }
       return newState;
     });
@@ -102,7 +103,7 @@ const All = () => {
         <button className='btn close_popup_btn' onClick={() => {
           setIsPopupVisible(false);
           document.body.classList.remove('no-scroll');
-          }}>
+        }}>
           X
         </button>
       </div>
@@ -135,7 +136,7 @@ const All = () => {
         )}
       </ScrollAnimation>
 
-      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={0.5} delay={500} animateOnce={true}>
+      <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={0.5} delay={500} animateOnce={true} className='z_index_fix'>
         <div className='portfolio__container'>
           {
             sortedData.map(({ id, image, icons, title, github, text, demo, links }) => {
@@ -150,20 +151,27 @@ const All = () => {
                       disabled={window.screen.width < 600}
                     >
                       {close => (
-                        <div className="pop_up_window animate__animated animate__zoomIn">
-                          <div className="pop_up_header"> {title} </div>
-                          <div className="pop_up_content">
-                            {<img src={image} alt={title} />}
-                          </div>
-                          <div className="pop_up_actions">
-                            <a
-                              className="btn"
-                              onClick={() => {
-                                close();
-                              }}
-                            >
-                              Close
-                            </a>
+                        <div>
+                          <div className='popup_background' onClick={
+                            () => {
+                              close()
+                            }
+                          }></div>
+                          <div className="pop_up_window animate__animated animate__zoomIn">
+                            <div className="pop_up_header"> {title} </div>
+                            <div className="pop_up_content">
+                              {<img src={image} alt={title} />}
+                            </div>
+                            <div className="pop_up_actions">
+                              <a
+                                className="btn"
+                                onClick={() => {
+                                  close();
+                                }}
+                              >
+                                Close
+                              </a>
+                            </div>
                           </div>
                         </div>
                       )}
@@ -181,20 +189,27 @@ const All = () => {
                       modal
                     >
                       {close => (
-                        <div className="pop_up_window animate__animated animate__zoomIn">
-                          <div className="pop_up_header"> {title} </div>
-                          <div className="pop_up_content">
-                            {text}
-                          </div>
-                          <div className="pop_up_actions">
-                            <a
-                              className="btn"
-                              onClick={() => {
-                                close();
-                              }}
-                            >
-                              Close
-                            </a>
+                        <div>
+                          <div className='popup_background' onClick={
+                            () => {
+                              close()
+                            }
+                          }></div>
+                          <div className="pop_up_window animate__animated animate__zoomIn">
+                            <div className="pop_up_header"> {title} </div>
+                            <div className="pop_up_content">
+                              {text}
+                            </div>
+                            <div className="pop_up_actions">
+                              <a
+                                className="btn"
+                                onClick={() => {
+                                  close();
+                                }}
+                              >
+                                Close
+                              </a>
+                            </div>
                           </div>
                         </div>
                       )}
