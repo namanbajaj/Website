@@ -97,15 +97,12 @@
   transform-style: preserve-3d;
 }
 
-/* .category:hover .category_inner {
-    transform: rotateY(180deg);
-} */
-
 .rotate_transform {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-.category_front, .category_back {
+.category_front,
+.category_back {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -208,4 +205,13 @@
   .note_grid {
     gap: 1rem;
   }
+
+  .note_grid div:hover {
+    background: var(--color-primary-variant);
+  }
+
+  .languages>div:hover {
+    background: var(--color-bg-variant);
+  }
+
 }

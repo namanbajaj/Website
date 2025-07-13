@@ -14,7 +14,7 @@ export const backend = [
           'First language learned',
           'Used throughout High School/College as part of courses',
           'Used at Prudential in conjunction with Spring Boot',
-          'Experience: ' + parseInt(((new Date()) - (new Date('2016-9-1'))) / 31556952000)  + ' years'
+          'Experience: ' + parseInt(((new Date()) - (new Date('2016-09-01'))) / 31556952000)  + ' years'
         ]
     },
     {
@@ -27,7 +27,7 @@ export const backend = [
           'Learned in 2020',
           'Used throughout College as part of courses',
           'Used at Prudential in conjunction with Flask and FastAPI',
-          'Experience: ' + parseInt(((new Date()) - (new Date('2020-6-1'))) / 31556952000)  + ' years'
+          'Experience: ' + parseInt(((new Date()) - (new Date('2020-06-01'))) / 31556952000)  + ' years'
         ]
     },
     {
