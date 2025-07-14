@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useEffect, useState } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import '../css/languages.css'
@@ -11,24 +11,9 @@ import { editors } from '../data//editors.jsx';
 import { other } from '../data//other.jsx';
 import { IoInformationCircleOutline } from 'react-icons/io5';
 
-const Languages = () => {
-  const [booleanState, setBooleanState] = useState({
-    frontend: false,
-    backend: false,
-    database: false,
-    tools: false,
-    other: false,
-    editors: false
-  });
 
-  const toggleBoolean = (key) => {
-    setBooleanState((prevState) => ({
-      ...prevState,
-      [key]: !prevState[key],
-    }));
-  };
-
-  const categories = [
+export default function Languages() {
+  const [categories, setCategories] = useState([
     {
       id: 1,
       name: 'Frontend Development',
@@ -65,9 +50,72 @@ const Languages = () => {
       key: 'other',
       data: other
     },
-  ]
+  ])
 
-  var delay = 0;
+  const [booleanState, setBooleanState] = useState({
+    frontend: false,
+    backend: false,
+    database: false,
+    tools: false,
+    other: false,
+    editors: false
+  });
+
+  const toggleBoolean = (key) => {
+    setBooleanState((prevState) => ({
+      ...prevState,
+      [key]: !prevState[key],
+    }));
+  };
+
+  // useEffect(() => {
+  //   categories.forEach(async (category, index) => {
+  //     const url = 'https://personal-portfolio-backend-v0d2r977ybmq.deno.dev/fetchJSON?filename=languages_' + category.key + '.json'
+  //     // const url = 'http://localhost:8000/fetchJSON?filename=languages_' + category.key + '.json'
+  //     fetch(url)
+  //       .then(response => response.json())
+  //       .then(data => {
+  //         if('Error' in data) {
+  //           console.log("Error with " + category.key + ": " + data["Error"])
+  //         }
+  //         else {
+  //           category.data.forEach(tech => {
+  //             if(tech.technology in data) {
+  //               tech.info = data[tech.technology]
+  //             }
+  //           });
+  //         }
+  //       })
+  //       .catch(err => console.log(err))
+  //   });
+  // })
+
+  useEffect(() => {
+    const url = 'https://personal-portfolio-backend.deno.dev/fetchJSON?filename=languages_info.json'
+    // const url = 'http://localhost:8000/fetchJSON?filename=languages_' + category.key + '.json'
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        if ('Error' in data) {
+          console.log("Error with fetch: " + data["Error"])
+        }
+        else {
+          const newCategories = structuredClone(categories)
+
+          newCategories.forEach(category => {
+            category.data.forEach(tech => {
+              if (tech.technology in data) {
+                tech.info = data[tech.technology]
+              }
+            });
+          })
+          
+          setCategories(newCategories)
+        }
+      })
+      .catch(err => console.log(err))
+  });
+
 
   const [notes, setNotes] = useState({
     frontend: { name: '', notes: [''] },
@@ -84,6 +132,8 @@ const Languages = () => {
       [key]: value
     }));
   };
+
+  var delay = 0;
 
   return (
     <section id='Languages'>
@@ -166,5 +216,3 @@ const Languages = () => {
     </section >
   )
 }
-
-export default Languages
