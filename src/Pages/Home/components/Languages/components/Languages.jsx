@@ -115,7 +115,7 @@ export default function Languages() {
         }
       })
       .catch(err => console.log(err))
-  });
+  }, []);
 
 
   const [notes, setNotes] = useState({
