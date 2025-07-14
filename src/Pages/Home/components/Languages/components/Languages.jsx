@@ -10,6 +10,7 @@ import { tools } from '../data//tools.jsx';
 import { editors } from '../data//editors.jsx';
 import { other } from '../data//other.jsx';
 import { IoInformationCircleOutline } from 'react-icons/io5';
+import { cloneDeep } from 'lodash';
 
 
 export default function Languages() {
@@ -100,7 +101,7 @@ export default function Languages() {
           console.log("Error with fetch: " + data["Error"])
         }
         else {
-          const newCategories = structuredClone(categories)
+          const newCategories = cloneDeep(categories)
 
           newCategories.forEach(category => {
             category.data.forEach(tech => {
