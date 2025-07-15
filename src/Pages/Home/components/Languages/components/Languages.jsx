@@ -11,6 +11,7 @@ import { editors } from '../data//editors.jsx';
 import { other } from '../data//other.jsx';
 import { IoInformationCircleOutline } from 'react-icons/io5';
 import { cloneDeep } from 'lodash';
+import { useLongPress } from 'use-long-press';
 
 
 export default function Languages() {
@@ -69,52 +70,57 @@ export default function Languages() {
     }));
   };
 
-  // useEffect(() => {
-  //   categories.forEach(async (category, index) => {
-  //     const url = 'https://personal-portfolio-backend-v0d2r977ybmq.deno.dev/fetchJSON?filename=languages_' + category.key + '.json'
-  //     // const url = 'http://localhost:8000/fetchJSON?filename=languages_' + category.key + '.json'
-  //     fetch(url)
-  //       .then(response => response.json())
-  //       .then(data => {
-  //         if('Error' in data) {
-  //           console.log("Error with " + category.key + ": " + data["Error"])
-  //         }
-  //         else {
-  //           category.data.forEach(tech => {
-  //             if(tech.technology in data) {
-  //               tech.info = data[tech.technology]
-  //             }
-  //           });
-  //         }
-  //       })
-  //       .catch(err => console.log(err))
-  //   });
-  // })
-
   useEffect(() => {
-    const url = 'https://personal-portfolio-backend.deno.dev/fetchJSON?filename=languages_info.json'
-    // const url = 'http://localhost:8000/fetchJSON?filename=languages_' + category.key + '.json'
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        if ('Error' in data) {
-          console.log("Error with fetch: " + data["Error"])
-        }
-        else {
-          const newCategories = cloneDeep(categories)
+    const lastNoteFetchTime = localStorage.getItem("lastNoteFetchTime")
+    const lastNoteFetch = localStorage.getItem("lastNoteFetch")
+    if (
+      lastNoteFetchTime === null ||
+      ((Date.now() - lastNoteFetchTime) / 86400000) >= 1 ||
+      lastNoteFetch === null
+    ) {
+      const url = 'https://personal-portfolio-backend.deno.dev/fetchJSON?filename=languages_info.json'
+      // const url = 'http://localhost:8000/fetchJSON?filename=languages_' + category.key + '.json'
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          if ('Error' in data) {
+            console.log("Error with fetch: " + data["Error"])
+          }
+          else {
+            localStorage.setItem("lastNoteFetchTime", Date.now())
+            localStorage.setItem("lastNoteFetch", JSON.stringify(data))
 
-          newCategories.forEach(category => {
-            category.data.forEach(tech => {
-              if (tech.technology in data) {
-                tech.info = data[tech.technology]
-              }
-            });
-          })
-          
-          setCategories(newCategories)
-        }
+            const newCategories = cloneDeep(categories)
+
+            newCategories.forEach(category => {
+              category.data.forEach(tech => {
+                if (tech.technology in data) {
+                  tech.info = data[tech.technology]
+                }
+              });
+            })
+
+            setCategories(newCategories)
+          }
+        })
+        .catch(err => console.log(err))
+    }
+
+    else {
+      const data = JSON.parse(lastNoteFetch)
+
+      const newCategories = cloneDeep(categories)
+
+      newCategories.forEach(category => {
+        category.data.forEach(tech => {
+          if (tech.technology in data) {
+            tech.info = data[tech.technology]
+          }
+        });
       })
-      .catch(err => console.log(err))
+
+      setCategories(newCategories)
+    }
   }, []);
 
 
@@ -134,13 +140,21 @@ export default function Languages() {
     }));
   };
 
+  const handlers = useLongPress(() => {
+    localStorage.setItem("lastNoteFetchTime", Date.now() - 86400001)
+  },
+    {
+      threshold: 2000
+    }
+  )
+
   var delay = 0;
 
   return (
     <section id='Languages'>
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} delay={delay} animateOnce={true}>
         <div className='l_t_header'>
-          <h1>
+          <h1 {...handlers()}>
             Languages and Technologies
           </h1>
         </div>
