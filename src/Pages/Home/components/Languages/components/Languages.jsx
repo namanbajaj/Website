@@ -79,7 +79,10 @@ export default function Languages() {
       lastNoteFetch === null
     ) {
       const url = 'https://personal-portfolio-backend.deno.dev/fetchJSON?filename=languages_info.json'
-      // const url = 'http://localhost:8000/fetchJSON?filename=languages_' + category.key + '.json'
+
+      // const url = 'https://personal-portfolio-backend.deno.dev/fetchJSON?filename=languages_info.json&password=' + process.env.REACT_APP_FETCH_JSON_PASSWORD
+      // const url = 'http://localhost:8000/fetchJSON?filename=languages_info.json&password=' + process.env.REACT_APP_FETCH_JSON_PASSWORD
+      
       fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -212,7 +215,15 @@ export default function Languages() {
                       <h2>{notes[categories[category.id - 1].key].name}</h2>
                       <div className='note_grid'>
                         {
-                          notes[categories[category.id - 1].key].notes?.map((note) => {
+                          notes[categories[category.id - 1].key].notes?.map((note, index) => {
+                            if (
+                              index === notes[categories[category.id - 1].key].notes.length - 1 &&
+                              note.includes('Experience:')
+                            ) {
+                              const monthYearExp = note.split(': ')[1]
+                              const expDate = new Date(monthYearExp.split('-').reverse().join('-') + '-01')
+                              note = 'Experience: ' + parseInt(((new Date()) - (expDate)) / 31556952000) + ' years'
+                            }
                             return <div><h3>{note}</h3></div>
                           })
                         }

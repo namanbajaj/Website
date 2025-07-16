@@ -1,5 +1,5 @@
 import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiAngularSimple } from 'react-icons/di';
-import { SiKotlin, SiBootstrap, SiJquery, SiTypescript } from 'react-icons/si'
+import { SiKotlin, SiTypescript, SiStreamlit } from 'react-icons/si'
 import Icons from '../../../../../Shared/Icons/Icons.jsx';
 import { iconSize } from './iconSize.jsx';
 
@@ -66,5 +66,12 @@ export const frontend = [
         technology: 'TypeScript',
         experience: 'Intermediate',
         isNotable: true
+    },
+    {
+      id: 12,
+      icon: <SiStreamlit size={iconSize} />,
+      technology: 'Streamlit',
+      experience: 'Intermediate',
+      isNotable: false
     }
 ]

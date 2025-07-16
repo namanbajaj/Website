@@ -1,5 +1,5 @@
 import { DiJava, DiPython } from 'react-icons/di';
-import { SiCplusplus, SiCsharp, SiC, SiNodedotjs, SiRust, SiSpringboot, SiFlask, SiFastapi } from 'react-icons/si'
+import { SiCplusplus, SiCsharp, SiC, SiNodedotjs, SiRust, SiSpringboot, SiFlask, SiFastapi, SiDeno } from 'react-icons/si'
 import { iconSize } from './iconSize.jsx';
 
 
@@ -83,6 +83,20 @@ export const backend = [
       id: 11,
       icon: <SiRust size={iconSize}/>,
       technology: 'Rust',
+      experience: 'Beginner',
+      isNotable: true
+    },
+    {
+      id: 15,
+      icon: <SiDeno size={iconSize}/>,
+      technology: 'Deno',
+      experience: 'Beginner',
+      isNotable: true
+    },
+    {
+      id: 14,
+      icon: <SiDeno size={iconSize}/>,
+      technology: 'Deno',
       experience: 'Beginner',
       isNotable: true
     }
