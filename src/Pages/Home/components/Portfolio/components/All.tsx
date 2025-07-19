@@ -10,6 +10,7 @@ import { SiGithub } from 'react-icons/si'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 import { RiVideoLine } from 'react-icons/ri'
 import { FaFilter } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const iconSize = 25;
 
@@ -271,12 +272,11 @@ const All = () => {
                             {link.icon}
                           </a>)
                         ||
-                        (link.value[0] === '/' && <a
-                          href={link.value} className='btn old_button'
-                          key={index}
-                        >
-                          {link.icon}
-                        </a>)
+                        (link.value[0] === '/' &&
+                          <Link to={link.value} className='btn old_button' key={index}>
+                            {link.icon}
+                          </Link>
+                        )
                       ))
                     ) : null
                     }

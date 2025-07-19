@@ -63,7 +63,7 @@ export default function Experience() {
                       onClose={() => document.body.classList.remove('modal-open')}
                     >
                       {
-                        // @ts-ignore - needed to fix issue with reactjs-popup library
+                        // @ts-ignore - issue with reactjs-popup library
                         ((close) => (
                           <div>
                             <div className='popup_background' onClick={() => close()} />

@@ -85,13 +85,6 @@ export const backend: LanguageModel[] = [
     isNotable: true
   },
   {
-    id: 15,
-    icon: <SiDeno size={iconSize} />,
-    technology: 'Deno',
-    experience: 'Beginner',
-    isNotable: true
-  },
-  {
     id: 14,
     icon: <SiDeno size={iconSize} />,
     technology: 'Deno',

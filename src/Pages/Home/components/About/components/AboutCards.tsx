@@ -63,7 +63,9 @@ export default function AboutCards() {
                     <ul className='working_on_list'>
                       {data.sub_bullets && data.sub_bullets.map((item, index) => (
                         <li key={index}>
-                          <h2 dangerouslySetInnerHTML={{ __html: item }} />
+                          <h2>
+                            {item}
+                          </h2>
                         </li>
                       ))}
                     </ul>

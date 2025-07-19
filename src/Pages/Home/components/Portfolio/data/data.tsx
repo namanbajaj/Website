@@ -29,8 +29,7 @@ import Deno from '../assets/Deno.png'
 
 import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJson, SiVisualstudio, SiWindows, SiPython, SiLinux, SiTypescript, SiGithub, SiDeno } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
-import { DiJava, DiJavascript } from 'react-icons/di';
-import { GoLinkExternal } from "react-icons/go";
+import { DiJava } from 'react-icons/di';
 import { FiExternalLink } from 'react-icons/fi';
 import { ProjectModel } from '../model/PortfolioModels.js';
 
@@ -75,7 +74,7 @@ export const data: ProjectModel[] = [
     ],
     links: [
       {
-        icon: <GoLinkExternal size={iconSize} />,
+        icon: <FiExternalLink size={iconSize} />,
         value: 'https://www.kaylaramnarain.com'
       }
     ],
@@ -373,16 +372,16 @@ export const data: ProjectModel[] = [
       <SiReact size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiHtml5 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiCss3 size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
-      <DiJavascript size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiTypescript size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiGithub size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/Website',
     text: [
-      "This website was written using JavaScript, ReactJS, and CSS"
+      "This website was written using TypeScript, ReactJS, and CSS"
     ],
     links: [
       {
-        icon: <GoLinkExternal size={iconSize} />,
+        icon: <FiExternalLink size={iconSize} />,
         value: '/#'
       }
     ],

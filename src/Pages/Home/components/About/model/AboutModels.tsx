@@ -10,5 +10,5 @@ export interface CardsDataModel {
 export interface CurrentDevelopmentDataModel {
   key: number,
   main_bullet: string,
-  sub_bullets?: string[]
+  sub_bullets?: (string | React.JSX.Element)[]
 }

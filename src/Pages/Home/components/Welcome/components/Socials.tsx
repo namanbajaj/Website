@@ -2,6 +2,7 @@ import React from 'react'
 import { BsLinkedin, BsGithub, BsInstagram, BsTwitterX } from 'react-icons/bs'
 import { FaGamepad } from 'react-icons/fa'
 import { IoLogoGooglePlaystore } from 'react-icons/io5'
+import { Link } from 'react-router-dom'
 
 export default function Socials() {
   return (
@@ -24,9 +25,9 @@ export default function Socials() {
         <a href="https://play.google.com/store/apps/dev?id=5692626467682406083" target='_blank' rel="noopener noreferrer">
           <IoLogoGooglePlaystore></IoLogoGooglePlaystore>
         </a>
-        <a href="/games">
+        <Link to="/games">
           <FaGamepad></FaGamepad>
-        </a>
+        </Link>
       </div>
     </div>
   )
