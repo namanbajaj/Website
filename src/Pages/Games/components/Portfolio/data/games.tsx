@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Icons from '../../../../../Shared/Icons/Icons.jsx';
+import Icons from '../../../../../Shared/Icons/Icons';
 
 import Snake from '../assets/snake.png'
 import PongPhoto from '../assets/pong_photo.png'
@@ -9,10 +9,11 @@ import ColorGamePhoto from '../assets/guess_the_color_photo.png'
 
 import { SiCsharp, SiAndroid, SiWindows, SiUnity, SiLinux, SiRaylib, SiWebassembly, SiCplusplus, SiKotlin, SiAndroidstudio, SiGradle } from 'react-icons/si'
 import { FaGamepad } from 'react-icons/fa'
+import { ProjectModel } from '../../../../Home/components/Portfolio/model/PortfolioModels.js';
 
 const iconSize = 25;
 
-export const data = [
+export const data: ProjectModel[] = [
   {
     id: 1,
     image: Snake,
@@ -23,12 +24,12 @@ export const data = [
       <SiRaylib size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiWebassembly size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
-    text: <span>
-      - Snake game written in C++ using raylib <br />
-      - Supports keyboard and mouse controls <br />
-      - Coded in Linux and compiled to Linux and WebAssembly <br />
-      - Many features
-    </span>,
+    text: [
+      'Snake game written in C++ using raylib',
+      'Supports keyboard and mouse controls',
+      'Coded in Linux and compiled to Linux and WebAssembly',
+      'Many features'
+    ],
     links: [
       {
         icon: <FaGamepad size={iconSize} />,
@@ -50,9 +51,9 @@ export const data = [
       <SiCsharp size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
-    text: <span>
-      - Infinite running game made in Unity <br />
-    </span>,
+    text: [
+      'Infinite running game made in Unity'
+    ],
     links: [
       {
         icon: <SiAndroid size={iconSize} />,
@@ -76,12 +77,12 @@ export const data = [
       <SiAndroid size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/Mini-Tennis',
-    text: <span>
-      - Pong clone made in Unity <br />
-      - Supports single player and multiplayer <br />
-      - Supports keyboard, mouse, and touchscreen controls <br />
-      - Supports Android and Windows <br />
-    </span>,
+    text: [
+      'Pong clone made in Unity',
+      'Supports single player and multiplayer',
+      'Supports keyboard, mouse, and touchscreen controls',
+      'Supports Android and Windows'
+    ],
     links: [
       {
         icon: <SiWindows size={iconSize} />,
@@ -110,14 +111,13 @@ export const data = [
       <Icons name='xml' size={iconSize} />
     </div>,
     github: 'https://github.com/namanbajaj/Color-Guessing-Game',
-    text:
-      <span>
-        - Color guessing game built with Kotlin in Android Studio. <br />
-        - Has 3 difficulty modes, each with their own high scores. <br />
-        - Implements coroutines for timer function and color changing title. <br />
-        - Responsive according to whether user has dark mode turned on. <br />
-        - Works well with variety of screen sizes and orientations. <br />
-      </span>,
+    text: [
+      'Color guessing game built with Kotlin in Android Studio.',
+      'Has 3 difficulty modes, each with their own high scores.',
+      'Implements coroutines for timer function and color changing title.',
+      'Responsive according to whether user has dark mode turned on.',
+      'Works well with variety of screen sizes and orientations.'
+    ],
     links: [
       {
         icon: <SiAndroid size={iconSize} />,

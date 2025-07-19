@@ -1,6 +1,6 @@
 import React from "react";
 
-const Icons = ({ name, size, className }) => {
+const Icons = ({ name, size, className }: { name: string, size?: number, className?: string }) => {
 
   switch (name) {
     case "default":

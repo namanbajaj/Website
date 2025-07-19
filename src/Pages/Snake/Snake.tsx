@@ -1,5 +1,8 @@
+import React from "react";
+
 import Footer from '../../Shared/Footer/Footer'
 import './snake.css'
+import { Link } from "react-router-dom";
 
 const Snake = () => {
   return (
@@ -10,10 +13,10 @@ const Snake = () => {
           Snake built in raylib
         </h1>
         <h2>Fullscreen recommended</h2>
-        <iframe src="https://namanbajaj.github.io/GameServer/Snake/snake.html" title='snake' frameborder="0" height='1000px' width='1300px' allowFullScreen={true} scrolling="no"></iframe>
+        <iframe src="https://namanbajaj.github.io/GameServer/Snake/snake.html" title='snake' height='1000px' width='1300px' allowFullScreen={true} scrolling="no"></iframe>
         <div className="game_nav_btns">
-          <a href="/#portfolio" className="btn">Home</a>
-          <a href="/games" className="btn">Games</a>
+          <Link to="/" className="btn">Home</Link>
+          <Link to="/games" className="btn">Games</Link>
         </div>
       </div>
       <Footer />

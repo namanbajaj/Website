@@ -4,7 +4,7 @@ import '../css/languages.css'
 
 import { techs } from '../data/techs'
 
-const Languages = () => {
+export default function Languages() {
   return (
     <section id='Languages'>
       <div className='games_l_t_header'>
@@ -33,5 +33,3 @@ const Languages = () => {
     </section >
   )
 }
-
-export default Languages

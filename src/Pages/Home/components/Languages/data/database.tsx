@@ -1,7 +1,7 @@
 import React from 'react';
 import { DiMysql, DiSqllite } from 'react-icons/di';
 import { SiMicrosoftsqlserver, SiPostgresql } from 'react-icons/si'
-import Icons from '../../../../../Shared/Icons/Icons.jsx';
+import Icons from '../../../../../Shared/Icons/Icons';
 import { iconSize, LanguageModel } from '../model/LanguageModels';
 
 export const database: LanguageModel[] = [

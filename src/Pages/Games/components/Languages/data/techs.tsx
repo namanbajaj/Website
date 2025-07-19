@@ -1,10 +1,12 @@
+import React from 'react';
 import { SiUnrealengine, SiUnity, SiVisualstudio, SiVisualstudiocode, SiCplusplus, SiCsharp } from 'react-icons/si'
 import Icons from '../../../../../Shared/Icons/Icons';
+import { GamesLanguageModel } from '../model/GamesLanguageModels';
 
 const iconSize = 150;
 
 
-export const techs = [
+export const techs: GamesLanguageModel[] = [
   {
     id: 1,
     icon: <SiUnity size={iconSize} />,

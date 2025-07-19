@@ -5,7 +5,7 @@ import '../css/experience.css'
 import Popup from 'reactjs-popup'
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import Icons from '../../../../../Shared/Icons/Icons.jsx';
+import Icons from '../../../../../Shared/Icons/Icons';
 
 import { data } from '../data/data'
 

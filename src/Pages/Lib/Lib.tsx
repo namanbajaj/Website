@@ -1,11 +1,12 @@
-import './css/lib.css'
-
 import { useState } from 'react'
+import React from 'react';
 
 import Popup from 'reactjs-popup'
 import ReactPlayer from 'react-player'
 
-import Icons from '../../Shared/Icons/Icons.jsx';
+import './css/lib.css'
+
+import Icons from '../../Shared/Icons/Icons';
 
 import { DiHtml5, DiCss3, DiJava, DiPython } from 'react-icons/di';
 import { SiGithub, SiAndroid, SiC, SiLinux, SiDocker, SiReact } from 'react-icons/si'
@@ -264,24 +265,26 @@ const Lib = () => {
                 onOpen={() => document.body.classList.add('modal-open')}
                 onClose={() => document.body.classList.remove('modal-open')}
               >
-                {close => (
-                  <div className="pop_up_window animate__animated animate__zoomIn">
-                    <div className="pop_up_header"> {experience_item.title} </div>
-                    <div className="pop_up_content">
-                      {experience_item.description}
+                {
+                  // @ts-ignore - issue with reactjs-popup library
+                  close => (
+                    <div className="pop_up_window animate__animated animate__zoomIn">
+                      <div className="pop_up_header"> {experience_item.title} </div>
+                      <div className="pop_up_content">
+                        {experience_item.description}
+                      </div>
+                      <div className="pop_up_actions">
+                        <a
+                          className="btn"
+                          onClick={() => {
+                            close();
+                          }}
+                        >
+                          Close
+                        </a>
+                      </div>
                     </div>
-                    <div className="pop_up_actions">
-                      <a
-                        className="btn"
-                        onClick={() => {
-                          close();
-                        }}
-                      >
-                        Close
-                      </a>
-                    </div>
-                  </div>
-                )}
+                  )}
               </Popup>
             ) : null}
           </div>
@@ -345,80 +348,13 @@ const Lib = () => {
                     contentStyle={{ width: '30%', height: 'auto' }}
                     disabled={window.screen.width < 600}
                   >
-                    {close => (
-                      <div className="pop_up_window animate__animated animate__zoomIn">
-                        <div className="pop_up_header"> {title} </div>
-                        <div className="pop_up_content">
-                          {<img src={image} alt={title} />}
-                        </div>
-                        <div className="pop_up_actions">
-                          <a
-                            className="btn"
-                            onClick={() => {
-                              close();
-                            }}
-                          >
-                            Close
-                          </a>
-                        </div>
-                      </div>
-                    )}
-                  </Popup>
-                </div>
-                <div>
-                  <h3 className='title_and_languages'>
-                    <div className='portfolio_item_title_text'>{title}</div>
-                    {icons}
-                  </h3>
-                </div>
-                <div className="portfolio__item-cta">
-                  <Popup
-                    trigger={<a className="btn portfolio_btns"> <AiOutlineInfoCircle size={iconSize_port} /> </a>}
-                    modal
-                  >
-                    {close => (
-                      <div className="pop_up_window animate__animated animate__zoomIn">
-                        <div className="pop_up_header"> {title} </div>
-                        <div className="pop_up_content">
-                          {text}
-                        </div>
-                        <div className="pop_up_actions">
-                          <a
-                            className="btn"
-                            onClick={() => {
-                              close();
-                            }}
-                          >
-                            Close
-                          </a>
-                        </div>
-                      </div>
-                    )}
-                  </Popup>
-
-                  {github != null ?
-                    (
-                      <a href={github} className='btn portfolio_btns' target='_blank'><SiGithub size={iconSize_port} /></a>
-                    ) : null
-                  }
-
-                  {demo != null ? (
-                    < Popup
-                      trigger={demobutton}
-                      modal
-                    >
-                      {close => (
-                        <div className="pop_up_window_video animate__animated animate__zoomIn">
-                          <div className="pop_up_content_video">
-                            <div className='player-wrapper'>
-                              <ReactPlayer
-                                url={demo}
-                                controls={true}
-                                width='100%'
-                                height='100%'
-                                className='.react-player'>
-                              </ReactPlayer>
-                            </div>
+                    {
+                      // @ts-ignore - issue with reactjs-popup library
+                      close => (
+                        <div className="pop_up_window animate__animated animate__zoomIn">
+                          <div className="pop_up_header"> {title} </div>
+                          <div className="pop_up_content">
+                            {<img src={image} alt={title} />}
                           </div>
                           <div className="pop_up_actions">
                             <a
@@ -432,6 +368,79 @@ const Lib = () => {
                           </div>
                         </div>
                       )}
+                  </Popup>
+                </div>
+                <div>
+                  <h3 className='title_and_languages'>
+                    <div className='portfolio_item_title_text'>{title}</div>
+                    {icons}
+                  </h3>
+                </div>
+                <div className="portfolio__item-cta">
+                  <Popup
+                    trigger={<a className="btn portfolio_btns"> <AiOutlineInfoCircle size={iconSize_port} /> </a>}
+                    modal
+                  >
+                    {
+                      // @ts-ignore - issue with reactjs-popup library
+                      close => (
+                        <div className="pop_up_window animate__animated animate__zoomIn">
+                          <div className="pop_up_header"> {title} </div>
+                          <div className="pop_up_content">
+                            {text}
+                          </div>
+                          <div className="pop_up_actions">
+                            <a
+                              className="btn"
+                              onClick={() => {
+                                close();
+                              }}
+                            >
+                              Close
+                            </a>
+                          </div>
+                        </div>
+                      )}
+                  </Popup>
+
+                  {github != null ?
+                    (
+                      <a href={github} className='btn portfolio_btns' target='_blank'><SiGithub size={iconSize_port} /></a>
+                    ) : null
+                  }
+
+                  {demo != null ? (
+                    < Popup
+                      trigger={demobutton}
+                      modal
+                    >
+                      {
+                        // @ts-ignore - issue with reactjs-popup library
+                        close => (
+                          <div className="pop_up_window_video animate__animated animate__zoomIn">
+                            <div className="pop_up_content_video">
+                              <div className='player-wrapper'>
+                                <ReactPlayer
+                                  src={demo}
+                                  controls={true}
+                                  width='100%'
+                                  height='100%'
+                                  className='.react-player'>
+                                </ReactPlayer>
+                              </div>
+                            </div>
+                            <div className="pop_up_actions">
+                              <a
+                                className="btn"
+                                onClick={() => {
+                                  close();
+                                }}
+                              >
+                                Close
+                              </a>
+                            </div>
+                          </div>
+                        )}
                     </Popup>
                   ) : null
                   }
@@ -467,12 +476,7 @@ const Lib = () => {
 
         <a className='filter_button btn portfolio_btns' onClick={() => handlePopupVisible()}><FaFilter /></a>
         {isPopupVisible && (
-          <FilterPopup
-            onClose={() => setIsPopupVisible(false)}
-            onFilterChange={handleFilterChange}
-            onSortChange={handleSortChange}
-            onSortOrderChange={handleSortOrderChange}
-          />
+          <FilterPopup />
         )}
 
         <h1 className='lib_set_margin'>Currently sorting

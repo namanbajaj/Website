@@ -5,8 +5,8 @@ import './games.css'
 import 'animate.css';
 
 import Footer from '../../Shared/Footer/Footer'
-import Languages from './components/Languages/components/Languages.jsx';
-import Portfolio from './components/Portfolio/components/Portfolio.jsx';
+import Languages from './components/Languages/components/Languages';
+import Portfolio from './components/Portfolio/components/Portfolio';
 
 
 export default function Games() {
