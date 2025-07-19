@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
 import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
@@ -9,13 +9,14 @@ import Lib from './Pages/Lib/Lib';
 
 export default function App() {
   const navigate = useNavigate();
+  const location = useLocation();
   useEffect(() => {
     const redirectPath = sessionStorage.getItem('redirect');
-    if(redirectPath) {
+    if (redirectPath && redirectPath !== location.pathname) {
       sessionStorage.removeItem('redirect');
-      navigate(redirectPath, {replace: true});
+      navigate(redirectPath, { replace: true });
     }
-  }, [navigate]);
+  }, [navigate, location]);
 
   return (
     <Routes>
