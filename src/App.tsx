@@ -12,7 +12,7 @@ export default function App() {
   useEffect(() => {
     const redirectPath = sessionStorage.getItem('redirect');
     if(redirectPath) {
-      sessionStorage.removeItem(redirectPath);
+      sessionStorage.removeItem('redirect');
       navigate(redirectPath, {replace: true});
     }
   }, [navigate]);
