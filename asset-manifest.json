@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.11ed883d.css",
-    "main.js": "/static/js/main.e47c9e63.js",
+    "main.js": "/static/js/main.eb42cdc9.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.2dde24a9.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.abd50e46.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.78906766.chunk.js",
@@ -39,6 +39,7 @@
     "static/media/university_management_photo.png": "/static/media/university_management_photo.171603d4b4805f3cc300.png",
     "static/media/Resume___Naman_Bajaj.pdf": "/static/media/Resume___Naman_Bajaj.d59cdf29889729f7a794.pdf",
     "static/media/aws-certified-cloud-practitioner.png": "/static/media/aws-certified-cloud-practitioner.39308e77e7d0028acce5.png",
+    "static/media/Deno.png": "/static/media/Deno.ebb65b8d8ddaee4ee7c2.png",
     "static/media/website_portfolio_photo.png": "/static/media/website_portfolio_photo.f11e033b6cbd9bf7b193.png",
     "static/media/swiftstrokes.png": "/static/media/swiftstrokes.7f3df9e8efad5645a14c.png",
     "static/media/memory.png": "/static/media/memory.a579da5b6eadcefd7404.png",
@@ -53,6 +54,6 @@
   },
   "entrypoints": [
     "static/css/main.11ed883d.css",
-    "static/js/main.e47c9e63.js"
+    "static/js/main.eb42cdc9.js"
   ]
 }
