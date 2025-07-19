@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.11ed883d.css",
-    "main.js": "/static/js/main.e9466270.js",
+    "main.js": "/static/js/main.9ae96994.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.2dde24a9.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.abd50e46.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.78906766.chunk.js",
@@ -54,6 +54,6 @@
   },
   "entrypoints": [
     "static/css/main.11ed883d.css",
-    "static/js/main.e9466270.js"
+    "static/js/main.9ae96994.js"
   ]
 }
