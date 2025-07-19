@@ -9,8 +9,8 @@
 
 <body>
   <script type="text/javascript">
-    var redirectUrl = window.location.protocol + '//' + window.location.host + '/?redirect=' + window.location.pathname;
-    window.location.href = redirectUrl;
+    sessionStorage.setItem('redirect', window.location.pathname);
+    window.location.replace(window.location.protocol + '//' + window.location.host)
   </script>
 </body>
 

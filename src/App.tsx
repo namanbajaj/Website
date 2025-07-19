@@ -1,5 +1,5 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 
 import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
@@ -8,6 +8,15 @@ import Games from './Pages/Games/Games';
 import Lib from './Pages/Lib/Lib';
 
 export default function App() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    const redirectPath = sessionStorage.getItem('redirect');
+    if(redirectPath) {
+      sessionStorage.removeItem(redirectPath);
+      navigate(redirectPath, {replace: true});
+    }
+  }, [navigate]);
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />
