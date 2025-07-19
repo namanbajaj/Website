@@ -25,16 +25,38 @@ import AIAss1 from '../assets/AIA1.png'
 import AIFP from '../assets/AIFP.png'
 import kp from '../assets/kp.png'
 import controller from '../assets/controller.png'
+import Deno from '../assets/Deno.png'
 
-import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJson, SiVisualstudio, SiWindows, SiPython, SiLinux, SiTypescript, SiGithub } from 'react-icons/si'
+import { SiCsharp, SiC, SiKotlin, SiAndroidstudio, SiGradle, SiApachetomcat, SiSqlite, SiAndroid, SiMysql, SiEclipseide, SiHtml5, SiReact, SiCss3, SiJson, SiVisualstudio, SiWindows, SiPython, SiLinux, SiTypescript, SiGithub, SiDeno } from 'react-icons/si'
 import { DiProlog } from 'react-icons/di';
 import { DiJava, DiJavascript } from 'react-icons/di';
 import { GoLinkExternal } from "react-icons/go";
 import { FiExternalLink } from 'react-icons/fi';
+import { ProjectModel } from '../model/PortfolioModels.js';
 
 const iconSize = 25;
 
-export const data = [
+export const data: ProjectModel[] = [
+  {
+    id: 22,
+    image: Deno,
+    title: 'Personal Portfolio Backend',
+    icons: <div className='icon_under'>
+      <SiDeno size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiTypescript size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+    </div>,
+    text: [
+      "Backend written for this portfolio",
+      "Written using Deno, Oak, and TypeScript",
+      "Deployed using Deno Deploy",
+      "Speeds up development by preventing need to redeploy upon simple changes",
+      "Currently pulls additional notes for certain languages/techs"
+    ],
+    isNotable: true,
+    type: 'web',
+    dateOfLastUpdate: '2025-07-15',
+    dateOfFirstUpdate: '2025-07-15'
+  },
   // Kayla Portfolio
   {
     id: 21,
@@ -47,10 +69,10 @@ export const data = [
       <SiTypescript size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       <SiGithub size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
-    text: <span>
-      - Personal portfolio website written in ReactJS, TypeScript, HTML, and CSS <br />
-      - Hosted on GitHub Pages <br />
-    </span>,
+    text: [
+      "Personal portfolio website written in ReactJS, TypeScript, HTML, and CSS",
+      "Hosted on GitHub Pages"
+    ],
     links: [
       {
         icon: <GoLinkExternal size={iconSize} />,
@@ -70,10 +92,10 @@ export const data = [
     icons: <div className='icon_under'>
       <SiReact size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
-    text: <span>
-      - Gaming portion of site <br />
-      - Contains list of gaming projects I've built and technologies I've used
-    </span>,
+    text: [
+      "Gaming portion of site",
+      "Contains list of gaming projects I've built and technologies I've used"
+    ],
     links: [
       {
         icon: <FiExternalLink size={iconSize} />,
@@ -93,10 +115,10 @@ export const data = [
     icons: <div className='icon_under'>
       <SiPython size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
-    text: <span>
-      - Implements face and digit classification using 2 layer neural network and perceptron <br />
-      - Uses numpy for matrix operations <br />
-    </span>,
+    text: [
+      "Implements face and digit classification using 2 layer neural network and perceptron",
+      "Uses numpy for matrix operations"
+    ],
     isNotable: true,
     type: 'other',
     dateOfLastUpdate: '2024-05-04',
@@ -110,13 +132,13 @@ export const data = [
     icons: <div className='icon_under'>
       <SiPython size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
-    text: <span>
-      - A* pathfinding visualizer written in Python <br />
-      - Implements repeated forward A*, backwards A* and adaptive A* <br />
-      - Visualizes pathfinding on a grid with obstacles <br />
-      - Adaptive A* updates heuristic function based on previous runs <br />
-      - Implements custom binary heap for priority queue <br />
-    </span>,
+    text: [
+      "A* pathfinding visualizer written in Python",
+      "Implements repeated forward A*, backwards A* and adaptive A*",
+      "Visualizes pathfinding on a grid with obstacles",
+      "Adaptive A* updates heuristic function based on previous runs",
+      "Implements custom binary heap for priority queue"
+    ],
     isNotable: true,
     type: 'other',
     dateOfLastUpdate: '2024-02-27',
@@ -132,12 +154,12 @@ export const data = [
       <SiLinux size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/CS416/tree/Main/Project_4',
-    text: <span>
-      - File system written in C using FUSE <br />
-      - Implements basic file system operations such as open, close, read, write, etc <br />
-      - Supports multiple levels of directories <br />
-      - Supports file and directory permissions <br />
-    </span>,
+    text: [
+      "File system written in C using FUSE",
+      "Implements basic file system operations such as open, close, read, write, etc",
+      "Supports multiple levels of directories",
+      "Supports file and directory permissions"
+    ],
     isNotable: true,
     type: 'other',
     dateOfLastUpdate: '2023-12-13',
@@ -153,11 +175,11 @@ export const data = [
       <SiLinux size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/CS416/tree/Main/Project_3',
-    text: <span>
-      - User-level memory management written in C <br />
-      - Translates virtual addresses to physical addresses using page tables <br />
-      - Implements Transition Lookaside Buffer (TLB) <br />
-    </span>,
+    text: [
+      "User-level memory management written in C",
+      "Translates virtual addresses to physical addresses using page tables",
+      "Implements Transition Lookaside Buffer (TLB)"
+    ],
     isNotable: true,
     type: 'other',
     dateOfLastUpdate: '2023-11-22',
@@ -173,12 +195,12 @@ export const data = [
       <SiLinux size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/CS416/tree/Main/Project_2',
-    text: <span>
-      - User-level thread library and scheduler written in C <br />
-      - Supports thread creation, scheduling, and synchronization <br />
-      - Supports preemption and priority scheduling <br />
-      - Implements PSJF and MLFQ scheduling algorithms <br />
-    </span>,
+    text: [
+      "User-level thread library and scheduler written in C",
+      "Supports thread creation, scheduling, and synchronization",
+      "Supports preemption and priority scheduling",
+      "Implements PSJF and MLFQ scheduling algorithms"
+    ],
     isNotable: true,
     type: 'other',
     dateOfLastUpdate: '2023-10-25',
@@ -194,11 +216,11 @@ export const data = [
       <SiPython size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/CS314/tree/main/Final',
-    text: <span>
-      - Prolog interpreter written in Python <br />
-      - Supports basic Prolog syntax such as facts, rules, queries, etc <br />
-      - Supports unification, backtracking, and negation <br />
-    </span>,
+    text: [
+      "Prolog interpreter written in Python",
+      "Supports basic Prolog syntax such as facts, rules, queries, etc",
+      "Supports unification, backtracking, and negation"
+    ],
     isNotable: false,
     type: 'other',
     dateOfLastUpdate: '2023-05-02',
@@ -217,11 +239,11 @@ export const data = [
       <Icons name='xml' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/DrawingApp',
-    text: <span>
-      - Android application that allows users to draw on a canvas and save their drawings <br />
-      - Implements a custom view that allows users to draw on the canvas <br />
-      - Allows users to set background image to trace
-    </span>,
+    text: [
+      "Android application that allows users to draw on a canvas and save their drawings",
+      "Implements a custom view that allows users to draw on the canvas",
+      "Allows users to set background image to trace"
+    ],
     isNotable: true,
     links: [
       {
@@ -242,12 +264,12 @@ export const data = [
       <SiC size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/CS214/tree/main/hw3',
-    text: <span>
-      - Custom shell written in C for Linux. <br />
-      - Built in commands such as bg, cd, jobs, etc <br />
-      - Supports moving jobs between background and foreground <br />
-      - Supports suspending and resuming jobs <br />
-    </span>,
+    text: [
+      "Custom shell written in C for Linux.",
+      "Built in commands such as bg, cd, jobs, etc",
+      "Supports moving jobs between background and foreground",
+      "Supports suspending and resuming jobs"
+    ],
     isNotable: false,
     type: 'other',
     dateOfLastUpdate: '2022-12-11',
@@ -266,12 +288,11 @@ export const data = [
       <SiVisualstudio size={iconSize} /> &nbsp;&nbsp; &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/CurrencyConverter/releases/tag/currency-converter%2Fv1.0',
-    text:
-      <span>
-        - Currency converter application built for Windows environments using WPF frontend and C# backend <br />
-        - Uses Open Exchange Rates API to retrieve latest exchange rates for over 170 currencies and calculates based on user entered value <br />
-        - Implements multithreading and async/await functionality for exchange rate retrieval <br />
-      </span>,
+    text: [
+      "Currency converter application built for Windows environments using WPF frontend and C# backend",
+      "Uses Open Exchange Rates API to retrieve latest exchange rates for over 170 currencies and calculates based on user entered value",
+      "Implements multithreading and async/await functionality for exchange rate retrieval"
+    ],
     isNotable: false,
     links: [
       {
@@ -298,13 +319,12 @@ export const data = [
         <Icons name='xml' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
       </div>,
     github: 'https://github.com/namanbajaj/Quiz-App',
-    text:
-      <span>
-        - Educational application built for Android systems built in Android Studio <br />
-        - Uses Kotlin for front end and SQLite for back end <br />
-        - Allows users to create, edit, delete, and do quizzes <br />
-        - Implements multi-threading using Kotlin concurrency for database loading <br />
-      </span>,
+    text: [
+      "Educational application built for Android systems built in Android Studio",
+      "Uses Kotlin for front end and SQLite for back end",
+      "Allows users to create, edit, delete, and do quizzes",
+      "Implements multi-threading using Kotlin concurrency for database loading"
+    ],
     links: [
       {
         icon: <SiAndroid size={iconSize} />,
@@ -330,15 +350,14 @@ export const data = [
       <Icons name='jdbc' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/University-Registration-System',
-    text:
-      <span>
-        - University registration system built with HTML and Java frontend and MySQL backend. <br />
-        - Java and MySQL interact via JDBC. <br />
-        - Used Apache Tomcat for local server and Eclipse as IDE. <br />
-        - Allows department administrators to add professors, students, and courses. <br />
-        - Professors can view students that are taking their course and assign grades. <br />
-        - Students can see courses that they are taking and their grades in those courses, in addition to registering for new courses if prerequisites are met. <br />
-      </span>,
+    text: [
+      "University registration system built with HTML and Java frontend and MySQL backend.",
+      "Java and MySQL interact via JDBC.",
+      "Used Apache Tomcat for local server and Eclipse as IDE.",
+      "Allows department administrators to add professors, students, and courses.",
+      "Professors can view students that are taking their course and assign grades.",
+      "Students can see courses that they are taking and their grades in those courses, in addition to registering for new courses if prerequisites are met."
+    ],
     demo: UniversityDemo,
     isNotable: true,
     type: 'app',
@@ -358,7 +377,9 @@ export const data = [
       <SiGithub size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/Website',
-    text: 'This website was written using JavaScript, ReactJS, and CSS',
+    text: [
+      "This website was written using JavaScript, ReactJS, and CSS"
+    ],
     links: [
       {
         icon: <GoLinkExternal size={iconSize} />,
@@ -367,7 +388,7 @@ export const data = [
     ],
     isNotable: true,
     type: 'web',
-    dateOfLastUpdate: '2025-2-23',
+    dateOfLastUpdate: '2025-7-23',
     dateOfFirstUpdate: '2022-06-01'
   },
   // Photos Library (Android)
@@ -383,15 +404,14 @@ export const data = [
       <Icons name='xml' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
-    text:
-      <span>
-        - Photos library manager written for Android devices.<br />
-        - Supports accessing filesystem to add photos to library. <br />
-        - Users can create, delete, and rename albums. <br />
-        - Users can add, delete, and move photos, in addition to displaying them in a larger display and showing all tags. <br />
-        - Users can add tags to pictures and search by those tag values. <br />
-        - Larger photo display has slideshow functionality.
-      </span>,
+    text: [
+      "Photos library manager written for Android devices.",
+      "Supports accessing filesystem to add photos to library.",
+      "Users can create, delete, and rename albums.",
+      "Users can add, delete, and move photos, in addition to displaying them in a larger display and showing all tags.",
+      "Users can add tags to pictures and search by those tag values.",
+      "Larger photo display has slideshow functionality."
+    ],
     demo: PhotosAndroidDemo,
     isNotable: false,
     type: 'app',
@@ -410,16 +430,15 @@ export const data = [
       <Icons name='scenebuilder' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/Photos-Library-Android',
-    text:
-      <span>
-        - Photos library manager written for Desktop environments using JavaFX.<br />
-        - Supports accessing filesystem to add photos to library. <br />
-        - Users can create, delete, and rename albums. <br />
-        - Users can add, delete, and move photos, in addition to displaying them in a larger display and showing all tags. <br />
-        - Users can add tags to pictures and search by those tag values. <br />
-        - Larger photo display has slideshow functionality. <br />
-        - Users can search by tags and dates.
-      </span>,
+    text: [
+      "Photos library manager written for Desktop environments using JavaFX.",
+      "Supports accessing filesystem to add photos to library.",
+      "Users can create, delete, and rename albums.",
+      "Users can add, delete, and move photos, in addition to displaying them in a larger display and showing all tags.",
+      "Users can add tags to pictures and search by those tag values.",
+      "Larger photo display has slideshow functionality.",
+      "Users can search by tags and dates."
+    ],
     demo: PhotosDesktopDemo,
     isNotable: false,
     type: 'app',
@@ -435,12 +454,11 @@ export const data = [
       <DiJava size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/Chess',
-    text:
-      <span>
-        - Fully implemented chess game using ASCII art. <br />
-        - Built from scratch using object-oriented design patterns. <br />
-        - Supports advanced chess moves such as En Passant and castling.
-      </span>,
+    text: [
+      "Fully implemented chess game using ASCII art.",
+      "Built from scratch using object-oriented design patterns.",
+      "Supports advanced chess moves such as En Passant and castling."
+    ],
     demo: ChessDemo,
     isNotable: false,
     type: 'app',
@@ -458,11 +476,10 @@ export const data = [
       <Icons name='scenebuilder' size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
     </div>,
     github: 'https://github.com/namanbajaj/Song-Library',
-    text:
-      <span>
-        - Song library built using JavaFX. <br />
-        - Allows users to manage songs.
-      </span>,
+    text: [
+      "Song library built using JavaFX.",
+      "Allows users to manage songs."
+    ],
     demo: SongLibraryDemo,
     isNotable: false,
     type: 'app',

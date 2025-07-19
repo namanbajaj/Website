@@ -1,8 +1,9 @@
+import React from 'react';
 import { DiVisualstudio, DiEclipse } from 'react-icons/di';
 import { SiVisualstudiocode, SiAndroidstudio, SiIntellijidea } from 'react-icons/si'
-import { iconSize } from './iconSize.jsx';
+import { iconSize, LanguageModel } from '../model/LanguageModels';
 
-export const editors = [
+export const editors: LanguageModel[] = [
     {
         id: 2,
         icon: <SiVisualstudiocode size={iconSize} />,

@@ -1,10 +1,13 @@
+import React from 'react';
+
 import { IoIosSchool } from 'react-icons/io'
 import { AiFillCode } from 'react-icons/ai'
 import { CgHomeScreen } from 'react-icons/cg'
+import { CardsDataModel } from '../model/AboutModels';
 
 const iconSize = 125;
 
-export const cards_data = [
+export const cards_data: CardsDataModel[] = [
   {
     key: 1,
     title: 'Rutgers University - New Brunswick',

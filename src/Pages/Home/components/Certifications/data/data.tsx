@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { SiAngular, SiC, SiCplusplus, SiCsharp, SiDocker, SiMicrosoftexcel, SiPython, SiReact, SiRust } from 'react-icons/si'
 import { FaAws } from 'react-icons/fa6'
 
@@ -9,10 +11,11 @@ import CLF02_Cert from '../assets/aws-certified-cloud-practitioner.png'
 import Docker_Cert from '../assets/Docker.png'
 import What_React_Cert from '../assets/React.png'
 import Guided_React_Cert from '../assets/Guided_React.png'
+import { CertificationModel } from '../model/CertificationsModels'
 
 const iconSize = 100;
 
-export const data = [
+export const data: CertificationModel[] = [
   {
     id: 13,
     title: 'Getting Started with Docker',

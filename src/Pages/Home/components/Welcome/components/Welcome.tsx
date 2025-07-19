@@ -1,3 +1,5 @@
+import React from 'react';
+
 import '../css/welcome.css'
 import Links from './Links'
 import ME from '../assets/me.jpg'
@@ -6,6 +8,7 @@ import Socials from './Socials'
 import Particles from "react-tsparticles";
 import { loadSlim } from 'tsparticles-slim'
 import { useMemo } from 'react';
+import { MoveDirection, OutMode } from '@tsparticles/engine';
 
 export default function Welcome() {
   const particlesInit = async (main) => {
@@ -18,7 +21,7 @@ export default function Welcome() {
         "enable": false,
         "zIndex": -5
       },
-      "fpsLimit": 120,
+      "fpsLimit": 60,
       "particles": {
         "number": {
           "value": 50,
@@ -63,10 +66,10 @@ export default function Welcome() {
         "move": {
           "enable": true,
           "speed": 2,
-          "direction": "none",
+          "direction": MoveDirection.none,
           "random": false,
           "straight": false,
-          "out_mode": "out",
+          "out_mode": OutMode.out,
           "attract": {
             "enable": false,
             "rotateX": 600,
@@ -76,10 +79,6 @@ export default function Welcome() {
       },
       "interactivity": {
         "events": {
-          "onhover": {
-            "enable": false,
-            "mode": "repulse",
-          },
           "onclick": {
             "enable": true,
             "mode": "push"
@@ -100,14 +99,8 @@ export default function Welcome() {
             "opacity": 0.8,
             "speed": 3
           },
-          "repulse": {
-            "distance": 50
-          },
           "push": {
             "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
           }
         }
       },
@@ -122,6 +115,7 @@ export default function Welcome() {
         init={particlesInit}
         options={options}
       />
+
       <div className="container header__container">
         <h1>Naman Bajaj</h1>
         <h5>Software Developer</h5>

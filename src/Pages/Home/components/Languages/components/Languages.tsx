@@ -1,14 +1,15 @@
+import React from 'react';
 import { useEffect, useState } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import '../css/languages.css'
 import '../../About/css/about.css'
-import { frontend } from '../data//frontend.jsx'
-import { backend } from '../data//backend.jsx';
-import { database } from '../data//database.jsx';
-import { tools } from '../data//tools.jsx';
-import { editors } from '../data//editors.jsx';
-import { other } from '../data//other.jsx';
+import { frontend } from '../data/frontend'
+import { backend } from '../data/backend';
+import { database } from '../data/database';
+import { tools } from '../data/tools';
+import { editors } from '../data/editors';
+import { other } from '../data/other';
 import { IoInformationCircleOutline } from 'react-icons/io5';
 import { cloneDeep } from 'lodash';
 import { useLongPress } from 'use-long-press';
@@ -71,18 +72,21 @@ export default function Languages() {
   };
 
   useEffect(() => {
-    const lastNoteFetchTime = localStorage.getItem("lastNoteFetchTime")
+    const lastNoteFetchTime = parseInt(localStorage.getItem("lastNoteFetchTime"))
     const lastNoteFetch = localStorage.getItem("lastNoteFetch")
     if (
       lastNoteFetchTime === null ||
       ((Date.now() - lastNoteFetchTime) / 86400000) >= 1 ||
       lastNoteFetch === null
     ) {
-      const url = 'https://personal-portfolio-backend.deno.dev/fetchJSON?filename=languages_info.json'
+      var url = 'https://personal-portfolio-backend.deno.dev/fetchJSON?filename=languages_info.json'
 
-      // const url = 'https://personal-portfolio-backend.deno.dev/fetchJSON?filename=languages_info.json&password=' + process.env.REACT_APP_FETCH_JSON_PASSWORD
-      // const url = 'http://localhost:8000/fetchJSON?filename=languages_info.json&password=' + process.env.REACT_APP_FETCH_JSON_PASSWORD
-      
+      if (window.location.href.includes('localhost')) {
+        url = 'https://personal-portfolio-backend.deno.dev/fetchJSON?filename=languages_info.json&password=' + process.env.REACT_APP_FETCH_JSON_PASSWORD
+        // url = 'http://localhost:8000/fetchJSON?filename=languages_info.json&password=' + process.env.REACT_APP_FETCH_JSON_PASSWORD
+      }
+
+
       fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -90,7 +94,7 @@ export default function Languages() {
             console.log("Error with fetch: " + data["Error"])
           }
           else {
-            localStorage.setItem("lastNoteFetchTime", Date.now())
+            localStorage.setItem("lastNoteFetchTime", Date.now().toString())
             localStorage.setItem("lastNoteFetch", JSON.stringify(data))
 
             const newCategories = cloneDeep(categories)
@@ -144,7 +148,7 @@ export default function Languages() {
   };
 
   const handlers = useLongPress(() => {
-    localStorage.setItem("lastNoteFetchTime", Date.now() - 86400001)
+    localStorage.setItem("lastNoteFetchTime", (Date.now() - 86400001).toString())
   },
     {
       threshold: 2000
@@ -185,7 +189,11 @@ export default function Languages() {
                               >
                                 <div className='language_item' onClick={() => {
                                   if (info) {
-                                    document.getElementsByClassName('category')[category.id - 1].firstChild.classList.add('rotate_transform')
+                                    (document
+                                      .getElementsByClassName('category')[category.id - 1]
+                                      .firstChild as HTMLElement)
+                                      .classList
+                                      .add('rotate_transform')
                                   }
                                   setCategoryNotes(categories[category.id - 1].key, { name: technology, notes: info })
                                 }}>
@@ -221,16 +229,22 @@ export default function Languages() {
                               note.includes('Experience:')
                             ) {
                               const monthYearExp = note.split(': ')[1]
-                              const expDate = new Date(monthYearExp.split('-').reverse().join('-') + '-01')
-                              note = 'Experience: ' + parseInt(((new Date()) - (expDate)) / 31556952000) + ' years'
+                              const expDate = new Date(monthYearExp.split('-').reverse().join('-') + '-01').getTime()
+                              note = 'Experience: ' + parseInt((((new Date()).getTime() - (expDate)) / 31556952000).toString()) + ' years'
                             }
-                            return <div><h3>{note}</h3></div>
+                            return <div>
+                              <h3>
+                                {note}
+                              </h3>
+                            </div>
                           })
                         }
                       </div>
                       <a className='btn' onClick={() => {
-                        document.getElementsByClassName('category')[category.id - 1].firstChild.classList.remove('rotate_transform')
-                      }}>Go back</a>
+                        (document.getElementsByClassName('category')[category.id - 1].firstChild as HTMLElement).classList.remove('rotate_transform')
+                      }}>
+                        Go back
+                      </a>
                     </div>
                   </div>
                 </div>

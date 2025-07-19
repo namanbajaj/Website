@@ -1,4 +1,6 @@
-export const cd_data = [
+import { CurrentDevelopmentDataModel } from "../model/AboutModels";
+
+export const cd_data: CurrentDevelopmentDataModel[] = [
   {
     key: 4,
     main_bullet: 'Working on acquisition of AWS Certified Solutions Architect',

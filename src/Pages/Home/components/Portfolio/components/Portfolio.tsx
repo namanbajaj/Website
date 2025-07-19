@@ -17,7 +17,6 @@ const Portfolio = () => {
       
       <All />
 
-
     </section >
   )
 }

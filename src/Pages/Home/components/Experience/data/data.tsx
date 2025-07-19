@@ -1,4 +1,7 @@
-export const data = [
+import React from "react";
+import { ExperienceCardItem } from "../model/ExperienceModels";
+
+export const data: ExperienceCardItem[] = [
   {
     id: 4,
     title: 'Prudential',
@@ -10,12 +13,13 @@ export const data = [
           <div className='session_name'>First Rotation (7/2024 - 7/2025)</div>
           <div className='line'></div>
           <ul className='r_list'>
-            <li>Full stack developer working on internal tool used by Prudential business teams</li>
+            <li>Full stack developer working on internal tool ETL used by Prudential business teams</li>
             <li>Current development:
               <ul>
                 <li>Created microservices in Java (Spring Boot) and Python (FastAPI & Flask)</li>
                 <li>Added functionality and features to Angular application</li>
                 <li>Worked in AWS to enable new features and functionality</li>
+                <li>Worked on internal custom built chatbot (Streamlit) intended to help users navigate our application</li>
               </ul>
             </li>
             <li>Technologies used:
@@ -28,7 +32,7 @@ export const data = [
                 <li>Postman, Jenkins, Git (BitBucket)</li>
               </ul>
             </li>
-            <li>Methodologies used: Agile, CI/CD, Microservices, Containerization</li>
+            <li>Methodologies used: Agile, CI/CD, Microservices, Containerization, UI/UX, Data Migration</li>
           </ul>
         </div>
 

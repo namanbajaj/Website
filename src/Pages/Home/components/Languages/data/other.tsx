@@ -1,8 +1,9 @@
+import React from 'react';
 import { SiAdobeillustrator, SiAdobephotoshop, SiBlender, SiGimp, SiInkscape } from 'react-icons/si'
 import { TbBrandOffice } from 'react-icons/tb';
-import { iconSize } from './iconSize.jsx';
+import { iconSize, LanguageModel } from '../model/LanguageModels';
 
-export const other = [
+export const other: LanguageModel[] = [
     {
         id: 1,
         icon: <SiAdobeillustrator size={iconSize} />,

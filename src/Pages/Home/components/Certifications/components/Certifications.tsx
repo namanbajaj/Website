@@ -11,8 +11,6 @@ const Certifications = () => {
 
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
-    // setIsPopupVisible(false);
-    // document.body.classList.remove('no-scroll');
   };
 
   const handlePopupVisible = () => {
@@ -22,8 +20,8 @@ const Certifications = () => {
         document.body.classList.add('no-scroll');
       } else {
         document.body.classList.remove('no-scroll');
-
       }
+      
       return newState;
     });
   };
@@ -90,10 +88,7 @@ const Certifications = () => {
 
       <a className='filter_button btn portfolio_btns' onClick={() => handlePopupVisible()}><FaFilter /></a>
       {isPopupVisible && (
-        <FilterPopup
-          onClose={() => setIsPopupVisible(false)}
-          onFilterChange={handleFilterChange}
-        />
+        <FilterPopup />
       )}
 
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}>

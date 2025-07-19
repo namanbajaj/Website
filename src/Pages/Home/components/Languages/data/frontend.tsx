@@ -1,9 +1,10 @@
+import React from 'react';
 import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiAngularSimple } from 'react-icons/di';
 import { SiKotlin, SiTypescript, SiStreamlit } from 'react-icons/si'
 import Icons from '../../../../../Shared/Icons/Icons.jsx';
-import { iconSize } from './iconSize.jsx';
+import { iconSize, LanguageModel } from '../model/LanguageModels';
 
-export const frontend = [
+export const frontend: LanguageModel[] = [
     {
         id: 1,
         icon: <DiHtml5 size={iconSize} />,

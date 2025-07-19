@@ -7,23 +7,25 @@ import { gi_data } from '../data/GenInfoData'
 import '../css/about.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-const AboutCards = () => {
+export default function AboutCards() {
   return (
     <div className='cards_overview'>
       <div className='info_cards'>
-        {cards_data.map(({ key, title, logo, info }) => {
+        {cards_data.map((card) => {
           return (
             <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}>
-              <div className='card' key={key}>
-                <h2>{title}</h2>
+              <div className='card' key={card.key}>
+                <h2>{card.title}</h2>
                 <div className='content_cards'>
                   <h3 className='logo center_text'>
-                    {logo}
+                    {card.logo}
                   </h3>
 
                   <h5 className='text-light center_text'>
-                    {info.map((item, index) => (
-                      <div className='about_me_line_item' key={index}>{window.screen.width <= 600 && '- '}{item}</div>
+                    {card.info.map((item, index) => (
+                      <div className='about_me_line_item' key={index}>
+                        {window.screen.width <= 600 && '- '}{item}
+                      </div>
                     )
                     )}
                   </h5>
@@ -31,16 +33,20 @@ const AboutCards = () => {
               </div>
             </ScrollAnimation>
           )
-        }
-        )}
+        })}
       </div>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1} animateOnce={true}>
 
+      <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1} animateOnce={true}>
         <div className='about__me__geninfo'>
           <div className='about_me_text_info'>
             <h5>
-              {gi_data.map((item, index) =>
-                (<div key={index}>{item} <br /> <br /></div>)
+              {gi_data.map((data, index) =>
+              (
+                <div key={index}>
+                  {data}
+                  <br /> <br />
+                </div>
+              )
               )}
             </h5>
           </div>
@@ -50,17 +56,16 @@ const AboutCards = () => {
               Current Development:
             </h1>
             <ul className='working_on_list'>
-              {cd_data.map(({ key, main_bullet, sub_bullets }) => {
+              {cd_data.map((data) => {
                 return (
-                  <li className='main_list_item' key={key}>
-                    <h2>{main_bullet}</h2>
+                  <li className='main_list_item' key={data.key}>
+                    <h2>{data.main_bullet}</h2>
                     <ul className='working_on_list'>
-                      {sub_bullets ? sub_bullets.map((item, index) => (
+                      {data.sub_bullets && data.sub_bullets.map((item, index) => (
                         <li key={index}>
-                          <h2 dangerouslySetInnerHTML={{ __html: item }}>
-                          </h2>
+                          <h2 dangerouslySetInnerHTML={{ __html: item }} />
                         </li>
-                      )) : ''}
+                      ))}
                     </ul>
                   </li>
                 )
@@ -70,8 +75,5 @@ const AboutCards = () => {
         </div>
       </ScrollAnimation >
     </div>
-
   )
 }
-
-export default AboutCards

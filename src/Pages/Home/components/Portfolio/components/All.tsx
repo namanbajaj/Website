@@ -21,20 +21,14 @@ const All = () => {
 
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
-    // setIsPopupVisible(false);
-    // document.body.classList.remove('no-scroll');
   };
 
   const handleSortChange = (newSortBy) => {
     setSortBy(newSortBy);
-    // setIsPopupVisible(false);
-    // document.body.classList.remove('no-scroll');
   };
 
   const handleSortOrderChange = () => {
     setSortOrder((prevOrder) => (prevOrder === 'asc' ? 'desc' : 'asc'));
-    // setIsPopupVisible(false);
-    // document.body.classList.remove('no-scroll');
   };
 
   const handlePopupVisible = () => {
@@ -53,8 +47,7 @@ const All = () => {
 
   const handleOverlayClick = (e) => {
     if (e.target.classList.contains('popup_background')) {
-      setIsPopupVisible(false);
-      document.body.classList.remove('no-scroll');
+      closePopup();
     }
   };
 
@@ -67,13 +60,13 @@ const All = () => {
   const sortedData = filteredProjects.sort((a, b) => {
     if (sortBy === 'dateOfFirstUpdate') {
       return sortOrder === 'asc'
-        ? new Date(a.dateOfFirstUpdate) - new Date(b.dateOfFirstUpdate)
-        : new Date(b.dateOfFirstUpdate) - new Date(a.dateOfFirstUpdate);
+        ? new Date(a.dateOfFirstUpdate).getTime() - new Date(b.dateOfFirstUpdate).getTime()
+        : new Date(b.dateOfFirstUpdate).getTime() - new Date(a.dateOfFirstUpdate).getTime();
     }
     if (sortBy === 'dateOfLastUpdate') {
       return sortOrder === 'asc'
-        ? new Date(a.dateOfLastUpdate) - new Date(b.dateOfLastUpdate)
-        : new Date(b.dateOfLastUpdate) - new Date(a.dateOfLastUpdate);
+        ? new Date(a.dateOfLastUpdate).getTime() - new Date(b.dateOfLastUpdate).getTime()
+        : new Date(b.dateOfLastUpdate).getTime() - new Date(a.dateOfLastUpdate).getTime();
     }
     return 0;
   });
@@ -100,14 +93,17 @@ const All = () => {
         <button onClick={handleSortOrderChange} className='btn'>
           Sort {sortOrder === 'asc' ? 'Descending' : 'Ascending'}
         </button>
-        <button className='btn close_popup_btn' onClick={() => {
-          setIsPopupVisible(false);
-          document.body.classList.remove('no-scroll');
-        }}>
+        <button className='btn close_popup_btn' onClick={() => closePopup()}>
           X
         </button>
       </div>
     )
+  }
+
+  const closePopup = () => {
+    setIsPopupVisible(false);
+    document.body.classList.remove('no-scroll');
+    document.getElementsByClassName('z_index_fix')[0].classList.remove('scroll_animation_fix')
   }
 
   const FilterPopup = () => {
@@ -127,12 +123,7 @@ const All = () => {
 
         <a className='filter_button btn portfolio_btns' onClick={() => handlePopupVisible()}><FaFilter /></a>
         {isPopupVisible && (
-          <FilterPopup
-            onClose={() => setIsPopupVisible(false)}
-            onFilterChange={handleFilterChange}
-            onSortChange={handleSortChange}
-            onSortOrderChange={handleSortOrderChange}
-          />
+          <FilterPopup />
         )}
       </ScrollAnimation>
 
@@ -150,31 +141,33 @@ const All = () => {
                       contentStyle={{ width: '30%', height: 'auto' }}
                       disabled={window.screen.width < 600}
                     >
-                      {close => (
-                        <div>
-                          <div className='popup_background' onClick={
-                            () => {
-                              close()
-                            }
-                          }></div>
-                          <div className="pop_up_window animate__animated animate__zoomIn">
-                            <div className="pop_up_header"> {title} </div>
-                            <div className="pop_up_content">
-                              {<img src={image} alt={title} />}
-                            </div>
-                            <div className="pop_up_actions">
-                              <a
-                                className="btn"
-                                onClick={() => {
-                                  close();
-                                }}
-                              >
-                                Close
-                              </a>
+                      {
+                        // @ts-ignore - issue with reactjs-popup library
+                        close => (
+                          <div>
+                            <div className='popup_background' onClick={
+                              () => {
+                                close()
+                              }
+                            }></div>
+                            <div className="pop_up_window animate__animated animate__zoomIn">
+                              <div className="pop_up_header"> {title} </div>
+                              <div className="pop_up_content">
+                                {<img src={image} alt={title} />}
+                              </div>
+                              <div className="pop_up_actions">
+                                <a
+                                  className="btn"
+                                  onClick={() => {
+                                    close();
+                                  }}
+                                >
+                                  Close
+                                </a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      )}
+                        )}
                     </Popup>
                   </div>
                   <div>
@@ -188,31 +181,43 @@ const All = () => {
                       trigger={<a className="btn portfolio_btns"> <AiOutlineInfoCircle size={iconSize} /> </a>}
                       modal
                     >
-                      {close => (
-                        <div>
-                          <div className='popup_background' onClick={
-                            () => {
-                              close()
-                            }
-                          }></div>
-                          <div className="pop_up_window animate__animated animate__zoomIn">
-                            <div className="pop_up_header"> {title} </div>
-                            <div className="pop_up_content">
-                              {text}
-                            </div>
-                            <div className="pop_up_actions">
-                              <a
-                                className="btn"
-                                onClick={() => {
-                                  close();
-                                }}
-                              >
-                                Close
-                              </a>
+                      {
+                        // @ts-ignore - issue with reactjs-popup library
+                        close => (
+                          <div>
+                            <div className='popup_background' onClick={
+                              () => {
+                                close()
+                              }
+                            }></div>
+                            <div className="pop_up_window animate__animated animate__zoomIn">
+                              <div className="pop_up_header"> {title} </div>
+                              <div className="pop_up_content">
+                                <span>
+                                  {
+                                    text.map((item) => {
+                                      return (
+                                        <div>
+                                          {"- " + item}
+                                        </div>
+                                      )
+                                    })
+                                  }
+                                </span>
+                              </div>
+                              <div className="pop_up_actions">
+                                <a
+                                  className="btn"
+                                  onClick={() => {
+                                    close();
+                                  }}
+                                >
+                                  Close
+                                </a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      )}
+                        )}
                     </Popup>
 
                     {github != null ?
@@ -226,31 +231,33 @@ const All = () => {
                         trigger={demobutton}
                         modal
                       >
-                        {close => (
-                          <div className="pop_up_window_video animate__animated animate__zoomIn">
-                            <div className="pop_up_content_video">
-                              <div className='player-wrapper'>
-                                <ReactPlayer
-                                  url={demo}
-                                  controls={true}
-                                  width='100%'
-                                  height='100%'
-                                  className='.react-player'>
-                                </ReactPlayer>
+                        {
+                          // @ts-ignore - issue with reactjs-popup library
+                          close => (
+                            <div className="pop_up_window_video animate__animated animate__zoomIn">
+                              <div className="pop_up_content_video">
+                                <div className='player-wrapper'>
+                                  <ReactPlayer
+                                    src={demo}
+                                    controls={true}
+                                    width='100%'
+                                    height='100%'
+                                    className='.react-player'>
+                                  </ReactPlayer>
+                                </div>
+                              </div>
+                              <div className="pop_up_actions">
+                                <a
+                                  className="btn"
+                                  onClick={() => {
+                                    close();
+                                  }}
+                                >
+                                  Close
+                                </a>
                               </div>
                             </div>
-                            <div className="pop_up_actions">
-                              <a
-                                className="btn"
-                                onClick={() => {
-                                  close();
-                                }}
-                              >
-                                Close
-                              </a>
-                            </div>
-                          </div>
-                        )}
+                          )}
                       </Popup>
                     ) : null
                     }

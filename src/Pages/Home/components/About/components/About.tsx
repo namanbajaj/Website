@@ -4,7 +4,7 @@ import AboutCards from './AboutCards';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const About = () => {
+export default function About(){
   return (
     <section id='about'>
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}>
@@ -15,9 +15,6 @@ const About = () => {
         </div>
       </ScrollAnimation>
       <AboutCards />
-
     </section>
   )
 }
-
-export default About
