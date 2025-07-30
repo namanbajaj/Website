@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.11ed883d.css",
-    "main.js": "/static/js/main.9ae96994.js",
+    "main.css": "/static/css/main.7a5772d3.css",
+    "main.js": "/static/js/main.86feab80.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.2dde24a9.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.abd50e46.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.78906766.chunk.js",
@@ -37,7 +37,7 @@
     "static/media/AIFP.png": "/static/media/AIFP.3f7148ce25fa825edae5.png",
     "static/media/desktop_photos_app_photo.png": "/static/media/desktop_photos_app_photo.b3fa55617b14a53106aa.png",
     "static/media/university_management_photo.png": "/static/media/university_management_photo.171603d4b4805f3cc300.png",
-    "static/media/Resume___Naman_Bajaj.pdf": "/static/media/Resume___Naman_Bajaj.d59cdf29889729f7a794.pdf",
+    "static/media/Resume___Naman_Bajaj.pdf": "/static/media/Resume___Naman_Bajaj.8fa6429355e31267ca9b.pdf",
     "static/media/aws-certified-cloud-practitioner.png": "/static/media/aws-certified-cloud-practitioner.39308e77e7d0028acce5.png",
     "static/media/Deno.png": "/static/media/Deno.ebb65b8d8ddaee4ee7c2.png",
     "static/media/website_portfolio_photo.png": "/static/media/website_portfolio_photo.f11e033b6cbd9bf7b193.png",
@@ -53,7 +53,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.11ed883d.css",
-    "static/js/main.9ae96994.js"
+    "static/css/main.7a5772d3.css",
+    "static/js/main.86feab80.js"
   ]
 }
