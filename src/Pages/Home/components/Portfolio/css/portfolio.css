@@ -238,6 +238,17 @@
     height: 100%;
     overflow: hidden;
   }
+
+  .filter_buttons {
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+
+  .vert_line {
+    display: none;
+  }
 }
 
 
@@ -346,10 +357,6 @@
     padding: 5px 10px !important;
     cursor: pointer;
     border-radius: 100%;
-  }
-
-  .vert_line {
-    display: none;
   }
 
   .horiz_line {

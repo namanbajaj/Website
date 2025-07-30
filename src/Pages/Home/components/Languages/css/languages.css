@@ -167,25 +167,27 @@
 }
 
 /* Medium Devices */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
   .languages {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
   }
 
   .languages>div {
-    width: 80%;
+    width: 100%;
     padding: 2rem;
     margin: 0 auto;
   }
 }
 
 /* Small Devices */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .l_t_header {
     margin-top: 2rem;
   }
 
   .languages {
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 

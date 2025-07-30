@@ -142,8 +142,18 @@ body.modal-open {
   margin-bottom: 5%;
 }
 
+@media screen and (max-width: 1250px) {
+  .experience_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pop_up_window {
+    max-width: 70vw;
+  }
+}
+
 /* Mobile Devices */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 775px) {
   .experience_grid {
     display: flex;
     flex-direction: column;
@@ -173,10 +183,7 @@ body.modal-open {
   }
 
   .pop_up_window {
-    min-width: 90%;
-    max-width: 100vw;
+    max-width: 95vw;
     max-height: 75vh;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

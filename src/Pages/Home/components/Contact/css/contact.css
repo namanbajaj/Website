@@ -54,6 +54,10 @@
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+
+    .contact__options {
+      grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Small Devices */

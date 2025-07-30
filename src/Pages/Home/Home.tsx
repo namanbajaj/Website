@@ -8,11 +8,11 @@ import Experience from './components/Experience/components/Experience'
 import Languages from './components/Languages/components/Languages'
 import Certifications from './components/Certifications/components/Certifications'
 
-const Home = () => {
+export default function Home() {
   return (
     <>
       <Welcome />
-      <About/>
+      <About />
       <Experience />
       <Languages />
       <Portfolio />
@@ -22,5 +22,3 @@ const Home = () => {
     </>
   )
 }
-
-export default Home;

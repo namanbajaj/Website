@@ -116,7 +116,7 @@ export default function Welcome() {
         options={options}
       />
 
-      <div className="container header__container">
+      <div className="header_container">
         <h1>Naman Bajaj</h1>
         <h5>Software Developer</h5>
 

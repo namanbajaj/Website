@@ -135,8 +135,25 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .content_cards {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .logo.center_text {
+    justify-content: center;
+  }
+
+  .info_cards {
+    align-items: center;
+  }
+}
+
 /* Small Devices */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .cards_overview {
     grid-template-columns: 1fr;
   }
@@ -150,7 +167,7 @@
   .about_me_line_item {
     display: flex;
   }
-  
+
   .content_cards {
     grid-template-columns: 1fr;
     justify-content: center;
