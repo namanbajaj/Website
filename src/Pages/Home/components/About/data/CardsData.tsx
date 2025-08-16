@@ -18,7 +18,6 @@ export const cards_data: CardsDataModel[] = [
       'Summa Cum Laude'
     ]
   },
-  
   {
     key: 2,
     title: 'Software Developer',
@@ -29,7 +28,7 @@ export const cards_data: CardsDataModel[] = [
       'Working on hobby projects',
     ]
   },
-  
+
   {
     key: 3,
     title: '20+ Projects',

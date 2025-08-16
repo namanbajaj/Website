@@ -36,6 +36,7 @@ import { ProjectModel } from '../model/PortfolioModels.js';
 const iconSize = 25;
 
 export const data: ProjectModel[] = [
+  // Backend for Portfolio
   {
     id: 22,
     image: Deno,
@@ -138,7 +139,7 @@ export const data: ProjectModel[] = [
       "Adaptive A* updates heuristic function based on previous runs",
       "Implements custom binary heap for priority queue"
     ],
-    isNotable: true,
+    isNotable: false,
     type: 'other',
     dateOfLastUpdate: '2024-02-27',
     dateOfFirstUpdate: '2024-02-27'
@@ -179,7 +180,7 @@ export const data: ProjectModel[] = [
       "Translates virtual addresses to physical addresses using page tables",
       "Implements Transition Lookaside Buffer (TLB)"
     ],
-    isNotable: true,
+    isNotable: false,
     type: 'other',
     dateOfLastUpdate: '2023-11-22',
     dateOfFirstUpdate: '2023-11-22'
@@ -200,7 +201,7 @@ export const data: ProjectModel[] = [
       "Supports preemption and priority scheduling",
       "Implements PSJF and MLFQ scheduling algorithms"
     ],
-    isNotable: true,
+    isNotable: false,
     type: 'other',
     dateOfLastUpdate: '2023-10-25',
     dateOfFirstUpdate: '2023-10-25'

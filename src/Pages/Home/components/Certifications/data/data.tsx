@@ -7,15 +7,25 @@ import Angular_Course_Certificate from '../assets/Angular_Course_Certificate.jpg
 import Rust_CC_Cert from '../assets/Rust_Crash_Course.jpg'
 import Intro_AWS_Cert from '../assets/Intro_AWS_Cert.pdf'
 import CLF02_Course from '../assets/ACG_CLF-02.png'
-import CLF02_Cert from '../assets/aws-certified-cloud-practitioner.png'
 import Docker_Cert from '../assets/Docker.png'
 import What_React_Cert from '../assets/React.png'
 import Guided_React_Cert from '../assets/Guided_React.png'
 import { CertificationModel } from '../model/CertificationsModels'
 
+import CLF02_Cert from '../assets/aws-certified-cloud-practitioner.png'
+import SAAC03_Cert from '../assets/aws-certified-solutions-architect-associate.png'
+
 const iconSize = 100;
 
 export const data: CertificationModel[] = [
+  {
+    id: 14,
+    title: 'AWS SAA-C03 Certification',
+    company: <img src={SAAC03_Cert} alt="" className='cert_image' />,
+    date: 'Aug 2025',
+    link: 'https://www.credly.com/badges/ca278fb3-dcdc-4733-ae8d-203f347f7bde/public_url',
+    type: 'certification'
+  },
   {
     id: 13,
     title: 'Getting Started with Docker',

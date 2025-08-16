@@ -4,10 +4,6 @@ import { CurrentDevelopmentDataModel } from "../model/AboutModels";
 
 export const cd_data: CurrentDevelopmentDataModel[] = [
   {
-    key: 4,
-    main_bullet: 'Working on acquisition of AWS Certified Solutions Architect',
-  },
-  {
     key: 1,
     main_bullet: 'Developing Android Apps using Kotlin',
     sub_bullets: [

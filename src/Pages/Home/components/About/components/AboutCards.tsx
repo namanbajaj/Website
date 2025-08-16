@@ -24,7 +24,7 @@ export default function AboutCards() {
                   <h5 className='text-light center_text'>
                     {card.info.map((item, index) => (
                       <div className='about_me_line_item' key={index}>
-                        {window.screen.width <= 1024 && '- '}{item}
+                        {'- '}{item}
                       </div>
                     )
                     )}

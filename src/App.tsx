@@ -5,7 +5,6 @@ import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import Snake from './Pages/Snake/Snake';
 import Games from './Pages/Games/Games';
-import Lib from './Pages/Lib/Lib';
 
 export default function App() {
   const navigate = useNavigate();
@@ -21,7 +20,6 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Lib" element={<Lib />} />
       <Route path="/games" element={<Games />} />
       <Route path="/snake" element={<Snake />} />
       <Route path="*" element={<NotFound />} />
