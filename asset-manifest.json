@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a5772d3.css",
-    "main.js": "/static/js/main.86feab80.js",
+    "main.css": "/static/css/main.5c5dc749.css",
+    "main.js": "/static/js/main.a44b639a.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.2dde24a9.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.abd50e46.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.78906766.chunk.js",
@@ -13,13 +13,12 @@
     "reactPlayerPreview.js": "/static/js/reactPlayerPreview.f9eee7c9.chunk.js",
     "static/js/655.fd03144d.chunk.js": "/static/js/655.fd03144d.chunk.js",
     "static/js/313.d55ebdca.chunk.js": "/static/js/313.d55ebdca.chunk.js",
-    "static/media/university_management_demo.mp4": "/static/media/university_management_demo.f10206b664168deefeeb.mp4",
-    "static/media/android_photos_app_demo.mp4": "/static/media/android_photos_app_demo.d28d020a62a63d84be6c.mp4",
+    "static/media/university_management_demo.mp4": "/static/media/university_management_demo.89bc0dc2cc32faea887f.mp4",
     "static/media/me.jpg": "/static/media/me.baff38c72dcd6f5ec8b2.jpg",
-    "static/media/desktop_photos_app_demo.mp4": "/static/media/desktop_photos_app_demo.f56e9624a29a7286527e.mp4",
-    "static/media/kp.png": "/static/media/kp.033eff3280a7d87eba21.png",
-    "static/media/chess_demo.mp4": "/static/media/chess_demo.667638e0b836d1c4cbb6.mp4",
+    "static/media/android_photos_app_demo.mp4": "/static/media/android_photos_app_demo.cbe3ec004f41eb430098.mp4",
+    "static/media/desktop_photos_app_demo.mp4": "/static/media/desktop_photos_app_demo.0e1b13950fa5a7410a84.mp4",
     "static/media/quizbiz_photo.png": "/static/media/quizbiz_photo.b262b3fdc6f0446c0cf3.png",
+    "static/media/chess_demo.mp4": "/static/media/chess_demo.01e967de617bebed3eee.mp4",
     "static/media/android_photos_app_photo.png": "/static/media/android_photos_app_photo.fe5649d04f06088a5934.png",
     "static/media/Guided_React.png": "/static/media/Guided_React.77f89e25e1d05b51ae7e.png",
     "static/media/song_library_demo.mp4": "/static/media/song_library_demo.8d23de91b904c878399b.mp4",
@@ -36,7 +35,9 @@
     "static/media/Rust_Crash_Course.jpg": "/static/media/Rust_Crash_Course.98d1506e046c4627cb37.jpg",
     "static/media/AIFP.png": "/static/media/AIFP.3f7148ce25fa825edae5.png",
     "static/media/desktop_photos_app_photo.png": "/static/media/desktop_photos_app_photo.b3fa55617b14a53106aa.png",
+    "static/media/kp.png": "/static/media/kp.390f30e9d1a49f02caaa.png",
     "static/media/university_management_photo.png": "/static/media/university_management_photo.171603d4b4805f3cc300.png",
+    "static/media/aws-certified-solutions-architect-associate.png": "/static/media/aws-certified-solutions-architect-associate.78b286db1f7e6ed8c867.png",
     "static/media/Resume___Naman_Bajaj.pdf": "/static/media/Resume___Naman_Bajaj.8fa6429355e31267ca9b.pdf",
     "static/media/aws-certified-cloud-practitioner.png": "/static/media/aws-certified-cloud-practitioner.39308e77e7d0028acce5.png",
     "static/media/Deno.png": "/static/media/Deno.ebb65b8d8ddaee4ee7c2.png",
@@ -53,7 +54,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.7a5772d3.css",
-    "static/js/main.86feab80.js"
+    "static/css/main.5c5dc749.css",
+    "static/js/main.a44b639a.js"
   ]
 }
