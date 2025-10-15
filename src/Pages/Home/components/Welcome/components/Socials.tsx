@@ -14,12 +14,6 @@ export default function Socials() {
         <a href="https://github.com/namanbajaj" target="_blank" rel="noopener noreferrer"
         ><BsGithub></BsGithub>
         </a>
-        <a href="https://www.instagram.com/naman.bajaj_/" target="_blank" rel="noopener noreferrer">
-          <BsInstagram></BsInstagram>
-        </a>
-        <a href="https://x.com/soyginder" target="_blank" rel="noopener noreferrer">
-          <BsTwitterX></BsTwitterX>
-        </a>
       </div>
       <div className='socials'>
         <a href="https://play.google.com/store/apps/dev?id=5692626467682406083" target='_blank' rel="noopener noreferrer">

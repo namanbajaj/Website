@@ -8,6 +8,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Icons from '../../../../../Shared/Icons/Icons';
 
 import { data } from '../data/data'
+import { FaArrowAltCircleDown } from 'react-icons/fa';
 
 const iconSize = 150;
 
@@ -26,6 +27,9 @@ function CloseButton({ close }) {
 export default function Experience() {
   var duration = 0;
   const [count, setCount] = useState(0);
+
+  var interval: NodeJS.Timeout = null;
+
   return (
     <section id='Experience'>
       <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1.5} animateOnce={true}>
@@ -56,11 +60,31 @@ export default function Experience() {
                       trigger={<a className="btn r_btn"> Responsibilities </a>}
                       modal
                       onOpen={() => {
-                        document.body.classList.add('modal-open')
-                        setCount(0)
+                        document.body.classList.add('modal-open');
+                        setCount(0);
                         document.getElementById('prev_btn_resp_popup')?.classList.add('btn_disabled');
+                        
+                        document.getElementById('more_to_read_arrow').style.display = 'block';
+                        interval = setInterval(() => {
+                          const el = document.getElementById('popup_content');
+                          if (el && el.scrollHeight > el.clientHeight) {
+                            const delta = 5;
+                            if (Math.abs((el.scrollTop + el.clientHeight) - el.scrollHeight) < delta) {
+                              document.getElementById('more_to_read_arrow').style.display = 'none';
+                            }
+                            else {
+                              document.getElementById('more_to_read_arrow').style.display = 'block';
+                            }
+                          } 
+                          else if (el) {
+                            document.getElementById('more_to_read_arrow').style.display = 'none';
+                          }
+                        }, 100);
                       }}
-                      onClose={() => document.body.classList.remove('modal-open')}
+                      onClose={() => {
+                        document.body.classList.remove('modal-open');
+                        clearInterval(interval);
+                      }}
                     >
                       {
                         // @ts-ignore - issue with reactjs-popup library
@@ -71,12 +95,15 @@ export default function Experience() {
                               <div className="pop_up_header"> {item.title} </div>
 
                               {
-                                <div className="pop_up_content">
+                                <div className="pop_up_content" id="popup_content">
                                   {
                                     item.do_multi_page ?
                                       item.description.props.children.toReversed()[count] :
                                       item.description
                                   }
+                                  <div id='more_to_read_arrow'>
+                                    <FaArrowAltCircleDown size={25}/>
+                                  </div>
                                 </div>
                               }
 
@@ -95,7 +122,7 @@ export default function Experience() {
                                   </a>
 
                                   <CloseButton close={close} />
-                                  
+
                                   <a className='btn' id='next_btn_resp_popup' onClick={() => {
                                     document.getElementById('prev_btn_resp_popup').classList.remove('btn_disabled');
                                     if (count + 1 === item.description.props.children.length - 1) {

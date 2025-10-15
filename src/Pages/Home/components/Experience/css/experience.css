@@ -77,8 +77,8 @@
 
 /* List for responsibilites */
 .r_list {
-  margin-left: 10px;
-  margin-top: 5px;
+  margin-left: 20px;
+  /* margin-top: 5px; */
 }
 
 /* Specific session organizer */
@@ -108,7 +108,7 @@
 
 /* Style for the modal content */
 .pop_up_content {
-  overflow-y: auto;
+  overflow-y: scroll;
   flex: 1;
   padding: 20px;
   border-color: black;
@@ -140,6 +140,13 @@ body.modal-open {
   margin-left: auto;
   margin-right: 5%;
   margin-bottom: 5%;
+}
+
+#more_to_read_arrow {
+  display: block;
+  position: absolute;
+  bottom: 80px;
+  right: 10px;
 }
 
 @media screen and (max-width: 1250px) {
