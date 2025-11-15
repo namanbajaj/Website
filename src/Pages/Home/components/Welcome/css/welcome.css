@@ -25,6 +25,11 @@ header {
 }
 
 /* Socials */
+.socials_grid {
+  display: flex;
+  flex-direction: row;
+}
+
 .socials {
   display: flex;
   gap: 1.2rem;
@@ -34,15 +39,15 @@ header {
 
 .socials::before {
   content: '';
-  width: 2rem;
-  height: 1px;
+  width: 1px;
+  height: 2rem;
   background: var(--color-bg-primary);
 }
 
 .socials::after {
   content: '';
-  width: 2rem;
-  height: 1px;
+  width: 1px;
+  height: 2rem;
   background: var(--color-bg-primary);
 }
 

@@ -27,6 +27,14 @@ export const data: CertificationModel[] = [
     type: 'certification'
   },
   {
+    id: 15,
+    title: 'AWS SAA-C03 Course',
+    company: <FaAws size={iconSize} />,
+    date: 'Mar 2025',
+    link: 'https://www.udemy.com/certificate/UC-7ac74bce-5443-40ab-950a-e2fdf206efdf/',
+    type: 'coursework'
+  },
+  {
     id: 13,
     title: 'Getting Started with Docker',
     company: <SiDocker size={iconSize} />,

@@ -8,11 +8,20 @@ import { CardsDataModel } from '../model/AboutModels';
 const iconSize = 125;
 
 export const cards_data: CardsDataModel[] = [
+  //   {
+  //   key: 4,
+  //   title: 'Georgia Tech',
+  //   logo: <FaSchool size={iconSize} />,
+  //   info: [
+  //     'Incoming student to OMSCS program',
+  //   ]
+  // },
   {
     key: 1,
-    title: 'Rutgers University - New Brunswick',
+    title: 'Education',
     logo: <IoIosSchool size={iconSize} />,
     info: [
+      'Rutgers University - New Brunswick',
       'GPA: 3.86/4.00',
       'BS in Computer Science (Honors) & Mathematics',
       'Summa Cum Laude'
