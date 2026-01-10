@@ -1,5 +1,6 @@
 import React from "react";
 import { ExperienceCardItem } from "../model/ExperienceModels";
+import { Link } from "react-router-dom";
 
 export const data: ExperienceCardItem[] = [
   {
@@ -37,25 +38,51 @@ export const data: ExperienceCardItem[] = [
         </div>
 
         <div>
-          <div className='session_name'>Second Rotation (7/2025 - Current)</div>
+          <div className='session_name'>Second Rotation (7/2025 - 1/2026)</div>
           <div className='line' />
           <ul className='r_list'>
-            <li>Platform Engineer working as a Salesforce Developer and Quality Engineer working on improving Test Automation</li>
+            <li>Platform Engineer working as a Salesforce Developer and Quality Engineer</li>
             <li>Current development:
               <ul className="r_list">
-                <li>Created Batch Apex Class that pulled data from Salesforce and made callout to external API to update stale data in external database</li>
-                <li>Created automatic ADA detection tool and implemented it into our teams automated testing suite</li>
+                <li>Implemented automatic ADA issue detection tool (ANDI - developed by SSA) and implemented it into our automated testing suite to allow developers to allow developers to test for ADA issues without reaching out to external team</li>
+                <li>Created Batch Apex Class that pulled data from Salesforce and made callout to external API to update stale data in external AWS database</li>
+                <li>Integrated Agentforce AI with the Genesys Live Chat window using Lightning Messaging Service (LMS), allowing AI responses to be displayed directly to agents</li>
+                <li>Built a "Pending Policy" search flow using OmniStudio (OmniScripts, Integration Procedures, Data Mappers) to handle Knowledge-Based Authentication (KBA) for customers</li>
+                <li>Automated call logging by building a feature that parses AI-generated notes from Genesys and automatically saves them to Salesforce Customer Interactions</li>
+                <li>Refactored legacy Integration Procedures into Apex classes for better error handling and supported the Omnicore migration by updating regression test suites</li>
+                <li>Created technical documentation (Confluence) for the team on setting up SFDX and performing ADA testing</li>
+                <li>Did significant learning on Salesforce Trailheads, including Superbadges and various modules and trails: <Link to="https://www.salesforce.com/trailblazer/namanbajaj" target='_blank' rel="noopener noreferrer">Trailheads</Link></li>
               </ul>
             </li>
             <li>Technologies used:
               <ul className="r_list">
-                <li>Apex (Batch Apex, HTTP callouts, unit testing)</li>
-                <li>HTML, CSS, JavaScript (Lightning Web Components)</li>
-                <li>Java (Selenium)</li>
-                <li>Postman, Jenkins, Git (BitBucket), VSCode, SFDX</li>
+                <li>Apex (Batch Apex, Triggers, SOQL, REST/SOAP, Unit Testing)</li>
+                <li>OmniStudio (OmniScripts, FlexCards, Integration Procedures, Data Mappers)</li>
+                <li>Salesforce Frontend (LWC, Aura Components, Visualforce, LMS)</li>
+                <li>AI & Integration (Agentforce, Genesys Platform)</li>
+                <li>Test Automation (Java, Selenium, Jest, XPath, sa11y)</li>
+                <li>Accessibility Tools (ANDI, axe DevTools, WAVE, NVDA/JAWS)</li>
+                <li>DevOps (Copado, Jenkins, Git/BitBucket, VSCode, SFDX, Postman)</li>
               </ul>
             </li>
-            <li>Methodologies used: Batch processing, platform development, test automation, unit testing</li>
+            <li>Methodologies used: Agile/Scrum, Batch processing, ADA/Accessibility compliance, CI/CD, Regression testing</li>
+          </ul>
+        </div>
+
+        <div>
+          <div className='session_name'>Third Rotation (1/2026 - Current)</div>
+          <div className='line' />
+          <ul className='r_list'>
+            <li>Cloud/Infrastructure Engineer</li>
+            <li>Current development:
+              <ul className='r_list'>
+              </ul>
+            </li>
+            <li>Technologies used:
+              <ul className='r_list'>
+              </ul>
+            </li>
+            <li>Methodologies used: </li>
           </ul>
         </div>
       </div>,
@@ -97,8 +124,7 @@ export const data: ExperienceCardItem[] = [
           <li>Graded for 3 classes of 01:640:300 - Introduction to Mathematical Reasoning</li>
           <li>Graded homework for 50+ students</li>
         </ul>
-      </div>
-    ,
+      </div>,
     icon: 'rutgers',
   },
 

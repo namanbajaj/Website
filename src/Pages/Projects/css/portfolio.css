@@ -320,7 +320,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--color-bg);
-    background-image: url(../../../../../assets/background.png);
+    background-image: url(../../../assets/background.png);
     padding: 20px;
     z-index: 1000;
     border-radius: 10%;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 
 import { cards_data } from '../data/CardsData'
 import { cd_data } from '../data/CurrentDevData'
@@ -6,6 +6,10 @@ import { gi_data } from '../data/GenInfoData'
 
 import '../css/about.css'
 import ScrollAnimation from 'react-animate-on-scroll'
+
+function parseTagAndReturnHTML(item: string): ReactElement {
+  return <div dangerouslySetInnerHTML={{__html: item}}></div>
+}
 
 export default function AboutCards() {
   return (
@@ -24,7 +28,9 @@ export default function AboutCards() {
                   <h5 className='text-light center_text'>
                     {card.info.map((item, index) => (
                       <div className='about_me_line_item' key={index}>
-                        {window.screen.width <= 1024 && card.info.length !== 1 && '- '}{item}
+                        {window.screen.width <= 1024 && card.info.length !== 1 && ((typeof(item) === "string" && '- ') || ('*'))}{
+                          typeof(item) === "string" && item.includes('<') && item.includes('</') ? parseTagAndReturnHTML(item) : item
+                        }
                       </div>
                     )
                     )}

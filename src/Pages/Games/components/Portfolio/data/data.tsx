@@ -9,7 +9,7 @@ import ColorGamePhoto from '../assets/guess_the_color_photo.png'
 
 import { SiCsharp, SiAndroid, SiWindows, SiUnity, SiLinux, SiRaylib, SiWebassembly, SiCplusplus, SiKotlin, SiAndroidstudio, SiGradle } from 'react-icons/si'
 import { FaGamepad } from 'react-icons/fa'
-import { ProjectModel } from '../../../../Home/components/Portfolio/model/PortfolioModels.js';
+import { ProjectModel } from '../../../../Projects/model/PortfolioModels';
 
 const iconSize = 25;
 

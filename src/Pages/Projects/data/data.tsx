@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Icons from '../../../../../Shared/Icons/Icons';
+import Icons from '../../../Shared/Icons/Icons';
 
 import ReactLogo from '../assets/website_portfolio_photo.png'
 import PhotosAndroidPhoto from '../assets/android_photos_app_photo.png'

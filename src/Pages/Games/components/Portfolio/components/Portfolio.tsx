@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../css/portfolio.css'
 
-import { data } from '../data/games';
+import { data } from '../data/data';
 import { SiGithub } from 'react-icons/si'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 import Popup from 'reactjs-popup'

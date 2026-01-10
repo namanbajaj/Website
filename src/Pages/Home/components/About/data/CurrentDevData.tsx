@@ -1,4 +1,3 @@
-import React from "react";
 import { CurrentDevelopmentDataModel } from "../model/AboutModels";
 
 export const cd_data: CurrentDevelopmentDataModel[] = [
@@ -25,20 +24,28 @@ export const cd_data: CurrentDevelopmentDataModel[] = [
   //     <span>Most recently updated project(s): <a href={window.location.href}>This website</a>, <a href='https://play.google.com/store/apps/dev?id=5692626467682406083'>Android app updates</a></span>
   //   ]
   // },
+  // {
+  //   key: 4,
+  //   main_bullet: 'Learning Salesforce skills on Salesforce Trailheads to apply at work as platform developer',
+  //   sub_bullets: [
+  //     <span>Working through Trailheads to achieve Salesforce Platform Developer Certification</span>,
+  //     <span>Working through Trailheads to earn Superbadges</span>,
+  //     <span>Salesforce Trailheads profile: <a href="https://www.salesforce.com/trailblazer/namanbajaj">Trailheads</a></span>
+  //   ]
+  // },
   {
-    key: 4,
-    main_bullet: 'Learning Salesforce skills on Salesforce Trailheads to apply at work as platform developer',
-    sub_bullets: [
-      <span>Working through Trailheads to achieve Salesforce Platform Developer Certification</span>,
-      <span>Working through Trailheads to earn Superbadges</span>,
-      <span>Salesforce Trailheads profile: <a href="https://www.salesforce.com/trailblazer/namanbajaj">Trailheads</a></span>
-    ]
+    key: 6,
+    main_bullet: 'Taking CS 6250: Computer Networks in OMSCS'
   },
   {
     key: 5,
-    main_bullet: 'Attempting to achieve AWS Developer Associate (DVA-C02) Certification',
-    sub_bullets: [
-      <span>Working through DVA-C02 Udemy Course</span>
-    ]
+    main_bullet: 'Attempting to achieve AWS Developer Associate (DVA-C02) Certification'
+    // sub_bullets: [
+    //   <span>Working through DVA-C02 Udemy Course</span>
+    // ]
   },
+  {
+    key: 7,
+    main_bullet: 'Learning Azure fundamentals to apply at my job as a Cloud Engineer'
+  }
 ]

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import '../css/languages.css'
-import '../../About/css/about.css'
+import '../../Home/components/About/css/about.css'
 import { frontend } from '../data/frontend'
 import { backend } from '../data/backend';
 import { database } from '../data/database';
@@ -13,6 +13,8 @@ import { other } from '../data/other';
 import { IoInformationCircleOutline } from 'react-icons/io5';
 import { cloneDeep } from 'lodash';
 import { useLongPress } from 'use-long-press';
+import Footer from '../../../Shared/Footer/Footer';
+import Header from '../../../Shared/Header/Header';
 
 
 export default function Languages() {
@@ -158,22 +160,21 @@ export default function Languages() {
   var delay = 0;
 
   return (
-    <section id='Languages'>
-      <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} delay={delay} animateOnce={true}>
+    <>
+      <Header />
+      <section id='Languages'>
         <div className='l_t_header'>
           <h1 {...handlers()}>
             Languages and Technologies
           </h1>
         </div>
-      </ScrollAnimation>
-      <div className='languages'>
-        {
-          categories.map((category) => {
-            const notableItemsCount = category.data.filter(item => item.isNotable).length
-            const totalItemsCount = category.data.length
-            delay += 100
-            return (
-              <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={delay} animateOnce={true}>
+        <div className='languages'>
+          {
+            categories.map((category) => {
+              const notableItemsCount = category.data.filter(item => item.isNotable).length
+              const totalItemsCount = category.data.length
+              delay += 100
+              return (
                 <div className='category' key={category.id}>
                   <div className='category_inner'>
                     <div className='category_front'>
@@ -248,11 +249,12 @@ export default function Languages() {
                     </div>
                   </div>
                 </div>
-              </ScrollAnimation>
-            )
-          })
-        }
-      </div>
-    </section >
+              )
+            })
+          }
+        </div>
+      </section >
+      <Footer />
+    </>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../css/languages.css'
 
-import { techs } from '../data/techs'
+import { data } from '../data/data'
 
 export default function Languages() {
   return (
@@ -15,7 +15,7 @@ export default function Languages() {
       <div className='games_languages'>
         <div className='games_content'>
           {
-            techs.map(({ id, icon, technology }) => {
+            data.map(({ id, icon, technology }) => {
               return (
                 <div key={id} className='game_tech_details'>
                   <div className='icon_flex_block'>

@@ -6,7 +6,7 @@ import { GamesLanguageModel } from '../model/GamesLanguageModels';
 const iconSize = 150;
 
 
-export const techs: GamesLanguageModel[] = [
+export const data: GamesLanguageModel[] = [
   {
     id: 1,
     icon: <SiUnity size={iconSize} />,

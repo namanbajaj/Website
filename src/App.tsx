@@ -5,6 +5,9 @@ import Home from './Pages/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import Snake from './Pages/Snake/Snake';
 import Games from './Pages/Games/Games';
+import OMSCS from './Pages/OMSCS/OMSCS';
+import Portfolio from './Pages/Projects/components/Portfolio';
+import Languages from './Pages/Tools/components/Languages';
 
 export default function App() {
   const navigate = useNavigate();
@@ -22,6 +25,9 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/games" element={<Games />} />
       <Route path="/snake" element={<Snake />} />
+      <Route path="/omscs" element={<OMSCS />} />
+      <Route path="/projects" element={<Portfolio />} />
+      <Route path="/tools" element={<Languages />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )

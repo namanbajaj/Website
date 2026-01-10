@@ -4,7 +4,7 @@ export interface CardsDataModel {
   key: number,
   title: string,
   logo: ReactElement,
-  info: string[]
+  info: (string | ReactElement)[]
 };
 
 export interface CurrentDevelopmentDataModel {

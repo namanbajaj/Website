@@ -1,0 +1,9 @@
+.go_to_projects_link {
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  .go_to_projects_link {
+    margin-top: 5%;
+  }
+}
