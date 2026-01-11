@@ -3,6 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .header_item {

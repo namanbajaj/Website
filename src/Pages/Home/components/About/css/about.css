@@ -18,24 +18,26 @@
 .about__me__geninfo {
   margin-left: 5%;
   margin-right: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
 }
 
 /* Container for entire section */
 .cards_overview {
   display: grid;
-  grid-template-columns: 5fr 6fr;
+  /* grid-template-rows: 5fr 6fr; */
   margin-left: 2.5%;
-  margin-right: 2.5%;
+  margin-right: 5%;
   gap: 3rem;
   margin-bottom: 5%;
 }
 
 /* Container for cards that hold info about school, position, and projects */
 .info_cards {
-  margin-bottom: 5%;
+  /* margin-bottom: 5%; */
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* Card that holds actual info */

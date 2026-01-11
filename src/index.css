@@ -114,6 +114,11 @@ a:hover {
   background-color: gray;
 }
 
+section .go_to_projects_link {
+  margin-right: 5%;
+  width: auto;
+}
+
 /* List item classes */
 li {
   list-style-type: square;

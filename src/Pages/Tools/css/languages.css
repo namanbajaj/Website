@@ -1,7 +1,7 @@
 .l_t_header {
   margin-left: 5%;
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 2%;
 }
 
 .l_t_header::after {
@@ -171,6 +171,7 @@
   .languages {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    margin-top: 3rem;
   }
 
   .languages>div {

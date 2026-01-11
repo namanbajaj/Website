@@ -8,40 +8,12 @@ import '../css/about.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 function parseTagAndReturnHTML(item: string): ReactElement {
-  return <div dangerouslySetInnerHTML={{__html: item}}></div>
+  return <div dangerouslySetInnerHTML={{ __html: item }}></div>
 }
 
 export default function AboutCards() {
   return (
     <div className='cards_overview'>
-      <div className='info_cards'>
-        {cards_data.map((card) => {
-          return (
-            <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}>
-              <div className='card' key={card.key}>
-                <h2>{card.title}</h2>
-                <div className='content_cards'>
-                  <h3 className='logo center_text'>
-                    {card.logo}
-                  </h3>
-
-                  <h5 className='text-light center_text'>
-                    {card.info.map((item, index) => (
-                      <div className='about_me_line_item' key={index}>
-                        {window.screen.width <= 1024 && card.info.length !== 1 && ((typeof(item) === "string" && '- ') || ('*'))}{
-                          typeof(item) === "string" && item.includes('<') && item.includes('</') ? parseTagAndReturnHTML(item) : item
-                        }
-                      </div>
-                    )
-                    )}
-                  </h5>
-                </div>
-              </div>
-            </ScrollAnimation>
-          )
-        })}
-      </div>
-
       <ScrollAnimation animateIn="animate__animated animate__fadeInRight" duration={1} animateOnce={true}>
         <div className='about__me__geninfo'>
           <div className='about_me_text_info'>
@@ -82,6 +54,34 @@ export default function AboutCards() {
           </div>
         </div>
       </ScrollAnimation >
+
+      <div className='info_cards'>
+        {cards_data.map((card) => {
+          return (
+            <ScrollAnimation animateIn="animate__animated animate__fadeInLeft" duration={1} animateOnce={true}>
+              <div className='card' key={card.key}>
+                <h2>{card.title}</h2>
+                <div className='content_cards'>
+                  <h3 className='logo center_text'>
+                    {card.logo}
+                  </h3>
+
+                  <h5 className='text-light center_text'>
+                    {card.info.map((item, index) => (
+                      <div className='about_me_line_item' key={index}>
+                        {window.screen.width <= 1024 && card.info.length !== 1 && ((typeof (item) === "string" && '- ') || ('*'))}{
+                          typeof (item) === "string" && item.includes('<') && item.includes('</') ? parseTagAndReturnHTML(item) : item
+                        }
+                      </div>
+                    )
+                    )}
+                  </h5>
+                </div>
+              </div>
+            </ScrollAnimation>
+          )
+        })}
+      </div>
     </div>
   )
 }
