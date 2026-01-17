@@ -37,10 +37,8 @@ const All = () => {
       const newState = !prevState;
       if (newState) {
         document.body.classList.add('no-scroll');
-        document.getElementsByClassName('z_index_fix')[0].classList.add('scroll_animation_fix')
       } else {
         document.body.classList.remove('no-scroll');
-        document.getElementsByClassName('z_index_fix')[0].classList.remove('scroll_animation_fix')
       }
       return newState;
     });
@@ -104,7 +102,6 @@ const All = () => {
   const closePopup = () => {
     setIsPopupVisible(false);
     document.body.classList.remove('no-scroll');
-    document.getElementsByClassName('z_index_fix')[0].classList.remove('scroll_animation_fix')
   }
 
   const FilterPopup = () => {
