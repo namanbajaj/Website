@@ -19,3 +19,12 @@
   border: 2px solid white;
   border-radius: 10px;
 }
+
+.summary_text {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.summary_intro {
+  margin-bottom: 1rem;
+}

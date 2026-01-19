@@ -14,10 +14,19 @@ import { CertificationModel } from '../model/CertificationsModels'
 
 import CLF02_Cert from '../assets/aws-certified-cloud-practitioner.png'
 import SAAC03_Cert from '../assets/aws-certified-solutions-architect-associate.png'
+import AZ900_Cert from '../assets/AZ-900.png'
 
 const iconSize = 100;
 
 export const data: CertificationModel[] = [
+  {
+    id: 16,
+    title: 'Azure AZ-900 Certification',
+    company: <img src={AZ900_Cert} alt="" className='cert_image' />,
+    date: 'Jan 2026',
+    link: 'https://learn.microsoft.com/api/credentials/share/en-us/namanbajaj/383DB4F03B62704?sharingId=3E3E041F03B16865',
+    type: 'certification'
+  },
   {
     id: 14,
     title: 'AWS SAA-C03 Certification',
