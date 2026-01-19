@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.73913200.css",
-    "main.js": "/static/js/main.73346f5d.js",
+    "main.css": "/static/css/main.b2df5a9e.css",
+    "main.js": "/static/js/main.e3ecc42b.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.2dde24a9.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.abd50e46.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.78906766.chunk.js",
@@ -51,10 +51,11 @@
     "static/media/song_library_photo.png": "/static/media/song_library_photo.0956fefd20d0413a58ab.png",
     "static/media/snake.png": "/static/media/snake.2a8b378275bb1e4eb5ae.png",
     "static/media/fs.png": "/static/media/fs.936db353bc768df21220.png",
+    "static/media/AZ-900.png": "/static/media/AZ-900.6da2ecffe97ec07040a5.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.73913200.css",
-    "static/js/main.73346f5d.js"
+    "static/css/main.b2df5a9e.css",
+    "static/js/main.e3ecc42b.js"
   ]
 }
