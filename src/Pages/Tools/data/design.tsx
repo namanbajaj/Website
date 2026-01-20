@@ -3,7 +3,7 @@ import { SiAdobeillustrator, SiAdobephotoshop, SiBlender, SiGimp, SiInkscape } f
 import { TbBrandOffice } from 'react-icons/tb';
 import { iconSize, LanguageModel } from '../model/LanguageModels';
 
-export const other: LanguageModel[] = [
+export const design: LanguageModel[] = [
     {
         id: 1,
         icon: <SiAdobeillustrator size={iconSize} />,

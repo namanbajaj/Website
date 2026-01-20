@@ -4,12 +4,15 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import '../css/languages.css'
 import '../../Home/components/About/css/about.css'
+
+import { languages } from '../data/languages';
 import { frontend } from '../data/frontend'
 import { backend } from '../data/backend';
 import { database } from '../data/database';
 import { tools } from '../data/tools';
 import { editors } from '../data/editors';
-import { other } from '../data/other';
+import { design } from '../data/design';
+
 import { IoInformationCircleOutline } from 'react-icons/io5';
 import { cloneDeep } from 'lodash';
 import { useLongPress } from 'use-long-press';
@@ -21,48 +24,55 @@ export default function Languages() {
   const [categories, setCategories] = useState([
     {
       id: 1,
+      name: 'Programming Languages',
+      key: 'languages',
+      data: languages
+    },
+    {
+      id: 2,
       name: 'Frontend Development',
       key: 'frontend',
       data: frontend
     },
     {
-      id: 2,
+      id: 3,
       name: 'Backend Development',
       key: 'backend',
       data: backend
     },
     {
-      id: 3,
+      id: 4,
       name: 'Database Technologies',
       key: 'database',
       data: database
     },
     {
-      id: 4,
-      name: 'Developer Tools',
+      id: 5,
+      name: 'Tools & Platforms',
       key: 'tools',
       data: tools
     },
     {
-      id: 5,
+      id: 6,
       name: 'Editors/IDEs',
       key: 'editors',
       data: editors
     },
     {
-      id: 6,
-      name: 'Other',
-      key: 'other',
-      data: other
+      id: 7,
+      name: 'Design & Creative',
+      key: 'design',
+      data: design
     },
   ])
 
   const [booleanState, setBooleanState] = useState({
+    languages: false,
     frontend: false,
     backend: false,
     database: false,
     tools: false,
-    other: false,
+    design: false,
     editors: false
   });
 
@@ -134,12 +144,13 @@ export default function Languages() {
 
 
   const [notes, setNotes] = useState({
+    languages: { name: '', notes: ['']},
     frontend: { name: '', notes: [''] },
     backend: { name: '', notes: [''] },
     database: { name: '', notes: [''] },
     tools: { name: '', notes: [''] },
     editors: { name: '', notes: [''] },
-    other: { name: '', notes: [''] }
+    design: { name: '', notes: [''] }
   });
 
   const setCategoryNotes = (key, value) => {
