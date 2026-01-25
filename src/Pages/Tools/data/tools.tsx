@@ -102,6 +102,6 @@ export const tools: LanguageModel[] = [
     icon: <SiSelenium size={iconSize} />,
     technology: 'Selenium',
     experience: 'Intermediate',
-    isNotable: false
+    isNotable: true
   }
 ]

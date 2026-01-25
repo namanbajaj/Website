@@ -1,12 +1,18 @@
 import React from "react";
 import Header from "../../Shared/Header/Header";
-import Semester from "./components/Semester/Semester";
 import Footer from "../../Shared/Footer/Footer";
+import Class from "./components/Class/Class";
+
+import { classData } from './data/classes'
 
 export default function OMSCS() {
   return <>
     <Header />
-    <Semester title='Spring 2026' />
+    {
+      classData.map((item) => {
+        return <Class className={item.className} url={item.url} summary={item.summary} techs={item.techs} projects={item.projects}/>;
+      })
+    }
     <Footer />
   </>
 }
