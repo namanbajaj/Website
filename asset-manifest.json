@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b2df5a9e.css",
-    "main.js": "/static/js/main.52e35284.js",
+    "main.css": "/static/css/main.966cfc3c.css",
+    "main.js": "/static/js/main.5b2b4799.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.2dde24a9.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.abd50e46.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.78906766.chunk.js",
@@ -37,6 +37,7 @@
     "static/media/desktop_photos_app_photo.png": "/static/media/desktop_photos_app_photo.b3fa55617b14a53106aa.png",
     "static/media/kp.png": "/static/media/kp.390f30e9d1a49f02caaa.png",
     "static/media/university_management_photo.png": "/static/media/university_management_photo.171603d4b4805f3cc300.png",
+    "static/media/STP.png": "/static/media/STP.48c4611c1330faee6b30.png",
     "static/media/aws-certified-solutions-architect-associate.png": "/static/media/aws-certified-solutions-architect-associate.78b286db1f7e6ed8c867.png",
     "static/media/Resume___Naman_Bajaj.pdf": "/static/media/Resume___Naman_Bajaj.8fa6429355e31267ca9b.pdf",
     "static/media/aws-certified-cloud-practitioner.png": "/static/media/aws-certified-cloud-practitioner.39308e77e7d0028acce5.png",
@@ -47,6 +48,7 @@
     "static/media/threads.png": "/static/media/threads.a3fc54da47a727f2991a.png",
     "static/media/currency_converter_photo.png": "/static/media/currency_converter_photo.287c8fa7b7e18156153a.png",
     "static/media/c_terminal_photo.png": "/static/media/c_terminal_photo.ba6a160b8b5a1ee3be22.png",
+    "static/media/SN.jpg": "/static/media/SN.e9fb14a659bc81d191bf.jpg",
     "static/media/diagonal_runner_photo.png": "/static/media/diagonal_runner_photo.6b154aa44fa800a2fa79.png",
     "static/media/song_library_photo.png": "/static/media/song_library_photo.0956fefd20d0413a58ab.png",
     "static/media/snake.png": "/static/media/snake.2a8b378275bb1e4eb5ae.png",
@@ -55,7 +57,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.b2df5a9e.css",
-    "static/js/main.52e35284.js"
+    "static/css/main.966cfc3c.css",
+    "static/js/main.5b2b4799.js"
   ]
 }
