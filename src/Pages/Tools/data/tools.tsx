@@ -1,6 +1,6 @@
 import React from 'react';
 import { DiGit, DiLinux, DiTerminal } from 'react-icons/di';
-import { SiApachetomcat, SiGradle, SiJenkins, SiMicrosoftazure, SiNpm, SiPostman, SiSelenium } from 'react-icons/si'
+import { SiApachetomcat, SiGradle, SiJenkins, SiMicrosoftazure, SiPostman, SiSelenium } from 'react-icons/si'
 import Icons from '../../../Shared/Icons/Icons';
 import { FaAws, FaChrome, FaDocker, FaSalesforce } from 'react-icons/fa6';
 import { iconSize, LanguageModel } from '../model/LanguageModels';

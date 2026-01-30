@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import ScrollAnimation from 'react-animate-on-scroll';
 import Popup from 'reactjs-popup'
 import ReactPlayer from 'react-player'
 import 'animate.css';

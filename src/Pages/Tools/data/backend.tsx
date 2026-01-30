@@ -1,6 +1,5 @@
 import React from 'react';
-import { DiJava, DiPython } from 'react-icons/di';
-import { SiCplusplus, SiCsharp, SiC, SiNodedotjs, SiRust, SiSpringboot, SiFlask, SiFastapi, SiDeno } from 'react-icons/si'
+import { SiNodedotjs, SiSpringboot, SiFlask, SiFastapi, SiDeno } from 'react-icons/si'
 import { iconSize, LanguageModel } from '../model/LanguageModels';
 
 export const backend: LanguageModel[] = [

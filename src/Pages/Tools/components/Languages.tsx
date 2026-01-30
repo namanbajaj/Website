@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect, useState } from 'react'
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import '../css/languages.css'
 import '../../Home/components/About/css/about.css'
@@ -168,8 +167,6 @@ export default function Languages() {
     }
   )
 
-  var delay = 0;
-
   return (
     <>
       <Header />
@@ -184,7 +181,6 @@ export default function Languages() {
             categories.map((category) => {
               const notableItemsCount = category.data.filter(item => item.isNotable).length
               const totalItemsCount = category.data.length
-              delay += 100
               return (
                 <div className='category' key={category.id}>
                   <div className='category_inner'>

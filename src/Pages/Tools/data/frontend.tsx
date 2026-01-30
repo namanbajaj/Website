@@ -1,6 +1,6 @@
 import React from 'react';
-import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiAngularSimple } from 'react-icons/di';
-import { SiKotlin, SiTypescript, SiStreamlit, SiSalesforce } from 'react-icons/si'
+import { DiHtml5, DiCss3, DiReact, DiAngularSimple } from 'react-icons/di';
+import { SiStreamlit, SiSalesforce } from 'react-icons/si'
 import Icons from '../../../Shared/Icons/Icons';
 import { iconSize, LanguageModel } from '../model/LanguageModels';
 
