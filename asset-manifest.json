@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.966cfc3c.css",
-    "main.js": "/static/js/main.5b2b4799.js",
-    "reactPlayerHls.js": "/static/js/reactPlayerHls.2dde24a9.chunk.js",
-    "reactPlayerDash.js": "/static/js/reactPlayerDash.abd50e46.chunk.js",
-    "reactPlayerMux.js": "/static/js/reactPlayerMux.78906766.chunk.js",
-    "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.f64c8987.chunk.js",
-    "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.70276c44.chunk.js",
-    "reactPlayerWistia.js": "/static/js/reactPlayerWistia.3c83f2a3.chunk.js",
-    "reactPlayerSpotify.js": "/static/js/reactPlayerSpotify.a7c29f6a.chunk.js",
-    "reactPlayerTwitch.js": "/static/js/reactPlayerTwitch.0ee8c07b.chunk.js",
-    "reactPlayerPreview.js": "/static/js/reactPlayerPreview.f9eee7c9.chunk.js",
-    "static/js/655.fd03144d.chunk.js": "/static/js/655.fd03144d.chunk.js",
-    "static/js/313.d55ebdca.chunk.js": "/static/js/313.d55ebdca.chunk.js",
+    "main.css": "/static/css/main.6cbf4497.css",
+    "main.js": "/static/js/main.b9774b8e.js",
+    "reactPlayerHls.js": "/static/js/reactPlayerHls.e1143741.chunk.js",
+    "reactPlayerDash.js": "/static/js/reactPlayerDash.81480344.chunk.js",
+    "reactPlayerMux.js": "/static/js/reactPlayerMux.f83e712b.chunk.js",
+    "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.92003025.chunk.js",
+    "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.d20b1925.chunk.js",
+    "reactPlayerWistia.js": "/static/js/reactPlayerWistia.5af8cec1.chunk.js",
+    "reactPlayerSpotify.js": "/static/js/reactPlayerSpotify.ff6f9d98.chunk.js",
+    "reactPlayerTwitch.js": "/static/js/reactPlayerTwitch.c1ad5888.chunk.js",
+    "reactPlayerPreview.js": "/static/js/reactPlayerPreview.5e0c4a73.chunk.js",
+    "static/js/655.fef7dae8.chunk.js": "/static/js/655.fef7dae8.chunk.js",
+    "static/js/313.8082e6e7.chunk.js": "/static/js/313.8082e6e7.chunk.js",
     "static/media/university_management_demo.mp4": "/static/media/university_management_demo.89bc0dc2cc32faea887f.mp4",
     "static/media/me.jpg": "/static/media/me.baff38c72dcd6f5ec8b2.jpg",
     "static/media/android_photos_app_demo.mp4": "/static/media/android_photos_app_demo.cbe3ec004f41eb430098.mp4",
@@ -57,7 +57,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.966cfc3c.css",
-    "static/js/main.5b2b4799.js"
+    "static/css/main.6cbf4497.css",
+    "static/js/main.b9774b8e.js"
   ]
 }
