@@ -4,6 +4,7 @@ import { SiLinux, SiPython, SiVisualstudiocode, SiVmware } from 'react-icons/si'
 
 import SN_image from '../assets/SN.jpg'
 import STP_image from '../assets/STP.png'
+import DVR_image from '../assets/DVR.png'
 import { TbCloudNetwork } from 'react-icons/tb';
 
 const iconSize = 75;
@@ -41,6 +42,14 @@ export const classData = [
       },
     ],
     projects: [
+      {
+        title: 'Distance Vector Routing',
+        image: DVR_image,
+        text: [
+          'Implemented Distance Vector Routing algorithm using Bellman-Ford algorithm',
+          'Links included positive and negative values to simulate business relationships between Autonomous Systems'
+        ]
+      },
       {
         title: 'Spanning Tree Protocol',
         image: STP_image,
