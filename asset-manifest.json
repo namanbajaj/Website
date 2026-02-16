@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6cbf4497.css",
-    "main.js": "/static/js/main.b9774b8e.js",
+    "main.js": "/static/js/main.fae84a14.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.e1143741.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.81480344.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.f83e712b.chunk.js",
@@ -41,6 +41,7 @@
     "static/media/aws-certified-solutions-architect-associate.png": "/static/media/aws-certified-solutions-architect-associate.78b286db1f7e6ed8c867.png",
     "static/media/Resume___Naman_Bajaj.pdf": "/static/media/Resume___Naman_Bajaj.8fa6429355e31267ca9b.pdf",
     "static/media/aws-certified-cloud-practitioner.png": "/static/media/aws-certified-cloud-practitioner.39308e77e7d0028acce5.png",
+    "static/media/DVR.png": "/static/media/DVR.f649ef469ffb9b0c1c67.png",
     "static/media/Deno.png": "/static/media/Deno.ebb65b8d8ddaee4ee7c2.png",
     "static/media/website_portfolio_photo.png": "/static/media/website_portfolio_photo.f11e033b6cbd9bf7b193.png",
     "static/media/swiftstrokes.png": "/static/media/swiftstrokes.7f3df9e8efad5645a14c.png",
@@ -58,6 +59,6 @@
   },
   "entrypoints": [
     "static/css/main.6cbf4497.css",
-    "static/js/main.b9774b8e.js"
+    "static/js/main.fae84a14.js"
   ]
 }
