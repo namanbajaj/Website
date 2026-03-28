@@ -5,6 +5,7 @@ import { SiLinux, SiPython, SiVisualstudiocode, SiVmware } from 'react-icons/si'
 import SN_image from '../assets/SN.jpg'
 import STP_image from '../assets/STP.png'
 import DVR_image from '../assets/DVR.png'
+import SDN_FW from '../assets/SDN_FW.jpg'
 import { TbCloudNetwork } from 'react-icons/tb';
 
 const iconSize = 75;
@@ -42,6 +43,13 @@ export const classData = [
       },
     ],
     projects: [
+      {
+        title: 'SDN Firewall',
+        image: SDN_FW,
+        text: [
+          'Implemented a simple SDN firewall that dropped or accepted packets based on preconfigured rules'
+        ]
+      },
       {
         title: 'Distance Vector Routing',
         image: DVR_image,
