@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6cbf4497.css",
-    "main.js": "/static/js/main.fae84a14.js",
+    "main.js": "/static/js/main.84e8b660.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.e1143741.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.81480344.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.f83e712b.chunk.js",
@@ -49,6 +49,7 @@
     "static/media/threads.png": "/static/media/threads.a3fc54da47a727f2991a.png",
     "static/media/currency_converter_photo.png": "/static/media/currency_converter_photo.287c8fa7b7e18156153a.png",
     "static/media/c_terminal_photo.png": "/static/media/c_terminal_photo.ba6a160b8b5a1ee3be22.png",
+    "static/media/SDN_FW.jpg": "/static/media/SDN_FW.52d03061d4eb90306372.jpg",
     "static/media/SN.jpg": "/static/media/SN.e9fb14a659bc81d191bf.jpg",
     "static/media/diagonal_runner_photo.png": "/static/media/diagonal_runner_photo.6b154aa44fa800a2fa79.png",
     "static/media/song_library_photo.png": "/static/media/song_library_photo.0956fefd20d0413a58ab.png",
@@ -59,6 +60,6 @@
   },
   "entrypoints": [
     "static/css/main.6cbf4497.css",
-    "static/js/main.fae84a14.js"
+    "static/js/main.84e8b660.js"
   ]
 }
