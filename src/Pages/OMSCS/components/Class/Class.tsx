@@ -18,7 +18,6 @@ interface ProjectModel {
 interface ClassModel {
   className: string,
   url: string,
-  summary: string,
   techs: TechModel[],
   projects: ProjectModel[]
 };
@@ -34,10 +33,6 @@ export default function Class(props: ClassModel) {
           <a className="btn" href={props.url} target="_blank">Class Link</a>
         </div>
         <br />
-        <div className="summary_intro class_item_intro"><h3>Summary</h3></div>
-        <div className="summary_text">
-          {props.summary}
-        </div>
         <br />
         <div className="class_item_intro"><h3>Languages, Techs, & Tools</h3></div>
         <div className="omscs_languages">
@@ -69,50 +64,52 @@ export default function Class(props: ClassModel) {
                   <h3 className='title_and_languages'>
                     <div className='portfolio_item_title_text'>{item.title}</div>
                   </h3>
-                </div>
-                <div className="portfolio__item-cta">
-                  <Popup
-                    trigger={<a className="btn portfolio_btns"> <AiOutlineInfoCircle size={iconSize} /> </a>}
-                    modal
-                  >
-                    {
-                      // @ts-ignore - issue with reactjs-popup library
-                      close => (
-                        <div>
-                          <div className='popup_background' onClick={
-                            () => {
-                              close()
-                            }
-                          }></div>
-                          <div className="pop_up_window animate__animated animate__zoomIn">
-                            <div className="pop_up_header"> {item.title} </div>
-                            <div className="pop_up_content">
-                              <span>
-                                {
-                                  item.text.map((item) => {
-                                    return (
-                                      <div>
-                                        {"- " + item}
-                                      </div>
-                                    )
-                                  })
-                                }
-                              </span>
-                            </div>
-                            <div className="pop_up_actions">
-                              <a
-                                className="btn"
-                                onClick={() => {
-                                  close();
-                                }}
-                              >
-                                Close
-                              </a>
+
+                  <div className="portfolio__item-cta">
+                    <Popup
+                      trigger={<a className="btn portfolio_btns"> <AiOutlineInfoCircle size={iconSize} /> </a>}
+                      modal
+                    >
+                      {
+                        // @ts-ignore - issue with reactjs-popup library
+                        close => (
+                          <div>
+                            <div className='popup_background' onClick={
+                              () => {
+                                close()
+                              }
+                            }></div>
+                            <div className="pop_up_window animate__animated animate__zoomIn">
+                              <div className="pop_up_header"> {item.title} </div>
+                              <div className="pop_up_content">
+                                <span>
+                                  {
+                                    item.text.map((item) => {
+                                      return (
+                                        <div>
+                                          {"- " + item}
+                                        </div>
+                                      )
+                                    })
+                                  }
+                                </span>
+                              </div>
+                              <div className="pop_up_actions">
+                                <a
+                                  className="btn"
+                                  onClick={() => {
+                                    close();
+                                  }}
+                                >
+                                  Close
+                                </a>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      )}
-                  </Popup>
+                        )}
+                    </Popup>
+                  </div>
+
                 </div>
               </article>)
           })}

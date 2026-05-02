@@ -90,10 +90,10 @@ export default function Languages() {
       ((Date.now() - lastNoteFetchTime) / 86400000) >= 1 ||
       lastNoteFetch === null
     ) {
-      var url = 'https://personal-portfolio-backend.deno.dev/fetchJSON?filename=languages_info.json'
+      var url = 'https://portfoliobackend.namanbajaj.deno.net/fetchJSON?filename=languages_info.json'
 
       if (window.location.href.includes('localhost')) {
-        url = 'https://personal-portfolio-backend.deno.dev/fetchJSON?filename=languages_info.json&password=' + process.env.REACT_APP_FETCH_JSON_PASSWORD
+        url = 'https://portfoliobackend--master.namanbajaj.deno.net/fetchJSON?filename=languages_info.json&password=' + process.env.REACT_APP_FETCH_JSON_PASSWORD
         // url = 'http://localhost:8000/fetchJSON?filename=languages_info.json&password=' + process.env.REACT_APP_FETCH_JSON_PASSWORD
       }
 

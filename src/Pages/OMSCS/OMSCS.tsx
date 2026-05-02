@@ -10,7 +10,7 @@ export default function OMSCS() {
     <Header />
     {
       classData.map((item) => {
-        return <Class className={item.className} url={item.url} summary={item.summary} techs={item.techs} projects={item.projects}/>;
+        return <Class className={item.className} url={item.url} techs={item.techs} projects={item.projects}/>;
       })
     }
     <Footer />
