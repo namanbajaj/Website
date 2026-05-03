@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6cbf4497.css",
-    "main.js": "/static/js/main.101b733c.js",
+    "main.css": "/static/css/main.51643441.css",
+    "main.js": "/static/js/main.db52f703.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.e1143741.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.81480344.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.f83e712b.chunk.js",
@@ -62,7 +62,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.6cbf4497.css",
-    "static/js/main.101b733c.js"
+    "static/css/main.51643441.css",
+    "static/js/main.db52f703.js"
   ]
 }
