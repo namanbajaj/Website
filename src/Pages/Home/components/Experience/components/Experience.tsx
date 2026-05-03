@@ -110,9 +110,9 @@ export default function Experience() {
                               {
                                 item.do_multi_page ? <div className='pop_up_actions prev_next_popup_btn'>
                                   <a className='btn' id='prev_btn_resp_popup' onClick={() => {
-                                    document.getElementById('next_btn_resp_popup').classList.remove('btn_disabled');
+                                    document.getElementById('next_btn_resp_popup')?.classList.remove('btn_disabled');
                                     if (count - 1 === 0) {
-                                      document.getElementById('prev_btn_resp_popup').classList.add('btn_disabled');
+                                      document.getElementById('prev_btn_resp_popup')?.classList.add('btn_disabled');
                                     }
                                     if (count !== 0) {
                                       setCount(count - 1)
@@ -124,9 +124,9 @@ export default function Experience() {
                                   <CloseButton close={close} />
 
                                   <a className='btn' id='next_btn_resp_popup' onClick={() => {
-                                    document.getElementById('prev_btn_resp_popup').classList.remove('btn_disabled');
+                                    document.getElementById('prev_btn_resp_popup')?.classList.remove('btn_disabled');
                                     if (count + 1 === item.description.props.children.length - 1) {
-                                      document.getElementById('next_btn_resp_popup').classList.add('btn_disabled');
+                                      document.getElementById('next_btn_resp_popup')?.classList.add('btn_disabled');
                                     }
                                     if (count !== item.description.props.children.length - 1) {
                                       setCount(count + 1)

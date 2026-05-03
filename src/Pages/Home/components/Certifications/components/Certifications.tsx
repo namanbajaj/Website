@@ -9,7 +9,7 @@ const Certifications = () => {
   const [filter, setFilter] = useState('certifications');
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
-  const handleFilterChange = (newFilter) => {
+  const handleFilterChange = (newFilter: string) => {
     setFilter(newFilter);
   };
 
@@ -21,13 +21,13 @@ const Certifications = () => {
       } else {
         document.body.classList.remove('no-scroll');
       }
-      
+
       return newState;
     });
   };
 
-  const handleOverlayClick = (e) => {
-    if (e.target.classList.contains('popup_background')) {
+  const handleOverlayClick = (e: React.MouseEvent<HTMLInputElement>) => {
+    if ((e.target as HTMLElement).classList.contains('popup_background')) {
       setIsPopupVisible(false);
       document.body.classList.remove('no-scroll');
     }
@@ -39,7 +39,7 @@ const Certifications = () => {
     if (filter === 'coursework') return project.type === 'coursework';
   });
 
-  const FilterButtonsObject = ({ className }) => {
+  const FilterButtonsObject = ({ className }: { className: string }) => {
     return (
       <div className={className}>
         <button onClick={() => handleFilterChange('all')} className={filter === 'all' ? 'btn' : 'active btn'}>
