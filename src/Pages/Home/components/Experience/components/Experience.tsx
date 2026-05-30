@@ -9,6 +9,10 @@ import Icons from '../../../../../Shared/Icons/Icons';
 
 import { data } from '../data/data'
 import { FaArrowAltCircleDown } from 'react-icons/fa';
+import { ExperienceCardItem } from '../model/ExperienceModels';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const iconSize = 150;
 
@@ -21,6 +25,113 @@ function CloseButton({ close }) {
       Close
     </a>
   </div>
+  )
+}
+
+function getExperienceItem(item: ExperienceCardItem, duration: Number, setCount: React.Dispatch<React.SetStateAction<number>>, count: number, interval: NodeJS.Timeout) {
+  return (
+    <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={duration} animateOnce={true}>
+      <article className="experience_item" key={item.id}>
+        <h2 className='item_title_text'>{item.title}</h2>
+        <h3 className='icon'>
+          <Icons name={item.icon} size={iconSize} />
+        </h3>
+        <div className='full_grid'>
+          <div className='info_grid'>
+            <h3>{item.subtitle}</h3>
+            <p>{item.date}</p>
+          </div>
+          {(item.description != null) && (
+            <Popup
+              trigger={<a className="btn r_btn"> Responsibilities </a>}
+              modal
+              onOpen={() => {
+                document.body.classList.add('modal-open');
+                setCount(0);
+                document.getElementById('prev_btn_resp_popup')?.classList.add('btn_disabled');
+
+                document.getElementById('more_to_read_arrow').style.display = 'block';
+                interval = setInterval(() => {
+                  const el = document.getElementById('popup_content');
+                  if (el && el.scrollHeight > el.clientHeight) {
+                    const delta = 5;
+                    if (Math.abs((el.scrollTop + el.clientHeight) - el.scrollHeight) < delta) {
+                      document.getElementById('more_to_read_arrow').style.display = 'none';
+                    }
+                    else {
+                      document.getElementById('more_to_read_arrow').style.display = 'block';
+                    }
+                  }
+                  else if (el) {
+                    document.getElementById('more_to_read_arrow').style.display = 'none';
+                  }
+                }, 100);
+              }}
+              onClose={() => {
+                document.body.classList.remove('modal-open');
+                clearInterval(interval);
+              }}
+            >
+              {
+                // @ts-ignore - issue with reactjs-popup library
+                ((close) => (
+                  <div>
+                    <div className='popup_background' onClick={() => close()} />
+                    <div className="pop_up_window animate__animated animate__zoomIn">
+                      <div className="pop_up_header"> {item.title} </div>
+
+                      {
+                        <div className="pop_up_content" id="popup_content">
+                          {
+                            item.do_multi_page ?
+                              item.description.props.children.toReversed()[count] :
+                              item.description
+                          }
+                          <div id='more_to_read_arrow'>
+                            <FaArrowAltCircleDown size={25} />
+                          </div>
+                        </div>
+                      }
+
+                      {
+                        item.do_multi_page ? <div className='pop_up_actions prev_next_popup_btn'>
+                          <a className='btn' id='prev_btn_resp_popup' onClick={() => {
+                            document.getElementById('next_btn_resp_popup')?.classList.remove('btn_disabled');
+                            if (count - 1 === 0) {
+                              document.getElementById('prev_btn_resp_popup')?.classList.add('btn_disabled');
+                            }
+                            if (count !== 0) {
+                              setCount(count - 1)
+                            }
+                          }}>
+                            Newer
+                          </a>
+
+                          <CloseButton close={close} />
+
+                          <a className='btn' id='next_btn_resp_popup' onClick={() => {
+                            document.getElementById('prev_btn_resp_popup')?.classList.remove('btn_disabled');
+                            if (count + 1 === item.description.props.children.length - 1) {
+                              document.getElementById('next_btn_resp_popup')?.classList.add('btn_disabled');
+                            }
+                            if (count !== item.description.props.children.length - 1) {
+                              setCount(count + 1)
+                            }
+                          }}>Older</a>
+                        </div> :
+                          <div className="pop_up_actions">
+                            <CloseButton close={close} />
+                          </div>
+                      }
+                    </div>
+                  </div>
+                ))
+              }
+            </Popup>
+          )}
+        </div>
+      </article>
+    </ScrollAnimation>
   )
 }
 
@@ -43,110 +154,7 @@ export default function Experience() {
       <div className="experience_grid">
         {data.map((item) => {
           duration += 100
-          return (
-            <ScrollAnimation animateIn="animate__animated animate__fadeIn" duration={1} delay={duration} animateOnce={true}>
-              <article className="experience_item" key={item.id}>
-                <h2 className='item_title_text'>{item.title}</h2>
-                <h3 className='icon'>
-                  <Icons name={item.icon} size={iconSize} />
-                </h3>
-                <div className='full_grid'>
-                  <div className='info_grid'>
-                    <h3>{item.subtitle}</h3>
-                    <p>{item.date}</p>
-                  </div>
-                  {(item.description != null) && (
-                    <Popup
-                      trigger={<a className="btn r_btn"> Responsibilities </a>}
-                      modal
-                      onOpen={() => {
-                        document.body.classList.add('modal-open');
-                        setCount(0);
-                        document.getElementById('prev_btn_resp_popup')?.classList.add('btn_disabled');
-                        
-                        document.getElementById('more_to_read_arrow').style.display = 'block';
-                        interval = setInterval(() => {
-                          const el = document.getElementById('popup_content');
-                          if (el && el.scrollHeight > el.clientHeight) {
-                            const delta = 5;
-                            if (Math.abs((el.scrollTop + el.clientHeight) - el.scrollHeight) < delta) {
-                              document.getElementById('more_to_read_arrow').style.display = 'none';
-                            }
-                            else {
-                              document.getElementById('more_to_read_arrow').style.display = 'block';
-                            }
-                          } 
-                          else if (el) {
-                            document.getElementById('more_to_read_arrow').style.display = 'none';
-                          }
-                        }, 100);
-                      }}
-                      onClose={() => {
-                        document.body.classList.remove('modal-open');
-                        clearInterval(interval);
-                      }}
-                    >
-                      {
-                        // @ts-ignore - issue with reactjs-popup library
-                        ((close) => (
-                          <div>
-                            <div className='popup_background' onClick={() => close()} />
-                            <div className="pop_up_window animate__animated animate__zoomIn">
-                              <div className="pop_up_header"> {item.title} </div>
-
-                              {
-                                <div className="pop_up_content" id="popup_content">
-                                  {
-                                    item.do_multi_page ?
-                                      item.description.props.children.toReversed()[count] :
-                                      item.description
-                                  }
-                                  <div id='more_to_read_arrow'>
-                                    <FaArrowAltCircleDown size={25}/>
-                                  </div>
-                                </div>
-                              }
-
-                              {
-                                item.do_multi_page ? <div className='pop_up_actions prev_next_popup_btn'>
-                                  <a className='btn' id='prev_btn_resp_popup' onClick={() => {
-                                    document.getElementById('next_btn_resp_popup')?.classList.remove('btn_disabled');
-                                    if (count - 1 === 0) {
-                                      document.getElementById('prev_btn_resp_popup')?.classList.add('btn_disabled');
-                                    }
-                                    if (count !== 0) {
-                                      setCount(count - 1)
-                                    }
-                                  }}>
-                                    Newer
-                                  </a>
-
-                                  <CloseButton close={close} />
-
-                                  <a className='btn' id='next_btn_resp_popup' onClick={() => {
-                                    document.getElementById('prev_btn_resp_popup')?.classList.remove('btn_disabled');
-                                    if (count + 1 === item.description.props.children.length - 1) {
-                                      document.getElementById('next_btn_resp_popup')?.classList.add('btn_disabled');
-                                    }
-                                    if (count !== item.description.props.children.length - 1) {
-                                      setCount(count + 1)
-                                    }
-                                  }}>Older</a>
-                                </div> :
-                                  <div className="pop_up_actions">
-                                    <CloseButton close={close} />
-                                  </div>
-                              }
-                            </div>
-                          </div>
-                        ))
-                      }
-                    </Popup>
-                  )}
-                </div>
-              </article>
-            </ScrollAnimation>
-          )
+          return getExperienceItem(item, duration, setCount, count, interval);
         })}
       </div>
     </section>
