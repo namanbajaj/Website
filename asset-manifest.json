@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fcd4fb43.css",
-    "main.js": "/static/js/main.0fa3d99f.js",
+    "main.js": "/static/js/main.4185c01b.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.e1143741.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.81480344.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.f83e712b.chunk.js",
@@ -51,6 +51,7 @@
     "static/media/BGPHJ.png": "/static/media/BGPHJ.6dcc99bc54728fff1e67.png",
     "static/media/currency_converter_photo.png": "/static/media/currency_converter_photo.287c8fa7b7e18156153a.png",
     "static/media/c_terminal_photo.png": "/static/media/c_terminal_photo.ba6a160b8b5a1ee3be22.png",
+    "static/media/BM.png": "/static/media/BM.a8ed37698a573464d915.png",
     "static/media/SDN_FW.jpg": "/static/media/SDN_FW.52d03061d4eb90306372.jpg",
     "static/media/SN.jpg": "/static/media/SN.e9fb14a659bc81d191bf.jpg",
     "static/media/flat-files.png": "/static/media/flat-files.81319d6fcfead57a9187.png",
@@ -64,6 +65,6 @@
   },
   "entrypoints": [
     "static/css/main.fcd4fb43.css",
-    "static/js/main.0fa3d99f.js"
+    "static/js/main.4185c01b.js"
   ]
 }
