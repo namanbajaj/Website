@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaNetworkWired } from 'react-icons/fa6';
 import { SiCplusplus, SiLinux, SiPython, SiVmware } from 'react-icons/si'
+import { TbCloudNetwork, TbSql } from 'react-icons/tb';
 
 import SN_image from '../assets/SN.jpg'
 import STP_image from '../assets/STP.png'
@@ -10,7 +11,7 @@ import BGPHJ_image from '../assets/BGPHJ.png'
 import BGPM_image from '../assets/BGPM.png'
 import KN_image from '../assets/KN.png'
 import FF_image from '../assets/flat-files.png'
-import { TbCloudNetwork, TbSql } from 'react-icons/tb';
+import BM_image from '../assets/BM.png'
 
 const iconSize = 75;
 
@@ -29,6 +30,17 @@ export const classData = [{
     }
   ],
   projects: [
+    {
+      title: 'Buffer Manager',
+      image: BM_image,
+      text: [
+        'Implemented custom Buffer Manager that allowed pages to be loaded, unloaded, and accessed concurrently by multiple threads',
+        'Fetched and saved pages to and from disk using given Storage Manager',
+        'Implemented 2Q policy for page eviction and replacement',
+        'Implemented coarse and fine grained locks for maximal performance and concurrency',
+        'Implemented constructors and functions for Page Guard class, such as copy constructor, utilizing RAII principles'
+      ]
+    },
     {
       title: 'Flat File Database',
       image: FF_image,
