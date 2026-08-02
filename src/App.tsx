@@ -8,6 +8,7 @@ import Games from './Pages/Games/Games';
 import OMSCS from './Pages/OMSCS/OMSCS';
 import Portfolio from './Pages/Projects/components/Portfolio';
 import Languages from './Pages/Tools/components/Languages';
+import RUPortfolio from './Pages/RUCSProjects/components/Portfolio';
 
 export default function App() {
   const navigate = useNavigate();
@@ -28,6 +29,7 @@ export default function App() {
       <Route path="/omscs" element={<OMSCS />} />
       <Route path="/projects" element={<Portfolio />} />
       <Route path="/tools" element={<Languages />} />
+      <Route path="/ruprojects" element={<RUPortfolio />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )

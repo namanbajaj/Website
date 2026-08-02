@@ -73,6 +73,6 @@ export const languages: LanguageModel[] = [
     icon: <SiSalesforce size={iconSize} />,
     technology: 'Apex',
     experience: 'Intermediate',
-    isNotable: true
+    isNotable: false
   }
 ]

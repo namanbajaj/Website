@@ -36,8 +36,8 @@ export const cards_data: CardsDataModel[] = [
     title: 'Software Developer',
     logo: <AiFillCode size={iconSize} />,
     info: [
-      'Global Technology Rotation Associate at Prudential',
-      'Current Rotation: Platform Engineer (Salesforce)',
+      'Infrastructure Engineer at Prudential',
+      'Completing projects as part of courses at Georgia Tech',
       'Working on hobby projects',
     ]
   },

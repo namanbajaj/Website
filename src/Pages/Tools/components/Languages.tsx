@@ -75,7 +75,7 @@ export default function Languages() {
     editors: false
   });
 
-  const toggleBoolean = (key) => {
+  const toggleBoolean = (key: string) => {
     setBooleanState((prevState) => ({
       ...prevState,
       [key]: !prevState[key],
@@ -143,7 +143,7 @@ export default function Languages() {
 
 
   const [notes, setNotes] = useState({
-    languages: { name: '', notes: ['']},
+    languages: { name: '', notes: [''] },
     frontend: { name: '', notes: [''] },
     backend: { name: '', notes: [''] },
     database: { name: '', notes: [''] },
@@ -211,7 +211,10 @@ export default function Languages() {
                                   <div className={'experience_info_container' + (info ? ' set_cursor_click' : '')}>
                                     {info && <IoInformationCircleOutline />}
                                     <h5 className='text-light'>
-                                      {experience}
+                                      {info && "Learn more"}
+                                    </h5>
+                                    <h5 className='text-light'>
+                                      {!info && experience}
                                     </h5>
                                   </div>
                                 </div>

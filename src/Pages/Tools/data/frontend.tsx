@@ -38,7 +38,7 @@ export const frontend: LanguageModel[] = [
     icon: <SiSalesforce size={iconSize} />,
     technology: 'LWC/Aura',
     experience: 'Intermediate',
-    isNotable: true
+    isNotable: false
   },
   {
     id: 6,

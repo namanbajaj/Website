@@ -11,9 +11,6 @@ import { data } from '../data/data'
 import { FaArrowAltCircleDown } from 'react-icons/fa';
 import { ExperienceCardItem } from '../model/ExperienceModels';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-
 const iconSize = 150;
 
 function CloseButton({ close }) {

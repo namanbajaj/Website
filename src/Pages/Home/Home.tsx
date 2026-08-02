@@ -16,8 +16,8 @@ export default function Home() {
       <Welcome />
       <About />
       <Experience />
-      <Languages />
-      <Portfolio />
+      {/* <Languages /> */}
+      {/* <Portfolio /> */}
       <Certifications />
       <Contact />
       <Footer />

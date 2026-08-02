@@ -35,7 +35,7 @@ export const cd_data: CurrentDevelopmentDataModel[] = [
   // },
   {
     key: 6,
-    main_bullet: 'Taking CS 6250: Computer Networks in OMSCS'
+    main_bullet: 'Taking CS 6200: Introduction to Operating Systems in the Fall semester'
   },
   {
     key: 5,
@@ -46,6 +46,6 @@ export const cd_data: CurrentDevelopmentDataModel[] = [
   },
   {
     key: 7,
-    main_bullet: 'Learning Azure fundamentals to apply at my job as a Cloud Engineer'
+    main_bullet: 'Learning Azure fundamentals to apply at my job as an Infrastructure Engineer'
   }
 ]

@@ -1,6 +1,6 @@
 import React from "react";
 import { BsCodeSquare, BsTools } from "react-icons/bs";
-import { FaGraduationCap } from "react-icons/fa6";
+import { FaGraduationCap, FaSchool } from "react-icons/fa6";
 import { FiHome } from "react-icons/fi";
 import { IoGameController } from "react-icons/io5";
 
@@ -12,13 +12,18 @@ export const data = [
   },
   {
     link: '/projects',
-    text: 'Projects',
+    text: 'Personal Projects',
     icon: <BsTools />,
   },
   {
     link: '/tools',
     text: 'Technologies & Tools',
     icon: <BsCodeSquare />,
+  },
+  {
+    link: '/ruprojects',
+    text: 'RUCS Projects',
+    icon: <FaSchool />,
   },
   {
     link: '/omscs',

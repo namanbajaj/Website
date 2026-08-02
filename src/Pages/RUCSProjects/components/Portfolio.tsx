@@ -7,22 +7,20 @@ import All from './All'
 import Header from '../../../Shared/Header/Header';
 import Footer from '../../../Shared/Footer/Footer';
 
-const Portfolio = () => {
+const RUPortfolio = () => {
   return (
     <>
       <Header />
       <section id='portfolio'>
         <div className='portfolio_intro_text'>
-          <h1>Personal Projects</h1>
+          <h1>Projects I did at Rutgers as part of classwork</h1>
         </div>
-
         <All />
       </section >
-
       <Footer />
     </>
 
   )
 }
 
-export default Portfolio
+export default RUPortfolio

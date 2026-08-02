@@ -1,6 +1,6 @@
 #ClassItem {
   margin: 5rem 1% 1% 1%;
-  border: 2px solid white;
+  border: 2px solid var(--color-bg-variant);
   border-radius: 10px;
 }
 

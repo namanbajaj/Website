@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 const iconSize = 25;
 
-const All = () => {
+const RUAll = () => {
   return (
     <div>
       <div className='portfolio__container'>
@@ -176,4 +176,4 @@ const All = () => {
   )
 }
 
-export default All
+export default RUAll

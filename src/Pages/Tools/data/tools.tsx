@@ -25,7 +25,7 @@ export const tools: LanguageModel[] = [
     icon: <FaSalesforce size={iconSize} />,
     technology: 'Salesforce',
     experience: 'Intermediate',
-    isNotable: true
+    isNotable: false
   },
   {
     id: 4,

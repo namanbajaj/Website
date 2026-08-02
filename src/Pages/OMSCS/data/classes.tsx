@@ -1,8 +1,10 @@
 import React from 'react'
 import { FaNetworkWired } from 'react-icons/fa6';
 import { SiCplusplus, SiLinux, SiPython, SiVmware } from 'react-icons/si'
-import { TbCloudNetwork, TbSql } from 'react-icons/tb';
+import { TbCloudNetwork, TbSql, TbCpu } from 'react-icons/tb';
+import { DiDatabase } from 'react-icons/di';
 
+// Computer Networks
 import SN_image from '../assets/SN.jpg'
 import STP_image from '../assets/STP.png'
 import DVR_image from '../assets/DVR.png'
@@ -10,8 +12,13 @@ import SDN_FW from '../assets/SDN_FW.jpg'
 import BGPHJ_image from '../assets/BGPHJ.png'
 import BGPM_image from '../assets/BGPM.png'
 import KN_image from '../assets/KN.png'
+
+// Database Systems Implementation
 import FF_image from '../assets/flat-files.png'
 import BM_image from '../assets/BM.png'
+import BTree_image from '../assets/BTree.png'
+import RTree_image from '../assets/RTree.png'
+import Parser_image from '../assets/Parser.png'
 
 const iconSize = 75;
 
@@ -27,9 +34,44 @@ export const classData = [{
     {
       tech: 'C++',
       icon: <SiCplusplus size={iconSize} />
+    },
+    {
+      tech: 'Multithreading',
+      icon: <TbCpu size={iconSize} />
+    },
+    {
+      tech: 'Databases',
+      icon: <DiDatabase size={iconSize} />
     }
   ],
   projects: [
+    {
+      title: 'Operators',
+      image: Parser_image,
+      text: [
+        'Implemented physical database operators using the iterator model',
+        'Implemented small query parser and executor',
+        'Implemented various SQL functions, such as Except/ExceptAll, Intersect/IntersectAll, Hash Aggregation, Hash Join, Sort, Union/UnionAll',
+        'Parses queries using regex and builds model for execution'
+      ]
+    },
+    {
+      title: 'R-Tree',
+      image: RTree_image,
+      text: [
+        'Implemented custom on disk R tree to store and retrieve multi dimensional data',
+        'Supports inserting 2D rectangles (MBRs), splitting pages when they overflow, maintaining parent bounding boxes, and answering spatial queries such as window (rectangle) queries and k-nearest neighbor queries'
+      ]
+    },
+    {
+      title: 'B+ Tree',
+      image: BTree_image,
+      text: [
+        'Implemented custom B+ tree, leaf nodes, and inner nodes to facilitate indices in a database system',
+        'Implemented persistence using meta page and saving using given buffer manager',
+        'Implemented various functions that leverage utility of B+ Tree, including range queries and lookup'
+      ]
+    },
     {
       title: 'Buffer Manager',
       image: BM_image,

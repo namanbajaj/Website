@@ -4,27 +4,49 @@ import { Link } from "react-router-dom";
 
 export const data: ExperienceCardItem[] = [
   {
-    id: 4,
+    id: 7,
+    title: 'Prudential',
+    subtitle: 'Infrastructure Engineer',
+    date: 'August 2026 - Current',
+    icon: 'prudential',
+  },
+
+  {
+    id: 6,
     title: 'Prudential',
     subtitle: 'Cloud Engineer',
-    date: 'January 2026 - Current',
+    date: 'January 2026 - August 2026',
     icon: 'prudential',
     description:
       <ul className='r_list'>
-        <li>Cloud Engineer, working as full stack and infrastructure engineer</li>
+        <li>Full stack and infrastructure engineer</li>
         <li>Current development:
           <ul className='r_list'>
+            <li>Implemented an automated VPC CIDR reconciliation and alerting pipeline integrating Infoblox IPAM, Wiz API, AWS Lambda, EventBridge, and S3 to generate monthly reports and send automated MS Teams notifications</li>
+            <li>Automated infrastructure decommissioning by writing Python scripts to programmatically delete ~10,000 legacy CodePipeline stacks and building custom AWS Nuke Lambda functions for regional cleanup</li>
+            <li>Added a redeployment retry feature to the PruCloud Console UI (React, FastAPI) after conducting architectural deep dives into AWS Step Functions, Lambda, and DynamoDB execution flows</li>
+            <li>Built a dynamic ServiceNow support intake form using JavaScript Script Includes and workflows to automate Incident and Change ticket creation for cloud support requests</li>
+            <li>Automated the nuking and bootstrapping of an AWS account using CloudFormation nested stacks, Step Functions, and EventBridge, integrating event buses for automated failure reporting to Teams</li>
+            <li>Migrated core IAM and infrastructure repositories to GitHub and AMPv2, writing Python scripts to auto-generate placeholder IAM roles to resolve deployment dependencies</li>
+            <li>Resolved critical SAST and SCA security vulnerabilities across multiple core cloud infrastructure repositories using Apiiro and updating package dependencies</li>
+            <li>Created comprehensive technical documentation on Confluence covering CIDR reconciliation, StackSets architecture, Azure repo breakouts, and DevOps deployer tools</li>
           </ul>
         </li>
         <li>Technologies used:
           <ul className='r_list'>
+            <li>AWS (CloudFormation, Lambda, Step Functions, DynamoDB, EventBridge, CodePipeline, CodeBuild, S3, SNS, CloudWatch, Route 53, IAM)</li>
+            <li>Python (boto3, FastAPI, requests, ipaddress)</li>
+            <li>React (TypeScript, CSS, HTML)</li>
+            <li>ServiceNow (Catalogue Builder, Script Includes, Workflows), Infoblox (IPAM, WAPI)</li>
+            <li>DevOps & Security Tools (GitHub, Apiiro, Confluence, Jira, AWS CLI)</li>
           </ul>
         </li>
-        <li>Methodologies used: </li>
-      </ul>
+        <li>Methodologies used: Cloud Engineering, Infrastructure as Code (IaC), Automation & Scripting, CI/CD & Repository Migration, Security Compliance (SAST/SCA), On-Call & Incident Management</li>
+      </ul>,
   },
+
   {
-    id: 6,
+    id: 5,
     title: 'Prudential',
     subtitle: 'Platform Engineer',
     date: 'July 2025 - January 2026',
@@ -58,10 +80,11 @@ export const data: ExperienceCardItem[] = [
         <li>Methodologies used: Agile/Scrum, Batch processing, ADA/Accessibility compliance, CI/CD, Regression testing</li>
       </ul>
   },
+
   {
-    id: 5,
+    id: 4,
     title: 'Prudential',
-    subtitle: 'Full Stack Engineer',
+    subtitle: 'Full Stack Developer',
     date: 'July 2024 - July 2025',
     icon: 'prudential',
     description:
@@ -86,10 +109,11 @@ export const data: ExperienceCardItem[] = [
           </ul>
         </li>
         <li>Methodologies used: Agile, CI/CD, Microservices, Containerization, UI/UX, Data Migration</li>
-      </ul>
+      </ul>,
   },
+
   {
-    id: 2,
+    id: 3,
     title: 'Rutgers University - New Brunswick',
     subtitle: 'Math Grader',
     date: 'Jan 2023 - May 2024',
@@ -127,7 +151,7 @@ export const data: ExperienceCardItem[] = [
   },
 
   {
-    id: 3,
+    id: 2,
     title: 'Prudential',
     subtitle: 'Software Engineering Intern',
     date: 'Jun 2023 - Aug 2023',
