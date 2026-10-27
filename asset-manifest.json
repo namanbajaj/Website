@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.06fecb19.css",
-    "main.js": "/static/js/main.1e979fec.js",
+    "main.css": "/static/css/main.00e2a987.css",
+    "main.js": "/static/js/main.6ec40cdb.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.44feb7c4.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.024af340.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.e5189a41.chunk.js",
@@ -15,6 +15,7 @@
     "static/js/313.5e67708a.chunk.js": "/static/js/313.5e67708a.chunk.js",
     "static/media/university_management_demo.mp4": "/static/media/university_management_demo.89bc0dc2cc32faea887f.mp4",
     "static/media/android_photos_app_demo.mp4": "/static/media/android_photos_app_demo.cbe3ec004f41eb430098.mp4",
+    "static/media/CS.png": "/static/media/CS.59cbaea6c3b4e945a3c1.png",
     "static/media/me.jpg": "/static/media/me.14c4daf37ac80eb25411.jpg",
     "static/media/desktop_photos_app_demo.mp4": "/static/media/desktop_photos_app_demo.0e1b13950fa5a7410a84.mp4",
     "static/media/quizbiz_photo.png": "/static/media/quizbiz_photo.b262b3fdc6f0446c0cf3.png",
@@ -62,11 +63,12 @@
     "static/media/snake.png": "/static/media/snake.2a8b378275bb1e4eb5ae.png",
     "static/media/fs.png": "/static/media/fs.936db353bc768df21220.png",
     "static/media/AZ-900.png": "/static/media/AZ-900.6da2ecffe97ec07040a5.png",
+    "static/media/IPC.png": "/static/media/IPC.c46bac4810611a2cb7a8.png",
     "static/media/RTree.png": "/static/media/RTree.0874541f875db2c60bae.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.06fecb19.css",
-    "static/js/main.1e979fec.js"
+    "static/css/main.00e2a987.css",
+    "static/js/main.6ec40cdb.js"
   ]
 }
