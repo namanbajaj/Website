@@ -19,6 +19,14 @@ export default function App() {
       sessionStorage.removeItem('redirect');
       navigate(redirectPath, { replace: true });
     }
+    var url = 'https://api.namanbajaj.com/'
+    fetch(url).then(response => response.json()).then(
+      data => {
+        if(data.message && data.message === "Server running") {
+          console.log("Connected to backend");
+        }
+      }
+    )
   }, [navigate, location]);
 
   return (
