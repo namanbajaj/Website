@@ -5,6 +5,8 @@ import Class from "./components/Class/Class";
 
 import { classData } from './data/classes'
 
+import "./omscs.css"
+
 export default function OMSCS() {
   return <>
     <Header />

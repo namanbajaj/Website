@@ -9,9 +9,10 @@ import Particles from "react-tsparticles";
 import { loadSlim } from 'tsparticles-slim'
 import { useMemo } from 'react';
 import { MoveDirection, OutMode } from '@tsparticles/engine';
+import { Engine } from 'tsparticles-engine';
 
 export default function Welcome() {
-  const particlesInit = async (main) => {
+  const particlesInit = async (main: Engine) => {
     await loadSlim(main);
   };
 
@@ -118,7 +119,7 @@ export default function Welcome() {
 
       <div className="header_container">
         <h1>Naman Bajaj</h1>
-        <h5>Software Developer</h5>
+        <h5>Infrastructure Engineer</h5>
 
         <Links />
         <Socials />
