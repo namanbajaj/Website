@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.00e2a987.css",
-    "main.js": "/static/js/main.ad91c2cd.js",
+    "main.js": "/static/js/main.1fdfd9d0.js",
     "reactPlayerHls.js": "/static/js/reactPlayerHls.44feb7c4.chunk.js",
     "reactPlayerDash.js": "/static/js/reactPlayerDash.024af340.chunk.js",
     "reactPlayerMux.js": "/static/js/reactPlayerMux.e5189a41.chunk.js",
@@ -39,8 +39,8 @@
     "static/media/kp.png": "/static/media/kp.390f30e9d1a49f02caaa.png",
     "static/media/university_management_photo.png": "/static/media/university_management_photo.171603d4b4805f3cc300.png",
     "static/media/STP.png": "/static/media/STP.48c4611c1330faee6b30.png",
+    "static/media/Resume___Naman_Bajaj.pdf": "/static/media/Resume___Naman_Bajaj.c4082b5053f4b8fd1eae.pdf",
     "static/media/aws-certified-solutions-architect-associate.png": "/static/media/aws-certified-solutions-architect-associate.78b286db1f7e6ed8c867.png",
-    "static/media/Resume___Naman_Bajaj.pdf": "/static/media/Resume___Naman_Bajaj.8fa6429355e31267ca9b.pdf",
     "static/media/aws-certified-cloud-practitioner.png": "/static/media/aws-certified-cloud-practitioner.39308e77e7d0028acce5.png",
     "static/media/DVR.png": "/static/media/DVR.f649ef469ffb9b0c1c67.png",
     "static/media/Deno.png": "/static/media/Deno.ebb65b8d8ddaee4ee7c2.png",
@@ -69,6 +69,6 @@
   },
   "entrypoints": [
     "static/css/main.00e2a987.css",
-    "static/js/main.ad91c2cd.js"
+    "static/js/main.1fdfd9d0.js"
   ]
 }
