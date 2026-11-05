@@ -8,14 +8,37 @@ import CurrencyConverterPhoto from '../assets/currency_converter_photo.png'
 import SwiftStrokesPhoto from '../assets/swiftstrokes.png'
 import kp from '../assets/kp.png'
 import Deno from '../assets/Deno.png'
+import CF from '../assets/CF_logo.png'
 
-import { SiCsharp, SiKotlin, SiAndroidstudio, SiGradle, SiSqlite, SiAndroid, SiHtml5, SiReact, SiCss3, SiJson, SiVisualstudio, SiWindows, SiTypescript, SiGithub, SiDeno } from 'react-icons/si'
+import { SiCsharp, SiKotlin, SiAndroidstudio, SiGradle, SiSqlite, SiAndroid, SiHtml5, SiReact, SiCss3, SiJson, SiVisualstudio, SiWindows, SiTypescript, SiGithub, SiDeno, SiCloudflare } from 'react-icons/si'
 import { FiExternalLink } from 'react-icons/fi';
 import { ProjectModel } from '../model/PortfolioModels.js';
 
 const iconSize = 25;
 
 export const data: ProjectModel[] = [
+  // Backend V2 for Portfolio
+  {
+    id: 22,
+    image: CF,
+    title: 'Personal Portfolio Backend V2',
+    icons: <div className='icon_under'>
+      <SiCloudflare size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+      <SiTypescript size={iconSize} /> &nbsp;&nbsp;  &nbsp;&nbsp;
+    </div>,
+    text: [
+      "Migrated to Cloudflare due to acquisition of Deno",
+      "Backend written for this portfolio",
+      "Written using TypeScript",
+      "Deployed on Cloudflare Workers",
+      "Speeds up development by preventing need to redeploy upon simple changes",
+      "Pulls additional notes for certain languages/techs"
+    ],
+    isNotable: true,
+    type: 'web',
+    dateOfLastUpdate: '2025-07-15',
+    dateOfFirstUpdate: '2025-07-15'
+  },
   // Backend for Portfolio
   {
     id: 22,
